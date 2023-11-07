@@ -1,0 +1,13 @@
+Tipo,Selettore,Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost/,6.00,9.00,6.60
+CssSelector,.ui-menu.ui-widget.ui-widget-content.ui-corner-all,3.70,8.00,4.56
+CssSelector,#ui-id-3 > span,7.60,8.00,7.68
+LinkText,Frutta,4.00,8.00,4.80
+CssSelector,.price-box,7.90,8.00,7.92
+CssSelector,.tocart > span,6.50,8.00,6.80
+CssSelector,.tocart > span,6.50,8.00,6.80
+LinkText,shopping cart,4.00,8.00,4.80
+CssSelector,.checkout > span,6.50,6.00,6.40
+CssSelector,.\_active > span,6.50,6.00,6.40
+CssSelector,.opc-progress-bar-item:nth-child(2) > span,3.90,6.00,4.32
+CssSelector,strong > span:nth-child(2),5.30,6.00,5.44

@@ -1,0 +1,13 @@
+Tipo,Selettore,Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost/admin,6.00,9.00,6.60
+Name,login[username],2.00,9.00,3.40
+Name,login[password],2.00,9.00,3.40
+Name,login[password],2.00,9.00,3.40
+Id,store-change-button,10.00,6.00,9.20
+Id,grid_tab_reviewed_products,10.00,6.00,9.20
+Id,grid_tab_customers,10.00,6.00,9.20
+Id,grid_tab_reviewed_products,10.00,6.00,9.20
+Id,grid_tab_ordered_products,10.00,6.00,9.20
+CssSelector,#menu-magento-marketplace-partners > a,7.60,6.00,7.28
+CssSelector,.page-footer,7.90,6.00,7.52
+XPath,//a[contains(@href, 'https://magento.com/sites/default/files/REVISED-MAGENTO-PRIVACY-POLICY.pdf')],4.40,6.00,4.72

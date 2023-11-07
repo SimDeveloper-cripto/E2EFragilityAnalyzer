@@ -1,0 +1,26 @@
+Tipo,Selettore,Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost:8989/login_page.php,6.00,9.00,6.60
+CssSelector,.row,7.90,9.00,8.12
+Id,username,10.00,9.00,9.80
+Id,username,10.00,9.00,9.80
+Id,username,10.00,9.00,9.80
+Id,username,10.00,9.00,9.80
+Id,username,10.00,9.00,9.80
+Id,username,10.00,9.00,9.80
+Id,username,10.00,9.00,9.80
+CssSelector,.width-40,7.90,9.00,8.12
+Id,password,10.00,9.00,9.80
+Id,password,10.00,9.00,9.80
+Id,password,10.00,9.00,9.80
+Id,password,10.00,9.00,9.80
+Id,password,10.00,9.00,9.80
+Id,password,10.00,9.00,9.80
+Id,password,10.00,9.00,9.80
+Id,password,10.00,9.00,9.80
+Id,password,10.00,9.00,9.80
+LinkText,Le fatture sono errate,4.00,8.00,4.80
+CssSelector,.col-md-12:nth-child(4),5.30,8.00,5.84
+CssSelector,.visible-on-hover,7.20,8.00,13.25
+CssSelector,.visible-on-hover,7.20,8.00,13.25
+CssSelector,.visible-on-hover,7.20,8.00,13.25
+CssSelector,.btn-white,7.90,9.00,8.12

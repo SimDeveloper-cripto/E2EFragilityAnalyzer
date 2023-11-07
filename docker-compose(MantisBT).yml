@@ -1,0 +1,29 @@
+version: '3'
+services:
+  mysql:
+    image: 'mysql:5.7.41'
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: bugtracker
+      MYSQL_USER: mantisbt
+      MYSQL_PASSWORD: mantisbt
+    volumes:
+      - './mysql:/var/lib/mysql'
+    restart: no
+  mantisbt:
+    image: 'xlrl/mantisbt:2.18.0'
+    ports:
+      - '8989:80'
+    volumes:
+      - './config:/var/www/html/config'
+      - './custom:/var/www/html/custom'
+    restart: no
+  phpmyadmin:
+    image: phpmyadmin
+    restart: no
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+volumes:
+  db_data: null

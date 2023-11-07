@@ -1,0 +1,33 @@
+Tipo,Selettore,Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost/,6.00,9.00,6.60
+CssSelector,#ui-id-3 > span,7.60,8.00,7.68
+CssSelector,.product-image-photo,7.90,8.00,7.92
+CssSelector,#product-addtocart-button > span,7.60,8.00,7.68
+LinkText,shopping cart,4.00,7.00,4.60
+CssSelector,.action-delete,7.90,6.00,7.52
+Id,newsletter,10.00,9.00,9.80
+Id,search,10.00,8.00,9.60
+Id,search,10.00,8.00,9.60
+Id,switcher-currency-trigger,10.00,8.00,9.60
+Id,switcher-currency-trigger,10.00,8.00,9.60
+Id,newsletter,10.00,8.00,9.60
+Id,maincontent,10.00,8.00,9.60
+Id,switcher-currency-trigger,10.00,8.00,9.60
+Id,switcher-currency-trigger,10.00,8.00,9.60
+Id,switcher-currency-trigger,10.00,8.00,9.60
+Id,switcher-currency-trigger,10.00,8.00,9.60
+Id,newsletter,10.00,8.00,9.60
+Id,search,10.00,8.00,9.60
+Id,search,10.00,8.00,9.60
+Id,switcher-currency-trigger,10.00,8.00,9.60
+Id,switcher-currency-trigger,10.00,8.00,9.60
+Id,newsletter,10.00,8.00,9.60
+Id,maincontent,10.00,8.00,9.60
+Id,switcher-currency-trigger,10.00,8.00,9.60
+Id,switcher-currency-trigger,10.00,8.00,9.60
+Id,switcher-currency-trigger,10.00,8.00,9.60
+Id,switcher-currency-trigger,10.00,8.00,9.60
+Id,newsletter,10.00,8.00,9.60
+Id,maincontent,10.00,8.00,9.60
+Id,switcher-currency-trigger,10.00,8.00,9.60
+Id,switcher-currency-trigger,10.00,8.00,9.60

@@ -1,0 +1,16 @@
+Tipo, Selettore, Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost:8080/,6.00,9.00,6.60
+Id,username,10.00,9.00,9.80
+Id,password,10.00,9.00,9.80
+Id,password,10.00,9.00,9.80
+CssSelector,.menu,8.81,4.00,7.85
+LinkText,Impostazioni,8.19,4.00,7.35
+CssSelector,.menu,8.81,8.00,8.65
+Name,buttonreset,2.00,3.00,2.20
+Id,search_keyword,10.00,3.00,8.60
+Id,search_keyword,10.00,3.00,8.60
+CssSelector,.fa-toggle-on,8.81,8.00,8.65
+CssSelector,.reposition > .fas,8.56,8.00,8.45
+Name,buttonreset,2.00,8.00,3.20
+XPath,//form[@id='searchFormList']/div[2]/table/tbody/tr/td/div,8.22,3.00,12.91
+XPath,//form[@id='searchFormList']/div[2]/div/div[2]/span,8.22,3.00,7.17

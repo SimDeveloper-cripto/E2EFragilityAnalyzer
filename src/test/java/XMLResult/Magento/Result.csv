@@ -1,0 +1,17 @@
+Nome del test,Magento2.4.2,Magento2.4.3,Magento2.4.4,Magento2.4.5,Magento2.4.6,Metric
+createAccount1,passed,passed,passed,passed,passed,7.98
+createCheckout1,passed,passed,error,error,error,5.81
+createHelp1,passed,passed,passed,passed,passed,7.87
+createOrder1,passed,error,error,error,error,5.55
+createReturn1,passed,error,error,error,error,4.64
+deleteCart1,passed,passed,passed,passed,passed,8.90
+readDetailsProduct1,passed,passed,passed,passed,failed,4.85
+readExtension1,passed,failed,failed,failed,failed,5.36
+readPopular1,passed,passed,passed,failed,failed,5.23
+readPrivacy1,passed,passed,passed,error,error,5.83
+readProduct1,passed,passed,error,error,error,6.63
+readTemplate1,passed,passed,error,error,error,5.15
+readView1,passed,passed,passed,passed,error,4.48
+resetPassword1,passed,passed,passed,passed,passed,7.47
+updatePage1,passed,passed,passed,passed,passed,8.50
+Point-Biserial Correlation, , , , ,  ,0.91

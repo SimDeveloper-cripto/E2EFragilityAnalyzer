@@ -1,0 +1,50 @@
+Tipo,Selettore,Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost:8989/login_page.php,6.00,9.00,6.60
+Id,username,10.00,9.00,9.80
+Id,username,10.00,9.00,9.80
+CssSelector,.width-40,7.90,9.00,8.12
+Id,password,10.00,9.00,9.80
+Id,password,10.00,9.00,9.80
+Id,password,10.00,9.00,9.80
+CssSelector,.fa-gears,7.90,9.00,8.12
+LinkText,Gestione progetti,4.00,9.00,5.00
+CssSelector,.widget-toolbox > .form-inline .btn,3.70,8.00,4.56
+Id,project-name,10.00,9.00,9.80
+Id,project-name,10.00,9.00,9.80
+Id,project-name,10.00,9.00,9.80
+CssSelector,.btn-white,7.90,9.00,8.12
+LinkText,Continua,4.00,9.00,5.00
+CssSelector,.user-info,7.90,8.00,7.92
+LinkText,Esci,4.00,8.00,4.80
+Id,username,10.00,9.00,9.80
+Id,username,10.00,9.00,9.80
+Id,username,10.00,9.00,9.80
+CssSelector,.width-40,7.90,9.00,8.12
+Id,password,10.00,9.00,9.80
+Id,password,10.00,9.00,9.80
+CssSelector,li:nth-child(3) .menu-text,5.30,8.00,5.84
+Id,select-project-id,10.00,9.00,9.80
+Id,select-project-id,10.00,9.00,9.80
+CssSelector,.btn-white,7.90,9.00,8.12
+Id,category_id,10.00,8.00,9.60
+Id,category_id,10.00,8.00,9.60
+Id,reproducibility,10.00,8.00,9.60
+Id,reproducibility,10.00,8.00,9.60
+Id,severity,10.00,8.00,9.60
+Id,severity,10.00,8.00,9.60
+Id,priority,10.00,8.00,9.60
+Id,priority,10.00,8.00,9.60
+Id,profile_id,10.00,8.00,9.60
+Id,profile_id,10.00,8.00,9.60
+Id,handler_id,10.00,8.00,9.60
+Id,handler_id,10.00,8.00,9.60
+Id,summary,10.00,8.00,9.60
+Id,summary,10.00,8.00,9.60
+CssSelector,tr:nth-child(7),6.70,8.00,6.96
+Id,summary,10.00,8.00,9.60
+Id,summary,10.00,8.00,9.60
+Id,summary,10.00,8.00,9.60
+Id,description,10.00,8.00,9.60
+Id,description,10.00,8.00,9.60
+Id,description,10.00,8.00,9.60
+CssSelector,.btn-white,7.90,8.00,7.92

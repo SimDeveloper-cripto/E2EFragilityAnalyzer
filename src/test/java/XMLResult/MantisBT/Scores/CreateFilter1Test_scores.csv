@@ -1,0 +1,27 @@
+Tipo,Selettore,Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost:8989/login_page.php,6.00,9.00,6.60
+Id,username,10.00,9.00,9.80
+CssSelector,.width-40,7.90,9.00,8.12
+Id,password,10.00,9.00,9.80
+CssSelector,.width-40,7.90,9.00,8.12
+Id,menu-toggler,10.00,9.00,9.80
+CssSelector,li:nth-child(2) .menu-text,5.30,9.00,6.04
+CssSelector,.widget-main:nth-child(1) > .table-responsive,2.50,7.00,3.40
+CssSelector,.widget-main:nth-child(1) > .table-responsive,2.50,7.00,3.40
+CssSelector,.widget-main:nth-child(1) > .table-responsive,2.50,7.00,3.40
+Id,view_state_filter,10.00,7.00,9.40
+Id,view_state_filter,10.00,7.00,9.40
+TagName,body,5.00,7.00,5.40
+Name,view_state,2.00,7.00,3.00
+Name,view_state,2.00,7.00,3.00
+Id,show_severity_filter,10.00,7.00,9.40
+Id,show_severity_filter,10.00,7.00,9.40
+CssSelector,.no-float,7.90,7.00,7.72
+Name,save_query_button,2.00,7.00,3.00
+Name,query_name,2.00,9.00,3.40
+CssSelector,.checkbox:nth-child(6) .lbl,3.90,9.00,4.92
+CssSelector,.checkbox:nth-child(7) .lbl,3.90,9.00,4.92
+Name,query_name,2.00,9.00,3.40
+Name,query_name,2.00,9.00,3.40
+CssSelector,.btn:nth-child(9),5.30,9.00,6.04
+LinkText,Esporta in Excel,4.00,7.00,4.60

@@ -1,0 +1,18 @@
+Tipo, Selettore, Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost:8080/,6.00,9.00,6.60
+Id,username,10.00,9.00,9.80
+Id,password,10.00,9.00,9.80
+Id,password,10.00,9.00,9.80
+CssSelector,#mainmenua_ticket > .mainmenuaspan,8.66,4.00,7.73
+CssSelector,.menu,8.81,8.00,8.65
+XPath,//div[@id='id-left']/div/div[2]/div[3]/a,8.22,8.00,8.17
+Id,subject,10.00,7.00,9.40
+Id,message,10.00,7.00,9.40
+Name,add,2.00,7.00,3.00
+CssSelector,.center:nth-child(3) > .butAction,8.32,7.00,8.06
+CssSelector,.ui-button:nth-child(1),8.58,7.00,8.26
+XPath,//div[@id='id-right']/div/div[2]/div[3]/div/table/tbody/tr[7]/td/table/tbody/tr/td,7.59,7.00,13.45
+XPath,//div[@id='id-right']/div/div[2]/div[3]/div/table/tbody/tr[3]/td,7.84,7.00,13.81
+XPath,//div[2]/div/div[2]/div/div/div[4],8.18,7.00,7.94
+XPath,//div[@id='id-right']/div/div[2]/div/div/div[2]/span,8.09,7.00,7.87
+XPath,//div[@id='id-right']/div/div[2]/div[3]/div[2]/div,8.03,7.00,7.82

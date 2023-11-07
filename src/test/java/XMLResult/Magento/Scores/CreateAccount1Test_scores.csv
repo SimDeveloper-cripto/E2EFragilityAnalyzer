@@ -1,0 +1,15 @@
+Tipo,Selettore,Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost/,6.00,9.00,6.60
+LinkText,Create an Account,4.00,8.00,4.80
+Id,firstname,10.00,8.00,9.60
+Id,firstname,10.00,8.00,9.60
+Id,lastname,10.00,8.00,9.60
+Id,email_address,10.00,8.00,9.60
+Id,email_address,10.00,8.00,9.60
+Id,password,10.00,8.00,9.60
+Id,password-confirmation,10.00,8.00,9.60
+Id,password-confirmation,10.00,8.00,9.60
+CssSelector,.submit > span,6.50,8.00,6.80
+LinkText,click here,4.00,8.00,4.80
+Id,email_address,10.00,9.00,9.80
+Id,captcha_user_forgotpassword,10.00,8.00,9.60

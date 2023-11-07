@@ -1,0 +1,38 @@
+version: '3'
+services:
+  mysql:
+    image: 'mysql:latest'
+    environment:
+        - "MYSQL_DATABASE=dolibarr"
+        - "MYSQL_USER=dolibarr"
+        - "MYSQL_PASSWORD=dolibarr"
+        - "MYSQL_RANDOM_ROOT_PASSWORD=yes"
+    volumes:
+      - './dolibarr-db-dump:/docker-entrypoint-initdb.b'
+    restart: no
+  dolibarr:
+    image: upshift/dolibarr:13.0
+    restart: always
+    depends_on:
+        - mysql
+    ports:
+        - "8080:80"
+    environment:
+        - "DOLI_DB_HOST=mysql"
+        - "DOLI_DB_NAME=dolibarr"
+        - "DOLI_DB_USER=dolibarr"
+        - "DOLI_DB_PASSWORD=dolibarr"
+    volumes:
+        - dolibarr_html:/var/www/html
+        - dolibarr_docs:/var/www/documents
+  phpmyadmin:
+    image: phpmyadmin
+    restart: no
+    ports:
+      - 8081:80
+    environment:
+      - PMA_ARBITRARY=1
+volumes:
+  dolibarr_html:
+  dolibarr_docs:
+  db_data: null

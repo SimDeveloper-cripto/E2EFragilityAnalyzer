@@ -1,0 +1,17 @@
+Nome del test,MantisBT18,MantisBT19,MantisBT20,MantisBT21,MantisBT22,Metric
+addTag1,passed,passed,passed,error,error,4.58
+astopFilter1,passed,passed,error,error,error,5.53
+createFilter1,passed,passed,error,error,error,5.03
+createNote1,passed,passed,passed,error,error,6.01
+createProject1,passed,passed,passed,passed,passed,8.15
+createReport1,passed,passed,passed,passed,passed,8.48
+createTag1,passed,passed,passed,passed,failed,7.24
+createUser1,passed,error,error,error,error,4.94
+readAdminInfo1,passed,error,error,error,error,4.13
+updateUserInfo1,passed,failed,failed,failed,failed,4.78
+updateWorkflow1,passed,passed,passed,passed,error,7.05
+zdeleteNote1,passed,passed,passed,passed,passed,9.06
+zdeleteProject1,passed,passed,error,error,error,5.14
+zdeleteReport1,passed,passed,passed,passed,passed,8.15
+zdeleteUser1,passed,passed,passed,passed,passed,8.08
+Point-Biserial Correlation, , , , , , 0.85

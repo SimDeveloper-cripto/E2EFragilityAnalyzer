@@ -1,0 +1,13 @@
+Tipo,Selettore,Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost:8989/login_page.php,6.00,9.00,6.60
+Name,username,2.00,9.00,3.40
+Name,username,2.00,9.00,3.40
+CssSelector,.width-40,7.90,9.00,8.12
+Name,password,2.00,9.00,3.40
+Name,password,2.00,9.00,3.40
+CssSelector,.width-40,7.90,9.00,8.12
+CssSelector,li:nth-child(1) .menu-text,5.30,9.00,6.04
+CssSelector,#resolved .my-buglist-bug:nth-child(1) span > a,3.60,8.00,4.48
+LinkText,Ivan52,4.00,7.00,4.60
+CssSelector,tr:nth-child(3) > td,5.30,9.00,6.04
+CssSelector,tr:nth-child(3) > td,5.30,9.00,6.04

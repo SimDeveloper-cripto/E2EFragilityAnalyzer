@@ -1,0 +1,20 @@
+Tipo,Selettore,Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost:8989/login_page.php,6.00,9.00,6.60
+Name,username,2.00,9.00,3.40
+CssSelector,.width-40,7.90,9.00,8.12
+Name,password,2.00,9.00,3.40
+CssSelector,.width-40,7.90,9.00,8.12
+Id,menu-toggler,10.00,9.00,9.80
+CssSelector,li:nth-child(7) .menu-text,5.30,9.00,6.04
+LinkText,Gestione utenti,4.00,9.00,5.00
+XPath,//button[@type='submit'],7.20,8.00,7.36
+Name,username,2.00,9.00,3.40
+Name,username,2.00,9.00,3.40
+Name,realname,2.00,9.00,3.40
+Name,realname,2.00,9.00,3.40
+Name,email,2.00,9.00,3.40
+Name,email,2.00,9.00,3.40
+Id,user-access-level,10.00,9.00,9.80
+Id,user-access-level,10.00,9.00,9.80
+CssSelector,tr:nth-child(6) .lbl,5.30,9.00,6.04
+CssSelector,.btn-white,7.90,9.00,8.12

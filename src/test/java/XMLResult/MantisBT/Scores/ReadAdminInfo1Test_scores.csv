@@ -1,0 +1,14 @@
+Tipo,Selettore,Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost:8989/login_page.php,6.00,9.00,6.60
+Name,username,2.00,9.00,3.40
+Name,username,2.00,9.00,3.40
+CssSelector,.width-40,7.90,9.00,8.12
+Name,password,2.00,9.00,3.40
+Name,password,2.00,9.00,3.40
+Name,password,2.00,9.00,3.40
+LinkText,Glitch grafico che prima non si verificava,4.00,8.00,4.80
+LinkText,administrator,4.00,8.00,4.80
+CssSelector,.padding-8,7.90,9.00,8.12
+CssSelector,td,9.30,9.00,9.24
+XPath,//div[@id='main-container']/div[5]/div/div/div/address/small,1.30,9.00,5.11
+XPath,//div[@id='main-container']/div[5]/div/div/div/address/small[2],0.00,9.00,1.80

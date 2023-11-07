@@ -1,0 +1,11 @@
+Tipo,Selettore,Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost/admin,6.00,9.00,6.60
+Name,login[username],2.00,9.00,3.40
+Name,login[password],2.00,9.00,3.40
+CssSelector,.action-login,7.90,9.00,8.12
+CssSelector,#menu-magento-sales-sales > a,7.60,6.00,7.28
+LinkText,Orders,4.00,6.00,4.40
+CssSelector,#add > span,7.60,1.00,6.28
+CssSelector,.even > .col-phone,4.40,2.00,7.06
+XPath,//label[contains(.,'Save in address book')],8.60,2.00,13.10
+XPath,//div[3]/button/span,5.80,2.00,5.04

@@ -1,0 +1,8 @@
+Tipo, Selettore, Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost:8080/,6.00,9.00,6.60
+Id,username,10.00,9.00,9.80
+Name,password,2.00,9.00,3.40
+Name,password,2.00,9.00,3.40
+CssSelector,.members,8.81,4.00,7.85
+CssSelector,.menu,8.81,8.00,8.65
+LinkText,Without subscription,8.19,8.00,8.15

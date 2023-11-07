@@ -1,0 +1,52 @@
+Tipo,Selettore,Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost/admin,6.00,9.00,6.60
+Id,username,10.00,9.00,9.80
+Id,username,10.00,9.00,9.80
+Id,username,10.00,9.00,9.80
+Id,login,10.00,9.00,9.80
+Id,login,10.00,9.00,9.80
+Id,login,10.00,9.00,9.80
+Id,login,10.00,9.00,9.80
+CssSelector,#menu-magento-backend-content > a > span,6.20,6.00,6.16
+CssSelector,.item-cms-page > a,6.50,6.00,6.40
+CssSelector,.data-row:nth-child(2) .action-select,3.90,3.00,3.72
+LinkText,Edit,4.00,3.00,3.80
+CssSelector,.admin__actions-switch-label,7.90,6.00,7.52
+CssSelector,.admin__actions-switch-label,7.90,6.00,7.52
+Id,save-button,10.00,6.00,9.20
+Id,back,10.00,7.00,9.40
+Id,footer_privacy,10.00,6.00,9.20
+Id,footer_bug_tracking,10.00,6.00,9.20
+Id,back,10.00,6.00,9.20
+Id,footer_privacy,10.00,6.00,9.20
+Id,footer_bug_tracking,10.00,6.00,9.20
+Id,back,10.00,6.00,9.20
+Id,footer_privacy,10.00,6.00,9.20
+Id,footer_bug_tracking,10.00,6.00,9.20
+Id,back,10.00,6.00,9.20
+Id,footer_privacy,10.00,6.00,9.20
+Id,footer_bug_tracking,10.00,6.00,9.20
+Id,back,10.00,6.00,9.20
+Id,footer_privacy,10.00,6.00,9.20
+Id,footer_bug_tracking,10.00,6.00,9.20
+Id,back,10.00,6.00,9.20
+Id,footer_privacy,10.00,6.00,9.20
+Id,footer_bug_tracking,10.00,6.00,9.20
+Id,back,10.00,6.00,9.20
+Id,footer_privacy,10.00,6.00,9.20
+Id,footer_bug_tracking,10.00,6.00,9.20
+Id,back,10.00,6.00,9.20
+Id,footer_privacy,10.00,6.00,9.20
+Id,footer_bug_tracking,10.00,6.00,9.20
+Id,back,10.00,6.00,9.20
+Id,footer_privacy,10.00,6.00,9.20
+Id,footer_bug_tracking,10.00,6.00,9.20
+Id,back,10.00,6.00,9.20
+Id,footer_privacy,10.00,6.00,9.20
+Id,footer_bug_tracking,10.00,6.00,9.20
+Id,back,10.00,6.00,9.20
+Id,footer_privacy,10.00,6.00,9.20
+Id,footer_bug_tracking,10.00,6.00,9.20
+Id,back,10.00,6.00,9.20
+Id,footer_privacy,10.00,6.00,9.20
+Id,footer_bug_tracking,10.00,6.00,9.20

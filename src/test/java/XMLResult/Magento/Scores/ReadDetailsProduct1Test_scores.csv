@@ -1,0 +1,9 @@
+Tipo,Selettore,Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost/admin,6.00,9.00,6.60
+Name,login[username],2.00,9.00,3.40
+Name,login[password],2.00,9.00,3.40
+Name,login[password],2.00,9.00,3.40
+CssSelector,#menu-magento-catalog-catalog > a,7.60,6.00,7.28
+CssSelector,.item-catalog-products span,7.90,6.00,7.52
+CssSelector,div.admin__data-grid-wrap[data-role='grid-wrapper'],6.50,3.00,5.80
+CssSelector,.\_odd-row .action-menu-item,6.50,3.00,5.80

@@ -1,0 +1,14 @@
+Tipo,Selettore,Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost/admin,6.00,9.00,6.60
+Name,login[username],2.00,9.00,3.40
+Name,login[username],2.00,9.00,3.40
+Name,login[password],2.00,9.00,3.40
+Name,login[password],2.00,9.00,3.40
+Name,login[password],2.00,9.00,3.40
+CssSelector,#menu-magento-backend-marketing > a,7.60,6.00,7.28
+CssSelector,.item-template span,7.90,6.00,7.52
+XPath,(//button[@type='button'])[7],5.80,5.00,5.64
+XPath,//select[contains(@class, 'ui-datepicker-month') and not(@aria-label)],8.60,5.00,7.88
+CssSelector,.ui-datepicker-year,7.90,5.00,7.32
+XPath,//a[contains(text(),'1')],7.40,5.00,12.46
+XPath,//div[2]/div/button/span,5.10,5.00,9.14

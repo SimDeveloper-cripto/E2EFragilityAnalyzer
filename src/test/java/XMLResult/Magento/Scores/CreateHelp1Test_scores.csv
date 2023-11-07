@@ -1,0 +1,20 @@
+Tipo,Selettore,Punteggio Selettore, Punteggio pagina, Punteggio finale 
+url,http://localhost/,6.00,9.00,6.60
+LinkText,Contact Us,4.00,9.00,5.00
+CssSelector,.submit > span,6.50,9.00,7.00
+TagName,body,5.00,8.00,5.60
+Id,name,10.00,8.00,9.60
+Id,name,10.00,8.00,9.60
+Id,name,10.00,8.00,9.60
+Id,email,10.00,8.00,9.60
+Id,email,10.00,8.00,9.60
+Id,comment,10.00,8.00,9.60
+Id,comment,10.00,8.00,9.60
+Id,comment,10.00,8.00,9.60
+Id,comment,10.00,8.00,9.60
+CssSelector,.submit > span,6.50,8.00,6.80
+CssSelector,.submit > span,6.50,9.00,7.00
+TagName,body,5.00,8.00,5.60
+CssSelector,.submit,7.90,8.00,7.92
+Id,comment,10.00,8.00,9.60
+Id,telephone,10.00,8.00,9.60
