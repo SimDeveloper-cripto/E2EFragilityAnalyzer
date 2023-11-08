@@ -5,57 +5,57 @@ public class Selector {
     private String selector, type;
     private float selectorComplexity, selectorScore, selectorFinalScore;
 
-    @Override
-    public String toString() {
-        return
-                "Selector = '" + selector + '\'' +
-                ", Type = '" + type + '\'' +
-                ", SelectorComplexity = " + selectorComplexity + '\'';
+    public Selector(String value, String type) {
+        this.selector = value;
+        this.type     = type;
     }
 
     public Selector(By locator) {
         this.selector = createSelector(locator);
-        this.type = locator.getClass().getSimpleName().replaceFirst("By", "");
+        this.type     = locator.getClass().getSimpleName().replaceFirst("By", "");
         this.selectorScore = 0;
     }
 
-    public Selector(String value, String type) {
-        this.selector = value;
-        this.type = type;
+    @Override
+    public String toString() {
+        return "Selector = '" + selector + '\'' + ", Type = '" + type + '\'' + ", SelectorComplexity = " + selectorComplexity + '\'';
     }
 
     private String createSelector(By locator) {
         String stringLocator = locator.toString();
         int index = stringLocator.indexOf(":");
-        String selectorString = stringLocator.substring(index + 2);
 
-        System.out.println(selectorString);
-        return selectorString;
+        // String selectorString = stringLocator.substring(index + 2);
+        // System.out.println(selectorString); // Not necessary to print
+        return stringLocator.substring(index + 2);
     }
 
     public String getSelector() {
-        return selector;
+        return this.selector;
     }
 
     public void setSelector(String selector) {
         this.selector = selector;
     }
-    public float getSelectorScore() {
-        return selectorScore;
-    }
-    public void setSelectorScore(float selectorScore) {
-        this.selectorScore = selectorScore;
-    }
 
     public String getType() {
-        return type;
+        return this.type;
     }
 
     public void setType(String type) {
         this.type = type;
     }
+
+    public float getSelectorScore() {
+        return this.selectorScore;
+    }
+
+    public void setSelectorScore(float selectorScore) {
+        this.selectorScore = selectorScore;
+    }
+
     public float getSelectorComplexity() {
-        return selectorComplexity;
+        return this.selectorComplexity;
     }
 
     public void setSelectorComplexity(float selectorComplexity) {
@@ -63,7 +63,7 @@ public class Selector {
     }
 
     public float getSelectorFinalScore() {
-        return selectorFinalScore;
+        return this.selectorFinalScore;
     }
 
     public void setSelectorFinalScore(float selectorFinalScore) {

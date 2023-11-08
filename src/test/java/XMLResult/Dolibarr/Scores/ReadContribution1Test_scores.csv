@@ -1,8 +1,8 @@
-Tipo, Selettore, Punteggio Selettore, Punteggio pagina, Punteggio finale 
-url,http://localhost:8080/,6.00,9.00,6.60
-Id,username,10.00,9.00,9.80
-Id,password,10.00,9.00,9.80
-Id,username,10.00,9.00,9.80
-CssSelector,#mainmenua_members > .mainmenuaspan,8.66,4.00,7.73
-CssSelector,.menu,8.81,8.00,8.65
-LinkText,Adesioni,8.19,8.00,8.15
+Type, Selector, SelectorScore, PageScore, FinalScore 
+url, http://localhost:8080/, 6.00, 9.00, 6.60
+Id, username, 10.00, 9.00, 9.80
+Id, password, 10.00, 9.00, 9.80
+Id, username, 10.00, 9.00, 9.80
+CssSelector, #mainmenua_members > .mainmenuaspan, 8.66, 4.00, 7.73
+CssSelector, .menu, 8.81, 8.00, 8.65
+LinkText, Adesioni, 8.19, 8.00, 8.15

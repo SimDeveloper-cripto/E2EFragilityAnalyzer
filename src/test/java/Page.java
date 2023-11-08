@@ -1,3 +1,4 @@
+
 import org.jsoup.nodes.Document;
 
 public class Page {
@@ -8,22 +9,27 @@ public class Page {
         this.page = page;
     }
 
-    public Document getPage() {
-        return page;
-    }
-
     @Override
     public String toString() {
         return "PageComplexity = " + pageComplexity  + "\n";
     }
+
+    public void setPage(Document page) {
+        this.page = page;
+    }
+
+    public Document getPage() {
+        return this.page;
+    }
+
     public float getPageScore() {
-        return pageScore;
+        return this.pageScore;
     }
     public void setPageScore(float pageScore) {
         this.pageScore = pageScore;
     }
     public float getPageComplexity() {
-        return pageComplexity;
+        return this.pageComplexity;
     }
 
     public void setPageComplexity(float pageComplexity) {

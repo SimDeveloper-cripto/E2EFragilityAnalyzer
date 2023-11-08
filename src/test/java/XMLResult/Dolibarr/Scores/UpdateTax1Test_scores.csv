@@ -1,10 +1,10 @@
-Tipo, Selettore, Punteggio Selettore, Punteggio pagina, Punteggio finale 
-url,http://localhost:8080/,6.00,9.00,6.60
-Name,username,2.00,9.00,3.40
-Name,password,2.00,9.00,3.40
-Name,password,2.00,9.00,3.40
-CssSelector,.menu,8.81,4.00,7.85
-LinkText,Impostazioni,8.19,4.00,7.35
-CssSelector,#no_vat,8.91,6.00,8.33
-XPath,//table[7]/tbody/tr/td[@width],8.43,6.00,7.95
-Name,save,2.00,6.00,2.80
+Type, Selector, SelectorScore, PageScore, FinalScore 
+url, http://localhost:8080/, 6.00, 9.00, 6.60
+Name, username, 2.00, 9.00, 3.40
+Name, password, 2.00, 9.00, 3.40
+Name, password, 2.00, 9.00, 3.40
+CssSelector, .menu, 8.81, 4.00, 7.85
+LinkText, Impostazioni, 8.19, 4.00, 7.35
+CssSelector, #no_vat, 8.91, 6.00, 8.33
+XPath, //table[7]/tbody/tr/td[@width], 8.43, 6.00, 7.95
+Name, save, 2.00, 6.00, 2.80

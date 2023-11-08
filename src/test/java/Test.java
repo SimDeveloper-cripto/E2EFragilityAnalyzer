@@ -1,3 +1,4 @@
+
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -9,14 +10,19 @@ import java.util.ArrayList;
 public class Test {
     private final String className;
     private List<Selector> selectors;
-    private List<Page> page;
+    private List<Page> pages;
     private double testScore;
-    private boolean laterGetSuccess;
+    private final boolean laterGetSuccess;
 
     public Test(String className) {
         this.className = className;
         this.testScore = 0;
-        this.laterGetSuccess = getStatusResult(this.getPureTestName(),5);
+        this.laterGetSuccess = getStatusResult(this.getFullTestName(),5);
+    }
+
+    @Override
+    public String toString() {
+        return "Test {" + "className = '" + className + '\'' + ", testScore = " + testScore + ", laterGetSuccess = " + laterGetSuccess + '}';
     }
 
     private boolean getStatusResult(String testName, int column) {
@@ -45,7 +51,7 @@ public class Test {
         return status;
     }
 
-    public static List<Test> getAllTests(String directory) throws IOException {
+    public static List<Test> getAllTests(String directory) {
         List<Test> listOfTests = new ArrayList<>();
         List<String> fileNames = getFileNames(directory);
 
@@ -56,7 +62,7 @@ public class Test {
         return listOfTests;
     }
 
-    public static List<String> getFileNames(String directoryPath) throws IOException {
+    public static List<String> getFileNames(String directoryPath) {
         List<String> fileNames = new ArrayList<>();
         File directory = new File(directoryPath);
 
@@ -74,11 +80,12 @@ public class Test {
     }
 
     public String getClassName() {
-        return className;
+        return this.className;
     }
+
     public String getTestName() {
         int lastIndex = className.lastIndexOf("/");
-        int endIndex = className.lastIndexOf(".java");
+        int endIndex  = className.lastIndexOf(".java");
 
         if (lastIndex >= 0 && lastIndex < className.length() - 1) {
             if (endIndex > lastIndex) {
@@ -91,7 +98,7 @@ public class Test {
         }
     }
 
-    public String getPureTestName() {
+    public String getFullTestName() {
         int lastIndex = className.lastIndexOf("/");
         int endIndex = className.lastIndexOf("Test.java");
 
@@ -105,36 +112,32 @@ public class Test {
             return className;
         }
     }
+
     public double getTestScore() {
-        return testScore;
+        return this.testScore;
     }
 
     public void setTestScore(double testScore) {
         this.testScore = testScore;
     }
+
     public List<Selector> getSelectors() {
-        return selectors;
+        return this.selectors;
     }
+
     public void setSelectors(List<Selector> selectors) {
         this.selectors = selectors;
     }
 
-    public List<Page> getPage() {
-        return page;
+    public List<Page> getPages() {
+        return this.pages;
     }
 
-    public void setPage(List<Page> page) {
-        this.page = page;
+    public void setPages(List<Page> page) {
+        this.pages = page;
     }
+
     public boolean isLaterGetSuccess() {
-        return laterGetSuccess;
-    }
-
-    @Override
-    public String toString() {
-        return "Test {" +
-                "className = '" + className + '\'' +
-                ", testScore = " + testScore +
-                ", laterGetSuccess = " + laterGetSuccess + '}';
+        return this.laterGetSuccess;
     }
 }

@@ -8,41 +8,51 @@ import org.openqa.selenium.support.events.WebDriverListener;
 import java.util.List;
 
 public class SelectorWebDriver implements WebDriverListener {
-	private List<Selector> selectorPages;
-	private List<Page> documentPages;
+	private List<Selector> visitedSelectors;
+	private List<Page> visitedPages;
 
+	/* [DESCRIPTION]
+		- When this method is called, the driver is about to visit a new page.
+		- The source of the page is obtained and then, a new Selector object is created with the locator used and an identifying string "url".
+		- Also, a new Page object (current visited page) is created using the parsed HTML document.
+		- After that, page's complexity and the selector score are calculated.
+	* */
 	@Override
 	public void beforeGet(WebDriver driver, String url) {
-		String pageString = driver.getPageSource();
-		Document pageDocument = Jsoup.parse(pageString);
+		String pageSource     = driver.getPageSource();
+		Document pageContent  = Jsoup.parse(pageSource);
 
 		Selector selector = new Selector(url,"url");
-		Page page = new Page(pageDocument);
+		Page page         = new Page(pageContent);
 
+		// Scores calculation
 		page.setPageComplexity(PageComplexityEvaluator.calculatePageComplexity(page));
 		selector.setSelectorFinalScore(Judge.getElementScore(selector, page));
 		System.out.println(selector + "  " + page);
 
-		selectorPages.add(selector);
-		documentPages.add(page);
-
+		visitedSelectors.add(selector);
+		visitedPages.add(page);
 		WebDriverListener.super.beforeGet(driver, url);
 	}
 
+	/* [DESCRIPTION]
+		- This method is called when using a selector, and not when performing a GET request. Therefore, in the Selector object, there will be the locator used in the command within the page.
+	* */
 	@Override
 	public void beforeFindElement(WebDriver driver, By locator) {
-		String pageString = driver.getPageSource();
-		Document pageDocument = Jsoup.parse(pageString);
+		String pageSource    = driver.getPageSource();
+		Document pageContent = Jsoup.parse(pageSource);
 
 		Selector selector = new Selector(locator);
-		Page page = new Page(pageDocument);
+		Page page         = new Page(pageContent);
 
+		// Scores calculation
 		page.setPageComplexity(PageComplexityEvaluator.calculatePageComplexity(page));
 		selector.setSelectorFinalScore(Judge.getElementScore(selector, page));
 		System.out.println("(Analyzed selector) " + selector + "  " + page);
 
-		selectorPages.add(selector);
-		documentPages.add(page);
+		visitedSelectors.add(selector);
+		visitedPages.add(page);
 	}
 
 	@Override
@@ -56,17 +66,17 @@ public class SelectorWebDriver implements WebDriverListener {
 		WebDriverListener.super.afterFindElement(driver, locator, result);
 	}
 
-	public void setSelectorPages(List<Selector> selectorPages) {
-		this.selectorPages = selectorPages;
+	public void setVisitedSelectors(List<Selector> selectors) {
+		this.visitedSelectors = selectors;
 	}
-	public List<Selector> getSelectorPages() {
-		return selectorPages;
+	public List<Selector> getVisitedSelectors() {
+		return visitedSelectors;
 	}
 
-	public List<Page> getDocumentPages() {
-		return documentPages;
+	public List<Page> getVisitedPages() {
+		return visitedPages;
 	}
-	public void setDocumentPages(List<Page> documentPages) {
-		this.documentPages = documentPages;
+	public void setVisitedPages(List<Page> pages) {
+		this.visitedPages = pages;
 	}
 }

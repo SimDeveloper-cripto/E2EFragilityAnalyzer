@@ -1,41 +1,41 @@
-Tipo, Selettore, Punteggio Selettore, Punteggio pagina, Punteggio finale 
-url,http://localhost:8080/,6.00,9.00,6.60
-Id,username,10.00,9.00,9.80
-Id,password,10.00,9.00,9.80
-Id,password,10.00,9.00,9.80
-CssSelector,.project,8.81,4.00,7.85
-CssSelector,.menu,8.81,4.00,7.85
-LinkText,Nuova opportunità o progetto,8.19,4.00,7.35
-Name,title,2.00,8.00,3.20
-CssSelector,.button:nth-child(1),8.58,7.00,8.26
-Id,select2-model-container,10.00,8.00,9.60
-Id,select2-model-container,10.00,7.00,9.40
-Id,id-right,10.00,8.00,9.60
-Id,project,10.00,8.00,9.60
-Id,contact,10.00,8.00,9.60
-Id,tasks,10.00,8.00,9.60
-Id,tasks,10.00,8.00,9.60
-Id,timespent,10.00,8.00,9.60
-Id,element,10.00,8.00,9.60
-Id,ticket,10.00,8.00,9.60
-Id,notes,10.00,8.00,9.60
-Id,document,10.00,8.00,9.60
-Id,agenda,10.00,8.00,9.60
-Id,project,10.00,8.00,9.60
-Id,contact,10.00,8.00,9.60
-Id,select2-model-container,10.00,8.00,9.60
-Id,select2-model-container,10.00,7.00,9.40
-Id,id-right,10.00,8.00,9.60
-Id,tasks,10.00,8.00,9.60
-Id,tasks,10.00,8.00,9.60
-Id,timespent,10.00,8.00,9.60
-Id,element,10.00,8.00,9.60
-Id,ticket,10.00,8.00,9.60
-Id,select2-model-container,10.00,8.00,9.60
-Id,id-right,10.00,7.00,9.40
-Id,id-right,10.00,8.00,9.60
-Id,tasks,10.00,8.00,9.60
-Id,tasks,10.00,8.00,9.60
-Id,timespent,10.00,8.00,9.60
-Id,element,10.00,8.00,9.60
-Id,element,10.00,8.00,9.60
+Type, Selector, SelectorScore, PageScore, FinalScore 
+url, http://localhost:8080/, 6.00, 9.00, 6.60
+Id, username, 10.00, 9.00, 9.80
+Id, password, 10.00, 9.00, 9.80
+Id, password, 10.00, 9.00, 9.80
+CssSelector, .project, 8.81, 4.00, 7.85
+CssSelector, .menu, 8.81, 3.00, 7.65
+LinkText, Nuova opportunità o progetto, 8.19, 3.00, 7.15
+Name, title, 2.00, 8.00, 3.20
+CssSelector, .button:nth-child(1), 8.58, 7.00, 8.26
+Id, select2-model-container, 10.00, 8.00, 9.60
+Id, select2-model-container, 10.00, 7.00, 9.40
+Id, id-right, 10.00, 8.00, 9.60
+Id, project, 10.00, 8.00, 9.60
+Id, contact, 10.00, 8.00, 9.60
+Id, tasks, 10.00, 8.00, 9.60
+Id, tasks, 10.00, 8.00, 9.60
+Id, timespent, 10.00, 8.00, 9.60
+Id, element, 10.00, 8.00, 9.60
+Id, ticket, 10.00, 8.00, 9.60
+Id, notes, 10.00, 8.00, 9.60
+Id, document, 10.00, 8.00, 9.60
+Id, agenda, 10.00, 8.00, 9.60
+Id, project, 10.00, 8.00, 9.60
+Id, contact, 10.00, 8.00, 9.60
+Id, select2-model-container, 10.00, 8.00, 9.60
+Id, select2-model-container, 10.00, 7.00, 9.40
+Id, id-right, 10.00, 8.00, 9.60
+Id, tasks, 10.00, 8.00, 9.60
+Id, tasks, 10.00, 8.00, 9.60
+Id, timespent, 10.00, 8.00, 9.60
+Id, element, 10.00, 8.00, 9.60
+Id, ticket, 10.00, 8.00, 9.60
+Id, select2-model-container, 10.00, 8.00, 9.60
+Id, id-right, 10.00, 7.00, 9.40
+Id, id-right, 10.00, 8.00, 9.60
+Id, tasks, 10.00, 8.00, 9.60
+Id, tasks, 10.00, 8.00, 9.60
+Id, timespent, 10.00, 8.00, 9.60
+Id, element, 10.00, 8.00, 9.60
+Id, element, 10.00, 8.00, 9.60

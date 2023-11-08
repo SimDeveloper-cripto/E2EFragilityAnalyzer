@@ -1,18 +1,18 @@
-Tipo, Selettore, Punteggio Selettore, Punteggio pagina, Punteggio finale 
-url,http://localhost:8080/,6.00,9.00,6.60
-Id,username,10.00,9.00,9.80
-Id,password,10.00,9.00,9.80
-Id,password,10.00,9.00,9.80
-CssSelector,.menu,8.81,4.00,7.85
-LinkText,Strumenti di amministrazione,8.19,4.00,7.35
-CssSelector,.menu,8.81,8.00,8.65
-LinkText,Backup,8.19,8.00,8.15
-Id,radio_dump_mysql_nobin,10.00,7.00,9.40
-Id,buttonGo,10.00,7.00,9.40
-XPath,//tr[@id='row-AFTER0POS1']/td[6]/a/span,8.41,7.00,8.12
-Id,radio_dump_mysql_nobin,10.00,7.00,9.40
-Id,radio_dump_mysql,10.00,7.00,9.40
-Id,radio_dump_mysql_nobin,10.00,7.00,9.40
-Id,filename_template,10.00,7.00,9.40
-Id,radio_compression_gzip,10.00,7.00,9.40
-Id,radio_compression_none,10.00,7.00,9.40
+Type, Selector, SelectorScore, PageScore, FinalScore 
+url, http://localhost:8080/, 6.00, 9.00, 6.60
+Id, username, 10.00, 9.00, 9.80
+Id, password, 10.00, 9.00, 9.80
+Id, password, 10.00, 9.00, 9.80
+CssSelector, .menu, 8.81, 4.00, 7.85
+LinkText, Strumenti di amministrazione, 8.19, 4.00, 7.35
+CssSelector, .menu, 8.81, 8.00, 8.65
+LinkText, Backup, 8.19, 8.00, 8.15
+Id, radio_dump_mysql_nobin, 10.00, 7.00, 9.40
+Id, buttonGo, 10.00, 7.00, 9.40
+XPath, //tr[@id='row-AFTER0POS1']/td[6]/a/span, 8.41, 7.00, 8.12
+Id, radio_dump_mysql_nobin, 10.00, 7.00, 9.40
+Id, radio_dump_mysql, 10.00, 7.00, 9.40
+Id, radio_dump_mysql_nobin, 10.00, 7.00, 9.40
+Id, filename_template, 10.00, 7.00, 9.40
+Id, radio_compression_gzip, 10.00, 7.00, 9.40
+Id, radio_compression_none, 10.00, 7.00, 9.40

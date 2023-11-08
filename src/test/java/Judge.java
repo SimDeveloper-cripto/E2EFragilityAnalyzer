@@ -246,7 +246,8 @@ public class Judge {
         DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
         symbols.setDecimalSeparator('.');
         DecimalFormat df = new DecimalFormat("0.00", symbols);
-        System.out.println("Test score no. " + numOfTestValutated + ": \n" +
+
+        System.out.println("Test no. " + (int) numOfTestValutated + " scores: \n" +
                 "Geometric Calculation: " + df.format(geometryMean) + ", Harmonic Calculation: " + df.format(harmonicMean) +
                 ", Arithmetic Calculation: " + df.format(arithmeticMean) + ", Quadratic Calculation: " + df.format(quadraticMean) + "\n");
 

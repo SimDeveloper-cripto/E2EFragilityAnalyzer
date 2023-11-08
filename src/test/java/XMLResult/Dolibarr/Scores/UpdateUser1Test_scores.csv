@@ -1,42 +1,42 @@
-Tipo, Selettore, Punteggio Selettore, Punteggio pagina, Punteggio finale 
-url,http://localhost:8080/,6.00,9.00,6.60
-Id,username,10.00,9.00,9.80
-Id,password,10.00,9.00,9.80
-Id,password,10.00,9.00,9.80
-CssSelector,.menu,8.81,4.00,7.85
-LinkText,admin,8.19,4.00,7.35
-LinkText,Scheda,8.19,4.00,7.35
-XPath,//a[contains(text(),'Modifica')],8.77,7.00,8.41
-Name,email,2.00,1.00,1.80
-Name,email,2.00,1.00,1.80
-Name,email,2.00,1.00,1.80
-Id,user,10.00,7.00,9.40
-Id,rights,10.00,7.00,9.40
-Id,guisetup,10.00,7.00,9.40
-Id,extsites,10.00,7.00,9.40
-Id,clicktodial,10.00,7.00,9.40
-Id,notify,10.00,7.00,9.40
-Id,bank,10.00,7.00,9.40
-Id,note,10.00,7.00,9.40
-Id,document,10.00,7.00,9.40
-Id,info,10.00,7.00,9.40
-Id,user,10.00,7.00,9.40
-Id,rights,10.00,7.00,9.40
-Id,guisetup,10.00,7.00,9.40
-Id,extsites,10.00,7.00,9.40
-Id,clicktodial,10.00,7.00,9.40
-Id,extsites,10.00,7.00,9.40
-Id,clicktodial,10.00,7.00,9.40
-Id,notify,10.00,7.00,9.40
-Id,bank,10.00,7.00,9.40
-Id,note,10.00,7.00,9.40
-Id,document,10.00,7.00,9.40
-Id,info,10.00,7.00,9.40
-Id,user,10.00,7.00,9.40
-Id,rights,10.00,7.00,9.40
-Id,guisetup,10.00,7.00,9.40
-Id,extsites,10.00,7.00,9.40
-Id,clicktodial,10.00,7.00,9.40
-Id,extsites,10.00,7.00,9.40
-Id,clicktodial,10.00,7.00,9.40
-Id,notify,10.00,7.00,9.40
+Type, Selector, SelectorScore, PageScore, FinalScore 
+url, http://localhost:8080/, 6.00, 9.00, 6.60
+Id, username, 10.00, 9.00, 9.80
+Id, password, 10.00, 9.00, 9.80
+Id, password, 10.00, 9.00, 9.80
+CssSelector, .menu, 8.81, 4.00, 7.85
+LinkText, admin, 8.19, 4.00, 7.35
+LinkText, Scheda, 8.19, 4.00, 7.35
+XPath, //a[contains(text(),'Modifica')], 8.77, 7.00, 8.41
+Name, email, 2.00, 1.00, 1.80
+Name, email, 2.00, 1.00, 1.80
+Name, email, 2.00, 1.00, 1.80
+Id, user, 10.00, 7.00, 9.40
+Id, rights, 10.00, 7.00, 9.40
+Id, guisetup, 10.00, 7.00, 9.40
+Id, extsites, 10.00, 7.00, 9.40
+Id, clicktodial, 10.00, 7.00, 9.40
+Id, notify, 10.00, 7.00, 9.40
+Id, bank, 10.00, 7.00, 9.40
+Id, note, 10.00, 7.00, 9.40
+Id, document, 10.00, 7.00, 9.40
+Id, info, 10.00, 7.00, 9.40
+Id, user, 10.00, 7.00, 9.40
+Id, rights, 10.00, 7.00, 9.40
+Id, guisetup, 10.00, 7.00, 9.40
+Id, extsites, 10.00, 7.00, 9.40
+Id, clicktodial, 10.00, 7.00, 9.40
+Id, extsites, 10.00, 7.00, 9.40
+Id, clicktodial, 10.00, 7.00, 9.40
+Id, notify, 10.00, 7.00, 9.40
+Id, bank, 10.00, 7.00, 9.40
+Id, note, 10.00, 7.00, 9.40
+Id, document, 10.00, 7.00, 9.40
+Id, info, 10.00, 7.00, 9.40
+Id, user, 10.00, 7.00, 9.40
+Id, rights, 10.00, 7.00, 9.40
+Id, guisetup, 10.00, 7.00, 9.40
+Id, extsites, 10.00, 7.00, 9.40
+Id, clicktodial, 10.00, 7.00, 9.40
+Id, extsites, 10.00, 7.00, 9.40
+Id, clicktodial, 10.00, 7.00, 9.40
+Id, notify, 10.00, 7.00, 9.40

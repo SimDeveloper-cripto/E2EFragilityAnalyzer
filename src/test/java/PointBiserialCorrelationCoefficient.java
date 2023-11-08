@@ -55,9 +55,6 @@ public class PointBiserialCorrelationCoefficient {
 
         double squarePart = Math.sqrt((n0 * n1) / Math.pow(n,2));
         double numerator = (meanContinuosTrue - meanContinuosFalse) * squarePart;
-        double result = (numerator / standardDeviation);
-
-        System.out.println("The value of correlation coefficient is: " + result);
-        return result;
+        return (numerator / standardDeviation);
     }
 }

@@ -1,6 +1,6 @@
 Nome del test,Dolibarr13,Dolibarr14.0,Dolibarr14.2,Dolibarr14.5,Dolibarr15,Metric
 createCompany1,passed,error,error,error,error,4.92
-createProject1,passed,passed,passed,passed,passed,8.85
+createProject1,passed,passed,passed,passed,passed,8.84
 createReport1,passed,passed,passed,passed,error,9.50
 createTicket1,passed,passed,error,error,error,7.93
 deleteBackup1,passed,passed,passed,passed,passed,8.79
