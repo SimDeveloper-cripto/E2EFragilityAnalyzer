@@ -14,11 +14,13 @@ import java.util.concurrent.TimeUnit;
 
 public class TestRunner {
     private final List<Test> testsToValidate;
+    private final Judge judge;
     private WebDriver driver;
     private SelectorWebDriver listener;
     private int numberOfSuccessTests = 0, numberOfFailedTests = 0;
 
-    public TestRunner(List<Test> tests) {
+    public TestRunner(List<Test> tests, Judge judge) {
+        this.judge = judge;
         this.testsToValidate = tests;
     }
 
@@ -46,7 +48,7 @@ public class TestRunner {
         WebDriverListener listenerDriver;
 
         driver         = new ChromeDriver(service);
-        listener       = new SelectorWebDriver();
+        listener       = new SelectorWebDriver(judge);
         listenerDriver = listener; // This class is used to track the pages and selectors visited during test execution (Observer)
         driver         = new EventFiringDecorator(listenerDriver).decorate(driver);
 
@@ -103,7 +105,7 @@ public class TestRunner {
 
             Selector lastSelector = listener.getVisitedSelectors().get(listener.getVisitedSelectors().size() - 1);
 
-            lastSelector.setSelectorScore(Judge.getBadElementScore(lastSelector));
+            lastSelector.setSelectorScore(judge.getBadElementScore(lastSelector));
             System.out.println("A Test stopped working, Judge will assign to it -100 points!");
 
             setNumberOfFailedTests(numberOfFailedTests + 1);
@@ -130,7 +132,7 @@ public class TestRunner {
         double scoreTest;
 
         for (Test testToJudge: tests) {
-            scoreTest = Judge.getTestScore(testToJudge);
+            scoreTest = judge.getTestScore(testToJudge);
             testToJudge.setTestScore(scoreTest);
         }
         return tests;

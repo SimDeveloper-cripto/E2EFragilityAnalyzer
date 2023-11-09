@@ -6,7 +6,7 @@ createTicket1,passed,passed,error,error,error,7.93
 deleteBackup1,passed,passed,passed,passed,passed,8.79
 deleteHoliday1,passed,passed,passed,passed,error,6.56
 deleteProductLot1,passed,passed,passed,passed,error,8.14
-readAgenda1,passed,passed,passed,passed,passed,8.87
+readAgenda1,passed,passed,passed,passed,passed,8.84
 readBAccounts1,passed,failed,failed,failed,failed,6.87
 readContribution1,passed,passed,passed,error,error,8.48
 readSubscription1,passed,passed,passed,error,error,5.80

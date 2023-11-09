@@ -10,6 +10,11 @@ import java.util.List;
 public class SelectorWebDriver implements WebDriverListener {
 	private List<Selector> visitedSelectors;
 	private List<Page> visitedPages;
+	private final Judge judge;
+
+	public SelectorWebDriver(Judge judge) {
+		this.judge = judge;
+	}
 
 	/* [DESCRIPTION]
 		- When this method is called, the driver is about to visit a new page.
@@ -27,7 +32,7 @@ public class SelectorWebDriver implements WebDriverListener {
 
 		// Scores calculation
 		page.setPageComplexity(PageComplexityEvaluator.calculatePageComplexity(page));
-		selector.setSelectorFinalScore(Judge.getElementScore(selector, page));
+		selector.setSelectorFinalScore(judge.getElementScore(selector, page));
 		System.out.println(selector + "  " + page);
 
 		visitedSelectors.add(selector);
@@ -48,7 +53,7 @@ public class SelectorWebDriver implements WebDriverListener {
 
 		// Scores calculation
 		page.setPageComplexity(PageComplexityEvaluator.calculatePageComplexity(page));
-		selector.setSelectorFinalScore(Judge.getElementScore(selector, page));
+		selector.setSelectorFinalScore(judge.getElementScore(selector, page));
 		System.out.println("(Analyzed selector) " + selector + "  " + page);
 
 		visitedSelectors.add(selector);

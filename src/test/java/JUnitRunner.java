@@ -15,10 +15,12 @@ public class JUnitRunner {
     public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException, IOException {
         String directory = "src/test/java/JUnit/" + SoftwareUsed; // JUnit test directory
 
+        Judge judge = new Judge(new StandardSelectorComplexityEvaluator());
+
         // Step 1: Retrieve all tests and run them
         List<Test> dolibarrTests = Test.getAllTests(directory);
 
-        TestRunner testRunner = new TestRunner(dolibarrTests);
+        TestRunner testRunner = new TestRunner(dolibarrTests, judge);
         List<Test> tests = testRunner.executeTests();
 
         // Step 3: For each test assign its score

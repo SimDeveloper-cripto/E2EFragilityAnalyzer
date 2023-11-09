@@ -4,8 +4,8 @@ Id, username, 10.00, 9.00, 9.80
 Id, password, 10.00, 9.00, 9.80
 Id, password, 10.00, 9.00, 9.80
 CssSelector, .agenda, 8.81, 4.00, 7.85
-CssSelector, .fa-calendar-week, 8.81, 5.00, 8.05
-CssSelector, .fa-calendar-day, 8.81, 6.00, 8.25
+CssSelector, .fa-calendar-week, 8.81, 4.00, 7.85
+CssSelector, .fa-calendar-day, 8.81, 5.00, 8.05
 Id, select2-search_projectid-container, 10.00, 7.00, 9.40
 Id, selectsearch_status, 10.00, 6.00, 9.20
 Id, select2-search_socid-container, 10.00, 7.00, 9.40
