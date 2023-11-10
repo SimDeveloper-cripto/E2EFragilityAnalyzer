@@ -31,7 +31,7 @@ public class SelectorWebDriver implements WebDriverListener {
 		Page page         = new Page(pageContent);
 
 		// Scores calculation
-		page.setPageComplexity(PageComplexityEvaluator.calculatePageComplexity(page));
+		page.setPageComplexity(judge.getStrategy().getPageComplexityScore(page));
 		selector.setSelectorFinalScore(judge.getElementScore(selector, page));
 		System.out.println(selector + "  " + page);
 
@@ -52,7 +52,7 @@ public class SelectorWebDriver implements WebDriverListener {
 		Page page         = new Page(pageContent);
 
 		// Scores calculation
-		page.setPageComplexity(PageComplexityEvaluator.calculatePageComplexity(page));
+		page.setPageComplexity(judge.getStrategy().getPageComplexityScore(page));
 		selector.setSelectorFinalScore(judge.getElementScore(selector, page));
 		System.out.println("(Analyzed selector) " + selector + "  " + page);
 

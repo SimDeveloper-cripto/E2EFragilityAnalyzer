@@ -1,18 +1,18 @@
 Type, Selector, SelectorScore, PageScore, FinalScore 
-url, http://localhost:8080/, 6.00, 9.00, 6.60
-Id, username, 10.00, 9.00, 9.80
-Id, password, 10.00, 9.00, 9.80
-Id, password, 10.00, 9.00, 9.80
-CssSelector, .menu, 8.81, 4.00, 7.85
-LinkText, Strumenti di amministrazione, 8.19, 4.00, 7.35
-CssSelector, .menu, 8.81, 8.00, 8.65
-LinkText, Backup, 8.19, 8.00, 8.15
-Id, radio_dump_mysql_nobin, 10.00, 7.00, 9.40
-Id, buttonGo, 10.00, 7.00, 9.40
-XPath, //tr[@id='row-AFTER0POS1']/td[6]/a/span, 8.41, 7.00, 8.12
-Id, radio_dump_mysql_nobin, 10.00, 7.00, 9.40
-Id, radio_dump_mysql, 10.00, 7.00, 9.40
-Id, radio_dump_mysql_nobin, 10.00, 7.00, 9.40
-Id, filename_template, 10.00, 7.00, 9.40
-Id, radio_compression_gzip, 10.00, 7.00, 9.40
-Id, radio_compression_none, 10.00, 7.00, 9.40
+url, http://localhost:8080/, 6.00, 8.98, 6.60
+Id, username, 10.00, 8.68, 9.74
+Id, password, 10.00, 8.68, 9.74
+Id, password, 10.00, 8.68, 9.74
+CssSelector, .menu, 8.81, 3.75, 7.80
+LinkText, Strumenti di amministrazione, 8.19, 3.68, 7.29
+CssSelector, .menu, 8.81, 7.47, 8.54
+LinkText, Backup, 8.19, 7.47, 8.05
+Id, radio_dump_mysql_nobin, 10.00, 6.72, 9.34
+Id, buttonGo, 10.00, 6.72, 9.34
+XPath, //tr[@id='row-AFTER0POS1']/td[6]/a/span, 8.41, 6.65, 8.06
+Id, radio_dump_mysql_nobin, 10.00, 6.70, 9.34
+Id, radio_dump_mysql, 10.00, 6.70, 9.34
+Id, radio_dump_mysql_nobin, 10.00, 6.70, 9.34
+Id, filename_template, 10.00, 6.70, 9.34
+Id, radio_compression_gzip, 10.00, 6.70, 9.34
+Id, radio_compression_none, 10.00, 6.70, 9.34

@@ -5,6 +5,7 @@ import org.jsoup.nodes.Document;
     - This is the standard strategy to apply to selectors when assigning scores.
 * */
 public interface ScoreStrategy {
+    /* Selector related functions */
     float getIdComplexityScore(String selectorString);
     float getUrlComplexityScore(String selectorString);
     float getXPathComplexityScore(String xpathSelector);
@@ -12,6 +13,10 @@ public interface ScoreStrategy {
     float getLinkTextComplexityScore(String selectorString, Document document);
     float getCssSelectorComplexityScore(String cssSelector, Document document);
 
+    /* Page related functions */
+    float getPageComplexityScore(Page document);
+
     /* Methods that may be useful to help Judge */
     float getSelectorScoreWeight();
+    float getPageScoreWeight();
 }

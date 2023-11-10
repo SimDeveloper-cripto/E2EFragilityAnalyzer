@@ -1,52 +1,52 @@
 Type, Selector, SelectorScore, PageScore, FinalScore 
-url, http://localhost:8080/, 6.00, 9.00, 6.60
-Id, username, 10.00, 9.00, 9.80
-Id, password, 10.00, 9.00, 9.80
-Id, password, 10.00, 9.00, 9.80
-CssSelector, #mainmenua_bank > .mainmenuaspan, 8.66, 4.00, 7.73
-CssSelector, .divsearchfield, 8.81, 8.00, 8.65
-CssSelector, .select2-selection--multiple > .select2-selection__rendered, 8.56, 8.00, 8.45
-Name, search_ref, 2.00, 8.00, 3.20
-Name, search_label, 2.00, 8.00, 3.20
-Name, search_number, 2.00, 8.00, 3.20
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 8.00, 7.82
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 8.00, 7.82
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[10]/div/button[2]/span, 7.84, 8.00, 7.87
-XPath, //form[@id='searchFormList']/div/div/span/span/span/ul, 8.34, 8.00, 8.27
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 8.00, 7.82
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 8.00, 7.82
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[10]/div/button[2]/span, 7.84, 8.00, 7.87
-XPath, //form[@id='searchFormList']/div/div/span/span/span/ul, 8.34, 8.00, 8.27
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 8.00, 7.82
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 8.00, 7.82
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[10]/div/button[2]/span, 7.84, 8.00, 7.87
-XPath, //form[@id='searchFormList']/div/div/span/span/span/ul, 8.34, 8.00, 8.27
-LinkText, Conti bancari, 8.19, 8.00, 8.15
-LinkText, Titolo, 8.19, 8.00, 8.15
-LinkText, Numero di conto, 8.19, 8.00, 8.15
-LinkText, Conto di contabilità, 8.19, 8.00, 8.15
-LinkText, Accounting code journal, 8.19, 8.00, 8.15
-LinkText, Stato, 8.19, 8.00, 8.15
-LinkText, Conti bancari, 8.19, 8.00, 8.15
-LinkText, Titolo, 8.19, 8.00, 8.15
-LinkText, Numero di conto, 8.19, 8.00, 8.15
-LinkText, Conto di contabilità, 8.19, 8.00, 8.15
-LinkText, Accounting code journal, 8.19, 8.00, 8.15
-LinkText, Stato, 8.19, 8.00, 8.15
-Name, search_ref, 2.00, 8.00, 3.20
-Name, search_label, 2.00, 8.00, 3.20
-Name, search_number, 2.00, 8.00, 3.20
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 8.00, 7.82
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 8.00, 7.82
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[10]/div/button[2]/span, 7.84, 8.00, 7.87
-XPath, //form[@id='searchFormList']/div/div/span/span/span/ul, 8.34, 8.00, 8.27
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 8.00, 7.82
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 8.00, 7.82
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[10]/div/button[2]/span, 7.84, 8.00, 7.87
-XPath, //form[@id='searchFormList']/div/div/span/span/span/ul, 8.34, 8.00, 8.27
-LinkText, Conti bancari, 8.19, 8.00, 8.15
-LinkText, Titolo, 8.19, 8.00, 8.15
-LinkText, Numero di conto, 8.19, 8.00, 8.15
-LinkText, Conto di contabilità, 8.19, 8.00, 8.15
-LinkText, Accounting code journal, 8.19, 8.00, 8.15
-LinkText, Stato, 8.19, 8.00, 8.15
+url, http://localhost:8080/, 6.00, 8.98, 6.60
+Id, username, 10.00, 8.68, 9.74
+Id, password, 10.00, 8.68, 9.74
+Id, password, 10.00, 8.68, 9.74
+CssSelector, #mainmenua_bank > .mainmenuaspan, 8.66, 3.75, 7.68
+CssSelector, .divsearchfield, 8.81, 7.17, 8.48
+CssSelector, .select2-selection--multiple > .select2-selection__rendered, 8.56, 7.17, 8.28
+Name, search_ref, 2.00, 7.16, 3.03
+Name, search_label, 2.00, 7.17, 3.03
+Name, search_number, 2.00, 7.17, 3.03
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 7.17, 7.66
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 7.15, 7.65
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[10]/div/button[2]/span, 7.84, 7.17, 7.71
+XPath, //form[@id='searchFormList']/div/div/span/span/span/ul, 8.34, 7.17, 8.11
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 7.16, 7.65
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 7.15, 7.65
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[10]/div/button[2]/span, 7.84, 7.17, 7.71
+XPath, //form[@id='searchFormList']/div/div/span/span/span/ul, 8.34, 7.17, 8.11
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 7.16, 7.65
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 7.15, 7.65
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[10]/div/button[2]/span, 7.84, 7.17, 7.71
+XPath, //form[@id='searchFormList']/div/div/span/span/span/ul, 8.34, 7.17, 8.11
+LinkText, Conti bancari, 8.19, 7.16, 7.98
+LinkText, Titolo, 8.19, 7.17, 7.99
+LinkText, Numero di conto, 8.19, 7.17, 7.99
+LinkText, Conto di contabilità, 8.19, 7.17, 7.99
+LinkText, Accounting code journal, 8.19, 7.17, 7.99
+LinkText, Stato, 8.19, 7.17, 7.99
+LinkText, Conti bancari, 8.19, 7.17, 7.99
+LinkText, Titolo, 8.19, 7.17, 7.99
+LinkText, Numero di conto, 8.19, 7.17, 7.99
+LinkText, Conto di contabilità, 8.19, 7.17, 7.99
+LinkText, Accounting code journal, 8.19, 7.17, 7.99
+LinkText, Stato, 8.19, 7.17, 7.99
+Name, search_ref, 2.00, 7.17, 3.03
+Name, search_label, 2.00, 7.17, 3.03
+Name, search_number, 2.00, 7.17, 3.03
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 7.17, 7.66
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 7.15, 7.65
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[10]/div/button[2]/span, 7.84, 7.17, 7.71
+XPath, //form[@id='searchFormList']/div/div/span/span/span/ul, 8.34, 7.17, 8.11
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 7.16, 7.65
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 7.78, 7.15, 7.65
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[10]/div/button[2]/span, 7.84, 7.17, 7.71
+XPath, //form[@id='searchFormList']/div/div/span/span/span/ul, 8.34, 7.17, 8.11
+LinkText, Conti bancari, 8.19, 7.16, 7.98
+LinkText, Titolo, 8.19, 7.17, 7.99
+LinkText, Numero di conto, 8.19, 7.17, 7.99
+LinkText, Conto di contabilità, 8.19, 7.17, 7.99
+LinkText, Accounting code journal, 8.19, 7.17, 7.99
+LinkText, Stato, 8.19, 7.17, 7.99

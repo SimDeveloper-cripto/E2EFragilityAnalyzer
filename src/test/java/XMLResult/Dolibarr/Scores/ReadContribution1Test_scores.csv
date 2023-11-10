@@ -1,8 +1,8 @@
 Type, Selector, SelectorScore, PageScore, FinalScore 
-url, http://localhost:8080/, 6.00, 9.00, 6.60
-Id, username, 10.00, 9.00, 9.80
-Id, password, 10.00, 9.00, 9.80
-Id, username, 10.00, 9.00, 9.80
-CssSelector, #mainmenua_members > .mainmenuaspan, 8.66, 4.00, 7.73
-CssSelector, .menu, 8.81, 8.00, 8.65
-LinkText, Adesioni, 8.19, 8.00, 8.15
+url, http://localhost:8080/, 6.00, 8.98, 6.60
+Id, username, 10.00, 8.68, 9.74
+Id, password, 10.00, 8.68, 9.74
+Id, username, 10.00, 8.68, 9.74
+CssSelector, #mainmenua_members > .mainmenuaspan, 8.66, 3.75, 7.68
+CssSelector, .menu, 8.81, 7.23, 8.49
+LinkText, Adesioni, 8.19, 7.21, 7.99

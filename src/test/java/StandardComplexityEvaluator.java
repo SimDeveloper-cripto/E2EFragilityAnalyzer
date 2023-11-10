@@ -5,6 +5,7 @@ import org.jsoup.select.Elements;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -13,13 +14,15 @@ import java.util.regex.Pattern;
     * All the scores mentioned have a range from 0 to 10, so a low complexity score means that that selector/page is not very complex (robust), vice versa if the score
     * is high the selector/page is very complex, same thing for the fragility calculation.
 * */
-public class StandardSelectorComplexityEvaluator implements ScoreStrategy {
-    /* CONSTANTS DECLARATION */
+public class StandardComplexityEvaluator implements ScoreStrategy {
+        /* VARIABLES AND CONSTANTS DECLARATION */
         private final float selectorWeight = 0.8f; // Selector score weight (you can adjust the value)
+        private final float pageWeight = 0.2f; // Page score weight (you can adjust the value)
         static float CLASS_COEFF = 1.4f, ATTR_COEFF = 1.4f, ID_COEFF = 0.3f, CHILD_COEFF = 1.4f, NODE_COEFF = 0.7f, FUNC_COEFF = 1.2f;
 
-        public StandardSelectorComplexityEvaluator() {}
+        public StandardComplexityEvaluator() {}
 
+        /*********************** SELECTOR SECTION ***********************/
         @Override
         public float getIdComplexityScore(String selectorString) { // For convention, selectorString stays as parameter
             return 0.0f;
@@ -54,7 +57,7 @@ public class StandardSelectorComplexityEvaluator implements ScoreStrategy {
             int complexity = len_score + depth + n_add_attr_score + n_el_score;
 
             // Normalization of score in [0-10]
-            return normalizeScore((float) complexity);
+            return normalizeScore((float) complexity, 100.0f);
         }
 
         /* [DESCRIPTION]
@@ -90,7 +93,7 @@ public class StandardSelectorComplexityEvaluator implements ScoreStrategy {
             float selectorScore = (classCount * CLASS_COEFF) + (attributeCount * ATTR_COEFF) + (idCount * ID_COEFF) + (childCount * CHILD_COEFF)
                     + (nodeCount * NODE_COEFF) + (functionCount * FUNC_COEFF);
 
-            return normalizeScore(selectorScore);
+            return normalizeScore(selectorScore, 100.0f);
         }
 
         private static float countXPathSelectorComplexity(String xpathSelector) {
@@ -111,7 +114,7 @@ public class StandardSelectorComplexityEvaluator implements ScoreStrategy {
             // According to this criterion I slightly modify the score.
             if(!isXPathAbsolute(xpathSelector)) selectorScore -= 0.2f;
 
-            return normalizeScore(selectorScore);
+            return normalizeScore(selectorScore, 100.0f);
         }
 
         private static int countSelectorSpecificity(String input, String regex) {
@@ -201,11 +204,62 @@ public class StandardSelectorComplexityEvaluator implements ScoreStrategy {
             return xpath.startsWith("/");
         }
 
+        @Override
+        public final float getSelectorScoreWeight() {
+            return this.selectorWeight;
+        }
+
+        /*********************** PAGE SECTION ***********************/
+
+        @Override
+        public final float getPageScoreWeight() {
+            return this.pageWeight;
+        }
+
         /* [DESCRIPTION]
-            - Returns normalized value of the selector score in the interval [0-10]
+            - Returns as float value of the score of the page based on Its complexity
+        * */
+        @Override
+        public float getPageComplexityScore(Page documentPage) {
+            return calculatePageComplexity(documentPage);
+        }
+
+        private static float calculatePageComplexity(Page page) {
+            Document document  = page.getPage();
+
+            int totalElements  = document.getAllElements().size();
+            int uniqueElements = countUniqueElements(document.getAllElements());
+            int imageCount     = countImages(document);
+            int linkCount      = countLinks(document);
+
+            float complexityScore = (float) (totalElements + uniqueElements + imageCount + linkCount);
+            return normalizeScore(complexityScore, 3000.0f);
+        }
+
+        private static int countUniqueElements(Elements elements) {
+            HashSet<String> hashSet = new HashSet<>();
+
+            for (Element element : elements) {
+                hashSet.add(element.tagName());
+            }
+            return hashSet.size();
+        }
+
+        private static int countImages(Document document) {
+            return document.select("img").size();
+        }
+
+        private static int countLinks(Document document) {
+            return document.select("a").size();
+        }
+
+        /*********************** STANDARD COMPLEXITY EVALUATOR MAIN FEATURE ***********************/
+
+        /* [DESCRIPTION]
+            - Returns normalized value of the selector score in the interval [0-10] given a maxScore
         */
-        private static float normalizeScore(float selectorScore) {
-            float minSelectorScore = 0.0f, maxSelectorScore = 100.0f;
+        private static float normalizeScore(float selectorScore, float maxScore) {
+            float minSelectorScore = 0.0f, maxSelectorScore = maxScore;
             float normalizedMin = 1.0f, normalizedMax = 10.0f;
 
             float diff = normalizedMax - normalizedMin; // 9.0f
@@ -214,10 +268,5 @@ public class StandardSelectorComplexityEvaluator implements ScoreStrategy {
             if(normalizedScore < 0.0f) normalizedScore = normalizedMin;
             if(normalizedScore > 10.0f) normalizedScore = normalizedMax;
             return normalizedScore;
-        }
-
-        @Override
-        public final float getSelectorScoreWeight() {
-            return this.selectorWeight;
         }
 }

@@ -1,18 +1,18 @@
 Type, Selector, SelectorScore, PageScore, FinalScore 
-url, http://localhost:8080/, 6.00, 9.00, 6.60
-Id, username, 10.00, 9.00, 9.80
-Id, password, 10.00, 9.00, 9.80
-Id, password, 10.00, 9.00, 9.80
-CssSelector, #mainmenua_ticket > .mainmenuaspan, 8.66, 4.00, 7.73
-CssSelector, .menu, 8.81, 8.00, 8.65
-XPath, //div[@id='id-left']/div/div[2]/div[3]/a, 8.22, 8.00, 8.17
-Id, subject, 10.00, 7.00, 9.40
-Id, message, 10.00, 7.00, 9.40
-Name, add, 2.00, 7.00, 3.00
+url, http://localhost:8080/, 6.00, 8.98, 6.60
+Id, username, 10.00, 8.68, 9.74
+Id, password, 10.00, 8.68, 9.74
+Id, password, 10.00, 8.68, 9.74
+CssSelector, #mainmenua_ticket > .mainmenuaspan, 8.66, 3.75, 7.68
+CssSelector, .menu, 8.81, 7.46, 8.54
+XPath, //div[@id='id-left']/div/div[2]/div[3]/a, 8.22, 7.46, 8.07
+Id, subject, 10.00, 6.70, 9.34
+Id, message, 10.00, 6.70, 9.34
+Name, add, 2.00, 6.70, 2.94
 CssSelector, .center:nth-child(3) > .butAction, 8.32, 7.00, 8.06
-CssSelector, .ui-button:nth-child(1), 8.58, 7.00, 8.26
-XPath, //div[@id='id-right']/div/div[2]/div[3]/div/table/tbody/tr[7]/td/table/tbody/tr/td, 7.59, 7.00, 13.45
-XPath, //div[@id='id-right']/div/div[2]/div[3]/div/table/tbody/tr[3]/td, 7.84, 7.00, 13.81
-XPath, //div[2]/div/div[2]/div/div/div[4], 8.18, 7.00, 7.94
-XPath, //div[@id='id-right']/div/div[2]/div/div/div[2]/span, 8.09, 7.00, 7.87
-XPath, //div[@id='id-right']/div/div[2]/div[3]/div[2]/div, 8.03, 7.00, 7.82
+CssSelector, .ui-button:nth-child(1), 8.58, 6.94, 8.25
+XPath, //div[@id='id-right']/div/div[2]/div[3]/div/table/tbody/tr[7]/td/table/tbody/tr/td, 7.59, 6.99, 13.44
+XPath, //div[@id='id-right']/div/div[2]/div[3]/div/table/tbody/tr[3]/td, 7.84, 6.99, 13.80
+XPath, //div[2]/div/div[2]/div/div/div[4], 8.18, 6.99, 7.94
+XPath, //div[@id='id-right']/div/div[2]/div/div/div[2]/span, 8.09, 6.89, 7.85
+XPath, //div[@id='id-right']/div/div[2]/div[3]/div[2]/div, 8.03, 6.89, 7.80

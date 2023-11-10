@@ -1,14 +1,14 @@
 Type, Selector, SelectorScore, PageScore, FinalScore 
-url, http://localhost:8080/, 6.00, 9.00, 6.60
-Id, username, 10.00, 9.00, 9.80
-Id, password, 10.00, 9.00, 9.80
-Id, password, 10.00, 9.00, 9.80
-CssSelector, .menu, 8.81, 4.00, 7.85
-LinkText, Impostazioni, 8.19, 4.00, 7.35
-CssSelector, .box-flex-container:nth-child(17) > .box-flex-item:nth-child(4) .reposition > .fas, 7.71, 3.00, 6.77
-CssSelector, .box-flex-container:nth-child(17) > .box-flex-item:nth-child(4) .reposition > .fas, 7.71, 3.00, 6.77
-Id, select2-search_status-container, 10.00, 3.00, 8.60
-Id, search_keyword, 10.00, 3.00, 8.60
-Id, modules, 10.00, 3.00, 8.60
-Id, marketplace, 10.00, 3.00, 8.60
-Id, deploy, 10.00, 3.00, 8.60
+url, http://localhost:8080/, 6.00, 8.98, 6.60
+Id, username, 10.00, 8.68, 9.74
+Id, password, 10.00, 8.68, 9.74
+Id, password, 10.00, 8.68, 9.74
+CssSelector, .menu, 8.81, 3.75, 7.80
+LinkText, Impostazioni, 8.19, 3.57, 7.27
+CssSelector, .box-flex-container:nth-child(17) > .box-flex-item:nth-child(4) .reposition > .fas, 7.71, 2.14, 6.60
+CssSelector, .box-flex-container:nth-child(17) > .box-flex-item:nth-child(4) .reposition > .fas, 7.71, 2.14, 6.60
+Id, select2-search_status-container, 10.00, 2.14, 8.43
+Id, search_keyword, 10.00, 2.11, 8.42
+Id, modules, 10.00, 2.14, 8.43
+Id, marketplace, 10.00, 2.14, 8.43
+Id, deploy, 10.00, 2.14, 8.43

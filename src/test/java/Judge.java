@@ -23,6 +23,8 @@ public class Judge {
         Judge.strategy = strategy;
     }
 
+    public ScoreStrategy getStrategy() { return this.strategy; }
+
     public float getElementScore(Selector selector, Page documentPage) {
         return applyMetric(selector, documentPage);
     }
@@ -77,7 +79,7 @@ public class Judge {
 
         // Weighting to combine selector and complexity scores
         final float selectorWeight = strategy.getSelectorScoreWeight();
-        float PageWeight = 0.2f; // Page score weight (you can adjust the value)
+        final float PageWeight     = strategy.getPageScoreWeight();
 
         // Judge combines the weighted selector and complexity scores to get the final score
         return ((selectorWeight * elementScore) + (PageWeight * pageScore)) * numElementsWeight; /* Read the flowchart (page 42/100) */
