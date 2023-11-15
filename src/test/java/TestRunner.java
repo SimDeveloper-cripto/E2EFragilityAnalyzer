@@ -106,6 +106,7 @@ public class TestRunner {
             // TODO: Find a better way to penalize if the test fails because of a selector
             // Selector lastSelector = listener.getVisitedSelectors().get(listener.getVisitedSelectors().size() - 1);
             // lastSelector.setSelectorScore(judge.getBadElementScore(lastSelector));
+
             System.out.println("A Test stopped working because of this selector!");
 
             setNumberOfFailedTests(numberOfFailedTests + 1);

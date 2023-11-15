@@ -8,6 +8,18 @@ CssSelector, .select2-selection--multiple > .select2-selection__rendered, 0.50, 
 Name, search_ref, 0.40, 0.39
 Name, search_label, 0.40, 0.39
 Name, search_number, 0.40, 0.39
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 0.50, 0.39
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 0.50, 0.39
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[10]/div/button[2]/span, 0.50, 0.39
+XPath, //form[@id='searchFormList']/div/div/span/span/span/ul, 0.50, 0.39
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 0.50, 0.39
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 0.50, 0.39
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[10]/div/button[2]/span, 0.50, 0.39
+XPath, //form[@id='searchFormList']/div/div/span/span/span/ul, 0.50, 0.39
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 0.50, 0.39
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 0.50, 0.39
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[10]/div/button[2]/span, 0.50, 0.39
+XPath, //form[@id='searchFormList']/div/div/span/span/span/ul, 0.50, 0.39
 LinkText, Conti bancari, 0.25, 0.39
 LinkText, Titolo, 0.25, 0.39
 LinkText, Numero di conto, 0.25, 0.39
@@ -23,6 +35,14 @@ LinkText, Stato, 0.25, 0.39
 Name, search_ref, 0.40, 0.39
 Name, search_label, 0.40, 0.39
 Name, search_number, 0.40, 0.39
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 0.50, 0.39
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 0.50, 0.39
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[10]/div/button[2]/span, 0.50, 0.39
+XPath, //form[@id='searchFormList']/div/div/span/span/span/ul, 0.50, 0.39
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 0.50, 0.39
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[8]/span/span/span/span[2], 0.50, 0.39
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td[10]/div/button[2]/span, 0.50, 0.39
+XPath, //form[@id='searchFormList']/div/div/span/span/span/ul, 0.50, 0.39
 LinkText, Conti bancari, 0.25, 0.39
 LinkText, Titolo, 0.25, 0.39
 LinkText, Numero di conto, 0.25, 0.39

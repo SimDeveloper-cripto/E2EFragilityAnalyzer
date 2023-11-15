@@ -31,6 +31,10 @@ public class Judge {
         return getPageScoreStrategy().evaluatePageComplexity(documentPage);
     }
 
+    public float applyMetricToPageAndSelector(Selector selector, Page page) {
+        return getPageAndSelectorScoreStrategy().evaluatePageAndSelectorComplexity(selector, page);
+    }
+
     /* [OLD] THIS WAS THE OLD WAY TO PENALIZE A TEST FAILURE BECAUSE OF A SELECTOR
         public static float getBadElementScore(Selector lastSelector) {
             // If the selector caused a test failure, we subtract 100 points form the return value of getElementScore().

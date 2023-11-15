@@ -39,14 +39,13 @@ public class UpdateUser1Test {
     driver.findElement(By.linkText("Scheda")).click();
 
     js.executeScript("window.scrollBy(0,600)", "");
-    driver.findElement(By.xpath("//a[contains(text(),\'Modifica\')]")).click();
+    driver.findElement(By.xpath("//a[contains(text(),'Modifica')]")).click();
 
     js.executeScript("window.scrollBy(0,600)", "");
     driver.findElement(By.name("email")).click();
 
     driver.findElement(By.name("email")).sendKeys("superadmin@gmail.com");
     driver.findElement(By.name("email")).sendKeys(Keys.ENTER);
-
 
     {
       WebElement element = driver.findElement(By.id("user"));

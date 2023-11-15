@@ -11,7 +11,7 @@ public class Page {
 
     @Override
     public String toString() {
-        return "PageComplexityScore = " + getPageComplexity()  + "\n";
+        return "PageComplexityScore = " + getPageComplexity()  + "  ";
     }
 
     public void setPage(Document page) {

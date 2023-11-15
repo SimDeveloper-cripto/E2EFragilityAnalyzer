@@ -38,8 +38,8 @@ public class CreateCompany1Test {
     driver.findElement(By.name("nom")).sendKeys("EasyCompany");
     driver.findElement(By.id("select2-selectcountry_id-container")).click();
     driver.findElement(By.cssSelector(".select2-search__field")).sendKeys("Ital");
-    driver.findElement(By.xpath("//div[@id=\'id-right\']/div/div[2]/form/table/tbody/tr[9]/td[2]/input")).click();
+    driver.findElement(By.xpath("//div[@id='id-right']/div/div[2]/form/table/tbody/tr[9]/td[2]/input")).click();
     driver.findElement(By.name("save")).click();
-    driver.findElement(By.xpath("//div[@id=\'id-right\']/div/div[2]/form/table/tbody/tr[11]/td[2]/input")).click();
+    driver.findElement(By.xpath("//div[@id='id-right']/div/div[2]/form/table/tbody/tr[11]/td[2]/input")).click();
   }
 }

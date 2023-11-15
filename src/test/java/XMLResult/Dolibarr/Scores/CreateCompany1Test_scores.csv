@@ -9,4 +9,6 @@ LinkText, Impostazioni -> Società/Organizzazione, 0.25, 0.40
 Name, nom, 0.40, 0.36
 Id, select2-selectcountry_id-container, 0.00, 0.36
 CssSelector, .select2-search__field, 0.00, 0.35
+XPath, //div[@id='id-right']/div/div[2]/form/table/tbody/tr[9]/td[2]/input, 0.50, 0.36
 Name, save, 0.40, 0.36
+XPath, //div[@id='id-right']/div/div[2]/form/table/tbody/tr[11]/td[2]/input, 0.50, 0.36

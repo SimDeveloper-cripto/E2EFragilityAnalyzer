@@ -12,3 +12,5 @@ Id, search_keyword, 0.00, 0.39
 CssSelector, .fa-toggle-on, 0.00, 0.40
 CssSelector, .reposition > .fas, 0.50, 0.40
 Name, buttonreset, 0.40, 0.40
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td/div, 0.50, 0.39
+XPath, //form[@id='searchFormList']/div[2]/div/div[2]/span, 0.50, 0.39

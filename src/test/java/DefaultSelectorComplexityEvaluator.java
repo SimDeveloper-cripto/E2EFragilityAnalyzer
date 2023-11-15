@@ -1,6 +1,7 @@
 
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Document;
+import org.jsoup.select.QueryParser;
 
 /* [DESCRIPTION]
     - The final score value is set to the interval [0-1].
@@ -21,20 +22,21 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
             case "CssSelector":
                 depth = evaluateCssSelectorHierarchyDepth(selectorString);
                 level = depth + 1;
-                hierarchyScore = (1 - ((float) (1 / level))); // [0-1]
+                hierarchyScore = (float) (1 - (1 / level)); // [0-1]
                 break;
             case "XPath":
                 depth = evaluateXPathSelectorHierarchyDepth(selectorString);
                 level = depth + 1;
-                hierarchyScore = (1 - ((float) (1 / level))); // [0-1]
+                hierarchyScore = (float) (1 - (1 / level)); // [0-1]
                 break;
             default:
                 hierarchyScore = 0.0f;
         }
+        System.out.println("(Debug) Hierarchy Depth: " + depth);
         System.out.println("(Analyzed) Selector Hierarchy score: " + hierarchyScore);
 
         // Step 2: Type Score calculation (Rule Based)
-        // TODO: "PartialLinkText" and "ClassName" never occur.
+        // TODO: "PartialLinkText" and "ClassName" never occur (at least for now).
         switch (selectorType) {
             case "CssSelector":
                 typeScore = evaluateCssSelectorTypeScore(selectorString, depth);
@@ -76,6 +78,9 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
     }
 
     private static int evaluateXPathSelectorHierarchyDepth(String selectorString) {
+        if (selectorString.startsWith("//"))
+            selectorString = selectorString.substring(2);
+
         String[] combinators = selectorString.split("/");
         return combinators.length - 1;
     }
@@ -90,10 +95,17 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
 
     private static float evaluateXPathTypeScore(String selectorString, int depth, Document document) {
         if (depth >= 2) {
-            Element lastElement = document.select(selectorString).last();
+            try {
+                String selector = QueryParser.parse(selectorString).toString();
+                Element lastElement = document.select(selector).last();
 
-            assert lastElement != null;
-            return evaluateXPathElementType(lastElement);
+                if (lastElement != null) {
+                    return evaluateXPathElementType(lastElement);
+                }
+            } catch(org.jsoup.select.Selector.SelectorParseException e) {
+                System.err.println("Errore nel selettore: " + selectorString);
+                System.err.println("SelectorParseException: " + e.getMessage());
+            }
         }
         return 0.0f;
     }
@@ -126,6 +138,6 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
         }
 
         // Simple Tag Name
-        return 0.8f; // TODO: We could assing a score depending on what TagName it is.
+        return 0.8f; // TODO: We could assing a score depending on what TagName it is (span, button, input, ...)
     }
 }
