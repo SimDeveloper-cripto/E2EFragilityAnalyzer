@@ -11,7 +11,7 @@ public class Page {
 
     @Override
     public String toString() {
-        return "PageComplexity = " + pageComplexity  + "\n";
+        return "PageComplexityScore = " + getPageComplexity()  + "\n";
     }
 
     public void setPage(Document page) {
@@ -25,9 +25,11 @@ public class Page {
     public float getPageScore() {
         return this.pageScore;
     }
+
     public void setPageScore(float pageScore) {
         this.pageScore = pageScore;
     }
+
     public float getPageComplexity() {
         return this.pageComplexity;
     }

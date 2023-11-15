@@ -1,4 +1,3 @@
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -22,7 +21,7 @@ public class Test {
 
     @Override
     public String toString() {
-        return "Test {" + "className = '" + className + '\'' + ", testScore = " + testScore + ", laterGetSuccess = " + laterGetSuccess + '}';
+        return "Test {" + "className = '" + className + '\'' + ", testScore = " + getTestScore() + ", laterGetSuccess = " + laterGetSuccess + '}';
     }
 
     private boolean getStatusResult(String testName, int column) {

@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.util.List;
 import java.util.Locale;
@@ -79,7 +78,7 @@ public class Log {
             String fileName = basePath + test.getTestName() + "_scores.csv";
 
             try (FileWriter fileWriter = new FileWriter(fileName)) {
-                String index = "Type, Selector, SelectorScore, PageScore, FinalScore \n";
+                String index = "Type, Selector, SelectorScore, PageScore \n";
 
                 fileWriter.write(index);
                 for (int i = 0; i < test.getSelectors().size(); i++) {
@@ -88,12 +87,11 @@ public class Log {
 
                     String nameSelector = selector.getSelector();
                     String typeSelector = selector.getType();
-                    float selectorScore = selector.getSelectorScore();
-                    float pageScore     = page.getPageScore();
-                    float selectorFinalScore = selector.getSelectorFinalScore();
+                    float pageScore     = page.getPageComplexity();
+                    float selectorScore = selector.getSelectorFinalScore();
 
                     String line = typeSelector + ", " + nameSelector + ", " + df.format(selectorScore) +
-                            ", " + df.format(pageScore) + ", " + df.format(selectorFinalScore) + "\n";
+                            ", " + df.format(pageScore) + "\n";
 
                     fileWriter.write(line);
                 }
@@ -115,7 +113,7 @@ public class Log {
         System.out.println("==================================");
 
         for (Test testJudged:testsJudged)
-            System.out.println("Test name: " + testJudged.getClassName() + " Score: " + df.format(testJudged.getTestScore()));
+            System.out.println("Test name: " + testJudged.getClassName() + ", Score: " + df.format(testJudged.getTestScore())); // TODO: getTestScore() returns HarmonicMean
 
         String directory = "src/test/java/XMLResult/" + JUnitRunner.SoftwareUsed + "/Result.csv";
         createScoreFileForEachTest(testsJudged, df);

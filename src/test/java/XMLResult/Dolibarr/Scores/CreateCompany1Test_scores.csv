@@ -1,14 +1,12 @@
-Type, Selector, SelectorScore, PageScore, FinalScore 
-url, http://localhost:8080/, 6.00, 8.98, 6.60
-Name, username, 2.00, 8.68, 3.34
-Name, password, 2.00, 8.68, 3.34
-Name, password, 2.00, 8.68, 3.34
-CssSelector, .menu, 8.81, 3.75, 7.80
-LinkText, Impostazioni, 8.19, 3.57, 7.27
-CssSelector, .fiche > .inline-block:nth-child(4), 8.32, 7.45, 8.15
-Name, nom, 2.00, 5.08, 2.62
-Id, select2-selectcountry_id-container, 10.00, 5.08, 9.02
-CssSelector, .select2-search__field, 8.81, 2.13, 7.47
-XPath, //div[@id='id-right']/div/div[2]/form/table/tbody/tr[9]/td[2]/input, 7.84, 5.05, 7.28
-Name, save, 2.00, 5.08, 2.62
-XPath, //div[@id='id-right']/div/div[2]/form/table/tbody/tr[11]/td[2]/input, 7.84, 5.06, 7.28
+Type, Selector, SelectorScore, PageScore 
+Name, username, 0.40, 0.39
+Name, password, 0.40, 0.39
+Name, password, 0.40, 0.39
+CssSelector, .menu, 0.00, 0.37
+LinkText, Impostazioni, 0.25, 0.37
+CssSelector, .fiche > .inline-block:nth-child(4), 0.50, 0.40
+LinkText, Impostazioni -> Società/Organizzazione, 0.25, 0.40
+Name, nom, 0.40, 0.36
+Id, select2-selectcountry_id-container, 0.00, 0.36
+CssSelector, .select2-search__field, 0.00, 0.35
+Name, save, 0.40, 0.36

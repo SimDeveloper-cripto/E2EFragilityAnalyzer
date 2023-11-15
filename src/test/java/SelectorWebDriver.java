@@ -22,6 +22,7 @@ public class SelectorWebDriver implements WebDriverListener {
 		- Also, a new Page object (current visited page) is created using the parsed HTML document.
 		- After that, page's complexity and the selector score are calculated.
 	* */
+/*
 	@Override
 	public void beforeGet(WebDriver driver, String url) {
 		String pageSource     = driver.getPageSource();
@@ -35,10 +36,13 @@ public class SelectorWebDriver implements WebDriverListener {
 		selector.setSelectorFinalScore(judge.getElementScore(selector, page));
 		System.out.println(selector + "  " + page);
 
+		System.out.println("URL: " + url);
+
 		visitedSelectors.add(selector);
 		visitedPages.add(page);
 		WebDriverListener.super.beforeGet(driver, url);
 	}
+*/
 
 	/* [DESCRIPTION]
 		- This method is called when using a selector, and not when performing a GET request. Therefore, in the Selector object, there will be the locator used in the command within the page.
@@ -52,9 +56,16 @@ public class SelectorWebDriver implements WebDriverListener {
 		Page page         = new Page(pageContent);
 
 		// Scores calculation
-		page.setPageComplexity(judge.getStrategy().getPageComplexityScore(page));
-		selector.setSelectorFinalScore(judge.getElementScore(selector, page));
-		System.out.println("(Analyzed selector) " + selector + "  " + page);
+		float selectorComplexityScore = judge.applyMetricToSelector(selector, pageContent);
+		float pageComplexityScore     = judge.applyMetricToPage(page);
+
+		// TODO: add pageAndSelectorComplexityScore.
+
+		page.setPageComplexity(pageComplexityScore);
+		selector.setSelectorFinalScore(selectorComplexityScore);
+
+		System.out.println("(Analyzed) " + selector + "  " + page);
+		// TODO: print to Terminal pageAndSelectorComplexityScore (you should also do it inside a .csv file).
 
 		visitedSelectors.add(selector);
 		visitedPages.add(page);

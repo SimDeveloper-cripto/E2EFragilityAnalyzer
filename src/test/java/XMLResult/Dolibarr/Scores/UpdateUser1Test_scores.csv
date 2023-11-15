@@ -1,42 +1,40 @@
-Type, Selector, SelectorScore, PageScore, FinalScore 
-url, http://localhost:8080/, 6.00, 8.98, 6.60
-Id, username, 10.00, 8.68, 9.74
-Id, password, 10.00, 8.68, 9.74
-Id, password, 10.00, 8.68, 9.74
-CssSelector, .menu, 8.81, 3.75, 7.80
-LinkText, admin, 8.19, 3.57, 7.27
-LinkText, Scheda, 8.19, 3.57, 7.27
-XPath, //a[contains(text(),'Modifica')], 8.77, 6.87, 8.39
-Name, email, 2.00, 0.05, 1.61
-Name, email, 2.00, 0.05, 1.61
-Name, email, 2.00, 0.05, 1.61
-Id, user, 10.00, 6.84, 9.37
-Id, rights, 10.00, 6.84, 9.37
-Id, guisetup, 10.00, 6.84, 9.37
-Id, extsites, 10.00, 6.84, 9.37
-Id, clicktodial, 10.00, 6.84, 9.37
-Id, notify, 10.00, 6.84, 9.37
-Id, bank, 10.00, 6.84, 9.37
-Id, note, 10.00, 6.84, 9.37
-Id, document, 10.00, 6.84, 9.37
-Id, info, 10.00, 6.84, 9.37
-Id, user, 10.00, 6.84, 9.37
-Id, rights, 10.00, 6.84, 9.37
-Id, guisetup, 10.00, 6.84, 9.37
-Id, extsites, 10.00, 6.84, 9.37
-Id, clicktodial, 10.00, 6.84, 9.37
-Id, extsites, 10.00, 6.84, 9.37
-Id, clicktodial, 10.00, 6.84, 9.37
-Id, notify, 10.00, 6.84, 9.37
-Id, bank, 10.00, 6.84, 9.37
-Id, note, 10.00, 6.84, 9.37
-Id, document, 10.00, 6.84, 9.37
-Id, info, 10.00, 6.84, 9.37
-Id, user, 10.00, 6.84, 9.37
-Id, rights, 10.00, 6.84, 9.37
-Id, guisetup, 10.00, 6.84, 9.37
-Id, extsites, 10.00, 6.84, 9.37
-Id, clicktodial, 10.00, 6.84, 9.37
-Id, extsites, 10.00, 6.84, 9.37
-Id, clicktodial, 10.00, 6.84, 9.37
-Id, notify, 10.00, 6.84, 9.37
+Type, Selector, SelectorScore, PageScore 
+Id, username, 0.00, 0.39
+Id, password, 0.00, 0.39
+Id, password, 0.00, 0.39
+CssSelector, .menu, 0.00, 0.37
+LinkText, admin, 0.25, 0.37
+LinkText, Scheda, 0.25, 0.37
+Name, email, 0.40, 0.35
+Name, email, 0.40, 0.35
+Name, email, 0.40, 0.35
+Id, user, 0.00, 0.38
+Id, rights, 0.00, 0.38
+Id, guisetup, 0.00, 0.38
+Id, extsites, 0.00, 0.38
+Id, clicktodial, 0.00, 0.38
+Id, notify, 0.00, 0.38
+Id, bank, 0.00, 0.38
+Id, note, 0.00, 0.38
+Id, document, 0.00, 0.38
+Id, info, 0.00, 0.38
+Id, user, 0.00, 0.38
+Id, rights, 0.00, 0.38
+Id, guisetup, 0.00, 0.38
+Id, extsites, 0.00, 0.38
+Id, clicktodial, 0.00, 0.38
+Id, extsites, 0.00, 0.38
+Id, clicktodial, 0.00, 0.38
+Id, notify, 0.00, 0.38
+Id, bank, 0.00, 0.38
+Id, note, 0.00, 0.38
+Id, document, 0.00, 0.38
+Id, info, 0.00, 0.38
+Id, user, 0.00, 0.38
+Id, rights, 0.00, 0.38
+Id, guisetup, 0.00, 0.38
+Id, extsites, 0.00, 0.38
+Id, clicktodial, 0.00, 0.38
+Id, extsites, 0.00, 0.38
+Id, clicktodial, 0.00, 0.38
+Id, notify, 0.00, 0.38

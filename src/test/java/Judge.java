@@ -1,127 +1,42 @@
 
-import org.htmlcleaner.TagNode;
 import org.jsoup.nodes.Document;
-import org.htmlcleaner.HtmlCleaner;
-import org.htmlcleaner.DomSerializer;
-import org.htmlcleaner.CleanerProperties;
-
-import org.w3c.dom.NodeList;
-
-import javax.xml.xpath.*;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 
 import java.util.Locale;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 
 public class Judge {
-    private static ScoreStrategy strategy = null;
+    private static ISelectorScoreStrategy selectorScoreStrategy = null;
+    private static IPageScoreStrategy pageScoreStrategy = null;
+    private static IPageAndSelectorScoreStrategy pageAndSelectorScoreStrategy = null;
     private static float numOfTestJudged = 0;
 
-    public Judge(ScoreStrategy strategy) {
-        Judge.strategy = strategy;
+    public Judge(ISelectorScoreStrategy selectorScoreStrategy, IPageScoreStrategy pageScoreStrategy, IPageAndSelectorScoreStrategy pageAndSelectorScoreStrategy) {
+        Judge.selectorScoreStrategy        = selectorScoreStrategy;
+        Judge.pageScoreStrategy            = pageScoreStrategy;
+        Judge.pageAndSelectorScoreStrategy = pageAndSelectorScoreStrategy;
     }
 
-    public ScoreStrategy getStrategy() { return this.strategy; }
+    public ISelectorScoreStrategy getSelectorScoreStrategy() { return selectorScoreStrategy; }
 
-    public float getElementScore(Selector selector, Page documentPage) {
-        return applyMetric(selector, documentPage);
+    public IPageScoreStrategy getPageScoreStrategy() { return pageScoreStrategy; }
+
+    public IPageAndSelectorScoreStrategy getPageAndSelectorScoreStrategy() { return pageAndSelectorScoreStrategy; }
+
+    public float applyMetricToSelector(Selector selector, Document document) {
+        return getSelectorScoreStrategy().evaluateSelectorComplexity(selector, document);
     }
 
-    private static float applyMetric(Selector selector, Page documentPage) {
-        Document document = documentPage.getPage();
+    public float applyMetricToPage(Page documentPage) {
+        return getPageScoreStrategy().evaluatePageComplexity(documentPage);
+    }
 
-        float numberOfElements  = 1, numElementsWeight = 1, complexitySelectorScore;
-
-        String type               = selector.getType();
-        String selectorString     = selector.getSelector();
-        float complexityPageScore = documentPage.getPageComplexity();
-
-        // Selector complexity score
-        switch (type) {
-            case "url":
-                complexitySelectorScore = strategy.getUrlComplexityScore(selector.getSelector());
-                break;
-            case "Id":
-                complexitySelectorScore = strategy.getIdComplexityScore(selectorString);
-                break;
-            case "CssSelector":
-                complexitySelectorScore = strategy.getCssSelectorComplexityScore(selectorString, document);
-                break;
-            case "XPath":
-                complexitySelectorScore = strategy.getXPathComplexityScore(selectorString);
-                break;
-            case "TagName":
-                complexitySelectorScore = strategy.getTagNameComplexityScore(selectorString);
-                break;
-            case "LinkText":
-                complexitySelectorScore = strategy.getLinkTextComplexityScore(selectorString, document);
-                break;
-            default:
-                complexitySelectorScore = 8.0f;
+    /* [OLD] THIS WAS THE OLD WAY TO PENALIZE A TEST FAILURE BECAUSE OF A SELECTOR
+        public static float getBadElementScore(Selector lastSelector) {
+            // If the selector caused a test failure, we subtract 100 points form the return value of getElementScore().
+            return lastSelector.getSelectorScore() - 100;
         }
-        selector.setSelectorComplexity(complexitySelectorScore);
-
-        // The score is inversely proportional to the complexity of the selector/page
-        float elementScore = Math.abs(complexitySelectorScore - 10);
-        float pageScore    = Math.abs(complexityPageScore - 10);
-
-        documentPage.setPageScore(pageScore);
-        selector.setSelectorScore(elementScore);
-
-        /* SELECTOR + PAGE */
-
-        // Judge adds one more criteria: if the locator identifies multiple elements on the page, unless it is of the tag type, I have to reduce the final score
-        if(!type.equals("url") && !type.equals("LinkText") && !type.equals("id")) numberOfElements = countOccurences(selector, documentPage);
-        if(numberOfElements > 1 && !type.equals("tag")) numElementsWeight = (1.8f / numElementsWeight);
-        System.out.println("NumberOfElements: " + numberOfElements + " numElementsWeight: " + numElementsWeight);
-
-        // Weighting to combine selector and complexity scores
-        final float selectorWeight = strategy.getSelectorScoreWeight();
-        final float PageWeight     = strategy.getPageScoreWeight();
-
-        // Judge combines the weighted selector and complexity scores to get the final score
-        return ((selectorWeight * elementScore) + (PageWeight * pageScore)) * numElementsWeight; /* Read the flowchart (page 42/100) */
-    }
-
-    private static float countOccurences(Selector selector, Page documentPage) {
-        if (!selector.getType().equals("XPath")) return documentPage.getPage().select(selector.getSelector()).size();
-        else return countElementsByXPath(selector.getSelector(), documentPage.getPage());
-    }
-
-    private static float countElementsByXPath(String xPathSelector, Document page) {
-        org.w3c.dom.Document doc = null;
-        TagNode tagNode = new HtmlCleaner().clean(page.toString());
-
-        try {
-            doc = new DomSerializer(new CleanerProperties()).createDOM(tagNode);
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        }
-
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        factory.setNamespaceAware(true);
-        try {
-            // Create the XPath
-            XPathFactory xpathfactory = XPathFactory.newInstance();
-            XPath xpath = xpathfactory.newXPath();
-
-            XPathExpression expr = xpath.compile(xPathSelector);
-            Object result = expr.evaluate(doc, XPathConstants.NODESET);
-            NodeList nodes = (NodeList) result;
-            return (float) nodes.getLength();
-        } catch (XPathExpressionException e) {
-            e.printStackTrace();
-        }
-
-        return 1.0f;
-    }
-
-    public static float getBadElementScore(Selector lastSelector) {
-        // If the selector caused a test failure, we subtract 100 points form the return value of getElementScore().
-        return lastSelector.getSelectorScore() - 100;
-    }
+    */
 
     public static double getTestScore(Test test) {
         double sumInverseScores = 0;

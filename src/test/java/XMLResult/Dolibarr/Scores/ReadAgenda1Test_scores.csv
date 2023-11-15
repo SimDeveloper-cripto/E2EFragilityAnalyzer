@@ -1,15 +1,14 @@
-Type, Selector, SelectorScore, PageScore, FinalScore 
-url, http://localhost:8080/, 6.00, 8.98, 6.60
-Id, username, 10.00, 8.68, 9.74
-Id, password, 10.00, 8.68, 9.74
-Id, password, 10.00, 8.68, 9.74
-CssSelector, .agenda, 8.81, 3.75, 7.80
-CssSelector, .fa-calendar-week, 8.81, 3.72, 7.79
-CssSelector, .fa-calendar-day, 8.81, 4.61, 7.97
-Id, select2-search_projectid-container, 10.00, 6.33, 9.27
-Id, selectsearch_status, 10.00, 5.75, 9.15
-Id, select2-search_socid-container, 10.00, 6.33, 9.27
-Id, select2-search_filtert-container, 10.00, 6.30, 9.26
-Id, select2-search_actioncode-container, 10.00, 6.31, 9.26
-Id, check_birthday, 10.00, 6.30, 9.26
-Id, check_birthday, 10.00, 6.33, 9.27
+Type, Selector, SelectorScore, PageScore 
+Id, username, 0.00, 0.39
+Id, password, 0.00, 0.39
+Id, password, 0.00, 0.39
+CssSelector, .agenda, 0.00, 0.37
+CssSelector, .fa-calendar-week, 0.00, 0.39
+CssSelector, .fa-calendar-day, 0.00, 0.38
+Id, select2-search_projectid-container, 0.00, 0.38
+Id, selectsearch_status, 0.00, 0.37
+Id, select2-search_socid-container, 0.00, 0.38
+Id, select2-search_filtert-container, 0.00, 0.38
+Id, select2-search_actioncode-container, 0.00, 0.38
+Id, check_birthday, 0.00, 0.38
+Id, check_birthday, 0.00, 0.38

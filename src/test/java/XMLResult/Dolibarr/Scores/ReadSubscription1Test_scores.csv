@@ -1,8 +1,7 @@
-Type, Selector, SelectorScore, PageScore, FinalScore 
-url, http://localhost:8080/, 6.00, 8.98, 6.60
-Id, username, 10.00, 8.68, 9.74
-Name, password, 2.00, 8.68, 3.34
-Name, password, 2.00, 8.68, 3.34
-CssSelector, .members, 8.81, 3.75, 7.80
-CssSelector, .menu, 8.81, 7.23, 8.49
-LinkText, Without subscription, 8.19, 7.21, 7.99
+Type, Selector, SelectorScore, PageScore 
+Id, username, 0.00, 0.39
+Name, password, 0.40, 0.39
+Name, password, 0.40, 0.39
+CssSelector, .members, 0.00, 0.37
+CssSelector, .menu, 0.00, 0.40
+LinkText, Without subscription, 0.25, 0.40

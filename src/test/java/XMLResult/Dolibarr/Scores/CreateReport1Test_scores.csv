@@ -1,16 +1,9 @@
-Type, Selector, SelectorScore, PageScore, FinalScore 
-url, http://localhost:8080/, 6.00, 8.98, 6.60
-Id, username, 10.00, 8.68, 9.74
-Id, password, 10.00, 8.68, 9.74
-Id, password, 10.00, 8.68, 9.74
-CssSelector, .billing, 8.87, 8.92, 8.88
-CssSelector, .menu, 8.81, 7.04, 8.46
-LinkText, Reportistiche, 8.19, 7.04, 7.96
-LinkText, Reportistiche, 8.19, 7.04, 7.96
-CssSelector, .button, 8.81, 7.31, 8.51
-XPath, //div[@id='id-right']/div/table[2]/tbody/tr/td, 8.28, 7.31, 14.56
-XPath, //div[@id='id-right']/div/table/tbody/tr/td[2]/div, 8.22, 7.31, 8.04
-XPath, //div[@id='id-right']/div/table[2]/tbody/tr/td[3], 8.15, 7.31, 14.37
-XPath, //div[@id='id-right']/div/table[2]/tbody/tr/td, 8.28, 7.31, 14.56
-XPath, //div[@id='id-right']/div/table/tbody/tr/td[2]/div, 8.22, 7.31, 8.04
-XPath, //div[@id='id-right']/div/table[2]/tbody/tr/td[3], 8.15, 7.31, 14.37
+Type, Selector, SelectorScore, PageScore 
+Id, username, 0.00, 0.39
+Id, password, 0.00, 0.39
+Id, password, 0.00, 0.39
+CssSelector, .billing, 0.00, 0.37
+CssSelector, .menu, 0.00, 0.40
+LinkText, Reportistiche, 0.25, 0.40
+LinkText, Reportistiche, 0.25, 0.40
+CssSelector, .button, 0.00, 0.40

@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.util.List;
 import java.lang.reflect.InvocationTargetException;
@@ -15,7 +14,7 @@ public class JUnitRunner {
     public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException, IOException {
         String directory = "src/test/java/JUnit/" + SoftwareUsed; // JUnit test directory
 
-        Judge judge = new Judge(new StandardComplexityEvaluator());
+        Judge judge = new Judge(new DefaultSelectorComplexityEvaluator(), new DefaultPageComplexityEvaluator(), new DefaultPageAndSelectorEvaluator());
 
         // Step 1: Retrieve all tests and run them
         List<Test> dolibarrTests = Test.getAllTests(directory);

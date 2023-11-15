@@ -1,13 +1,12 @@
-Type, Selector, SelectorScore, PageScore, FinalScore 
-url, http://localhost:8080/, 6.00, 8.98, 6.60
-Name, username, 2.00, 8.68, 3.34
-Name, password, 2.00, 8.68, 3.34
-Name, password, 2.00, 8.68, 3.34
-CssSelector, .menu, 8.81, 3.75, 7.80
-LinkText, Strumenti di amministrazione, 8.19, 3.68, 7.29
-CssSelector, .menu, 8.81, 7.47, 8.54
-LinkText, Informazioni su Dolibarr, 8.19, 7.47, 8.05
-CssSelector, .menu, 8.81, 1.73, 7.39
-LinkText, Verifica integrità dei file, 8.19, 1.73, 6.90
-CssSelector, input:nth-child(7), 8.70, 7.36, 8.43
-CssSelector, .button, 8.81, 7.36, 8.52
+Type, Selector, SelectorScore, PageScore 
+Name, username, 0.40, 0.39
+Name, password, 0.40, 0.39
+Name, password, 0.40, 0.39
+CssSelector, .menu, 0.00, 0.37
+LinkText, Strumenti di amministrazione, 0.25, 0.37
+CssSelector, .menu, 0.00, 0.41
+LinkText, Informazioni su Dolibarr, 0.25, 0.41
+CssSelector, .menu, 0.00, 0.35
+LinkText, Verifica integrità dei file, 0.25, 0.35
+CssSelector, input:nth-child(7), 0.00, 0.40
+CssSelector, .button, 0.00, 0.40

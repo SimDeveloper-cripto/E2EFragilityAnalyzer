@@ -3,7 +3,7 @@ import org.openqa.selenium.By;
 
 public class Selector {
     private String selector, type;
-    private float selectorComplexity, selectorScore, selectorFinalScore;
+    private float selectorFinalScore;
 
     public Selector(String value, String type) {
         this.selector = value;
@@ -13,20 +13,17 @@ public class Selector {
     public Selector(By locator) {
         this.selector = createSelector(locator);
         this.type     = locator.getClass().getSimpleName().replaceFirst("By", "");
-        this.selectorScore = 0;
     }
 
     @Override
     public String toString() {
-        return "Selector = '" + selector + '\'' + ", Type = '" + type + '\'' + ", SelectorComplexity = " + selectorComplexity + '\'';
+        return "Selector = '" + selector + '\'' + ", Type = '" + type + '\'' + ", SelectorComplexityScore = " + getSelectorFinalScore() + '\'';
     }
 
     private String createSelector(By locator) {
         String stringLocator = locator.toString();
         int index = stringLocator.indexOf(":");
 
-        // String selectorString = stringLocator.substring(index + 2);
-        // System.out.println(selectorString); // Not necessary to print
         return stringLocator.substring(index + 2);
     }
 
@@ -44,22 +41,6 @@ public class Selector {
 
     public void setType(String type) {
         this.type = type;
-    }
-
-    public float getSelectorScore() {
-        return this.selectorScore;
-    }
-
-    public void setSelectorScore(float selectorScore) {
-        this.selectorScore = selectorScore;
-    }
-
-    public float getSelectorComplexity() {
-        return this.selectorComplexity;
-    }
-
-    public void setSelectorComplexity(float selectorComplexity) {
-        this.selectorComplexity = selectorComplexity;
     }
 
     public float getSelectorFinalScore() {
