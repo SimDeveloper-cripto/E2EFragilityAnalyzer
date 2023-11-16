@@ -1,5 +1,6 @@
 
 import org.jsoup.nodes.Document;
+import org.openqa.selenium.WebDriver;
 
 import java.util.Locale;
 import java.text.DecimalFormat;
@@ -23,16 +24,16 @@ public class Judge {
 
     public IPageAndSelectorScoreStrategy getPageAndSelectorScoreStrategy() { return pageAndSelectorScoreStrategy; }
 
-    public float applyMetricToSelector(Selector selector, Document document) {
-        return getSelectorScoreStrategy().evaluateSelectorComplexity(selector, document);
+    public float applyMetricToSelector(Selector selector, Document document, WebDriver driver) {
+        return getSelectorScoreStrategy().evaluateSelectorComplexity(selector, document, driver);
     }
 
     public float applyMetricToPage(Page documentPage) {
         return getPageScoreStrategy().evaluatePageComplexity(documentPage);
     }
 
-    public float applyMetricToPageAndSelector(Selector selector, Page page) {
-        return getPageAndSelectorScoreStrategy().evaluatePageAndSelectorComplexity(selector, page);
+    public float applyMetricToPageAndSelector(Selector selector, Page page, WebDriver driver) {
+        return getPageAndSelectorScoreStrategy().evaluatePageAndSelectorComplexity(selector, page, driver);
     }
 
     /* [OLD] THIS WAS THE OLD WAY TO PENALIZE A TEST FAILURE BECAUSE OF A SELECTOR

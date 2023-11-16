@@ -6,5 +6,5 @@ CssSelector, .menu, 0.00, 0.37
 LinkText, Impostazioni, 0.25, 0.37
 LinkText, Impostazioni -> Società/Organizzazione, 0.25, 0.40
 CssSelector, #no_vat, 0.00, 0.36
-XPath, //table[7]/tbody/tr/td[@width], 0.50, 0.36
+XPath, //table[7]/tbody/tr/td[@width], 0.90, 0.36
 Name, save, 0.40, 0.36

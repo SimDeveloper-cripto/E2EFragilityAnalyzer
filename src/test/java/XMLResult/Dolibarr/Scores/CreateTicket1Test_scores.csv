@@ -4,14 +4,14 @@ Id, password, 0.00, 0.39
 Id, password, 0.00, 0.39
 CssSelector, #mainmenua_ticket > .mainmenuaspan, 0.50, 0.37
 CssSelector, .menu, 0.00, 0.40
-XPath, //div[@id='id-left']/div/div[2]/div[3]/a, 0.50, 0.40
+XPath, //div[@id='id-left']/div/div[2]/div[3]/a, 0.80, 0.40
 Id, subject, 0.00, 0.37
 Id, message, 0.00, 0.37
 Name, add, 0.40, 0.37
 CssSelector, .center:nth-child(3) > .butAction, 0.50, 0.40
 CssSelector, .ui-button:nth-child(1), 0.00, 0.40
-XPath, //div[@id='id-right']/div/div[2]/div[3]/div/table/tbody/tr[7]/td/table/tbody/tr/td, 0.50, 0.40
-XPath, //div[@id='id-right']/div/div[2]/div[3]/div/table/tbody/tr[3]/td, 0.50, 0.40
-XPath, //div[2]/div/div[2]/div/div/div[4], 0.50, 0.40
-XPath, //div[@id='id-right']/div/div[2]/div/div/div[2]/span, 0.50, 0.38
-XPath, //div[@id='id-right']/div/div[2]/div[3]/div[2]/div, 0.50, 0.38
+XPath, //div[@id='id-right']/div/div[2]/div[3]/div/table/tbody/tr[7]/td/table/tbody/tr/td, 0.90, 0.40
+XPath, //div[@id='id-right']/div/div[2]/div[3]/div/table/tbody/tr[3]/td, 0.90, 0.40
+XPath, //div[2]/div/div[2]/div/div/div[4], 0.90, 0.40
+XPath, //div[@id='id-right']/div/div[2]/div/div/div[2]/span, 0.90, 0.38
+XPath, //div[@id='id-right']/div/div[2]/div[3]/div[2]/div, 0.90, 0.38

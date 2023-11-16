@@ -1,7 +1,10 @@
 
-import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Document;
-import org.jsoup.select.QueryParser;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 /* [DESCRIPTION]
     - The final score value is set to the interval [0-1].
@@ -9,7 +12,7 @@ import org.jsoup.select.QueryParser;
 **/
 public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrategy {
     @Override
-    public float evaluateSelectorComplexity(Selector selector, Document document) {
+    public float evaluateSelectorComplexity(Selector selector, Document document, WebDriver driver) {
         String selectorType   = selector.getType();
         String selectorString = selector.getSelector();
 
@@ -42,7 +45,7 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
                 typeScore = evaluateCssSelectorTypeScore(selectorString, depth);
                 break;
             case "XPath":
-                typeScore = evaluateXPathTypeScore(selectorString, depth, document);
+                typeScore = evaluateXPathTypeScore(selectorString, depth, driver);
                 break;
             case "TagName":
             case "Name":
@@ -93,18 +96,15 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
         return 0.0f;
     }
 
-    private static float evaluateXPathTypeScore(String selectorString, int depth, Document document) {
-        if (depth >= 2) {
+    private static float evaluateXPathTypeScore(String selectorString, int depth, WebDriver driver) {
+        if (depth >= 1) {
             try {
-                String selector = QueryParser.parse(selectorString).toString();
-                Element lastElement = document.select(selector).last();
+                List<WebElement> elements = driver.findElements(By.xpath(selectorString));
 
-                if (lastElement != null) {
-                    return evaluateXPathElementType(lastElement);
-                }
+                int size = elements.size();
+                if (size > 0) return evaluateXPathElementType(elements.get(size - 1));
             } catch(org.jsoup.select.Selector.SelectorParseException e) {
-                System.err.println("Errore nel selettore: " + selectorString);
-                System.err.println("SelectorParseException: " + e.getMessage());
+                e.printStackTrace();
             }
         }
         return 0.0f;
@@ -125,19 +125,35 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
         }
     }
 
-    private static float evaluateXPathElementType(Element lastElement) {
-        String idAttr    = lastElement.attr("id");
-        String classAttr = lastElement.attr("class");
+    private static float evaluateXPathElementType(WebElement lastElement) { // [0-1]
+        float score = 0.0f;
 
-        if (!idAttr.isEmpty() && !classAttr.isEmpty()) {
-            return 0.2f;
-        } else if (!idAttr.isEmpty()) {    // Does not have class but only id
-            return 0.0f;
-        } else if (!classAttr.isEmpty()) { // Does not have id but only class
-            return 0.5f;
+        // If the element has associated an id or name
+        if ((lastElement.getAttribute("id") != null && !lastElement.getAttribute("id").isEmpty())
+            || (lastElement.getAttribute("name") != null && !lastElement.getAttribute("name").isEmpty())) {
+            score = 0.0f;
         }
 
-        // Simple Tag Name
-        return 0.8f; // TODO: We could assing a score depending on what TagName it is (span, button, input, ...)
+        // If the element has associated a class
+        if (lastElement.getAttribute("class") != null && !lastElement.getAttribute("class").isEmpty()) {
+            score = 0.5f;
+        }
+
+        // If the element has associated a tag name
+        if (lastElement.getTagName() != null && !lastElement.getTagName().isEmpty()) {
+            score = 0.8f;
+        }
+
+        // If the element has associated a link text
+        if (lastElement.getTagName().equalsIgnoreCase("a") && lastElement.getText() != null && !lastElement.getText().isEmpty()) {
+            score = 0.6f;
+        }
+
+        // If the element has associated a partial link text
+        if (lastElement.getTagName().equalsIgnoreCase("a") && lastElement.getText() != null && lastElement.getText().contains("partial text")) {
+            score = 0.7f;
+        }
+
+        return score;
     }
 }

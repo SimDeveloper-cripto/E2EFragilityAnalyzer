@@ -8,7 +8,7 @@ CssSelector, .menu, 0.00, 0.41
 LinkText, Backup, 0.25, 0.41
 Id, radio_dump_mysql_nobin, 0.00, 0.39
 Id, buttonGo, 0.00, 0.39
-XPath, //tr[@id='row-AFTER0POS1']/td[6]/a/span, 0.50, 0.39
+XPath, //tr[@id='row-AFTER0POS1']/td[6]/a/span, 0.90, 0.39
 Id, radio_dump_mysql_nobin, 0.00, 0.39
 Id, radio_dump_mysql, 0.00, 0.39
 Id, radio_dump_mysql_nobin, 0.00, 0.39

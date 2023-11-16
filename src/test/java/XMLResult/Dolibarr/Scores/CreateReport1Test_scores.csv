@@ -7,9 +7,9 @@ CssSelector, .menu, 0.00, 0.40
 LinkText, Reportistiche, 0.25, 0.40
 LinkText, Reportistiche, 0.25, 0.40
 CssSelector, .button, 0.00, 0.40
-XPath, //div[@id='id-right']/div/table[2]/tbody/tr/td, 0.50, 0.40
-XPath, //div[@id='id-right']/div/table/tbody/tr/td[2]/div, 0.50, 0.40
-XPath, //div[@id='id-right']/div/table[2]/tbody/tr/td[3], 0.50, 0.40
-XPath, //div[@id='id-right']/div/table[2]/tbody/tr/td, 0.50, 0.40
-XPath, //div[@id='id-right']/div/table/tbody/tr/td[2]/div, 0.50, 0.40
-XPath, //div[@id='id-right']/div/table[2]/tbody/tr/td[3], 0.50, 0.40
+XPath, //div[@id='id-right']/div/table[2]/tbody/tr/td, 0.90, 0.40
+XPath, //div[@id='id-right']/div/table/tbody/tr/td[2]/div, 0.90, 0.40
+XPath, //div[@id='id-right']/div/table[2]/tbody/tr/td[3], 0.90, 0.40
+XPath, //div[@id='id-right']/div/table[2]/tbody/tr/td, 0.90, 0.40
+XPath, //div[@id='id-right']/div/table/tbody/tr/td[2]/div, 0.90, 0.40
+XPath, //div[@id='id-right']/div/table[2]/tbody/tr/td[3], 0.90, 0.40
