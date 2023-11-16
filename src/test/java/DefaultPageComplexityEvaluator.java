@@ -39,18 +39,13 @@ public class DefaultPageComplexityEvaluator implements IPageScoreStrategy {
 
     private static float evaluateLinkRatio(Document document) {
         Elements links = document.select("a");
-
         float nLinks = links.size();
-        float nElem  = (float) getNumberOfElements();
-
-        return (nLinks / nElem); // [0-1]
+        return (nLinks / getNumberOfElements()); // [0-1]
     }
 
     private static float evaluateDomRatio(Document document) {
         float depth  = (float) evaluatePageDepth(document.child(0)); // root element
-        float nElem  = (float) getNumberOfElements();
-
-        return (depth / nElem); // [0-1]
+        return (depth / getNumberOfElements()); // [0-1]
     }
 
     private static float evaluateBranchingFactorRatio(Document document) {
@@ -58,9 +53,7 @@ public class DefaultPageComplexityEvaluator implements IPageScoreStrategy {
         for (Element elem : document.select("*")) {
             sumBranchingFactor += evaluateBranchingFactorForElement(elem);
         }
-
-        float nElem  = (float) getNumberOfElements();
-        return ((float) sumBranchingFactor / nElem); // [0-1]
+        return ((float) sumBranchingFactor / getNumberOfElements()); // [0-1]
     }
 
     /* HELPER FUNCTIONS */

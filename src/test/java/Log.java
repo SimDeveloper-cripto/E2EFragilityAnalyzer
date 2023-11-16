@@ -8,9 +8,6 @@ import java.text.DecimalFormatSymbols;
     - Log class is used to show the user Test results on terminal and also in the specified files
 * */
 public class Log {
-    private float selectorScore, pageScore, pageAndSelectorScore;
-    private double selectorFinalScore;
-
     private void fillResultFile(List<Test> testsJudge, String csvFileNamePath, String columnName, DecimalFormat df) {
         try {
             File inputFile = new File(csvFileNamePath);
@@ -91,9 +88,9 @@ public class Log {
                     String nameSelector = selector.getSelector();
                     String typeSelector = selector.getType();
                     float selectorScore = selector.getSimpleScore();
-                    float pageScore     = page.getPageComplexity();
+                    float pageScore     = selector.getPageScore();
                     float pageAndSelectorScore = selector.getPageAndSelectorScore();
-                    double selectorFinalScore = selector.getSelectorFinalScore();
+                    double selectorFinalScore  = selector.getSelectorFinalScore();
 
                     String line = typeSelector + ", " + nameSelector + ", " + selectorScore +
                             ", " + pageScore + ", " + pageAndSelectorScore + ", " + selectorFinalScore + "\n";
@@ -131,8 +128,8 @@ public class Log {
             System.out.println("Test name: " + testJudged.getClassName());
             for (Selector selector : testJudged.getSelectors()) {
                 System.out.println("\tSelector: " + selector.getSelector());
-                System.out.println("\t\tSelectorScore: " + df.format(selector.getSimpleScore()) + ", PageScore: " + df.format(getPageScoreToLog())
-                        + ", PageAndSelectorScore: " + df.format(selector.getPageAndSelectorScore()) + ", SelectorFinalScore: " + df.format(selector.getSelectorFinalScore()));
+                System.out.println("\t\tSelectorScore: " + selector.getSimpleScore() + ", PageScore: " + selector.getPageScore()
+                        + ", PageAndSelectorScore: " + selector.getPageAndSelectorScore() + ", SelectorFinalScore: " + selector.getSelectorFinalScore());
             }
             System.out.println("Test Score (by harmonic Mean): " + testJudged.getTestScore());
             System.out.println(" ");
@@ -140,13 +137,5 @@ public class Log {
         System.out.println(" ");
         double result = PointBiserialCorrelationCoefficient.getCorrelation(testsJudged);
         System.out.println("The value of correlation coefficient is: " + result);
-    }
-
-    public void setPageScoreToLog(float pageScore) {
-        this.pageScore = pageScore;
-    }
-
-    private float getPageScoreToLog() {
-        return pageScore;
     }
 }

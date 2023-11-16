@@ -64,12 +64,12 @@ public class SelectorWebDriver implements WebDriverListener {
 
 		float result = (selectorComplexityScore + pageComplexityScore + pageAndSelectorComplexityScore) / 3; // [0-1]
 
+		page.setPageComplexity(pageComplexityScore); // TODO: This is useless now (refactor)
+
 		selector.setSimpleScore(selectorComplexityScore);
-		page.setPageComplexity(pageComplexityScore);
 		selector.setPageAndSelectorScore(pageAndSelectorComplexityScore);
 		selector.setSelectorFinalScore(result);
-
-		log.setPageScoreToLog(pageComplexityScore);
+		selector.setPageScore(pageComplexityScore);
 
 		System.out.println("(Analyzed) " + selector + "  " + page + "  " + "PageAndSelectorComplexityScore = " + pageAndSelectorComplexityScore + "\n");
 
