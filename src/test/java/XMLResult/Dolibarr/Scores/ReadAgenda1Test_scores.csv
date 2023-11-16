@@ -1,14 +1,15 @@
-Type, Selector, SelectorScore, PageScore 
-Id, username, 0.13, 0.39
-Id, password, 0.13, 0.39
-Id, password, 0.13, 0.39
-CssSelector, .agenda, 0.12, 0.37
-CssSelector, .fa-calendar-week, 0.13, 0.39
-CssSelector, .fa-calendar-day, 0.13, 0.38
-Id, select2-search_projectid-container, 0.13, 0.38
-Id, selectsearch_status, 0.12, 0.37
-Id, select2-search_socid-container, 0.13, 0.38
-Id, select2-search_filtert-container, 0.13, 0.38
-Id, select2-search_actioncode-container, 0.13, 0.38
-Id, check_birthday, 0.13, 0.38
-Id, check_birthday, 0.13, 0.38
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore 
+
+Id, username, 0.0, 0.38759688, 0.0, 0.12919895350933075
+Id, password, 0.0, 0.38759688, 0.0, 0.12919895350933075
+Id, password, 0.0, 0.38759688, 0.0, 0.12919895350933075
+CssSelector, .agenda, 0.25, 0.36732528, 0.0, 0.20577509701251984
+CssSelector, .fa-calendar-week, 0.25, 0.3849969, 0.0, 0.21166563034057617
+CssSelector, .fa-calendar-day, 0.25, 0.3835592, 0.0, 0.21118640899658203
+Id, select2-search_projectid-container, 0.0, 0.38006985, 0.0, 0.12668995559215546
+Id, selectsearch_status, 0.0, 0.37257555, 0.0, 0.12419185042381287
+Id, select2-search_socid-container, 0.0, 0.38006985, 0.0, 0.12668995559215546
+Id, select2-search_filtert-container, 0.0, 0.37973332, 0.0, 0.12657777965068817
+Id, select2-search_actioncode-container, 0.0, 0.3797705, 0.0, 0.12659016251564026
+Id, check_birthday, 0.0, 0.37973332, 0.0, 0.12657777965068817
+Id, check_birthday, 0.0, 0.38006985, 0.0, 0.12668995559215546

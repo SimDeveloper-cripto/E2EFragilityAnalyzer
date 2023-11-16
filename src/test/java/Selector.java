@@ -3,7 +3,7 @@ import org.openqa.selenium.By;
 
 public class Selector {
     private String selector, type;
-    private float selectorFinalScore;
+    private float score, pageAndSelectorScore, selectorFinalScore;
 
     public Selector(String value, String type) {
         this.selector = value;
@@ -17,7 +17,7 @@ public class Selector {
 
     @Override
     public String toString() {
-        return "Selector = '" + selector + '\'' + ", Type = '" + type + '\'' + ", SelectorComplexityScore = " + getSelectorFinalScore() + '\'';
+        return "Selector = '" + selector + '\'' + ", Type = '" + type + '\'' + ", SelectorFinalScore = " + getSelectorFinalScore() + '\'';
     }
 
     private String createSelector(By locator) {
@@ -43,8 +43,24 @@ public class Selector {
         this.type = type;
     }
 
+    public void setSimpleScore(float score) {
+        this.score = score;
+    }
+
+    public float getSimpleScore() {
+        return score;
+    }
+
+    public void setPageAndSelectorScore(float score) {
+        this.pageAndSelectorScore = score;
+    }
+
+    public float getPageAndSelectorScore() {
+        return pageAndSelectorScore;
+    }
+
     public double getSelectorFinalScore() {
-        return (double) this.selectorFinalScore;
+        return this.selectorFinalScore;
     }
 
     public void setSelectorFinalScore(float selectorFinalScore) {

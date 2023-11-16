@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+// import java.util.regex.Matcher;
+// import java.util.regex.Pattern;
 
 public class DefaultPageAndSelectorEvaluator implements IPageAndSelectorScoreStrategy {
     @Override
@@ -22,14 +22,16 @@ public class DefaultPageAndSelectorEvaluator implements IPageAndSelectorScoreStr
         switch (selectorType) {
             case "CssSelector":
                 nElemFirstMatch   = getNumberOfMatches(selectorString, selectorType, driver);
+                System.out.println("(Debug) Old css selector: " + selectorString);
                 newSelectorString = removeFirstLevelCssSelector(selectorString);
+                System.out.println("(Debug) New css selector: " + newSelectorString);
                 nElemSecondMatch  = getNumberOfMatches(newSelectorString, selectorType, driver);
                 break;
             case "XPath":
                 nElemFirstMatch   = getNumberOfMatches(selectorString, selectorType, driver);
-                // System.out.println("(Debug) Old xpath selector: " + selectorString);
+                System.out.println("(Debug) Old xpath selector: " + selectorString);
                 newSelectorString = removeFirstLevelXPath(selectorString);
-                // System.out.println("(Debug) New xpath selector: " + newSelectorString);
+                System.out.println("(Debug) New xpath selector: " + newSelectorString);
                 nElemSecondMatch  = getNumberOfMatches(newSelectorString, selectorType, driver);
                 break;
             default:
@@ -39,34 +41,52 @@ public class DefaultPageAndSelectorEvaluator implements IPageAndSelectorScoreStr
         if (nElemSecondMatch == 0) { // Fragile selector, need to penalize
             ratio = 0.2f;            // Could write 0.1f. So that (1 - ratio) is as close as possible to 1
         } else {
-            ratio = (float) (nElemFirstMatch / nElemSecondMatch);
+            ratio = (float) nElemFirstMatch / (float) nElemSecondMatch;
         }
 
         return (1 - ratio);
     }
 
     private String removeFirstLevelCssSelector(String selectorString) {
-        Pattern pattern = Pattern.compile("^\\s*([^>]+>)\\s*(.*)$");
-        Matcher matcher = pattern.matcher(selectorString);
-
-        if (matcher.matches()) {
-            return matcher.group(2).trim();
+/*
+        int index = selectorString.indexOf(' ');
+        if (index != -1) {
+            return selectorString.substring(index + 1); // Exclude the first part of the selector
         } else {
             return selectorString;
         }
+*/
+        String[] combinators = { ">", "+", "~", " " };
+
+        for (String combinator : combinators) {
+            int index = selectorString.indexOf(combinator);
+            if (index != -1 && index < selectorString.length() - 1) {
+                return selectorString.substring(index + 1).trim();
+            }
+        }
+        return selectorString.trim();
     }
 
     private String removeFirstLevelXPath(String selectorString) {
         if (selectorString.startsWith("//")) {
-            int posFirstBar = selectorString.indexOf("/", 2); // The XPath string starts with "//"
-
-            if (posFirstBar != -1)
-                return selectorString.substring(posFirstBar);
+            int index = selectorString.indexOf("/", 2); // The XPath string starts with "//"
+            if (index != -1)
+                return "//" + selectorString.substring(index + 1);
         }
         return selectorString;
+ /*
+        int index = selectorString.indexOf('/');
+        if (index != -1) {
+            return selectorString.substring(index + 1); // Exclude the first part of the XPath
+        } else {
+            return selectorString;
+        }
+ */
     }
 
     private static int getNumberOfMatches(String selectorString, String type, WebDriver driver) {
+        System.err.println("getNumberOfMatches(), selector received: " + selectorString);
+
         List<WebElement> list;
         if (type.equals("CssSelector")) {
             list = driver.findElements(By.cssSelector(selectorString));

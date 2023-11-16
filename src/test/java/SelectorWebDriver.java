@@ -62,17 +62,15 @@ public class SelectorWebDriver implements WebDriverListener {
 		float pageComplexityScore            = judge.applyMetricToPage(page);
 		float pageAndSelectorComplexityScore = judge.applyMetricToPageAndSelector(selector, page, driver);
 
-		page.setPageComplexity(pageComplexityScore);
-
 		float result = (selectorComplexityScore + pageComplexityScore + pageAndSelectorComplexityScore) / 3; // [0-1]
+
+		selector.setSimpleScore(selectorComplexityScore);
+		page.setPageComplexity(pageComplexityScore);
+		selector.setPageAndSelectorScore(pageAndSelectorComplexityScore);
 		selector.setSelectorFinalScore(result);
 
-		log.setSelectorScoreToLog(selectorComplexityScore);
 		log.setPageScoreToLog(pageComplexityScore);
-		log.setPageAndSelectorScoreToLog(pageAndSelectorComplexityScore);
-		log.setSelectorFinalScoreToLog(selector.getSelectorFinalScore());
 
-		// TODO: pageAndSelectorComplexityScore should also be printed inside a .csv file).
 		System.out.println("(Analyzed) " + selector + "  " + page + "  " + "PageAndSelectorComplexityScore = " + pageAndSelectorComplexityScore + "\n");
 
 		visitedSelectors.add(selector);

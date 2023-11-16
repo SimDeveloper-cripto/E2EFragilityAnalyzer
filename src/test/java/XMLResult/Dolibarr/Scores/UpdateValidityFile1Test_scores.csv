@@ -1,12 +1,13 @@
-Type, Selector, SelectorScore, PageScore 
-Name, username, 0.26, 0.39
-Name, password, 0.26, 0.39
-Name, password, 0.26, 0.39
-CssSelector, .menu, 0.12, 0.37
-LinkText, Strumenti di amministrazione, 0.21, 0.37
-CssSelector, .menu, 0.14, 0.41
-LinkText, Informazioni su Dolibarr, 0.22, 0.41
-CssSelector, .menu, 0.12, 0.35
-LinkText, Verifica integrità dei file, 0.20, 0.35
-CssSelector, input:nth-child(7), 0.13, 0.40
-CssSelector, .button, 0.13, 0.40
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore 
+
+Name, username, 0.4, 0.38759688, 0.0, 0.2625322937965393
+Name, password, 0.4, 0.38759688, 0.0, 0.2625322937965393
+Name, password, 0.4, 0.38759688, 0.0, 0.2625322937965393
+CssSelector, .menu, 0.25, 0.36732528, 0.0, 0.20577509701251984
+LinkText, Strumenti di amministrazione, 0.25, 0.3662779, 0.0, 0.20542597770690918
+CssSelector, .menu, 0.25, 0.4052936, 0.0, 0.21843118965625763
+LinkText, Informazioni su Dolibarr, 0.25, 0.4052936, 0.0, 0.21843118965625763
+CssSelector, .menu, 0.25, 0.3466147, 0.0, 0.19887156784534454
+LinkText, Verifica integrità dei file, 0.25, 0.3466147, 0.0, 0.19887156784534454
+CssSelector, input:nth-child(7), 0.4, 0.40198323, 0.0, 0.26732775568962097
+CssSelector, .button, 0.25, 0.40198323, 0.0, 0.2173277586698532

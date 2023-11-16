@@ -1,40 +1,41 @@
-Type, Selector, SelectorScore, PageScore 
-Id, username, 0.13, 0.39
-Id, password, 0.13, 0.39
-Id, password, 0.13, 0.39
-CssSelector, .project, 0.12, 0.37
-CssSelector, .menu, 0.13, 0.38
-LinkText, Nuova opportunità o progetto, 0.21, 0.38
-Name, title, 0.26, 0.39
-CssSelector, .button:nth-child(1), 0.13, 0.39
-Id, select2-model-container, 0.13, 0.40
-Id, select2-model-container, 0.13, 0.40
-Id, id-right, 0.13, 0.40
-Id, project, 0.13, 0.40
-Id, contact, 0.13, 0.40
-Id, tasks, 0.13, 0.40
-Id, tasks, 0.13, 0.40
-Id, timespent, 0.13, 0.40
-Id, element, 0.13, 0.40
-Id, ticket, 0.13, 0.40
-Id, notes, 0.13, 0.40
-Id, document, 0.13, 0.40
-Id, agenda, 0.13, 0.40
-Id, project, 0.13, 0.40
-Id, contact, 0.13, 0.40
-Id, select2-model-container, 0.13, 0.40
-Id, select2-model-container, 0.13, 0.40
-Id, id-right, 0.13, 0.40
-Id, tasks, 0.13, 0.40
-Id, tasks, 0.13, 0.40
-Id, timespent, 0.13, 0.40
-Id, element, 0.13, 0.40
-Id, ticket, 0.13, 0.40
-Id, select2-model-container, 0.13, 0.40
-Id, id-right, 0.13, 0.40
-Id, id-right, 0.13, 0.40
-Id, tasks, 0.13, 0.40
-Id, tasks, 0.13, 0.40
-Id, timespent, 0.13, 0.40
-Id, element, 0.13, 0.40
-Id, element, 0.13, 0.40
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore 
+
+Id, username, 0.0, 0.38759688, 0.0, 0.12919895350933075
+Id, password, 0.0, 0.38759688, 0.0, 0.12919895350933075
+Id, password, 0.0, 0.38759688, 0.0, 0.12919895350933075
+CssSelector, .project, 0.25, 0.36732528, 0.0, 0.20577509701251984
+CssSelector, .menu, 0.25, 0.38341308, 0.0, 0.21113769710063934
+LinkText, Nuova opportunità o progetto, 0.25, 0.38341308, 0.0, 0.21113769710063934
+Name, title, 0.4, 0.3861709, 0.0, 0.26205697655677795
+CssSelector, .button:nth-child(1), 0.25, 0.38832608, 0.0, 0.2127753496170044
+Id, select2-model-container, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, select2-model-container, 0.0, 0.39670932, 0.0, 0.13223643600940704
+Id, id-right, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, project, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, contact, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, tasks, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, tasks, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, timespent, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, element, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, ticket, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, notes, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, document, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, agenda, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, project, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, contact, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, select2-model-container, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, select2-model-container, 0.0, 0.39670932, 0.0, 0.13223643600940704
+Id, id-right, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, tasks, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, tasks, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, timespent, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, element, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, ticket, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, select2-model-container, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, id-right, 0.0, 0.39670932, 0.0, 0.13223643600940704
+Id, id-right, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, tasks, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, tasks, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, timespent, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, element, 0.0, 0.39764997, 0.0, 0.13254998624324799
+Id, element, 0.0, 0.39764997, 0.0, 0.13254998624324799

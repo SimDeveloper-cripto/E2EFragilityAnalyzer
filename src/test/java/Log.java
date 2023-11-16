@@ -77,12 +77,11 @@ public class Log {
             }
         }
 
-        // TODO: MODIFY RESULT.csv
         for (Test test : testsJudged) {
             String fileName = basePath + test.getTestName() + "_scores.csv";
 
             try (FileWriter fileWriter = new FileWriter(fileName)) {
-                String index = "Type, Selector, SelectorScore, PageScore \n";
+                String index = "Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore \n\n";
 
                 fileWriter.write(index);
                 for (int i = 0; i < test.getSelectors().size(); i++) {
@@ -91,11 +90,13 @@ public class Log {
 
                     String nameSelector = selector.getSelector();
                     String typeSelector = selector.getType();
+                    float selectorScore = selector.getSimpleScore();
                     float pageScore     = page.getPageComplexity();
-                    double selectorScore = selector.getSelectorFinalScore();
+                    float pageAndSelectorScore = selector.getPageAndSelectorScore();
+                    double selectorFinalScore = selector.getSelectorFinalScore();
 
-                    String line = typeSelector + ", " + nameSelector + ", " + df.format(selectorScore) +
-                            ", " + df.format(pageScore) + "\n";
+                    String line = typeSelector + ", " + nameSelector + ", " + selectorScore +
+                            ", " + pageScore + ", " + pageAndSelectorScore + ", " + selectorFinalScore + "\n";
 
                     fileWriter.write(line);
                 }
@@ -123,29 +124,22 @@ public class Log {
         fillResultFile(testsJudged, directory,"Metric", df);
     }
 
+    // TODO: MODIFY RESULT.CSV, add pageAndSelectorComplexityScore
     public void logResultForEachTest(List<Test> testsJudged, DecimalFormat df) {
         System.out.println(" ");
         for (Test testJudged : testsJudged) {
-            System.out.println("Nome Test: " + testJudged.getClassName());
+            System.out.println("Test name: " + testJudged.getClassName());
             for (Selector selector : testJudged.getSelectors()) {
-                System.out.println("\tSelettore: " + selector.getSelector());
-                System.out.println("\t\tScoreSelettore: " + getSelectorScoreToLog() + ", ScorePagina: " + getPageScoreToLog()
-                        + ", ScorePaginaESelettore: " + getPageAndSelectorScoreToLog() + ", SelectorFinalScore: " + getSelectorFinalScoreToLog());
+                System.out.println("\tSelector: " + selector.getSelector());
+                System.out.println("\t\tSelectorScore: " + df.format(selector.getSimpleScore()) + ", PageScore: " + df.format(getPageScoreToLog())
+                        + ", PageAndSelectorScore: " + df.format(selector.getPageAndSelectorScore()) + ", SelectorFinalScore: " + df.format(selector.getSelectorFinalScore()));
             }
-            System.out.println("Score del Test (Media Armonica): " + testJudged.getTestScore());
+            System.out.println("Test Score (by harmonic Mean): " + testJudged.getTestScore());
             System.out.println(" ");
         }
         System.out.println(" ");
         double result = PointBiserialCorrelationCoefficient.getCorrelation(testsJudged);
         System.out.println("The value of correlation coefficient is: " + result);
-    }
-
-    public void setSelectorScoreToLog(float selectorScore) {
-        this.selectorScore = selectorScore;
-    }
-
-    private float getSelectorScoreToLog() {
-        return selectorScore;
     }
 
     public void setPageScoreToLog(float pageScore) {
@@ -154,21 +148,5 @@ public class Log {
 
     private float getPageScoreToLog() {
         return pageScore;
-    }
-
-    public void setPageAndSelectorScoreToLog(float score) {
-        this.pageAndSelectorScore = score;
-    }
-
-    private float getPageAndSelectorScoreToLog() {
-        return pageAndSelectorScore;
-    }
-
-    public void setSelectorFinalScoreToLog(double selectorFinalScore) {
-        this.selectorFinalScore = selectorFinalScore;
-    }
-
-    private double getSelectorFinalScoreToLog() {
-        return selectorFinalScore;
     }
 }

@@ -1,7 +1,8 @@
-Type, Selector, SelectorScore, PageScore 
-Id, username, 0.13, 0.39
-Id, password, 0.13, 0.39
-Id, username, 0.13, 0.39
-CssSelector, #mainmenua_members > .mainmenuaspan, 0.62, 0.37
-CssSelector, .menu, 0.13, 0.40
-LinkText, Adesioni, 0.22, 0.40
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore 
+
+Id, username, 0.0, 0.38759688, 0.0, 0.12919895350933075
+Id, password, 0.0, 0.38759688, 0.0, 0.12919895350933075
+Id, username, 0.0, 0.38759688, 0.0, 0.12919895350933075
+CssSelector, #mainmenua_members > .mainmenuaspan, 0.5, 0.36732528, 0.95238096, 0.6065687537193298
+CssSelector, .menu, 0.25, 0.39574757, 0.0, 0.2152491807937622
+LinkText, Adesioni, 0.25, 0.39574757, 0.0, 0.2152491807937622

@@ -1,10 +1,6 @@
 
 import org.jsoup.nodes.Document;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 /* [DESCRIPTION]
     - The final score value is set to the interval [0-1].
@@ -25,12 +21,12 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
             case "CssSelector":
                 depth = evaluateCssSelectorHierarchyDepth(selectorString);
                 level = depth + 1;
-                hierarchyScore = (float) (1 - (1 / level)); // [0-1]
+                hierarchyScore = (1 - ((float) 1 / level)); // [0-1]
                 break;
             case "XPath":
                 depth = evaluateXPathSelectorHierarchyDepth(selectorString);
                 level = depth + 1;
-                hierarchyScore = (float) (1 - (1 / level)); // [0-1]
+                hierarchyScore = (1 - ((float) 1 / level)); // [0-1]
                 break;
             default:
                 hierarchyScore = 0.0f;
@@ -89,25 +85,20 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
     }
 
     private static float evaluateCssSelectorTypeScore(String selectorString, int depth) {
-        if (depth >= 2) {
+        if (depth >= 1) {
             String lastElement = getLastCssSelectorElement(selectorString);
             return evaluateCssSelectorElementType(lastElement);
         }
-        return 0.0f;
+        return evaluateCssSelectorElementType(selectorString);
     }
 
     private static float evaluateXPathTypeScore(String selectorString, int depth, WebDriver driver) {
         if (depth >= 1) {
-            try {
-                List<WebElement> elements = driver.findElements(By.xpath(selectorString));
-
-                int size = elements.size();
-                if (size > 0) return evaluateXPathElementType(elements.get(size - 1));
-            } catch(org.jsoup.select.Selector.SelectorParseException e) {
-                e.printStackTrace();
-            }
+            String lastLevel = selectorString.substring(selectorString.lastIndexOf("/") + 1);
+            String evaluate = "//" + lastLevel;
+            return evaluateXPathElementType(evaluate);
         }
-        return 0.0f;
+        return evaluateXPathElementType(selectorString);
     }
 
     private static String getLastCssSelectorElement(String selectorString) {
@@ -125,35 +116,52 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
         }
     }
 
-    private static float evaluateXPathElementType(WebElement lastElement) { // [0-1]
-        float score = 0.0f;
-
-        // If the element has associated an id or name
-        if ((lastElement.getAttribute("id") != null && !lastElement.getAttribute("id").isEmpty())
-            || (lastElement.getAttribute("name") != null && !lastElement.getAttribute("name").isEmpty())) {
-            score = 0.0f;
+    private static float evaluateXPathElementType(String xpathLastElement) {
+        // In order Best to Worst
+        if (xpathLastElement.contains("@id") || xpathLastElement.contains("@name")) {
+            return 0.0f;
+        } else if (xpathLastElement.contains("@class")) {
+            return 0.5f;
+        } else if (xpathLastElement.contains("[text()")) { // LinkText
+            return 0.6f;
+        } else if (xpathLastElement.contains("[contains(text()")) { // Partial LinkText
+            return 0.7f;
         }
 
-        // If the element has associated a class
-        if (lastElement.getAttribute("class") != null && !lastElement.getAttribute("class").isEmpty()) {
-            score = 0.5f;
-        }
-
-        // If the element has associated a tag name
-        if (lastElement.getTagName() != null && !lastElement.getTagName().isEmpty()) {
-            score = 0.8f;
-        }
-
-        // If the element has associated a link text
-        if (lastElement.getTagName().equalsIgnoreCase("a") && lastElement.getText() != null && !lastElement.getText().isEmpty()) {
-            score = 0.6f;
-        }
-
-        // If the element has associated a partial link text
-        if (lastElement.getTagName().equalsIgnoreCase("a") && lastElement.getText() != null && lastElement.getText().contains("partial text")) {
-            score = 0.7f;
-        }
-
-        return score;
+        return 0.8f;
     }
+
+    /*
+        private static float evaluateXPathElementType(WebElement lastElement) { // [0-1]
+            float score = 0.0f;
+
+            // If the element has associated an id or name
+            if ((lastElement.getAttribute("id") != null && !lastElement.getAttribute("id").isEmpty())
+                || (lastElement.getAttribute("name") != null && !lastElement.getAttribute("name").isEmpty())) {
+                score = 0.0f;
+            }
+
+            // If the element has associated a class
+            if (lastElement.getAttribute("class") != null && !lastElement.getAttribute("class").isEmpty()) {
+                score = 0.5f;
+            }
+
+            // If the element has associated a tag name
+            if (lastElement.getTagName() != null && !lastElement.getTagName().isEmpty()) {
+                score = 0.8f;
+            }
+
+            // If the element has associated a link text
+            if (lastElement.getTagName().equalsIgnoreCase("a") && lastElement.getText() != null && !lastElement.getText().isEmpty()) {
+                score = 0.6f;
+            }
+
+            // If the element has associated a partial link text
+            if (lastElement.getTagName().equalsIgnoreCase("a") && lastElement.getText() != null && lastElement.getText().contains("partial text")) {
+                score = 0.7f;
+            }
+
+            return score;
+        }
+    */
 }
