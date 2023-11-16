@@ -14,23 +14,15 @@ public class JUnitRunner {
     public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException, IOException {
         String directory = "src/test/java/JUnit/" + SoftwareUsed; // JUnit test directory
 
+        Log log = new Log();
         Judge judge = new Judge(new DefaultSelectorComplexityEvaluator(), new DefaultPageComplexityEvaluator(), new DefaultPageAndSelectorEvaluator());
 
-        // Step 1: Retrieve all tests and run them
         List<Test> dolibarrTests = Test.getAllTests(directory);
 
-        TestRunner testRunner = new TestRunner(dolibarrTests, judge);
+        TestRunner testRunner = new TestRunner(dolibarrTests, judge, log);
         List<Test> tests = testRunner.executeTests();
 
-        // Step 3: For each test assign its score
         List<Test> testsJudged = testRunner.assignScoreToEachTest(tests);
-
-        // Step 4: Calculate the correlation coefficient
-        double result = PointBiserialCorrelationCoefficient.getCorrelation(testsJudged);
-        System.out.println("The value of correlation coefficient is: " + result);
-
-        // Step 5: Show results
-        Log log = new Log();
         log.logResult(testsJudged, testRunner);
     }
 }

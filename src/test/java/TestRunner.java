@@ -17,11 +17,13 @@ public class TestRunner {
     private final Judge judge;
     private WebDriver driver;
     private SelectorWebDriver listener;
+    private Log log;
     private int numberOfSuccessTests = 0, numberOfFailedTests = 0;
 
-    public TestRunner(List<Test> tests, Judge judge) {
+    public TestRunner(List<Test> tests, Judge judge, Log log) {
         this.judge = judge;
         this.testsToValidate = tests;
+        this.log = log;
     }
 
     public int getNumberOfSuccessTests() {
@@ -48,7 +50,7 @@ public class TestRunner {
         WebDriverListener listenerDriver;
 
         driver         = new ChromeDriver(service);
-        listener       = new SelectorWebDriver(judge);
+        listener       = new SelectorWebDriver(judge, log);
         listenerDriver = listener; // This class is used to track the pages and selectors visited during test execution (Observer)
         driver         = new EventFiringDecorator(listenerDriver).decorate(driver);
 
@@ -133,8 +135,8 @@ public class TestRunner {
         double scoreTest;
 
         for (Test testToJudge: tests) {
-            scoreTest = Judge.getTestScore(testToJudge); // TODO: Return value is always 0 because of HarmonicMean (Judge)
-            testToJudge.setTestScore(scoreTest);         // TODO: Return value is always 0 because of HarmonicMean (Judge)
+            scoreTest = Judge.getTestScore(testToJudge);
+            testToJudge.setTestScore(scoreTest);
         }
         return tests;
     }

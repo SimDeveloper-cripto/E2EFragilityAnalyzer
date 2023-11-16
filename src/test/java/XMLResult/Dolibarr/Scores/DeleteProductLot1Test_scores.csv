@@ -1,14 +1,14 @@
 Type, Selector, SelectorScore, PageScore 
-Id, username, 0.00, 0.39
-Id, password, 0.00, 0.39
-Id, password, 0.00, 0.39
-CssSelector, .menu, 0.00, 0.37
-LinkText, Impostazioni, 0.25, 0.37
-LinkText, Impostazioni -> Moduli/Applicazioni, 0.25, 0.40
-CssSelector, .box-flex-container:nth-child(17) > .box-flex-item:nth-child(4) .reposition > .fas, 0.75, 0.39
-CssSelector, .box-flex-container:nth-child(17) > .box-flex-item:nth-child(4) .reposition > .fas, 0.75, 0.39
-Id, select2-search_status-container, 0.00, 0.39
-Id, search_keyword, 0.00, 0.39
-Id, modules, 0.00, 0.39
-Id, marketplace, 0.00, 0.39
-Id, deploy, 0.00, 0.39
+Id, username, 0.13, 0.39
+Id, password, 0.13, 0.39
+Id, password, 0.13, 0.39
+CssSelector, .menu, 0.12, 0.37
+LinkText, Impostazioni, 0.21, 0.37
+LinkText, Impostazioni -> Moduli/Applicazioni, 0.22, 0.40
+CssSelector, .box-flex-container:nth-child(17) > .box-flex-item:nth-child(4) .reposition > .fas, 0.71, 0.39
+CssSelector, .box-flex-container:nth-child(17) > .box-flex-item:nth-child(4) .reposition > .fas, 0.71, 0.39
+Id, select2-search_status-container, 0.13, 0.39
+Id, search_keyword, 0.13, 0.39
+Id, modules, 0.13, 0.39
+Id, marketplace, 0.13, 0.39
+Id, deploy, 0.13, 0.39

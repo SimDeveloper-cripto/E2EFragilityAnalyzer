@@ -1,10 +1,10 @@
 Type, Selector, SelectorScore, PageScore 
-Name, username, 0.40, 0.39
-Name, password, 0.40, 0.39
-Name, password, 0.40, 0.39
-CssSelector, .menu, 0.00, 0.37
-LinkText, Impostazioni, 0.25, 0.37
-LinkText, Impostazioni -> Società/Organizzazione, 0.25, 0.40
-CssSelector, #no_vat, 0.00, 0.36
-XPath, //table[7]/tbody/tr/td[@width], 0.90, 0.36
-Name, save, 0.40, 0.36
+Name, username, 0.26, 0.39
+Name, password, 0.26, 0.39
+Name, password, 0.26, 0.39
+CssSelector, .menu, 0.12, 0.37
+LinkText, Impostazioni, 0.21, 0.37
+LinkText, Impostazioni -> Società/Organizzazione, 0.22, 0.40
+CssSelector, #no_vat, 0.12, 0.36
+XPath, //table[7]/tbody/tr/td[@width], 0.69, 0.36
+Name, save, 0.25, 0.36

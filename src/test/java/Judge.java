@@ -47,10 +47,14 @@ public class Judge {
         double sumInverseScores = 0;
         int n = test.getSelectors().size();
 
-        for (Selector tes : test.getSelectors()) sumInverseScores += 1.0 / tes.getSelectorFinalScore();
+        for (Selector tes : test.getSelectors()) {
+            sumInverseScores += 1.0 / tes.getSelectorFinalScore();
+        }
 
         numOfTestJudged += 1;
+        System.out.println("sumInverseScores: " + sumInverseScores);
         double harmonicMean   = n / sumInverseScores;             // Media Armonica
+
         double geometryMean   = getTestScoreGeometryMean(test);   // Media Geometrica
         double arithmeticMean = getTestScoreArithmeticMean(test); // Media Aritmetica
         double quadraticMean  = getTestScoreQuadraticMean(test);  // Media Quadratica

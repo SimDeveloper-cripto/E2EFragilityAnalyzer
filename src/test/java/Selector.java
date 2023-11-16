@@ -43,8 +43,8 @@ public class Selector {
         this.type = type;
     }
 
-    public float getSelectorFinalScore() {
-        return this.selectorFinalScore;
+    public double getSelectorFinalScore() {
+        return (double) this.selectorFinalScore;
     }
 
     public void setSelectorFinalScore(float selectorFinalScore) {

@@ -1,7 +1,7 @@
 Type, Selector, SelectorScore, PageScore 
-Id, username, 0.00, 0.39
-Name, password, 0.40, 0.39
-Name, password, 0.40, 0.39
-CssSelector, .members, 0.00, 0.37
-CssSelector, .menu, 0.00, 0.40
-LinkText, Without subscription, 0.25, 0.40
+Id, username, 0.13, 0.39
+Name, password, 0.26, 0.39
+Name, password, 0.26, 0.39
+CssSelector, .members, 0.12, 0.37
+CssSelector, .menu, 0.13, 0.40
+LinkText, Without subscription, 0.22, 0.40

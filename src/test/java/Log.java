@@ -8,6 +8,9 @@ import java.text.DecimalFormatSymbols;
     - Log class is used to show the user Test results on terminal and also in the specified files
 * */
 public class Log {
+    private float selectorScore, pageScore, pageAndSelectorScore;
+    private double selectorFinalScore;
+
     private void fillResultFile(List<Test> testsJudge, String csvFileNamePath, String columnName, DecimalFormat df) {
         try {
             File inputFile = new File(csvFileNamePath);
@@ -74,6 +77,7 @@ public class Log {
             }
         }
 
+        // TODO: MODIFY RESULT.csv
         for (Test test : testsJudged) {
             String fileName = basePath + test.getTestName() + "_scores.csv";
 
@@ -88,7 +92,7 @@ public class Log {
                     String nameSelector = selector.getSelector();
                     String typeSelector = selector.getType();
                     float pageScore     = page.getPageComplexity();
-                    float selectorScore = selector.getSelectorFinalScore();
+                    double selectorScore = selector.getSelectorFinalScore();
 
                     String line = typeSelector + ", " + nameSelector + ", " + df.format(selectorScore) +
                             ", " + df.format(pageScore) + "\n";
@@ -112,11 +116,59 @@ public class Log {
         System.out.println("== Successes: " + testRunner.getNumberOfSuccessTests() + "\n== Failures: " + testRunner.getNumberOfFailedTests());
         System.out.println("==================================");
 
-        for (Test testJudged:testsJudged)
-            System.out.println("Test name: " + testJudged.getClassName() + ", Score: " + df.format(testJudged.getTestScore())); // TODO: getTestScore() returns HarmonicMean
+        logResultForEachTest(testsJudged, df);
 
         String directory = "src/test/java/XMLResult/" + JUnitRunner.SoftwareUsed + "/Result.csv";
         createScoreFileForEachTest(testsJudged, df);
         fillResultFile(testsJudged, directory,"Metric", df);
+    }
+
+    public void logResultForEachTest(List<Test> testsJudged, DecimalFormat df) {
+        System.out.println(" ");
+        for (Test testJudged : testsJudged) {
+            System.out.println("Nome Test: " + testJudged.getClassName());
+            for (Selector selector : testJudged.getSelectors()) {
+                System.out.println("\tSelettore: " + selector.getSelector());
+                System.out.println("\t\tScoreSelettore: " + getSelectorScoreToLog() + ", ScorePagina: " + getPageScoreToLog()
+                        + ", ScorePaginaESelettore: " + getPageAndSelectorScoreToLog() + ", SelectorFinalScore: " + getSelectorFinalScoreToLog());
+            }
+            System.out.println("Score del Test (Media Armonica): " + testJudged.getTestScore());
+            System.out.println(" ");
+        }
+        System.out.println(" ");
+        double result = PointBiserialCorrelationCoefficient.getCorrelation(testsJudged);
+        System.out.println("The value of correlation coefficient is: " + result);
+    }
+
+    public void setSelectorScoreToLog(float selectorScore) {
+        this.selectorScore = selectorScore;
+    }
+
+    private float getSelectorScoreToLog() {
+        return selectorScore;
+    }
+
+    public void setPageScoreToLog(float pageScore) {
+        this.pageScore = pageScore;
+    }
+
+    private float getPageScoreToLog() {
+        return pageScore;
+    }
+
+    public void setPageAndSelectorScoreToLog(float score) {
+        this.pageAndSelectorScore = score;
+    }
+
+    private float getPageAndSelectorScoreToLog() {
+        return pageAndSelectorScore;
+    }
+
+    public void setSelectorFinalScoreToLog(double selectorFinalScore) {
+        this.selectorFinalScore = selectorFinalScore;
+    }
+
+    private double getSelectorFinalScoreToLog() {
+        return selectorFinalScore;
     }
 }

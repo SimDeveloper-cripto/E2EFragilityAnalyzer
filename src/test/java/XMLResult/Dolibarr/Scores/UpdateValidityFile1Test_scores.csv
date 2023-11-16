@@ -1,12 +1,12 @@
 Type, Selector, SelectorScore, PageScore 
-Name, username, 0.40, 0.39
-Name, password, 0.40, 0.39
-Name, password, 0.40, 0.39
-CssSelector, .menu, 0.00, 0.37
-LinkText, Strumenti di amministrazione, 0.25, 0.37
-CssSelector, .menu, 0.00, 0.41
-LinkText, Informazioni su Dolibarr, 0.25, 0.41
-CssSelector, .menu, 0.00, 0.35
-LinkText, Verifica integrità dei file, 0.25, 0.35
-CssSelector, input:nth-child(7), 0.00, 0.40
-CssSelector, .button, 0.00, 0.40
+Name, username, 0.26, 0.39
+Name, password, 0.26, 0.39
+Name, password, 0.26, 0.39
+CssSelector, .menu, 0.12, 0.37
+LinkText, Strumenti di amministrazione, 0.21, 0.37
+CssSelector, .menu, 0.14, 0.41
+LinkText, Informazioni su Dolibarr, 0.22, 0.41
+CssSelector, .menu, 0.12, 0.35
+LinkText, Verifica integrità dei file, 0.20, 0.35
+CssSelector, input:nth-child(7), 0.13, 0.40
+CssSelector, .button, 0.13, 0.40

@@ -11,9 +11,11 @@ public class SelectorWebDriver implements WebDriverListener {
 	private List<Selector> visitedSelectors;
 	private List<Page> visitedPages;
 	private final Judge judge;
+	private final Log log;
 
-	public SelectorWebDriver(Judge judge) {
+	public SelectorWebDriver(Judge judge, Log log) {
 		this.judge = judge;
+		this.log = log;
 	}
 
 	/* [DESCRIPTION]
@@ -61,12 +63,17 @@ public class SelectorWebDriver implements WebDriverListener {
 		float pageAndSelectorComplexityScore = judge.applyMetricToPageAndSelector(selector, page, driver);
 
 		page.setPageComplexity(pageComplexityScore);
-		selector.setSelectorFinalScore(selectorComplexityScore);
+
+		float result = (selectorComplexityScore + pageComplexityScore + pageAndSelectorComplexityScore) / 3; // [0-1]
+		selector.setSelectorFinalScore(result);
+
+		log.setSelectorScoreToLog(selectorComplexityScore);
+		log.setPageScoreToLog(pageComplexityScore);
+		log.setPageAndSelectorScoreToLog(pageAndSelectorComplexityScore);
+		log.setSelectorFinalScoreToLog(selector.getSelectorFinalScore());
 
 		// TODO: pageAndSelectorComplexityScore should also be printed inside a .csv file).
 		System.out.println("(Analyzed) " + selector + "  " + page + "  " + "PageAndSelectorComplexityScore = " + pageAndSelectorComplexityScore + "\n");
-
-		// TODO: add unified score!
 
 		visitedSelectors.add(selector);
 		visitedPages.add(page);
