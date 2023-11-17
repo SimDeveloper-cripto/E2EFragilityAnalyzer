@@ -7,5 +7,5 @@ import org.openqa.selenium.WebDriver;
 * */
 public interface ISelectorScoreStrategy {
     float evaluateSelectorComplexity(Selector selector, Document document, WebDriver driver);
-    float getSelectorScoreWeight();
+    // float getSelectorScoreWeight();
 }

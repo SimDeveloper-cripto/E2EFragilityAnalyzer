@@ -1,15 +1,15 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore 
 
-Id, username, 0.0, 0.38759688, 0.0, 0.12919895350933075
-Id, password, 0.0, 0.38759688, 0.0, 0.12919895350933075
-Id, password, 0.0, 0.38759688, 0.0, 0.12919895350933075
-CssSelector, .menu, 0.25, 0.36732528, 0.0, 0.20577509701251984
-LinkText, Impostazioni, 0.25, 0.3662779, 0.0, 0.20542597770690918
-LinkText, Impostazioni -> Moduli/Applicazioni, 0.25, 0.40308192, 0.0, 0.2176939696073532
-CssSelector, .box-flex-container:nth-child(17) > .box-flex-item:nth-child(4) .reposition > .fas, 0.625, 0.38832712, 0.8888889, 0.6340720057487488
-CssSelector, .box-flex-container:nth-child(17) > .box-flex-item:nth-child(4) .reposition > .fas, 0.625, 0.3881789, 0.8888889, 0.6340226531028748
-Id, select2-search_status-container, 0.0, 0.38832712, 0.0, 0.12944237887859344
-Id, search_keyword, 0.0, 0.38806498, 0.0, 0.12935499846935272
-Id, modules, 0.0, 0.38832712, 0.0, 0.12944237887859344
-Id, marketplace, 0.0, 0.38832712, 0.0, 0.12944237887859344
-Id, deploy, 0.0, 0.38832712, 0.0, 0.12944237887859344
+Id, username, 0.0, 0.38759688, 0.0, 0.07751937955617905
+Id, password, 0.0, 0.38759688, 0.0, 0.07751937955617905
+Id, password, 0.0, 0.38759688, 0.0, 0.07751937955617905
+CssSelector, .menu, 0.25, 0.3662779, 0.0, 0.24825558066368103
+LinkText, Impostazioni, 0.25, 0.3662779, 0.0, 0.24825558066368103
+LinkText, Impostazioni -> Moduli/Applicazioni, 0.25, 0.40308192, 0.0, 0.25561636686325073
+CssSelector, .box-flex-container:nth-child(17) > .box-flex-item:nth-child(4) .reposition > .fas, 0.625, 0.38832712, 0.8888889, 0.60405433177948
+CssSelector, .box-flex-container:nth-child(17) > .box-flex-item:nth-child(4) .reposition > .fas, 0.625, 0.3881789, 0.8888889, 0.6040246486663818
+Id, select2-search_status-container, 0.0, 0.38832712, 0.0, 0.07766542583703995
+Id, search_keyword, 0.0, 0.38806498, 0.0, 0.0776129961013794
+Id, modules, 0.0, 0.38832712, 0.0, 0.07766542583703995
+Id, marketplace, 0.0, 0.38832712, 0.0, 0.07766542583703995
+Id, deploy, 0.0, 0.38832712, 0.0, 0.07766542583703995

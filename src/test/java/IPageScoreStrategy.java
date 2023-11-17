@@ -4,5 +4,5 @@
 * */
 public interface IPageScoreStrategy {
     float evaluatePageComplexity(Page page);
-    float getPageScoreWeight();
+    // float getPageScoreWeight();
 }

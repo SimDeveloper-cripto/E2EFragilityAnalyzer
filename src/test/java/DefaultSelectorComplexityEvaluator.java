@@ -64,9 +64,8 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
         return ((hierarchyScore + typeScore) / 2); // [0-1]
     }
 
-    @Override
-    public float getSelectorScoreWeight() {
-        return 0.8f;
+    public static float getSelectorScoreWeight() {
+        return 0.7f;
     }
 
     /* METHODS */

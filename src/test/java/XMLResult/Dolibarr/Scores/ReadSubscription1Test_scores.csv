@@ -1,8 +1,8 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore 
 
-Id, username, 0.0, 0.38759688, 0.0, 0.12919895350933075
-Name, password, 0.4, 0.38759688, 0.0, 0.2625322937965393
-Name, password, 0.4, 0.38759688, 0.0, 0.2625322937965393
-CssSelector, .members, 0.25, 0.36732528, 0.0, 0.20577509701251984
-CssSelector, .menu, 0.25, 0.39574757, 0.0, 0.2152491807937622
-LinkText, Without subscription, 0.25, 0.39574757, 0.0, 0.2152491807937622
+Id, username, 0.0, 0.38759688, 0.0, 0.07751937955617905
+Name, password, 0.4, 0.38759688, 0.0, 0.35751938819885254
+Name, password, 0.4, 0.38759688, 0.0, 0.35751938819885254
+CssSelector, .members, 0.25, 0.3662779, 0.0, 0.24825558066368103
+CssSelector, .menu, 0.25, 0.39574757, 0.0, 0.25414949655532837
+LinkText, Without subscription, 0.25, 0.39574757, 0.0, 0.25414949655532837

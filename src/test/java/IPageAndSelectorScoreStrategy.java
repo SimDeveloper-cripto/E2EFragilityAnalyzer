@@ -5,4 +5,5 @@ import org.openqa.selenium.WebDriver;
 * */
 public interface IPageAndSelectorScoreStrategy {
     float evaluatePageAndSelectorComplexity(Selector selector, Page page, WebDriver driver);
+    // float getPageAndSelectorScoreWeight();
 }

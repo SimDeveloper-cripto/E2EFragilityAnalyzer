@@ -22,8 +22,7 @@ public class DefaultPageComplexityEvaluator implements IPageScoreStrategy {
         return ((firstRatio + secondRatio + thirdRatio) / 3); // [0-1]
     }
 
-    @Override
-    public float getPageScoreWeight() {
+    public static float getPageScoreWeight() {
         return 0.2f;
     }
 

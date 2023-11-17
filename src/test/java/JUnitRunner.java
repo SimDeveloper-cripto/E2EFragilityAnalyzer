@@ -15,7 +15,7 @@ public class JUnitRunner {
         String directory = "src/test/java/JUnit/" + SoftwareUsed; // JUnit test directory
 
         Log log = new Log();
-        Judge judge = new Judge(new DefaultSelectorComplexityEvaluator(), new DefaultPageComplexityEvaluator(), new DefaultPageAndSelectorEvaluator());
+        Judge judge = new Judge(new DefaultSelectorComplexityEvaluator(), new DefaultPageComplexityEvaluator(), new DefaultPageAndSelectorComplexityEvaluator());
 
         List<Test> dolibarrTests = Test.getAllTests(directory);
 

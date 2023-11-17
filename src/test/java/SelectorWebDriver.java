@@ -62,7 +62,11 @@ public class SelectorWebDriver implements WebDriverListener {
 		float pageComplexityScore            = judge.applyMetricToPage(page);
 		float pageAndSelectorComplexityScore = judge.applyMetricToPageAndSelector(selector, page, driver);
 
-		float result = (selectorComplexityScore + pageComplexityScore + pageAndSelectorComplexityScore) / 3; // [0-1]
+		/* Weighted Average Calculation */
+		float result = (selectorComplexityScore * DefaultSelectorComplexityEvaluator.getSelectorScoreWeight())
+				+ (pageComplexityScore * DefaultPageComplexityEvaluator.getPageScoreWeight())
+				+ (pageAndSelectorComplexityScore * DefaultPageAndSelectorComplexityEvaluator.getPageAndSelectorScoreWeight()); // [0-1]
+		// float result = (selectorComplexityScore + pageComplexityScore + pageAndSelectorComplexityScore) / 3; // [0-1]
 
 		page.setPageComplexity(pageComplexityScore); // TODO: This is useless now (refactor)
 

@@ -1,17 +1,17 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore 
 
-Id, username, 0.0, 0.38759688, 0.0, 0.12919895350933075
-Id, password, 0.0, 0.38759688, 0.0, 0.12919895350933075
-Id, password, 0.0, 0.38759688, 0.0, 0.12919895350933075
-CssSelector, .menu, 0.25, 0.36732528, 0.0, 0.20577509701251984
-LinkText, Impostazioni, 0.25, 0.3662779, 0.0, 0.20542597770690918
-CssSelector, .menu, 0.25, 0.40308192, 0.0, 0.2176939696073532
-LinkText, Moduli/Applicazioni, 0.25, 0.40308192, 0.0, 0.2176939696073532
-Name, buttonreset, 0.4, 0.38832712, 0.0, 0.2627756893634796
-Id, search_keyword, 0.0, 0.38832712, 0.0, 0.12944237887859344
-Id, search_keyword, 0.0, 0.38832712, 0.0, 0.12944237887859344
-CssSelector, .fa-toggle-on, 0.25, 0.39820567, 0.0, 0.2160685509443283
-CssSelector, .reposition > .fas, 0.5, 0.3976487, 0.8333333, 0.576994001865387
-Name, buttonreset, 0.4, 0.39820567, 0.0, 0.26606854796409607
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td/div, 0.82857144, 0.38832712, 0.0, 0.4056328535079956
-XPath, //form[@id='searchFormList']/div[2]/div/div[2]/span, 0.8, 0.38832712, 0.95652175, 0.7149496078491211
+Id, username, 0.0, 0.38759688, 0.0, 0.07751937955617905
+Id, password, 0.0, 0.38759688, 0.0, 0.07751937955617905
+Id, password, 0.0, 0.38759688, 0.0, 0.07751937955617905
+CssSelector, .menu, 0.25, 0.3662779, 0.0, 0.24825558066368103
+LinkText, Impostazioni, 0.25, 0.3662779, 0.0, 0.24825558066368103
+CssSelector, .menu, 0.25, 0.40308192, 0.0, 0.25561636686325073
+LinkText, Moduli/Applicazioni, 0.25, 0.40308192, 0.0, 0.25561636686325073
+Name, buttonreset, 0.4, 0.38832712, 0.0, 0.35766541957855225
+Id, search_keyword, 0.0, 0.38832712, 0.0, 0.07766542583703995
+Id, search_keyword, 0.0, 0.38832712, 0.0, 0.07766542583703995
+CssSelector, .fa-toggle-on, 0.25, 0.39820567, 0.0, 0.2546411156654358
+CssSelector, .reposition > .fas, 0.5, 0.3976487, 0.8333333, 0.512863039970398
+Name, buttonreset, 0.4, 0.39820567, 0.0, 0.3596411347389221
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td/div, 0.82857144, 0.38832712, 0.0, 0.6576654314994812
+XPath, //form[@id='searchFormList']/div[2]/div/div[2]/span, 0.8, 0.38832712, 0.95652175, 0.7333176136016846

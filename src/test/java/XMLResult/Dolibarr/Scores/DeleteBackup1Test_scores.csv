@@ -1,18 +1,18 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore 
 
-Id, username, 0.0, 0.38759688, 0.0, 0.12919895350933075
-Id, password, 0.0, 0.38759688, 0.0, 0.12919895350933075
-Id, password, 0.0, 0.38759688, 0.0, 0.12919895350933075
-CssSelector, .menu, 0.25, 0.36732528, 0.0, 0.20577509701251984
-LinkText, Strumenti di amministrazione, 0.25, 0.3662779, 0.0, 0.20542597770690918
-CssSelector, .menu, 0.25, 0.4052936, 0.0, 0.21843118965625763
-LinkText, Backup, 0.25, 0.4052936, 0.0, 0.21843118965625763
-Id, radio_dump_mysql_nobin, 0.0, 0.38561073, 0.0, 0.1285369098186493
-Id, buttonGo, 0.0, 0.38561073, 0.0, 0.1285369098186493
-XPath, //tr[@id='row-AFTER0POS1']/td[6]/a/span, 0.775, 0.38511816, 0.0, 0.38670602440834045
-Id, radio_dump_mysql_nobin, 0.0, 0.38512823, 0.0, 0.1283760815858841
-Id, radio_dump_mysql, 0.0, 0.38512823, 0.0, 0.1283760815858841
-Id, radio_dump_mysql_nobin, 0.0, 0.38512823, 0.0, 0.1283760815858841
-Id, filename_template, 0.0, 0.38512823, 0.0, 0.1283760815858841
-Id, radio_compression_gzip, 0.0, 0.38512823, 0.0, 0.1283760815858841
-Id, radio_compression_none, 0.0, 0.38512823, 0.0, 0.1283760815858841
+Id, username, 0.0, 0.38759688, 0.0, 0.07751937955617905
+Id, password, 0.0, 0.38759688, 0.0, 0.07751937955617905
+Id, password, 0.0, 0.38759688, 0.0, 0.07751937955617905
+CssSelector, .menu, 0.25, 0.3662779, 0.0, 0.24825558066368103
+LinkText, Strumenti di amministrazione, 0.25, 0.3662779, 0.0, 0.24825558066368103
+CssSelector, .menu, 0.25, 0.4052936, 0.0, 0.2560587227344513
+LinkText, Backup, 0.25, 0.4052936, 0.0, 0.2560587227344513
+Id, radio_dump_mysql_nobin, 0.0, 0.38561073, 0.0, 0.07712214440107346
+Id, buttonGo, 0.0, 0.38561073, 0.0, 0.07712214440107346
+XPath, //tr[@id='row-AFTER0POS1']/td[6]/a/span, 0.775, 0.38511816, 0.0, 0.6195235848426819
+Id, radio_dump_mysql_nobin, 0.0, 0.38512823, 0.0, 0.0770256444811821
+Id, radio_dump_mysql, 0.0, 0.38512823, 0.0, 0.0770256444811821
+Id, radio_dump_mysql_nobin, 0.0, 0.38512823, 0.0, 0.0770256444811821
+Id, filename_template, 0.0, 0.38512823, 0.0, 0.0770256444811821
+Id, radio_compression_gzip, 0.0, 0.38512823, 0.0, 0.0770256444811821
+Id, radio_compression_none, 0.0, 0.38512823, 0.0, 0.0770256444811821

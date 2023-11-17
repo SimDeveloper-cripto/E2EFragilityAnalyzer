@@ -1,15 +1,15 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore 
 
-Name, username, 0.4, 0.38759688, 0.0, 0.2625322937965393
-Name, password, 0.4, 0.38759688, 0.0, 0.2625322937965393
-Name, password, 0.4, 0.38759688, 0.0, 0.2625322937965393
-CssSelector, .menu, 0.25, 0.36732528, 0.0, 0.20577509701251984
-LinkText, Impostazioni, 0.25, 0.3662779, 0.0, 0.20542597770690918
-CssSelector, .fiche > .inline-block:nth-child(4), 0.5, 0.40308192, 0.5, 0.467693954706192
-LinkText, Impostazioni -> Società/Organizzazione, 0.25, 0.40308192, 0.0, 0.2176939696073532
-Name, nom, 0.4, 0.35919055, 0.0, 0.25306352972984314
-Id, select2-selectcountry_id-container, 0.0, 0.35919055, 0.0, 0.11973018199205399
-CssSelector, .select2-search__field, 0.25, 0.34926406, 0.0, 0.19975467026233673
-XPath, //div[@id='id-right']/div/div[2]/form/table/tbody/tr[9]/td[2]/input, 0.84444445, 0.3589958, 0.0, 0.4011467397212982
-Name, save, 0.4, 0.35919055, 0.0, 0.25306352972984314
-XPath, //div[@id='id-right']/div/div[2]/form/table/tbody/tr[11]/td[2]/input, 0.84444445, 0.3590604, 0.0, 0.40116825699806213
+Name, username, 0.4, 0.38759688, 0.0, 0.35751938819885254
+Name, password, 0.4, 0.38759688, 0.0, 0.35751938819885254
+Name, password, 0.4, 0.38759688, 0.0, 0.35751938819885254
+CssSelector, .menu, 0.25, 0.36732528, 0.0, 0.24846506118774414
+LinkText, Impostazioni, 0.25, 0.3662779, 0.0, 0.24825558066368103
+CssSelector, .fiche > .inline-block:nth-child(4), 0.5, 0.40308192, 0.5, 0.48061639070510864
+LinkText, Impostazioni -> Società/Organizzazione, 0.25, 0.40308192, 0.0, 0.25561636686325073
+Name, nom, 0.4, 0.35919055, 0.0, 0.3518381118774414
+Id, select2-selectcountry_id-container, 0.0, 0.35919055, 0.0, 0.07183811068534851
+CssSelector, .select2-search__field, 0.25, 0.34926406, 0.0, 0.24485281109809875
+XPath, //div[@id='id-right']/div/div[2]/form/table/tbody/tr[9]/td[2]/input, 0.84444445, 0.3589958, 0.0, 0.6629102826118469
+Name, save, 0.4, 0.35919055, 0.0, 0.3518381118774414
+XPath, //div[@id='id-right']/div/div[2]/form/table/tbody/tr[11]/td[2]/input, 0.84444445, 0.3590604, 0.0, 0.6629232168197632

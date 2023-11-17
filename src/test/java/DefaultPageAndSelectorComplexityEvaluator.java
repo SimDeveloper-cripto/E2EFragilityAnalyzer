@@ -8,7 +8,7 @@ import java.util.List;
 // import java.util.regex.Matcher;
 // import java.util.regex.Pattern;
 
-public class DefaultPageAndSelectorEvaluator implements IPageAndSelectorScoreStrategy {
+public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelectorScoreStrategy {
     @Override
     public float evaluatePageAndSelectorComplexity(Selector selector, Page page, WebDriver driver) {
         String selectorType   = selector.getType();
@@ -107,5 +107,9 @@ public class DefaultPageAndSelectorEvaluator implements IPageAndSelectorScoreStr
                 e.printStackTrace();
             }
         */
+    }
+
+    public static float getPageAndSelectorScoreWeight() {
+        return 0.1f;
     }
 }
