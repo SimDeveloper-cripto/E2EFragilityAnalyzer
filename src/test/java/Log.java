@@ -87,13 +87,13 @@ public class Log {
 
                     String nameSelector = selector.getSelector();
                     String typeSelector = selector.getType();
-                    float selectorScore = selector.getSimpleScore();
+                    float selectorScore = selector.getSelectorScore();
                     float pageScore     = selector.getPageScore();
                     float pageAndSelectorScore = selector.getPageAndSelectorScore();
                     double selectorFinalScore  = selector.getSelectorFinalScore();
 
-                    String line = typeSelector + ", " + nameSelector + ", " + selectorScore +
-                            ", " + pageScore + ", " + pageAndSelectorScore + ", " + selectorFinalScore + "\n";
+                    String line = typeSelector + ", " + nameSelector + ", " + df.format(selectorScore) +
+                            ", " + df.format(pageScore) + ", " + df.format(pageAndSelectorScore) + ", " + df.format(selectorFinalScore) + "\n";
 
                     fileWriter.write(line);
                 }
@@ -108,7 +108,7 @@ public class Log {
     public void logResult(List<Test> testsJudged, TestRunner testRunner) {
         DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
         symbols.setDecimalSeparator('.');
-        DecimalFormat df = new DecimalFormat("0.00", symbols);
+        DecimalFormat df = new DecimalFormat("0.000", symbols);
 
         System.out.println("============ Results =============");
         System.out.println("== Successes: " + testRunner.getNumberOfSuccessTests() + "\n== Failures: " + testRunner.getNumberOfFailedTests());
@@ -118,18 +118,17 @@ public class Log {
 
         String directory = "src/test/java/XMLResult/" + JUnitRunner.SoftwareUsed + "/Result.csv";
         createScoreFileForEachTest(testsJudged, df);
-        fillResultFile(testsJudged, directory,"Metric", df);
+        fillResultFile(testsJudged, directory,"Metric Result", df);
     }
 
-    // TODO: MODIFY RESULT.CSV, add pageAndSelectorComplexityScore
     public void logResultForEachTest(List<Test> testsJudged, DecimalFormat df) {
         System.out.println(" ");
         for (Test testJudged : testsJudged) {
             System.out.println("Test name: " + testJudged.getClassName());
             for (Selector selector : testJudged.getSelectors()) {
                 System.out.println("\tSelector: " + selector.getSelector());
-                System.out.println("\t\tSelectorScore: " + selector.getSimpleScore() + ", PageScore: " + selector.getPageScore()
-                        + ", PageAndSelectorScore: " + selector.getPageAndSelectorScore() + ", SelectorFinalScore: " + selector.getSelectorFinalScore());
+                System.out.println("\t\tSelectorScore: " + df.format(selector.getSelectorScore()) + ", PageScore: " + df.format(selector.getPageScore())
+                        + ", PageAndSelectorScore: " + df.format(selector.getPageAndSelectorScore()) + ", SelectorFinalScore: " + df.format(selector.getSelectorFinalScore()));
             }
             System.out.println("Test Score (by harmonic Mean): " + testJudged.getTestScore());
             System.out.println(" ");

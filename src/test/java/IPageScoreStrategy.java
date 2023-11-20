@@ -1,4 +1,3 @@
-
 /* [DESCRIPTION]
     - Strategy to apply to pages when assigning scores.
 * */

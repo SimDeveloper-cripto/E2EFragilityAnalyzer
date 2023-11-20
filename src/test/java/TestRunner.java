@@ -17,13 +17,11 @@ public class TestRunner {
     private final Judge judge;
     private WebDriver driver;
     private SelectorWebDriver listener;
-    private Log log;
     private int numberOfSuccessTests = 0, numberOfFailedTests = 0;
 
-    public TestRunner(List<Test> tests, Judge judge, Log log) {
+    public TestRunner(List<Test> tests, Judge judge) {
         this.judge = judge;
         this.testsToValidate = tests;
-        this.log = log;
     }
 
     public int getNumberOfSuccessTests() {
@@ -50,7 +48,7 @@ public class TestRunner {
         WebDriverListener listenerDriver;
 
         driver         = new ChromeDriver(service);
-        listener       = new SelectorWebDriver(judge, log);
+        listener       = new SelectorWebDriver(judge);
         listenerDriver = listener; // This class is used to track the pages and selectors visited during test execution (Observer)
         driver         = new EventFiringDecorator(listenerDriver).decorate(driver);
 

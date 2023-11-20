@@ -24,8 +24,8 @@ public class Judge {
 
     public IPageAndSelectorScoreStrategy getPageAndSelectorScoreStrategy() { return pageAndSelectorScoreStrategy; }
 
-    public float applyMetricToSelector(Selector selector, Document document, WebDriver driver) {
-        return getSelectorScoreStrategy().evaluateSelectorComplexity(selector, document, driver);
+    public float applyMetricToSelector(Selector selector, Document document) {
+        return getSelectorScoreStrategy().evaluateSelectorComplexity(selector, document);
     }
 
     public float applyMetricToPage(Page documentPage) {
@@ -35,13 +35,6 @@ public class Judge {
     public float applyMetricToPageAndSelector(Selector selector, Page page, WebDriver driver) {
         return getPageAndSelectorScoreStrategy().evaluatePageAndSelectorComplexity(selector, page, driver);
     }
-
-    /* [OLD] THIS WAS THE OLD WAY TO PENALIZE A TEST FAILURE BECAUSE OF A SELECTOR
-        public static float getBadElementScore(Selector lastSelector) {
-            // If the selector caused a test failure, we subtract 100 points form the return value of getElementScore().
-            return lastSelector.getSelectorScore() - 100;
-        }
-    */
 
     public static double getTestScore(Test test) {
         double sumInverseScores = 0;
@@ -53,11 +46,11 @@ public class Judge {
 
         numOfTestJudged += 1;
         System.out.println("sumInverseScores: " + sumInverseScores);
-        double harmonicMean   = n / sumInverseScores;             // Media Armonica
+        double harmonicMean   = n / sumInverseScores;             // Harmonic average
 
-        double geometryMean   = getTestScoreGeometryMean(test);   // Media Geometrica
-        double arithmeticMean = getTestScoreArithmeticMean(test); // Media Aritmetica
-        double quadraticMean  = getTestScoreQuadraticMean(test);  // Media Quadratica
+        double geometryMean   = getTestScoreGeometryMean(test);   // Geometric average
+        double arithmeticMean = getTestScoreArithmeticMean(test); // Arithmetic average
+        double quadraticMean  = getTestScoreQuadraticMean(test);  // Quadratic average
 
         DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
         symbols.setDecimalSeparator('.');

@@ -1,18 +1,18 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore 
 
-Id, username, 0.0, 0.38759688, 0.0, 0.07751937955617905
-Id, password, 0.0, 0.38759688, 0.0, 0.07751937955617905
-Id, password, 0.0, 0.38759688, 0.0, 0.07751937955617905
-CssSelector, #mainmenua_ticket > .mainmenuaspan, 0.5, 0.3662779, 0.95238096, 0.51849365234375
-CssSelector, .menu, 0.25, 0.39678717, 0.0, 0.2543574273586273
-XPath, //div[@id='id-left']/div/div[2]/div[3]/a, 0.8, 0.39678717, 0.0, 0.6393574476242065
-Id, subject, 0.0, 0.3662037, 0.0, 0.0732407420873642
-Id, message, 0.0, 0.3662037, 0.0, 0.0732407420873642
-Name, add, 0.4, 0.3662037, 0.0, 0.3532407283782959
-CssSelector, .center:nth-child(3) > .butAction, 0.5, 0.3968254, 0.85714287, 0.5150793790817261
-CssSelector, .ui-button:nth-child(1), 0.25, 0.39501777, 0.0, 0.2540035545825958
-XPath, //div[@id='id-right']/div/div[2]/div[3]/div/table/tbody/tr[7]/td/table/tbody/tr/td, 0.86153847, 0.39720193, 0.0, 0.6825172901153564
-XPath, //div[@id='id-right']/div/div[2]/div[3]/div/table/tbody/tr[3]/td, 0.84444445, 0.39720193, 0.0, 0.6705515384674072
-XPath, //div[2]/div/div[2]/div/div/div[4], 0.81666666, 0.39720193, 0.75, 0.7261070609092712
-XPath, //div[@id='id-right']/div/div[2]/div/div/div[2]/span, 0.82857144, 0.38361582, 0.0, 0.656723141670227
-XPath, //div[@id='id-right']/div/div[2]/div[3]/div[2]/div, 0.81666666, 0.38361582, 0.0, 0.6483898162841797
+Id, username, 0.000, 0.388, 0.000, 0.078
+Id, password, 0.000, 0.388, 0.000, 0.078
+Id, password, 0.000, 0.388, 0.000, 0.078
+CssSelector, #mainmenua_ticket > .mainmenuaspan, 0.500, 0.367, 0.952, 0.519
+CssSelector, .menu, 0.250, 0.397, 0.000, 0.254
+XPath, //div[@id='id-left']/div/div[2]/div[3]/a, 0.800, 0.397, 0.000, 0.639
+Id, subject, 0.000, 0.366, 0.000, 0.073
+Id, message, 0.000, 0.366, 0.000, 0.073
+Name, add, 0.400, 0.366, 0.000, 0.353
+CssSelector, .center:nth-child(3) > .butAction, 0.500, 0.397, 0.857, 0.515
+CssSelector, .ui-button:nth-child(1), 0.250, 0.395, 0.000, 0.254
+XPath, //div[@id='id-right']/div/div[2]/div[3]/div/table/tbody/tr[7]/td/table/tbody/tr/td, 0.862, 0.397, 0.000, 0.683
+XPath, //div[@id='id-right']/div/div[2]/div[3]/div/table/tbody/tr[3]/td, 0.844, 0.397, 0.000, 0.671
+XPath, //div[2]/div/div[2]/div/div/div[4], 0.817, 0.397, 0.750, 0.726
+XPath, //div[@id='id-right']/div/div[2]/div/div/div[2]/span, 0.829, 0.384, 0.000, 0.657
+XPath, //div[@id='id-right']/div/div[2]/div[3]/div[2]/div, 0.817, 0.384, 0.000, 0.648

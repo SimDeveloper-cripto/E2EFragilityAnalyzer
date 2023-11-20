@@ -1,11 +1,11 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore 
 
-Name, username, 0.4, 0.38759688, 0.0, 0.35751938819885254
-Name, password, 0.4, 0.38759688, 0.0, 0.35751938819885254
-Name, password, 0.4, 0.38759688, 0.0, 0.35751938819885254
-CssSelector, .menu, 0.25, 0.3662779, 0.0, 0.24825558066368103
-LinkText, Impostazioni, 0.25, 0.3662779, 0.0, 0.24825558066368103
-LinkText, Impostazioni -> Società/Organizzazione, 0.25, 0.40308192, 0.0, 0.25561636686325073
-CssSelector, #no_vat, 0.0, 0.35919055, 0.0, 0.07183811068534851
-XPath, //table[7]/tbody/tr/td[@width], 0.775, 0.35919055, 0.8333333, 0.6976713538169861
-Name, save, 0.4, 0.35919055, 0.0, 0.3518381118774414
+Name, username, 0.400, 0.388, 0.000, 0.358
+Name, password, 0.400, 0.388, 0.000, 0.358
+Name, password, 0.400, 0.388, 0.000, 0.358
+CssSelector, .menu, 0.250, 0.367, 0.000, 0.248
+LinkText, Impostazioni, 0.250, 0.366, 0.000, 0.248
+LinkText, Impostazioni -> Società/Organizzazione, 0.250, 0.403, 0.000, 0.256
+CssSelector, #no_vat, 0.000, 0.359, 0.000, 0.072
+XPath, //table[7]/tbody/tr/td[@width], 0.775, 0.359, 0.833, 0.698
+Name, save, 0.400, 0.359, 0.000, 0.352

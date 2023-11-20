@@ -1,6 +1,5 @@
 
 import org.jsoup.nodes.Document;
-import org.openqa.selenium.WebDriver;
 
 /* [DESCRIPTION]
     - The final score value is set to the interval [0-1].
@@ -8,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 **/
 public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrategy {
     @Override
-    public float evaluateSelectorComplexity(Selector selector, Document document, WebDriver driver) {
+    public float evaluateSelectorComplexity(Selector selector, Document document) {
         String selectorType   = selector.getType();
         String selectorString = selector.getSelector();
 
@@ -35,13 +34,13 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
         System.out.println("(Analyzed) Selector Hierarchy score: " + hierarchyScore);
 
         // Step 2: Type Score calculation (Rule Based)
-        // TODO: "PartialLinkText" and "ClassName" never occur (at least for now).
+        // TODO: "PartialLinkText" and "ClassName" never occur (at least for now)
         switch (selectorType) {
             case "CssSelector":
                 typeScore = evaluateCssSelectorTypeScore(selectorString, depth);
                 break;
             case "XPath":
-                typeScore = evaluateXPathTypeScore(selectorString, depth, driver);
+                typeScore = evaluateXPathTypeScore(selectorString, depth);
                 break;
             case "TagName":
             case "Name":
@@ -91,7 +90,7 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
         return evaluateCssSelectorElementType(selectorString);
     }
 
-    private static float evaluateXPathTypeScore(String selectorString, int depth, WebDriver driver) {
+    private static float evaluateXPathTypeScore(String selectorString, int depth) {
         if (depth >= 1) {
             String lastLevel = selectorString.substring(selectorString.lastIndexOf("/") + 1);
             String evaluate = "//" + lastLevel;
@@ -129,38 +128,4 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
 
         return 0.8f;
     }
-
-    /*
-        private static float evaluateXPathElementType(WebElement lastElement) { // [0-1]
-            float score = 0.0f;
-
-            // If the element has associated an id or name
-            if ((lastElement.getAttribute("id") != null && !lastElement.getAttribute("id").isEmpty())
-                || (lastElement.getAttribute("name") != null && !lastElement.getAttribute("name").isEmpty())) {
-                score = 0.0f;
-            }
-
-            // If the element has associated a class
-            if (lastElement.getAttribute("class") != null && !lastElement.getAttribute("class").isEmpty()) {
-                score = 0.5f;
-            }
-
-            // If the element has associated a tag name
-            if (lastElement.getTagName() != null && !lastElement.getTagName().isEmpty()) {
-                score = 0.8f;
-            }
-
-            // If the element has associated a link text
-            if (lastElement.getTagName().equalsIgnoreCase("a") && lastElement.getText() != null && !lastElement.getText().isEmpty()) {
-                score = 0.6f;
-            }
-
-            // If the element has associated a partial link text
-            if (lastElement.getTagName().equalsIgnoreCase("a") && lastElement.getText() != null && lastElement.getText().contains("partial text")) {
-                score = 0.7f;
-            }
-
-            return score;
-        }
-    */
 }

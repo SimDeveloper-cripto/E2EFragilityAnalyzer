@@ -1,17 +1,17 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore 
 
-Id, username, 0.0, 0.38759688, 0.0, 0.07751937955617905
-Id, password, 0.0, 0.38759688, 0.0, 0.07751937955617905
-Id, password, 0.0, 0.38759688, 0.0, 0.07751937955617905
-CssSelector, .menu, 0.25, 0.3662779, 0.0, 0.24825558066368103
-LinkText, Impostazioni, 0.25, 0.3662779, 0.0, 0.24825558066368103
-CssSelector, .menu, 0.25, 0.40308192, 0.0, 0.25561636686325073
-LinkText, Moduli/Applicazioni, 0.25, 0.40308192, 0.0, 0.25561636686325073
-Name, buttonreset, 0.4, 0.38832712, 0.0, 0.35766541957855225
-Id, search_keyword, 0.0, 0.38832712, 0.0, 0.07766542583703995
-Id, search_keyword, 0.0, 0.38832712, 0.0, 0.07766542583703995
-CssSelector, .fa-toggle-on, 0.25, 0.39820567, 0.0, 0.2546411156654358
-CssSelector, .reposition > .fas, 0.5, 0.3976487, 0.8333333, 0.512863039970398
-Name, buttonreset, 0.4, 0.39820567, 0.0, 0.3596411347389221
-XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td/div, 0.82857144, 0.38832712, 0.0, 0.6576654314994812
-XPath, //form[@id='searchFormList']/div[2]/div/div[2]/span, 0.8, 0.38832712, 0.95652175, 0.7333176136016846
+Id, username, 0.000, 0.388, 0.000, 0.078
+Id, password, 0.000, 0.388, 0.000, 0.078
+Id, password, 0.000, 0.388, 0.000, 0.078
+CssSelector, .menu, 0.250, 0.367, 0.000, 0.248
+LinkText, Impostazioni, 0.250, 0.366, 0.000, 0.248
+CssSelector, .menu, 0.250, 0.403, 0.000, 0.256
+LinkText, Moduli/Applicazioni, 0.250, 0.403, 0.000, 0.256
+Name, buttonreset, 0.400, 0.388, 0.000, 0.358
+Id, search_keyword, 0.000, 0.388, 0.000, 0.078
+Id, search_keyword, 0.000, 0.388, 0.000, 0.078
+CssSelector, .fa-toggle-on, 0.250, 0.398, 0.000, 0.255
+CssSelector, .reposition > .fas, 0.500, 0.398, 0.833, 0.513
+Name, buttonreset, 0.400, 0.398, 0.000, 0.360
+XPath, //form[@id='searchFormList']/div[2]/table/tbody/tr/td/div, 0.829, 0.388, 0.000, 0.658
+XPath, //form[@id='searchFormList']/div[2]/div/div[2]/span, 0.800, 0.388, 0.957, 0.733

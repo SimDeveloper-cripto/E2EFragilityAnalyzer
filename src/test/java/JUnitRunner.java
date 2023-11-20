@@ -14,15 +14,16 @@ public class JUnitRunner {
     public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException, IOException {
         String directory = "src/test/java/JUnit/" + SoftwareUsed; // JUnit test directory
 
-        Log log = new Log();
         Judge judge = new Judge(new DefaultSelectorComplexityEvaluator(), new DefaultPageComplexityEvaluator(), new DefaultPageAndSelectorComplexityEvaluator());
 
         List<Test> dolibarrTests = Test.getAllTests(directory);
 
-        TestRunner testRunner = new TestRunner(dolibarrTests, judge, log);
+        TestRunner testRunner = new TestRunner(dolibarrTests, judge);
         List<Test> tests = testRunner.executeTests();
 
         List<Test> testsJudged = testRunner.assignScoreToEachTest(tests);
+
+        Log log = new Log();
         log.logResult(testsJudged, testRunner);
     }
 }

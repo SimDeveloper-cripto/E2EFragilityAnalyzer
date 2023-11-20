@@ -3,7 +3,10 @@ import org.openqa.selenium.By;
 
 public class Selector {
     private String selector, type;
-    private float score, pageScore, pageAndSelectorScore, selectorFinalScore;
+    private float selectorScore;
+    private float pageScore;
+    private float pageAndSelectorScore;
+    private float selectorFinalScore;
 
     public Selector(String value, String type) {
         this.selector = value;
@@ -43,12 +46,12 @@ public class Selector {
         this.type = type;
     }
 
-    public void setSimpleScore(float score) {
-        this.score = score;
+    public void setSelectorScore(float score) {
+        this.selectorScore = score;
     }
 
-    public float getSimpleScore() {
-        return score;
+    public float getSelectorScore() {
+        return selectorScore;
     }
 
     public void setPageScore(float pageScore) {

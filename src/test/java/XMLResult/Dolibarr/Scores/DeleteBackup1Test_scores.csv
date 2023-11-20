@@ -1,18 +1,18 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore 
 
-Id, username, 0.0, 0.38759688, 0.0, 0.07751937955617905
-Id, password, 0.0, 0.38759688, 0.0, 0.07751937955617905
-Id, password, 0.0, 0.38759688, 0.0, 0.07751937955617905
-CssSelector, .menu, 0.25, 0.3662779, 0.0, 0.24825558066368103
-LinkText, Strumenti di amministrazione, 0.25, 0.3662779, 0.0, 0.24825558066368103
-CssSelector, .menu, 0.25, 0.4052936, 0.0, 0.2560587227344513
-LinkText, Backup, 0.25, 0.4052936, 0.0, 0.2560587227344513
-Id, radio_dump_mysql_nobin, 0.0, 0.38561073, 0.0, 0.07712214440107346
-Id, buttonGo, 0.0, 0.38561073, 0.0, 0.07712214440107346
-XPath, //tr[@id='row-AFTER0POS1']/td[6]/a/span, 0.775, 0.38511816, 0.0, 0.6195235848426819
-Id, radio_dump_mysql_nobin, 0.0, 0.38512823, 0.0, 0.0770256444811821
-Id, radio_dump_mysql, 0.0, 0.38512823, 0.0, 0.0770256444811821
-Id, radio_dump_mysql_nobin, 0.0, 0.38512823, 0.0, 0.0770256444811821
-Id, filename_template, 0.0, 0.38512823, 0.0, 0.0770256444811821
-Id, radio_compression_gzip, 0.0, 0.38512823, 0.0, 0.0770256444811821
-Id, radio_compression_none, 0.0, 0.38512823, 0.0, 0.0770256444811821
+Id, username, 0.000, 0.388, 0.000, 0.078
+Id, password, 0.000, 0.388, 0.000, 0.078
+Id, password, 0.000, 0.388, 0.000, 0.078
+CssSelector, .menu, 0.250, 0.367, 0.000, 0.248
+LinkText, Strumenti di amministrazione, 0.250, 0.366, 0.000, 0.248
+CssSelector, .menu, 0.250, 0.405, 0.000, 0.256
+LinkText, Backup, 0.250, 0.405, 0.000, 0.256
+Id, radio_dump_mysql_nobin, 0.000, 0.386, 0.000, 0.077
+Id, buttonGo, 0.000, 0.386, 0.000, 0.077
+XPath, //tr[@id='row-AFTER0POS1']/td[6]/a/span, 0.775, 0.385, 0.000, 0.620
+Id, radio_dump_mysql_nobin, 0.000, 0.385, 0.000, 0.077
+Id, radio_dump_mysql, 0.000, 0.385, 0.000, 0.077
+Id, radio_dump_mysql_nobin, 0.000, 0.385, 0.000, 0.077
+Id, filename_template, 0.000, 0.385, 0.000, 0.077
+Id, radio_compression_gzip, 0.000, 0.385, 0.000, 0.077
+Id, radio_compression_none, 0.000, 0.385, 0.000, 0.077
