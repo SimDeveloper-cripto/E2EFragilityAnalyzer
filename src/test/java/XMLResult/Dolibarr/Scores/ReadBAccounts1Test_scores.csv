@@ -3,7 +3,7 @@ Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore
 Id, username, 0.000, 0.388, 0.000, 0.078
 Id, password, 0.000, 0.388, 0.000, 0.078
 Id, password, 0.000, 0.388, 0.000, 0.078
-CssSelector, #mainmenua_bank > .mainmenuaspan, 0.500, 0.370, 0.952, 0.519
+CssSelector, #mainmenua_bank > .mainmenuaspan, 0.500, 0.367, 0.952, 0.519
 CssSelector, .divsearchfield, 0.250, 0.394, 0.000, 0.254
 CssSelector, .select2-selection--multiple > .select2-selection__rendered, 0.500, 0.394, 0.500, 0.479
 Name, search_ref, 0.400, 0.393, 0.000, 0.359

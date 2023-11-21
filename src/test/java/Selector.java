@@ -2,11 +2,21 @@
 import org.openqa.selenium.By;
 
 public class Selector {
-    private String selector, type;
-    private float selectorScore;
-    private float pageScore;
-    private float pageAndSelectorScore;
-    private float selectorFinalScore;
+    private String selector; // String value of the Locator
+    private String type; // Type of the Locator
+    private float selectorScore, selectorCombinedScoreWithPageScore;
+
+    /** [DESCRIPTION]
+        - This value is the result of a weighted average combined with
+            selectorScore, pageComplexity, selectorCombinedScoreWithPageScore (all of them with their weights)
+            Result calculation:
+                (selectorComplexityScore * DefaultSelectorComplexityEvaluator.getSelectorScoreWeight())
+                + (pageComplexityScore * DefaultPageComplexityEvaluator.getPageScoreWeight())
+                + (pageAndSelectorComplexityScore * DefaultPageAndSelectorComplexityEvaluator.getPageAndSelectorScoreWeight()
+
+        - It is used for calculating the Harmonic Mean used to set the Test score (Test in which is the Selector is used)
+     */
+    private float weightedAverageResult;
 
     public Selector(String value, String type) {
         this.selector = value;
@@ -20,7 +30,7 @@ public class Selector {
 
     @Override
     public String toString() {
-        return "Selector = '" + selector + '\'' + ", Type = '" + type + '\'' + ", SelectorFinalScore = " + getSelectorFinalScore() + '\'';
+        return "Selector = '" + selector + '\'' + ", Type = '" + type + '\'' + ", Selector's WeightedAverageResult = " + getSelectorWeightedAverageResultScore() + '\'';
     }
 
     private String createSelector(By locator) {
@@ -54,27 +64,19 @@ public class Selector {
         return selectorScore;
     }
 
-    public void setPageScore(float pageScore) {
-        this.pageScore = pageScore;
+    public void setSelectorCombinedScoreWithPageScore(float score) {
+        this.selectorCombinedScoreWithPageScore = score;
     }
 
-    public float getPageScore() {
-        return pageScore;
+    public float getSelectorCombinedScoreWithPageScore() {
+        return selectorCombinedScoreWithPageScore;
     }
 
-    public void setPageAndSelectorScore(float score) {
-        this.pageAndSelectorScore = score;
+    public void setWeightedAverageResultScore(float score) {
+        this.weightedAverageResult = score;
     }
 
-    public float getPageAndSelectorScore() {
-        return pageAndSelectorScore;
-    }
-
-    public double getSelectorFinalScore() {
-        return this.selectorFinalScore;
-    }
-
-    public void setSelectorFinalScore(float selectorFinalScore) {
-        this.selectorFinalScore = selectorFinalScore;
+    public double getSelectorWeightedAverageResultScore() {
+        return this.weightedAverageResult;
     }
 }

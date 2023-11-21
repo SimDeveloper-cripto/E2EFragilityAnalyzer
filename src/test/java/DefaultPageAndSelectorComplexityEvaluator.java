@@ -1,19 +1,15 @@
 
-// import org.jsoup.nodes.Document;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
-// import java.util.regex.Matcher;
-// import java.util.regex.Pattern;
 
 public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelectorScoreStrategy {
     @Override
     public float evaluatePageAndSelectorComplexity(Selector selector, Page page, WebDriver driver) {
         String selectorType   = selector.getType();
         String selectorString = selector.getSelector();
-        // Document document     = page.getPage();
 
         int nElemFirstMatch, nElemSecondMatch;
         float ratio;
@@ -48,14 +44,6 @@ public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelect
     }
 
     private String removeFirstLevelCssSelector(String selectorString) {
-/*
-        int index = selectorString.indexOf(' ');
-        if (index != -1) {
-            return selectorString.substring(index + 1); // Exclude the first part of the selector
-        } else {
-            return selectorString;
-        }
-*/
         String[] combinators = { ">", "+", "~", " " };
 
         for (String combinator : combinators) {
@@ -74,14 +62,6 @@ public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelect
                 return "//" + selectorString.substring(index + 1);
         }
         return selectorString;
- /*
-        int index = selectorString.indexOf('/');
-        if (index != -1) {
-            return selectorString.substring(index + 1); // Exclude the first part of the XPath
-        } else {
-            return selectorString;
-        }
- */
     }
 
     private static int getNumberOfMatches(String selectorString, String type, WebDriver driver) {
@@ -95,18 +75,6 @@ public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelect
         }
 
         return list.size();
-        /* [OLD VERSION]
-            try {
-                String selector = QueryParser.parse(selectorString).toString();
-                for (Element e : document.select(selector)) {
-                    nMatch += 1;
-                }
-            } catch (org.jsoup.select.Selector.SelectorParseException e) {
-                // System.err.println("Errore nel selettore: " + selectorString);
-                // System.err.println("SelectorParseException: " + e.getMessage());
-                e.printStackTrace();
-            }
-        */
     }
 
     public static float getPageAndSelectorScoreWeight() {

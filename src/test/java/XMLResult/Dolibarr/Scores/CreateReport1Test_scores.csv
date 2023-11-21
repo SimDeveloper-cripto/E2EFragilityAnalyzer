@@ -3,7 +3,7 @@ Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore
 Id, username, 0.000, 0.388, 0.000, 0.078
 Id, password, 0.000, 0.388, 0.000, 0.078
 Id, password, 0.000, 0.388, 0.000, 0.078
-CssSelector, .billing, 0.250, 0.370, 0.000, 0.249
+CssSelector, .billing, 0.250, 0.367, 0.000, 0.248
 CssSelector, .menu, 0.250, 0.395, 0.000, 0.254
 LinkText, Reportistiche, 0.250, 0.395, 0.000, 0.254
 LinkText, Reportistiche, 0.250, 0.395, 0.000, 0.254

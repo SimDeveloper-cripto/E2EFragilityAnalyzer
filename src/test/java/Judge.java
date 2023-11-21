@@ -36,12 +36,12 @@ public class Judge {
         return getPageAndSelectorScoreStrategy().evaluatePageAndSelectorComplexity(selector, page, driver);
     }
 
-    public static double getTestScore(Test test) {
+    public double getTestScore(Test test) {
         double sumInverseScores = 0;
         int n = test.getSelectors().size();
 
-        for (Selector tes : test.getSelectors()) {
-            sumInverseScores += 1.0 / tes.getSelectorFinalScore();
+        for (Selector s : test.getSelectors()) {
+            sumInverseScores += 1.0 / s.getSelectorWeightedAverageResultScore();
         }
 
         numOfTestJudged += 1;
@@ -67,7 +67,7 @@ public class Judge {
         double sumScores = 0;
         int n = test.getSelectors().size();
 
-        for (Selector tes : test.getSelectors()) sumScores += tes.getSelectorFinalScore();
+        for (Selector tes : test.getSelectors()) sumScores += tes.getSelectorWeightedAverageResultScore();
         return sumScores / n;
     }
 
@@ -75,7 +75,7 @@ public class Judge {
         double prodotto = 1;
         int n = test.getSelectors().size();
 
-        for (Selector tes : test.getSelectors()) prodotto *= tes.getSelectorFinalScore();
+        for (Selector tes : test.getSelectors()) prodotto *= tes.getSelectorWeightedAverageResultScore();
         return Math.pow(prodotto, 1.0 / n);
     }
 
@@ -83,7 +83,7 @@ public class Judge {
         double sumSquares = 0;
         int n = test.getSelectors().size();
 
-        for (Selector tes : test.getSelectors()) sumSquares += Math.pow(tes.getSelectorFinalScore(), 2);
+        for (Selector tes : test.getSelectors()) sumSquares += Math.pow(tes.getSelectorWeightedAverageResultScore(), 2);
         return Math.sqrt(sumSquares / n);
     }
 }

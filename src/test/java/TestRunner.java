@@ -133,7 +133,7 @@ public class TestRunner {
         double scoreTest;
 
         for (Test testToJudge: tests) {
-            scoreTest = Judge.getTestScore(testToJudge);
+            scoreTest = judge.getTestScore(testToJudge);
             testToJudge.setTestScore(scoreTest);
         }
         return tests;

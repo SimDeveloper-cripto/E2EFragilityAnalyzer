@@ -1,3 +1,4 @@
+
 import java.io.*;
 import java.util.List;
 import java.util.Locale;
@@ -8,7 +9,7 @@ import java.text.DecimalFormatSymbols;
     - Log class is used to show the user Test results on terminal and also in the specified files
 * */
 public class Log {
-    private void fillResultFile(List<Test> testsJudge, String csvFileNamePath, String columnName, DecimalFormat df) {
+    private void fillResultFile(List<Test> testsJudge, String csvFileNamePath, DecimalFormat df) {
         try {
             File inputFile = new File(csvFileNamePath);
             File tempFile  = new File("temp.csv");
@@ -25,7 +26,7 @@ public class Log {
             if ((line = reader.readLine()) != null) {
                 headers = line.split(",");
                 for (int i = 0; i < headers.length; i++) {
-                    if (headers[i].equals(columnName)) {
+                    if (headers[i].equals("Metric Result")) {
                         columnIdx = i;
                         foundColumn = true;
                         break;
@@ -40,7 +41,7 @@ public class Log {
 
                 if (foundColumn && !testsJudge.isEmpty()) {
                     // Update the values in the column with scores from testsJudge
-                    if (columnIdx >= 0 && columnIdx < data.length) {
+                    if (columnIdx < data.length) {
                         String newValue = df.format(testsJudge.remove(0).getTestScore());
                         data[columnIdx] = newValue;
                     }
@@ -88,9 +89,9 @@ public class Log {
                     String nameSelector = selector.getSelector();
                     String typeSelector = selector.getType();
                     float selectorScore = selector.getSelectorScore();
-                    float pageScore     = selector.getPageScore();
-                    float pageAndSelectorScore = selector.getPageAndSelectorScore();
-                    double selectorFinalScore  = selector.getSelectorFinalScore();
+                    float pageScore     = page.getPageComplexity();
+                    float pageAndSelectorScore = selector.getSelectorCombinedScoreWithPageScore();
+                    double selectorFinalScore  = selector.getSelectorWeightedAverageResultScore();
 
                     String line = typeSelector + ", " + nameSelector + ", " + df.format(selectorScore) +
                             ", " + df.format(pageScore) + ", " + df.format(pageAndSelectorScore) + ", " + df.format(selectorFinalScore) + "\n";
@@ -118,17 +119,20 @@ public class Log {
 
         String directory = "src/test/java/XMLResult/" + JUnitRunner.SoftwareUsed + "/Result.csv";
         createScoreFileForEachTest(testsJudged, df);
-        fillResultFile(testsJudged, directory,"Metric Result", df);
+        fillResultFile(testsJudged, directory, df);
     }
 
     public void logResultForEachTest(List<Test> testsJudged, DecimalFormat df) {
         System.out.println(" ");
         for (Test testJudged : testsJudged) {
             System.out.println("Test name: " + testJudged.getClassName());
-            for (Selector selector : testJudged.getSelectors()) {
+            for (int i = 0; i < testJudged.getSelectors().size(); i++) {
+                Selector selector = testJudged.getSelectors().get(i);
+                Page page = testJudged.getPages().get(i);
+
                 System.out.println("\tSelector: " + selector.getSelector());
-                System.out.println("\t\tSelectorScore: " + df.format(selector.getSelectorScore()) + ", PageScore: " + df.format(selector.getPageScore())
-                        + ", PageAndSelectorScore: " + df.format(selector.getPageAndSelectorScore()) + ", SelectorFinalScore: " + df.format(selector.getSelectorFinalScore()));
+                System.out.println("\t\tSelectorScore: " + df.format(selector.getSelectorScore()) + ", PageScore: " + df.format(page.getPageComplexity())
+                        + ", PageAndSelectorScore: " + df.format(selector.getSelectorCombinedScoreWithPageScore()) + ", SelectorFinalScore: " + df.format(selector.getSelectorWeightedAverageResultScore()));
             }
             System.out.println("Test Score (by harmonic Mean): " + testJudged.getTestScore());
             System.out.println(" ");

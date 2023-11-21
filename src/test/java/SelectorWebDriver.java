@@ -25,7 +25,7 @@ public class SelectorWebDriver implements WebDriverListener {
 		Document pageContent = Jsoup.parse(pageSource);
 
 		Selector selector = new Selector(locator);
-		Page page         = new Page(pageContent);
+		Page page        = new Page(pageContent);
 
 		// Scores calculation
 		float selectorComplexityScore        = judge.applyMetricToSelector(selector, pageContent);
@@ -34,18 +34,14 @@ public class SelectorWebDriver implements WebDriverListener {
 
 		selector.setSelectorScore(selectorComplexityScore);
 		page.setPageComplexity(pageComplexityScore);
-
-
-
+		selector.setSelectorCombinedScoreWithPageScore(pageAndSelectorComplexityScore);
 
 		/* Weighted Average Calculation */
 		float result = (selectorComplexityScore * DefaultSelectorComplexityEvaluator.getSelectorScoreWeight())
 				+ (pageComplexityScore * DefaultPageComplexityEvaluator.getPageScoreWeight())
 				+ (pageAndSelectorComplexityScore * DefaultPageAndSelectorComplexityEvaluator.getPageAndSelectorScoreWeight()); // [0-1]
 
-		selector.setPageAndSelectorScore(pageAndSelectorComplexityScore);
-		selector.setSelectorFinalScore(result);
-		selector.setPageScore(pageComplexityScore);
+		selector.setWeightedAverageResultScore(result);
 
 		System.out.println("(Analyzed) " + selector + "  " + page + "  " + "PageAndSelectorComplexityScore = " + pageAndSelectorComplexityScore + "\n");
 
