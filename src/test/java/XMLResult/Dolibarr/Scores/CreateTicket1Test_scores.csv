@@ -6,9 +6,9 @@ Id, password, 0.000, 0.388, 0.000, 0.078
 CssSelector, #mainmenua_ticket > .mainmenuaspan, 0.500, 0.367, 0.952, 0.519
 CssSelector, .menu, 0.250, 0.397, 0.000, 0.254
 XPath, //div[@id='id-left']/div/div[2]/div[3]/a, 0.800, 0.397, 0.000, 0.639
-Id, subject, 0.000, 0.366, 0.000, 0.073
-Id, message, 0.000, 0.366, 0.000, 0.073
-Name, add, 0.400, 0.366, 0.000, 0.353
+Id, subject, 0.000, 0.370, 0.000, 0.074
+Id, message, 0.000, 0.370, 0.000, 0.074
+Name, add, 0.400, 0.370, 0.000, 0.354
 CssSelector, .center:nth-child(3) > .butAction, 0.500, 0.397, 0.857, 0.515
 CssSelector, .ui-button:nth-child(1), 0.250, 0.395, 0.000, 0.254
 XPath, //div[@id='id-right']/div/div[2]/div[3]/div/table/tbody/tr[7]/td/table/tbody/tr/td, 0.862, 0.397, 0.000, 0.683

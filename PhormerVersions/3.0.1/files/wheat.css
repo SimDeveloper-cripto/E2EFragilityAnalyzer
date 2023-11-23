@@ -1,0 +1,101 @@
+body 			{ background: #F5DEB3; color: #BBB; font-size: 11px; margin: 0px; padding: 0px; font-family: Tahoma, Arial, Helvetica, Serif; direction: ltr; }
+#Granny			{ width: 760px; text-align: left; margin-bottom: 30px;}
+a 			{ color: #444; text-decoration: none;  }
+a:hover 		{ color: #111; }
+div.topPhorm 		{ font-family: georgia; margin-left: 10%; margin-bottom: 30px; background: url('wheat/vbg1.jpg') bottom; text-align: left; padding: 10px 25px; font-size: 72px; color: #666; }
+div.topPhorm a		{ color: #666; }
+div.topPhormAbout 	{ line-height: 125%; font-family: tahoma; letter-spacing: 1px; border-left: 1px dashed #999; padding-left: 40px; margin-left: 12px; font-size: 8pt; color: #555; }
+div.footer 		{ background: url('wheat/vbg0.jpg') top; padding: 30px 40px; margin-right: 10%; margin-top: 10px; font-size: 8pt; color: #777; text-align: center; line-height: 150%; }
+#sidecol		{ width: 190px; margin-right: 5px; background: url('wheat/hbg1.jpg') right; float: left; }
+#sidecolinner		{ padding: 15px 0px 0px 20px; }
+#maincol		{ width: 560px; float: left;}
+#maincolinner		{ }
+.part 			{ line-height: 100%; background: url('wheat/hbg1.jpg') right repeat-y; margin: 0px 15px 20px 0px; padding: 10px 0px 10px 0px; text-align: left; }
+.item			{ padding: 2px 0px 4px; }
+.submenu 		{ margin: 5px 0px 5px 15px; clear: both; }
+.part .titlepart 	{ position: relative; left: -10px; font-size: 8pt; margin: 0px 25px 8px 0px; padding: 5px 5px 5px 10px; color: #444; background: url('wheat/hbg1.jpg') right repeat-y; }
+.part .titlepart a	{ color: #444; }
+.thumbcntarr		{ letter-spacing: 0px; color: #777; }
+.categinfo		{ padding-left: .3em; font-size: 0.89em; color: #777;}
+.categeach		{ } 
+.partmain		{ line-height: 100%; background: #F5DEB3; margin: 0px 15px 0px 0px; text-align: left; }
+.partmain .submenu	{ clear: both; border: 1px solid #F5DEB3; }
+.partmain .titlepart 	{ letter-spacing: 5px; margin: 0px 20px 10px 0px; padding: 15px 15px 10px; color: #444; background: url('wheat/vbg1.jpg') bottom; }
+.theTitleA		{ color: #444; }
+.partmain .midInfo	{ border-left: 2px dotted #888480; margin: 0px 28px 20px 17px; padding: 2px 15px 2px 15px; color: #666; line-height: 125%; text-align: justify; }
+.partmain .end		{ text-align: left; clear: both; margin: 0px 20px 30px 0px; background: url('wheat/vbg0.jpg') top; padding: 7px 20px 30px 20px; }
+.titlepartlinkR		{ float: right; letter-spacing: 0px; color: #666; }
+.titlepartlinkR a	{ color: #666; }
+.titlepartlinkR a:hover	{ color: #333; }
+.titlepartlinkL		{ float: left; letter-spacing: 0px; color: #666; }
+.titlepartlinkL a	{ color: #666; }
+.titlepartlinkL a:hover	{ color: #333; }
+.wholePhoto		{ padding-left: 30px; }
+.photoTheImg		{ text-align: center; margin-top: 5px; }
+.photoTheImg img	{ margin: 5px 15px 30px 0px; border: 1px solid black; }
+.divClear		{ clear: both; height: 1px; font-size: 1px; }
+.photoBox		{ color: #484440; background: url('wheat/hbg1.jpg') right repeat-y; line-height: 140%; border: 1px solid #AAA; margin: 12px 17px 15px 0px; float:left; padding: 0px 15px 10px; width:170px; }
+.photoBox a		{ color: #686868; }
+.photoBox a:hover	{ color: #383838; }
+.titlePhotoBox		{ background: black url('wheat/hbg0.jpg') left repeat-y; color: #242220; position: relative; padding: 2px 10px; top: -7px; left: -7px; border: 1px solid #999; }
+.spc			{ font-size: 1px; height: 10px; line-height: 0%; }
+
+select.rate 		{ background: #DDD; color: #585450; border-width: 1px; margin: 5px 5px 5px 5px; border-color: #999; font-size: 1em; font-family: tahoma; }
+input.submit 		{ background: #DDD; color: #383430; margin: 2px 0px; font-size: 1em; font-family: tahoma; padding: 0px; position: relative; top: -3px; border-color: #777; }
+form 			{ margin: 0px; }
+.hr			{ width: 80%; font-size: 1px; line-height: 0%; height: 1px; border-top: 1px solid #444; margin: 10px 0px 10px; }
+
+.pvTitle		{ background: url('wheat/vbg1.jpg') bottom; padding: 10px 35px 15px; color: #888480; font-size: 1.6em; letter-spacing: 2px; font-weight: bold; }
+.pvTitle a		{ color: #888480; }
+.pvTitle a:hover	{ color: #888480; }
+.pvTitle .dt		{ font-family: serif; color: #6F6860; font-size: 1.6em; }
+.authFailed		{ width: 80%; margin: 10px auto; line-height: 140%; color: #999; }
+.pvEnd			{ background: url('wheat/vbg0.jpg') top; padding: 15px 35px; color: #888; font-size: 1.6em; letter-spacing: 2px; font-weight: bold; }
+
+.aThumb			{ margin: 5px 0px; background: #F5DEB3;  overflow: hidden; width: 100px; height: 120px; float: left; }
+.aThumb img		{ border: 1px solid #111; margin: 5px; }
+.aThumb a		{ color: #444; }
+.aThumb a:hover		{ color: #666; }
+.thumbDate		{ font-size: 0.8em; margin: 2px 0px; color: #222; }
+.thumbNameLine		{ height: 14px; overflow: hidden; }
+
+.small			{ font-size: 0.89em; color: #666462; letter-spacing: 1px; }
+.dot 			{ color: #C60; padding-right: 4px; }
+.darkdot 		{ color: #B72; padding-right: 5px; }
+.reddot 		{ font-size: 14px; padding-right: 5px; color: #C30; }
+
+.alert_msg		{ color: #643; letter-spacing: 1px; text-align: center; background: #D8D4D0; width: 80%; margin: 5px auto 15px; padding: 10px 15px; border: 3px double #999; }
+.ok_msg			{ color: #404844; letter-spacing: 1px; text-align: center; background: #C0C8C4; width: 80%; margin: 5px auto 15px; padding: 10px 15px; border: 3px double #999; }
+.ok_msg_inside		{ color: #303F38; text-align: justify; padding: 0px 10px 10px; border-left: 1px dashed #851; position: relative; top: 5px; left: 1px; }
+
+.Commenting		{ text-align: justify; width: 85%; margin: 0px 30px 20px 0px; color: #888; border-top: 0px dashed #383430; padding-top: 0px; line-height: 125%; }
+.Commenting .title	{ background: url('wheat/vbg1.jpg') bottom; padding: 15px 15px 25px; letter-spacing: 3px; font-size: 1.2em; color: #333; text-align: left; margin: 0px; position: relative; top: 10px; }
+.Commenting table	{ text-align: left; margin-left: auto; margin-right: auto; }
+.Commenting input 	{ font-size: 11px; font-family: tahoma, arial, helvetica, sans-serif; background: url('wheat/hbg0.jpg') left repeat-y; color: #333; padding: 1px 3px; border: 1px solid #999; margin-top: 2px;}
+.Commenting textarea 	{ background: url('wheat/vbg0.jpg') top; color: #333; padding: 2px 5px; border: 1px solid #999; margin-top: 2px; }
+.Commenting .cell	{ color: #333; background: url('wheat/vbg0.jpg') top; padding: 10px 20px 5px; margin: 10px 20px 20px; }
+.Commenting .bcell	{ color: #333; background: #F5DEB3; padding: 10px 20px 5px; margin: 10px 20px 20px; }
+.Commenting blockquote 	{ border-left: 1px dashed #C60; padding: 0px 20px 5px; margin: 5px 5px 10px 1px; line-height: 140%; color: #444; }
+.Commenting blockquote.r { border-left-width: 0px; border-right: 1px dashed #C60; direction: rtl; padding: 0px 20px 5px; margin: 5px 5px 10px 1px; line-height: 140%; color: #444; }
+.Commenting a		{ color: #777; }
+.Commenting a:hover	{ color: #444; }
+.Commenting .bottitle	{ background: url('wheat/vbg0.jpg') top; padding: 0px 0px 30px; margin: 0px; position: relative; top: -20px; }
+
+input			{ font-family: tahoma, arial, sans-serif; background: url('wheat/hbg0.jpg') left repeat-y; color: #555; padding: 1px 3px; border: 1px solid #444; }
+input.checkBox		{ background: #F5DEB3; border: 1px solid black; }
+
+.navigation		{ margin: 10px 25px 15px 20px; float: left; }
+.navigation .title	{ background: url('wheat/vbg1.jpg') bottom; padding: 10px 5px 10px 15px; letter-spacing: 3px; font-size: 1em; color: #636363; }
+.navigation .bottitle	{ position: relative; top: -10px; clear: both; background: url('wheat/vbg0.jpg') top; padding: 0px 0px 20px; }
+
+#jungleBox		{ width: 400px; height: 400px; border: 0px solid #DDD; margin: 5px auto; overflow: hidden; position: relative; z-index: 0; }
+.aThumbInBox		{ background: black; overflow: hidden; width: 77px; height: 77px; position: absolute; }
+.aThumbInBox img	{ border: 1px solid #111; }
+
+.aStory			{ width: 85%; margin: 0px auto; }
+.aStory	.titlepart	{ margin-bottom: 0px; padding-bottom: 5px; padding-top: 10px; }
+.aStory	.titlepart a	{ color: #444; }
+.aStory	.end		{ margin-top: 0px; padding-bottom: 15px; } 
+.aStory .thumbcntarr	{ line-height: 150%; color: #777; }
+.aStory .end a		{ color: #555; }
+.aStory .end a:hover	{ color: #888; }

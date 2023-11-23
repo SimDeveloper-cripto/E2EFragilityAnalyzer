@@ -4,8 +4,8 @@ Id, username, 0.000, 0.388, 0.000, 0.078
 Id, password, 0.000, 0.388, 0.000, 0.078
 Id, password, 0.000, 0.388, 0.000, 0.078
 CssSelector, .project, 0.250, 0.367, 0.000, 0.248
-CssSelector, .menu, 0.250, 0.383, 0.000, 0.252
-LinkText, Nuova opportunità o progetto, 0.250, 0.383, 0.000, 0.252
+CssSelector, .menu, 0.250, 0.384, 0.000, 0.252
+LinkText, Nuova opportunità o progetto, 0.250, 0.384, 0.000, 0.252
 Name, title, 0.400, 0.386, 0.000, 0.357
 CssSelector, .button:nth-child(1), 0.250, 0.388, 0.000, 0.253
 Id, select2-model-container, 0.000, 0.398, 0.000, 0.080

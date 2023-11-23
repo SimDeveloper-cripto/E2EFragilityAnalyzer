@@ -102,8 +102,6 @@ public class TestRunner {
             System.out.println("<Test: " + testName + ">" + ", <Invoked method: " + methodName + ">\n");
         } catch(Exception e) {
             e.printStackTrace();
-
-            // TODO: Find a better way to penalize if the test fails because of a selector
             // Selector lastSelector = listener.getVisitedSelectors().get(listener.getVisitedSelectors().size() - 1);
             // lastSelector.setSelectorScore(judge.getBadElementScore(lastSelector));
 

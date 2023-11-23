@@ -8,10 +8,10 @@ services:
       MYSQL_USER: mantisbt
       MYSQL_PASSWORD: mantisbt
     volumes:
-      - './mysql:/var/lib/mysql'
+      - './mantisbt-db-dump:/docker-entrypoint-initdb.b'
     restart: no
   mantisbt:
-    image: 'xlrl/mantisbt:2.18.0'
+    image: xlrl/mantisbt:2.18.0
     ports:
       - '8989:80'
     volumes:

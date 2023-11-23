@@ -34,7 +34,6 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
         System.out.println("(Analyzed) Selector Hierarchy score: " + hierarchyScore);
 
         // Step 2: Type Score calculation (Rule Based)
-        // TODO: "PartialLinkText" and "ClassName" never occur (at least for now)
         switch (selectorType) {
             case "CssSelector":
                 typeScore = evaluateCssSelectorTypeScore(selectorString, depth);

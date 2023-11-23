@@ -8,8 +8,11 @@ import java.lang.reflect.InvocationTargetException;
         - TestRunner: runs all tests
         - Log: logs results on terminal and also in the specified files
 * */
+
+// TODO: ADD IN XMLResult PACKAGE CALLED SCORES AND Phormer3.0.1.xml
+
 public class JUnitRunner {
-    static String SoftwareUsed = "Dolibarr"; // Change this as you like
+    static String SoftwareUsed = "MantisBT"; // Change this as you like (Dolibarr, MantisBT, MikeFonsetaPhormer)
 
     public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException, IOException {
         String directory = "src/test/java/JUnit/" + SoftwareUsed; // JUnit test directory
