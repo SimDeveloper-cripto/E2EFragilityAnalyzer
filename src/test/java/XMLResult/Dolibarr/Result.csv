@@ -1,17 +1,18 @@
 Nome del test,Dolibarr13,Dolibarr14.0,Dolibarr14.2,Dolibarr14.5,Dolibarr15,Metric
-createCompany1,passed,error,error,error,error,0.26
-createProject1,passed,passed,passed,passed,passed,0.09
-createReport1,passed,passed,passed,passed,error,0.21
-createTicket1,passed,passed,error,error,error,0.18
-deleteBackup1,passed,passed,passed,passed,passed,0.10
-deleteHoliday1,passed,passed,passed,passed,error,0.16
-deleteProductLot1,passed,passed,passed,passed,error,0.11
-readAgenda1,passed,passed,passed,passed,passed,0.09
-readBAccounts1,passed,failed,failed,failed,failed,0.30
-readContribution1,passed,passed,passed,error,error,0.12
-readSubscription1,passed,passed,passed,error,error,0.20
-updateStyle1,passed,passed,passed,passed,passed,0.10
-updateTax1,passed,passed,error,error,error,0.23
-updateUser1,passed,passed,passed,passed,passed,0.09
-updateValidityFile1,passed,passed,passed,error,error,0.28
+createCompany1,passed,error,error,error,error,0.265
+createProject1,passed,passed,passed,passed,passed,0.087
+createReport1,passed,passed,passed,passed,error,0.207
+createTicket1,passed,passed,error,error,error,0.179
+deleteBackup1,passed,passed,passed,passed,passed,0.100
+deleteHoliday1,passed,passed,passed,passed,error,0.158
+deleteProductLot1,passed,passed,passed,passed,error,0.110
+readAgenda1,passed,passed,passed,passed,passed,0.091
+readBAccounts1,passed,failed,failed,failed,failed,0.304
+readContribution1,passed,passed,passed,error,error,0.124
+readSubscription1,passed,passed,passed,error,error,0.197
+updateStyle1,passed,passed,passed,passed,passed,0.095
+updateTax1,passed,passed,error,error,error,0.233
+updateUser1,passed,passed,passed,passed,passed,0.088
+updateValidityFile1,passed,passed,passed,error,error,0.281
 Point-Biserial Correlation, , , , , ,0.82
+

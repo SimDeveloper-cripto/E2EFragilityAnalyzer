@@ -12,6 +12,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 public class AddTag1Test {
   private  WebDriver driver=new ChromeDriver();
@@ -30,7 +31,7 @@ public class AddTag1Test {
     driver.quit();
   }
   @Test
-  public void addTag1() {
+  public void addTag1() throws InterruptedException {
     driver.get("http://localhost:8989/login_page.php");
     driver.manage().window().setSize(new Dimension(945, 1020));
     driver.findElement(By.name("username")).sendKeys("Chris95");
@@ -38,7 +39,13 @@ public class AddTag1Test {
     driver.findElement(By.name("password")).sendKeys("root");
     driver.findElement(By.cssSelector(".width-40")).click();
     //Selettore CSS troppo specifico
+    driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
+
     driver.findElement(By.cssSelector(".my-buglist-bug:nth-child(1) .status-50-color")).click();
+
+    driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
     driver.findElement(By.linkText("Le fatture sono errate")).click();
     driver.findElement(By.name("tag_string")).click();
     driver.findElement(By.name("tag_string")).sendKeys("mysql");

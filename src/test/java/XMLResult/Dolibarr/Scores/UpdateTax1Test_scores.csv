@@ -1,4 +1,4 @@
-Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore 
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
 Name, username, 0.400, 0.388, 0.000, 0.358
 Name, password, 0.400, 0.388, 0.000, 0.358

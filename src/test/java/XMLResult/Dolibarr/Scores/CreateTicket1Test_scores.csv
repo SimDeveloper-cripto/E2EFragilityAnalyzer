@@ -1,9 +1,9 @@
-Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore 
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
 Id, username, 0.000, 0.388, 0.000, 0.078
 Id, password, 0.000, 0.388, 0.000, 0.078
 Id, password, 0.000, 0.388, 0.000, 0.078
-CssSelector, #mainmenua_ticket > .mainmenuaspan, 0.500, 0.367, 0.952, 0.519
+CssSelector, #mainmenua_ticket > .mainmenuaspan, 0.500, 0.370, 0.952, 0.519
 CssSelector, .menu, 0.250, 0.397, 0.000, 0.254
 XPath, //div[@id='id-left']/div/div[2]/div[3]/a, 0.800, 0.397, 0.000, 0.639
 Id, subject, 0.000, 0.370, 0.000, 0.074

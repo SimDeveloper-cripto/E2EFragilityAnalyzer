@@ -26,7 +26,7 @@ public class Log {
             if ((line = reader.readLine()) != null) {
                 headers = line.split(",");
                 for (int i = 0; i < headers.length; i++) {
-                    if (headers[i].equals("Metric Result")) {
+                    if (headers[i].equals("Metric")) {
                         columnIdx = i;
                         foundColumn = true;
                         break;
@@ -79,7 +79,7 @@ public class Log {
             String fileName = basePath + test.getTestName() + "_scores.csv";
 
             try (FileWriter fileWriter = new FileWriter(fileName)) {
-                String index = "Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore \n\n";
+                String index = "Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult \n\n";
 
                 fileWriter.write(index);
                 for (int i = 0; i < test.getSelectors().size(); i++) {
@@ -132,7 +132,7 @@ public class Log {
 
                 System.out.println("\tSelector: " + selector.getSelector());
                 System.out.println("\t\tSelectorScore: " + df.format(selector.getSelectorScore()) + ", PageScore: " + df.format(page.getPageComplexity())
-                        + ", PageAndSelectorScore: " + df.format(selector.getSelectorCombinedScoreWithPageScore()) + ", SelectorFinalScore: " + df.format(selector.getSelectorWeightedAverageResultScore()));
+                        + ", PageAndSelectorScore: " + df.format(selector.getSelectorCombinedScoreWithPageScore()) + ", SelectorWeightedAverageResult: " + df.format(selector.getSelectorWeightedAverageResultScore()));
             }
             System.out.println("Test Score (by harmonic Mean): " + testJudged.getTestScore());
             System.out.println(" ");

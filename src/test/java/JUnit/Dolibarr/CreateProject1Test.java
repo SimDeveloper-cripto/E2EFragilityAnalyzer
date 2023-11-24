@@ -40,8 +40,6 @@ public class CreateProject1Test {
     driver.findElement(By.name("title")).sendKeys("ProgettoEasy");
     js.executeScript("window.scrollBy(0,600)", "");
     driver.findElement(By.cssSelector(".button:nth-child(1)")).click();
-
-
     driver.findElement(By.id("select2-model-container")).click();
     driver.findElement(By.id("select2-model-container")).click();
     driver.findElement(By.id("id-right")).click();

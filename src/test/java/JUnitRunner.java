@@ -7,12 +7,13 @@ import java.lang.reflect.InvocationTargetException;
     - JUnitRunner uses two classes:
         - TestRunner: runs all tests
         - Log: logs results on terminal and also in the specified files
-* */
+**/
 
-// TODO: ADD IN XMLResult PACKAGE CALLED SCORES AND Phormer3.0.1.xml
+// TODO: Phormer Result.csv remains empty after execution
+// TODO: At last row of Result.csv: update value of Point-BiserialCorrelation Coefficient (or remove it)
 
 public class JUnitRunner {
-    static String SoftwareUsed = "MantisBT"; // Change this as you like (Dolibarr, MantisBT, MikeFonsetaPhormer)
+    static String SoftwareUsed = "Phormer";
 
     public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException, IOException {
         String directory = "src/test/java/JUnit/" + SoftwareUsed; // JUnit test directory
