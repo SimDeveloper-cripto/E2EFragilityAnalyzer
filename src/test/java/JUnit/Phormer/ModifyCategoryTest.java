@@ -6,8 +6,13 @@ import static org.hamcrest.CoreMatchers.is;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class ModifyCategoryTest {
   private WebDriver driver = new ChromeDriver();
@@ -23,16 +28,30 @@ public class ModifyCategoryTest {
   public void modifyCategory() {
     driver.get("http://localhost/");
     driver.findElement(By.linkText("Admin")).click();
+
+    driver.findElement(By.name("passwd")).click();
+    driver.findElement(By.name("passwd")).sendKeys("admin");
+    driver.findElement(By.cssSelector(".submit")).click();
+
     driver.findElement(By.linkText("Manage Categories")).click();
     driver.findElement(By.cssSelector("span:nth-child(10) > a:nth-child(1)")).click();
-    driver.findElement(By.id("name")).click();
-    driver.findElement(By.id("name")).sendKeys("New category Edit");
-    driver.findElement(By.name("desc")).click();
-    driver.findElement(By.name("desc")).sendKeys("Category description Edit");
+
+    WebElement nameField = driver.findElement(By.id("name"));
+    nameField.clear();
+    nameField.sendKeys("New category Edit");
+
+    WebElement descField = driver.findElement(By.name("desc"));
+    descField.clear();
+    descField.sendKeys("Category description Edit");
+
     driver.findElement(By.name("list")).click();
+
     driver.findElement(By.cssSelector("tr:nth-child(4) > td:nth-child(2)")).click();
     driver.findElement(By.id("public")).click();
     driver.findElement(By.cssSelector(".submit")).click();
-    assertThat(driver.findElement(By.cssSelector(".note_valid")).getText(), is("Category \\\"New category Edit\\\" edited succesfully!"));
+
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+    WebElement successMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".note_valid")));
+    assertThat(successMessage.getText(), is("Category \"New category Edit\" edited succesfully!"));
   }
 }

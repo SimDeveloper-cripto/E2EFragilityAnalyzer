@@ -12,17 +12,15 @@ import org.openqa.selenium.JavascriptExecutor;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.is;
 
-
 public class SelectRatePhotoTest {
   private WebDriver driver = new ChromeDriver();
-  private Map<String, Object> vars;
+  private Map<String, Object> vars = vars = new HashMap<>();
   JavascriptExecutor js = (JavascriptExecutor) driver;
 
   public void setUp(WebDriver driver) {
     this.driver.quit();
     this.driver = driver;
     js = (JavascriptExecutor) driver;
-    vars = new HashMap<>();
   }
 
   @After
@@ -46,8 +44,9 @@ public class SelectRatePhotoTest {
 
   @Test
   public void selectRatePhoto() {
-    driver.get("http://localhost//");
+    driver.get("http://localhost/");
     vars.put("window_handles", driver.getWindowHandles());
+
     driver.findElement(By.cssSelector(".submenu:nth-child(2) img")).click();
     vars.put("win3009", waitForWindow(2000));
     driver.switchTo().window(vars.get("win3009").toString());

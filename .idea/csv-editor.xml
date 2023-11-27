@@ -339,6 +339,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\src\test\java\XMLResult\Phormer\Scores\CreatecategoryTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\src\test\java\XMLResult\Phormer\Scores\LoginTest_scores.csv">
           <value>
             <Attribute>

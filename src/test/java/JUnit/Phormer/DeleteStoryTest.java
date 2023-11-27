@@ -28,6 +28,11 @@ public class DeleteStoryTest {
   public void deleteStory() {
     driver.get("http://localhost/");
     driver.findElement(By.linkText("Admin")).click();
+
+    driver.findElement(By.name("passwd")).click();
+    driver.findElement(By.name("passwd")).sendKeys("admin");
+    driver.findElement(By.cssSelector(".submit")).click();
+
     driver.findElement(By.linkText("Manage Stories")).click();
     driver.findElement(By.cssSelector("span:nth-child(10) > a:nth-child(2)")).click();
     driver.switchTo().alert().accept();

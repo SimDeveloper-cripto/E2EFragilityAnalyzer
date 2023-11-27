@@ -30,6 +30,11 @@ public class ModifyPhotoTest {
   public void modifyPhoto() {
     driver.get("http://localhost/");
     driver.findElement(By.linkText("Admin")).click();
+
+    driver.findElement(By.name("passwd")).click();
+    driver.findElement(By.name("passwd")).sendKeys("admin");
+    driver.findElement(By.cssSelector(".submit")).click();
+
     driver.findElement(By.linkText("Manage Photos")).click();
     driver.findElement(By.linkText("Edit")).click();
     driver.findElement(By.name("getcmnts")).click();
