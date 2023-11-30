@@ -1,0 +1,8 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
+
+Id, user, 0.000, 0.379, 0.000, 0.076
+Id, user, 0.000, 0.379, 0.000, 0.076
+Id, pwd, 0.000, 0.379, 0.000, 0.076
+Id, pwd, 0.000, 0.379, 0.000, 0.076
+Id, chk, 0.000, 0.379, 0.000, 0.076
+LinkText, Export CSV, 0.250, 0.379, 0.000, 0.251

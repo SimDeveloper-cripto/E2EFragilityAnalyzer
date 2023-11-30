@@ -1,0 +1,8 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
+
+Id, user, 0.000, 0.379, 0.000, 0.076
+Id, user, 0.000, 0.379, 0.000, 0.076
+Id, pwd, 0.000, 0.379, 0.000, 0.076
+Id, pwd, 0.000, 0.379, 0.000, 0.076
+Id, chk, 0.000, 0.379, 0.000, 0.076
+CssSelector, .datarow:nth-child(3) .glyphicon-wrench, 0.500, 0.379, 0.800, 0.506
