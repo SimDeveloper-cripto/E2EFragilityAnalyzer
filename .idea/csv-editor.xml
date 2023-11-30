@@ -115,6 +115,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\src\test\java\XMLResult\JTrac\Result.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\src\test\java\XMLResult\Magento\Scores\CreateAccount1Test_scores.csv">
           <value>
             <Attribute>
@@ -326,6 +333,20 @@
           </value>
         </entry>
         <entry key="\src\test\java\XMLResult\MantisBT\Scores\zDeleteUser1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\test\java\XMLResult\PasswordManager\Result.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\test\java\XMLResult\PasswordManager\Scores\ModifyEntry2Test_scores.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

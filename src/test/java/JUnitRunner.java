@@ -13,7 +13,7 @@ import java.lang.reflect.InvocationTargetException;
 // TODO: At last row of Result.csv: update value of Point-BiserialCorrelation Coefficient (or remove it)
 
 public class JUnitRunner {
-    static String SoftwareUsed = "Phormer";
+    static String SoftwareUsed = "Phormer"; // Phormer, PasswordManager, MantisBT, JTrac
 
     public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException, IOException {
         String directory = "src/test/java/JUnit/" + SoftwareUsed; // JUnit test directory

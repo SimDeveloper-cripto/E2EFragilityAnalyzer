@@ -1,0 +1,52 @@
+body {padding-top: 50px; width:100%;}
+/*.theme-showcase{max-width:100%;}*/
+.cellOptionButton {float:right; }
+/* Tags */
+#rightHandBox {margin-top:10px; padding:5px; }
+.group { background-color:#f8f8f8; }
+.activeTag { text-decoration:underline; }
+
+.namecell, .usercell {
+    word-wrap: break-word;
+}
+
+/* Fixing uncollapsed navbar inline*/
+@media (max-width: 767px) {
+    .navbar-collapse.collapse.in{ clear:left; }
+    .navbar-collapse.collapsing{ clear:left; }
+}
+
+/* pull-right on all except xs devices */
+@media (min-width: 992px) {
+    .pull-right-sm {
+        float: right;
+    }
+    
+}
+@media (max-width: 992px) {
+    .namecell, .usercell { max-width:360px; }
+}
+@media (max-width: 700px) {
+    .namecell, .usercell { max-width:250px;}
+}
+@media (max-width: 500px) {
+    .namecell, .usercell { max-width:170px;}
+}
+
+
+/*Login form */
+#loginform #user { 
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;  
+    font-size: 16px; 
+    height: auto;
+}
+#loginform #pwd {
+    margin-bottom: 10px; 
+    border-top-left-radius: 0; 
+    border-top-right-radius: 0;
+    font-size: 16px; 
+    height: auto;
+}
+

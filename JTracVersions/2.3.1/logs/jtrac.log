@@ -1,0 +1,43 @@
+2023-10-15 17:25:22,326 [main] INFO [info.jtrac.config.JtracConfigurer] - found 'jtrac-init.properties' on classpath, processing...
+2023-10-15 17:25:22,327 [main] INFO [info.jtrac.config.JtracConfigurer] - locales available configured are 'en,de,fr,el,uk,ja,es_MX,nl,ru,pl,hu,zh_CN,pt_BR,cs,sv,en,sl,es,zh_TW,no,tr,ar,es_AR,it,ko'
+2023-10-15 17:25:22,328 [main] INFO [info.jtrac.config.JtracConfigurer] - valid 'jtrac.home' property not available in 'jtrac-init.properties', trying system properties.
+2023-10-15 17:25:22,328 [main] INFO [info.jtrac.config.JtracConfigurer] - 'jtrac.home' property initialized from system properties as 'data'
+2023-10-15 17:25:22,328 [main] INFO [info.jtrac.config.JtracConfigurer] - directory does not exist, created 'data'
+2023-10-15 17:25:22,328 [main] INFO [info.jtrac.config.JtracConfigurer] - directory does not exist, created 'data/attachments'
+2023-10-15 17:25:22,328 [main] INFO [info.jtrac.config.JtracConfigurer] - directory does not exist, created 'data/indexes'
+2023-10-15 17:25:22,328 [main] INFO [info.jtrac.config.JtracConfigurer] - properties file does not exist, created 'data/jtrac.properties'
+2023-10-15 17:25:22,328 [main] INFO [info.jtrac.config.JtracConfigurer] - HSQLDB will be used.  Finished creating 'data/jtrac.properties'
+2023-10-15 17:25:22,328 [main] INFO [info.jtrac.config.JtracConfigurer] - found 'jtrac-version.properties' on classpath, processing...
+2023-10-15 17:25:22,329 [main] INFO [info.jtrac.config.JtracConfigurer] - jtrac.version = '2.3.1'
+2023-10-15 17:25:22,329 [main] INFO [info.jtrac.config.JtracConfigurer] - jtrac.timestamp = '2023-05-23 08:21 UTC'
+2023-10-15 17:25:22,329 [main] INFO [info.jtrac.config.JtracConfigurer] - Loading properties file from file [/home/mike/Scrivania/JTrac/Versions/2.3.1/data/jtrac.properties]
+2023-10-15 17:25:22,390 [main] INFO [info.jtrac.config.DataSourceFactoryBean] - embedded HSQLDB mode detected, using Spring single connection data source
+2023-10-15 17:25:23,498 [main] WARN [org.hibernate.util.JDBCExceptionReporter] - SQL Error: -5501, SQLState: 42501
+2023-10-15 17:25:23,498 [main] ERROR [org.hibernate.util.JDBCExceptionReporter] - user lacks privilege or object not found: ITEMS in statement [select item0_.id as id0_, item0_.version as version0_, item0_.space_id as space3_0_, item0_.sequence_num as sequence4_0_, item0_.type as type0_, item0_.parent_id as parent6_0_, item0_.time_stamp as time7_0_, item0_.planned_effort as planned8_0_, item0_.logged_by as logged9_0_, item0_.assigned_to as assigned10_0_, item0_.summary as summary0_, item0_.detail as detail0_, item0_.status as status0_, item0_.severity as severity0_, item0_.priority as priority0_, item0_.cus_dbl_01 as cus16_0_, item0_.cus_dbl_02 as cus17_0_, item0_.cus_dbl_03 as cus18_0_, item0_.cus_int_01 as cus19_0_, item0_.cus_int_02 as cus20_0_, item0_.cus_int_03 as cus21_0_, item0_.cus_int_04 as cus22_0_, item0_.cus_int_05 as cus23_0_, item0_.cus_int_06 as cus24_0_, item0_.cus_int_07 as cus25_0_, item0_.cus_int_08 as cus26_0_, item0_.cus_int_09 as cus27_0_, item0_.cus_int_10 as cus28_0_, item0_.cus_str_01 as cus29_0_, item0_.cus_str_02 as cus30_0_, item0_.cus_str_03 as cus31_0_, item0_.cus_str_04 as cus32_0_, item0_.cus_str_05 as cus33_0_, item0_.cus_tim_01 as cus34_0_, item0_.cus_tim_02 as cus35_0_, item0_.cus_tim_03 as cus36_0_ from items item0_ where item0_.id=1]
+2023-10-15 17:25:23,500 [main] WARN [info.jtrac.hibernate.HibernateJtracDao] - expected database schema does not exist, will create. Error is: could not execute query; nested exception is org.hibernate.exception.SQLGrammarException: could not execute query
+2023-10-15 17:25:23,518 [main] INFO [info.jtrac.hibernate.SchemaHelper] - begin database schema creation =========================
+2023-10-15 17:25:23,595 [main] INFO [info.jtrac.hibernate.SchemaHelper] - end database schema creation ===========================
+2023-10-15 17:25:23,596 [main] INFO [info.jtrac.hibernate.HibernateJtracDao] - inserting default admin user into database
+2023-10-15 17:25:23,618 [main] INFO [info.jtrac.hibernate.HibernateJtracDao] - schema creation complete
+2023-10-15 17:25:23,635 [main] WARN [org.hibernate.util.JDBCExceptionReporter] - SQL Warning: -1100, SQLState: 02000
+2023-10-15 17:25:23,635 [main] WARN [org.hibernate.util.JDBCExceptionReporter] - no data
+2023-10-15 17:25:23,638 [main] WARN [org.hibernate.util.JDBCExceptionReporter] - SQL Warning: -1100, SQLState: 02000
+2023-10-15 17:25:23,638 [main] WARN [org.hibernate.util.JDBCExceptionReporter] - no data
+2023-10-15 17:25:23,641 [main] WARN [org.hibernate.util.JDBCExceptionReporter] - SQL Warning: -1100, SQLState: 02000
+2023-10-15 17:25:23,641 [main] WARN [org.hibernate.util.JDBCExceptionReporter] - no data
+2023-10-15 17:25:23,717 [main] INFO [info.jtrac.JtracImpl] - available locales configured {en=en - inglese, de=de - tedesco, fr=fr - francese, el=el - greco, uk=uk - ucraino, ja=ja - giapponese, es_MX=es_MX - spagnolo (Messico), nl=nl - olandese, ru=ru - russo, pl=pl - polacco, hu=hu - ungherese, zh_CN=zh_CN - cinese (Cina), pt_BR=pt_BR - portoghese (Brasile), cs=cs - ceco, sv=sv - svedese, sl=sl - sloveno, es=es - spagnolo, zh_TW=zh_TW - cinese (Taiwan), no=no - norvegese, tr=tr - turco, ar=ar - arabo, es_AR=es_AR - spagnolo (Argentina), it=it - italiano, ko=ko - coreano}
+2023-10-15 17:25:23,719 [main] WARN [info.jtrac.JtracImpl] - invalid default locale configured = 'null', using en
+2023-10-15 17:25:23,719 [main] INFO [info.jtrac.JtracImpl] - default locale set to 'en'
+2023-10-15 17:25:23,720 [main] WARN [info.jtrac.mail.MailSender] - 'mail.server.host' config is null, mail sender not initialized
+2023-10-15 17:25:23,721 [main] INFO [info.jtrac.mail.MailSender] - email hyperlink base url set to 'http://localhost/jtrac/'
+2023-10-15 17:25:23,721 [main] WARN [info.jtrac.JtracImpl] - invalid attachment max size 'null', using 5
+2023-10-15 17:25:23,721 [main] INFO [info.jtrac.JtracImpl] - attachment max size set to 5 MB
+2023-10-15 17:25:23,721 [main] WARN [info.jtrac.JtracImpl] - invalid session timeout 'null', using 30
+2023-10-15 17:25:23,721 [main] INFO [info.jtrac.JtracImpl] - session timeout set to 30 minutes
+2023-10-15 17:25:23,854 [main] INFO [info.jtrac.wicket.JtracApplication] - wicket production mode, using: org.apache.wicket.protocol.http.SecondLevelCacheSessionStore@6d8796c1
+2023-10-15 17:25:23,883 [main] INFO [info.jtrac.wicket.JtracApplication] - casProxyTicketValidator not found in application context, CAS single-sign-on is not being used
+2023-10-15 17:25:27,605 [qtp1864350231-14] INFO [info.jtrac.config.ProviderManagerFactoryBean] - not using ldap authentication
+2023-10-15 17:25:35,521 [qtp1864350231-22] INFO [info.jtrac.JtracImpl] - default locale set to 'it'
+2023-10-15 17:27:06,636 [qtp1864350231-20] ERROR [info.jtrac.wicket.LoginPage] - login failed - Authentication for login name '13Mike' not successful
+2023-10-15 17:28:28,086 [JettyShutdownThread] INFO [info.jtrac.config.DataSourceFactoryBean] - attempting to shut down embedded HSQLDB database
+2023-10-15 17:28:28,214 [JettyShutdownThread] INFO [info.jtrac.config.DataSourceFactoryBean] - embedded HSQLDB database shut down successfully
