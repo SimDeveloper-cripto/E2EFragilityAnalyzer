@@ -25,7 +25,7 @@ public class RSSTest {
   }
 
   @Test
-  public void rss() {
+  public void rsS() {
     driver.get("http://localhost/");
     {
       List<WebElement> elements = driver.findElements(By.linkText("RSS"));

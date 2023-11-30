@@ -346,7 +346,70 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\src\test\java\XMLResult\PasswordManager\Scores\AddEntry1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\test\java\XMLResult\PasswordManager\Scores\AddEntry2Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\test\java\XMLResult\PasswordManager\Scores\DeleteEntry1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\test\java\XMLResult\PasswordManager\Scores\DeleteEntry2Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\test\java\XMLResult\PasswordManager\Scores\ExportCSVTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\test\java\XMLResult\PasswordManager\Scores\ImportCSVTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\test\java\XMLResult\PasswordManager\Scores\LoginTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\test\java\XMLResult\PasswordManager\Scores\ModifyEntry1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\src\test\java\XMLResult\PasswordManager\Scores\ModifyEntry2Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\test\java\XMLResult\PasswordManager\Scores\RegisterTest_scores.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

@@ -1,0 +1,9 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
+
+LinkText, Admin, 0.250, 0.441, 0.000, 0.263
+Name, passwd, 0.400, 0.490, 0.000, 0.378
+Name, passwd, 0.400, 0.490, 0.000, 0.378
+CssSelector, .submit, 0.250, 0.490, 0.000, 0.273
+LinkText, Manage Categories, 0.250, 0.475, 0.000, 0.270
+CssSelector, span:nth-child(10) > a:nth-child(2), 0.650, 0.440, 0.875, 0.630
+CssSelector, .note_valid, 0.250, 0.436, 0.000, 0.262
