@@ -1,16 +1,16 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-LinkText, Admin, 0.250, 0.438, 0.000, 0.263
+LinkText, Admin, 0.250, 0.435, 0.000, 0.262
 Name, passwd, 0.400, 0.490, 0.000, 0.378
 Name, passwd, 0.400, 0.490, 0.000, 0.378
 CssSelector, .submit, 0.250, 0.490, 0.000, 0.273
 LinkText, Manage Stories, 0.250, 0.475, 0.000, 0.270
-Id, name, 0.000, 0.431, 0.000, 0.086
-Id, name, 0.000, 0.431, 0.000, 0.086
-Name, desc, 0.400, 0.431, 0.000, 0.366
-CssSelector, tr:nth-child(5) .radio:nth-child(4), 0.500, 0.431, 0.667, 0.503
-CssSelector, tr:nth-child(6) .radio:nth-child(4), 0.500, 0.431, 0.667, 0.503
-Id, password, 0.000, 0.431, 0.000, 0.086
-Id, password, 0.000, 0.431, 0.000, 0.086
-CssSelector, .submit, 0.250, 0.431, 0.000, 0.261
-CssSelector, .note_valid, 0.250, 0.430, 0.000, 0.261
+Id, name, 0.000, 0.436, 0.000, 0.087
+Id, name, 0.000, 0.436, 0.000, 0.087
+Name, desc, 0.400, 0.436, 0.000, 0.367
+CssSelector, tr:nth-child(5) .radio:nth-child(4), 0.500, 0.436, 0.667, 0.504
+CssSelector, tr:nth-child(6) .radio:nth-child(4), 0.500, 0.436, 0.667, 0.504
+Id, password, 0.000, 0.436, 0.000, 0.087
+Id, password, 0.000, 0.436, 0.000, 0.087
+CssSelector, .submit, 0.250, 0.436, 0.000, 0.262
+CssSelector, .note_valid, 0.250, 0.435, 0.000, 0.262

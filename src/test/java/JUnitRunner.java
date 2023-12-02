@@ -9,8 +9,6 @@ import java.lang.reflect.InvocationTargetException;
         - Log: logs results on terminal and also in the specified files
 **/
 
-// TODO: At last row of Result.csv: update value of Point-BiserialCorrelation Coefficient (or remove it)
-
 public class JUnitRunner {
     static String SoftwareUsed = "Phormer";
 
@@ -18,6 +16,10 @@ public class JUnitRunner {
         String directory = "src/test/java/JUnit/" + SoftwareUsed; // JUnit test directory
 
         Judge judge = new Judge(new DefaultSelectorComplexityEvaluator(), new DefaultPageComplexityEvaluator(), new DefaultPageAndSelectorComplexityEvaluator());
+
+        String filePath = "src/test/java/XMLResult/" + JUnitRunner.SoftwareUsed + "/ErrorLog.txt";
+        PrintWriter writer = new PrintWriter(filePath);
+        writer.close();
 
         List<Test> dolibarrTests = Test.getAllTests(directory);
 

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.events.EventFiringDecorator;
 import java.lang.reflect.Method;
 import java.lang.reflect.InvocationTargetException;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
@@ -101,11 +102,14 @@ public class TestRunner {
             method2.invoke(objPetX);
             System.out.println("<Test: " + testName + ">" + ", <Invoked method: " + methodName + ">\n");
         } catch(Exception e) {
-            e.printStackTrace();
-            // Selector lastSelector = listener.getVisitedSelectors().get(listener.getVisitedSelectors().size() - 1);
-            // lastSelector.setSelectorScore(judge.getBadElementScore(lastSelector));
+            String filePath = "src/test/java/XMLResult/" + JUnitRunner.SoftwareUsed + "/ErrorLog.txt";
 
-            System.out.println("A Test stopped working because of this selector!");
+            System.err.println("Error Log generated in: " + filePath);
+
+            String errorMessage = "<Test: " + testName + "> " + "<Invoked method: " + methodName + ">" + "\n";
+            errorMessage += "Error: " + (e.getMessage() != null ? e.getMessage() : "No detailed message available");
+            errorMessage += "\n" + "------------------------------------------------------------------------------------" + "\n";
+            Log.fillErrorLog(errorMessage, filePath);
 
             setNumberOfFailedTests(numberOfFailedTests + 1);
             testFailed = true;

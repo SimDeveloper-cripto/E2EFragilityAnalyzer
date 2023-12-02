@@ -40,9 +40,6 @@ public class ModifyCategoryTest {
     driver.findElement(By.cssSelector(".submit")).click();
 
     driver.findElement(By.linkText("Manage Categories")).click();
-
-    // System.out.println(driver.getPageSource());
-
     driver.findElement(By.cssSelector("span:nth-child(10) > a:nth-child(1)")).click();
 
     WebElement nameField = driver.findElement(By.id("name"));

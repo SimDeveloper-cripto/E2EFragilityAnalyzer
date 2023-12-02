@@ -14,5 +14,4 @@ updateStyle1,passed,passed,passed,passed,passed,0.095
 updateTax1,passed,passed,error,error,error,0.233
 updateUser1,passed,passed,passed,passed,passed,0.088
 updateValidityFile1,passed,passed,passed,error,error,0.281
-Point-Biserial Correlation, , , , , ,0.82
-
+,,,,,,

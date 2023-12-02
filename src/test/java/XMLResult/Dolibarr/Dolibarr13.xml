@@ -2,31 +2,31 @@
     <count name="total" value="15"/>
     <count name="passed" value="15"/>
     <config configId="JUnit" name="JUnit.Dolibarr Tests">
-        <module name="FragilitySentry"/>
-        <option name="MAIN_CLASS_NAME" value=""/>
-        <option name="METHOD_NAME" value=""/>
-        <option name="TEST_OBJECT" value="pattern"/>
-        <patterns>
-            <pattern testClass="JUnit.Dolibarr.CreateCompany1Test"/>
-            <pattern testClass="JUnit.Dolibarr.CreateProject1Test"/>
-            <pattern testClass="JUnit.Dolibarr.CreateReport1Test"/>
-            <pattern testClass="JUnit.Dolibarr.CreateTicket1Test"/>
-            <pattern testClass="JUnit.Dolibarr.DeleteBackup1Test"/>
-            <pattern testClass="JUnit.Dolibarr.DeleteHoliday1Test"/>
-            <pattern testClass="JUnit.Dolibarr.DeleteProductLot1Test"/>
-            <pattern testClass="JUnit.Dolibarr.ReadAgenda1Test"/>
-            <pattern testClass="JUnit.Dolibarr.ReadBAccounts1Test"/>
-            <pattern testClass="JUnit.Dolibarr.ReadContribution1Test"/>
-            <pattern testClass="JUnit.Dolibarr.ReadSubscription1Test"/>
-            <pattern testClass="JUnit.Dolibarr.UpdateStyle1Test"/>
-            <pattern testClass="JUnit.Dolibarr.UpdateTax1Test"/>
-            <pattern testClass="JUnit.Dolibarr.UpdateUser1Test"/>
-            <pattern testClass="JUnit.Dolibarr.UpdateValidityFile1Test"/>
-        </patterns>
-        <method v="2">
-            <option name="Make" enabled="true"/>
-        </method>
-    </config>
+    <module name="FragilitySentry"/>
+    <option name="MAIN_CLASS_NAME" value=""/>
+    <option name="METHOD_NAME" value=""/>
+    <option name="TEST_OBJECT" value="pattern"/>
+    <patterns>
+        <pattern testClass="JUnit.Dolibarr.CreateCompany1Test"/>
+        <pattern testClass="JUnit.Dolibarr.CreateProject1Test"/>
+        <pattern testClass="JUnit.Dolibarr.CreateReport1Test"/>
+        <pattern testClass="JUnit.Dolibarr.CreateTicket1Test"/>
+        <pattern testClass="JUnit.Dolibarr.DeleteBackup1Test"/>
+        <pattern testClass="JUnit.Dolibarr.DeleteHoliday1Test"/>
+        <pattern testClass="JUnit.Dolibarr.DeleteProductLot1Test"/>
+        <pattern testClass="JUnit.Dolibarr.ReadAgenda1Test"/>
+        <pattern testClass="JUnit.Dolibarr.ReadBAccounts1Test"/>
+        <pattern testClass="JUnit.Dolibarr.ReadContribution1Test"/>
+        <pattern testClass="JUnit.Dolibarr.ReadSubscription1Test"/>
+        <pattern testClass="JUnit.Dolibarr.UpdateStyle1Test"/>
+        <pattern testClass="JUnit.Dolibarr.UpdateTax1Test"/>
+        <pattern testClass="JUnit.Dolibarr.UpdateUser1Test"/>
+        <pattern testClass="JUnit.Dolibarr.UpdateValidityFile1Test"/>
+    </patterns>
+    <method v="2">
+        <option name="Make" enabled="true"/>
+    </method>
+</config>
     <root name="&lt;default package&gt;" location="java:suite://&lt;default package&gt;">
         <output type="stdout">&amp;quot;C:\Program Files\Java\jdk-11.0.12\bin\java.exe&amp;quot; -ea -Didea.test.cyclic.buffer.size=1048576 &amp;quot;-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\lib\idea_rt.jar=5258:C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\bin&amp;quot; -Dfile.encoding=UTF-8 -classpath &amp;quot;C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\lib\idea_rt.jar;C:\Users\ivan_\.m2\repository\org\junit\platform\junit-platform-launcher\1.7.0\junit-platform-launcher-1.7.0.jar;C:\Users\ivan_\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\ivan_\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\ivan_\.m2\repository\org\junit\vintage\junit-vintage-engine\5.7.0\junit-vintage-engine-5.7.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\plugins\junit\lib\junit5-rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\plugins\junit\lib\junit-rt.jar;C:\Users\ivan_\Documents\FragilitySentry\target\test-classes;C:\Users\ivan_\Documents\FragilitySentry\target\classes;C:\Users\ivan_\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\ivan_\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\ivan_\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\ivan_\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\ivan_\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ivan_\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\ivan_\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\ivan_\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\ivan_\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\ivan_\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\ivan_\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\ivan_\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\ivan_\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\ivan_\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\ivan_\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ivan_\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\ivan_\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\ivan_\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\ivan_\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\ivan_\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\ivan_\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\ivan_\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar&amp;quot; com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 @w@C:\Users\ivan_\AppData\Local\Temp\idea_working_dirs_junit.tmp @C:\Users\ivan_\AppData\Local\Temp\idea_junit.tmp -socket5257
 Process finished with exit code 0

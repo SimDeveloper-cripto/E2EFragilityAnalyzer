@@ -1,5 +1,6 @@
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.text.DecimalFormat;
@@ -140,5 +141,15 @@ public class Log {
         System.out.println(" ");
         double result = PointBiserialCorrelationCoefficient.getCorrelation(testsJudged);
         System.out.println("The value of correlation coefficient is: " + result);
+    }
+
+    public static void fillErrorLog(String errorMessage, String filePath) {
+        try {
+            PrintWriter w = new PrintWriter(new BufferedWriter(new FileWriter(filePath, true)));
+            w.println(errorMessage);
+            w.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
