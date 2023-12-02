@@ -9,11 +9,10 @@ import java.lang.reflect.InvocationTargetException;
         - Log: logs results on terminal and also in the specified files
 **/
 
-// TODO: Phormer Result.csv remains empty after execution
 // TODO: At last row of Result.csv: update value of Point-BiserialCorrelation Coefficient (or remove it)
 
 public class JUnitRunner {
-    static String SoftwareUsed = "Phormer"; // Phormer, PasswordManager, MantisBT, JTrac
+    static String SoftwareUsed = "Phormer";
 
     public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException, IOException {
         String directory = "src/test/java/JUnit/" + SoftwareUsed; // JUnit test directory

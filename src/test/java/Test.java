@@ -16,7 +16,11 @@ public class Test {
     public Test(String className) {
         this.className = className;
         this.testScore = 0;
-        this.laterGetSuccess = getStatusResult(this.getFullTestName(),5);
+
+        if (JUnitRunner.SoftwareUsed.equals("Phormer"))
+            this.laterGetSuccess = getStatusResult(this.getFullTestName(),1);
+        else
+            this.laterGetSuccess = getStatusResult(this.getFullTestName(),5); // Dolibarr, Magento, MantisBT have 5 versions
     }
 
     @Override
@@ -25,9 +29,6 @@ public class Test {
     }
 
     private boolean getStatusResult(String testName, int column) {
-        // Questo metodo prende il file Result.csv dell'applicativo che si sta utilizzando e restituisce lo status del test preso in ingresso per
-        // le versioni successive
-
         boolean status = false;
         String directory = "src/test/java/XMLResult/" + JUnitRunner.SoftwareUsed + "/Result.csv";
 

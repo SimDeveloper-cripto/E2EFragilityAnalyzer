@@ -1,0 +1,14 @@
+Nome del test,Metric
+addNewPhoto,0.291
+createcategory,0.208
+createStory,0.181
+deleteCategory,0.320
+deletePhoto,0.289
+deleteStory,0.320
+login,0.304
+logout,0.298
+modifyCategory,0.234
+modifyStory,0.219
+photoGallery,0.264
+rsS,0.264
+selectlast20,0.264
