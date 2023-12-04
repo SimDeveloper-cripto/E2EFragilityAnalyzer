@@ -11,6 +11,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 import java.util.*;
 
 public class ReadAgenda1Test {
@@ -40,6 +43,9 @@ public class ReadAgenda1Test {
     driver.findElement(By.cssSelector(".fa-calendar-day")).click();
 
     driver.findElement(By.id("select2-search_projectid-container")).click();
+
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+
     driver.findElement(By.id("selectsearch_status")).click();
     driver.findElement(By.id("select2-search_socid-container")).click();
     driver.findElement(By.id("select2-search_filtert-container")).click();

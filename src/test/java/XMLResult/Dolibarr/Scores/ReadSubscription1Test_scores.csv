@@ -1,3 +1,8 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Id, username, 0.000, 0.458, 0.000, 0.092
+Id, username, 0.000, 0.388, 0.000, 0.078
+Name, password, 0.400, 0.388, 0.000, 0.358
+Name, password, 0.400, 0.388, 0.000, 0.358
+CssSelector, .members, 0.250, 0.363, 0.000, 0.248
+CssSelector, .menu, 0.250, 0.396, 0.000, 0.254
+LinkText, Without subscription, 0.250, 0.396, 0.000, 0.254
