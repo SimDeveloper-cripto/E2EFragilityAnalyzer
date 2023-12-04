@@ -12,7 +12,7 @@ services:
     restart: no
   dolibarr:
     image: upshift/dolibarr:13.0
-    restart: always
+    restart: no
     depends_on:
         - mysql
     ports:

@@ -1,11 +1,3 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Name, username, 0.400, 0.388, 0.000, 0.358
-Name, password, 0.400, 0.388, 0.000, 0.358
-Name, password, 0.400, 0.388, 0.000, 0.358
-CssSelector, .menu, 0.250, 0.367, 0.000, 0.248
-LinkText, Impostazioni, 0.250, 0.366, 0.000, 0.248
-LinkText, Impostazioni -> Società/Organizzazione, 0.250, 0.403, 0.000, 0.256
-CssSelector, #no_vat, 0.000, 0.359, 0.000, 0.072
-XPath, //table[7]/tbody/tr/td[@width], 0.775, 0.359, 0.833, 0.698
-Name, save, 0.400, 0.359, 0.000, 0.352
+Name, username, 0.400, 0.458, 0.000, 0.372

@@ -1,15 +1,3 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Name, username, 0.400, 0.388, 0.000, 0.358
-Name, password, 0.400, 0.388, 0.000, 0.358
-Name, password, 0.400, 0.388, 0.000, 0.358
-CssSelector, .menu, 0.250, 0.367, 0.000, 0.248
-LinkText, Impostazioni, 0.250, 0.366, 0.000, 0.248
-CssSelector, .fiche > .inline-block:nth-child(4), 0.500, 0.403, 0.500, 0.481
-LinkText, Impostazioni -> Società/Organizzazione, 0.250, 0.403, 0.000, 0.256
-Name, nom, 0.400, 0.359, 0.000, 0.352
-Id, select2-selectcountry_id-container, 0.000, 0.359, 0.000, 0.072
-CssSelector, .select2-search__field, 0.250, 0.349, 0.000, 0.245
-XPath, //div[@id='id-right']/div/div[2]/form/table/tbody/tr[9]/td[2]/input, 0.844, 0.359, 0.000, 0.663
-Name, save, 0.400, 0.359, 0.000, 0.352
-XPath, //div[@id='id-right']/div/div[2]/form/table/tbody/tr[11]/td[2]/input, 0.844, 0.359, 0.000, 0.663
+Name, username, 0.400, 0.458, 0.000, 0.372

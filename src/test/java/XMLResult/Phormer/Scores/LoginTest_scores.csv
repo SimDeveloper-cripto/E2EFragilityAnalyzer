@@ -1,7 +1,3 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-LinkText, Admin, 0.250, 0.441, 0.000, 0.263
-Name, passwd, 0.400, 0.490, 0.000, 0.378
-Name, passwd, 0.400, 0.490, 0.000, 0.378
-CssSelector, .submit, 0.250, 0.490, 0.000, 0.273
-LinkText, Logout, 0.250, 0.475, 0.000, 0.270
+LinkText, Admin, 0.250, 0.426, 0.000, 0.260

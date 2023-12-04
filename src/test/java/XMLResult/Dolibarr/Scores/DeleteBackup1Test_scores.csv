@@ -1,18 +1,3 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Id, username, 0.000, 0.388, 0.000, 0.078
-Id, password, 0.000, 0.388, 0.000, 0.078
-Id, password, 0.000, 0.388, 0.000, 0.078
-CssSelector, .menu, 0.250, 0.367, 0.000, 0.248
-LinkText, Strumenti di amministrazione, 0.250, 0.366, 0.000, 0.248
-CssSelector, .menu, 0.250, 0.405, 0.000, 0.256
-LinkText, Backup, 0.250, 0.405, 0.000, 0.256
-Id, radio_dump_mysql_nobin, 0.000, 0.386, 0.000, 0.077
-Id, buttonGo, 0.000, 0.386, 0.000, 0.077
-XPath, //tr[@id='row-AFTER0POS1']/td[6]/a/span, 0.775, 0.385, 0.000, 0.620
-Id, radio_dump_mysql_nobin, 0.000, 0.385, 0.000, 0.077
-Id, radio_dump_mysql, 0.000, 0.385, 0.000, 0.077
-Id, radio_dump_mysql_nobin, 0.000, 0.385, 0.000, 0.077
-Id, filename_template, 0.000, 0.385, 0.000, 0.077
-Id, radio_compression_gzip, 0.000, 0.385, 0.000, 0.077
-Id, radio_compression_none, 0.000, 0.385, 0.000, 0.077
+Id, username, 0.000, 0.458, 0.000, 0.092

@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AddNewPhotoTest {
-  private static final String imagePath = "C:\\Users\\catap\\OneDrive\\Desktop\\PhormerImages\\image.jpeg";
+  private static final String imagePath = "/home/simone/Desktop/image.jpg";
 
   private WebDriver driver = new ChromeDriver();
   JavascriptExecutor js;
@@ -43,8 +43,7 @@ public class AddNewPhotoTest {
     driver.findElement(By.linkText("Add a new photo!")).click();
     driver.switchTo().frame(0);
 
-    // TODO: imagePath deve essere per forza assoluto altrimenti abbiamo un'eccezione
-    driver.findElement(By.id("fileAddr")).sendKeys(imagePath); // /home/mike/Scrivania/image.jpg
+    driver.findElement(By.id("fileAddr")).sendKeys(imagePath);
 
     driver.switchTo().defaultContent();
     driver.findElement(By.name("name")).click();

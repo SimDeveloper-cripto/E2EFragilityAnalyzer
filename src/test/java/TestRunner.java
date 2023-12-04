@@ -102,12 +102,22 @@ public class TestRunner {
             method2.invoke(objPetX);
             System.out.println("<Test: " + testName + ">" + ", <Invoked method: " + methodName + ">\n");
         } catch(Exception e) {
+            e.printStackTrace();
             String filePath = "src/test/java/XMLResult/" + JUnitRunner.SoftwareUsed + "/ErrorLog.txt";
 
             System.err.println("Error Log generated in: " + filePath);
 
             String errorMessage = "<Test: " + testName + "> " + "<Invoked method: " + methodName + ">" + "\n";
-            errorMessage += "Error: " + (e.getMessage() != null ? e.getMessage() : "No detailed message available");
+            // errorMessage += "Error: " + (e.getMessage() != null ? e.getMessage() : "No detailed message available");
+
+            errorMessage += "[ERROR] Exception Type: " + e.getClass().getName() + ", ";
+            Throwable cause = e.getCause();
+            if (cause != null) {
+                errorMessage += "Root Cause: " + cause.getMessage();
+            } else {
+                errorMessage += "Root Cause: No detailed message available.";
+            }
+
             errorMessage += "\n" + "------------------------------------------------------------------------------------" + "\n";
             Log.fillErrorLog(errorMessage, filePath);
 
@@ -160,9 +170,7 @@ public class TestRunner {
     }
 
     private String getMethodName(String nomeTest) {
-        String nomeMetodo;
-
-        nomeMetodo = nomeTest.replace("Test", "");
+        String nomeMetodo = nomeTest.replace("Test", "");
         nomeMetodo = (nomeMetodo.substring(nomeMetodo.lastIndexOf(".") + 1).trim());
         nomeMetodo = decapitalize(nomeMetodo);
         return nomeMetodo;

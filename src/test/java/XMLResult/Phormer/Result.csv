@@ -1,14 +1,14 @@
 Nome del test,Metric
-addNewPhoto,0.291
-createcategory,0.208
-createStory,0.183
-deleteCategory,0.320
-deletePhoto,0.289
-deleteStory,0.320
-login,0.304
-logout,0.298
-modifyCategory,0.333
-modifyStory,0.220
-photoGallery,0.263
-rsS,0.263
-selectlast20,0.263
+addNewPhoto,0.260
+createcategory,0.260
+createStory,0.260
+deleteCategory,0.260
+deletePhoto,0.260
+deleteStory,0.260
+login,0.260
+logout,0.260
+modifyCategory,0.260
+modifyStory,0.260
+photoGallery,0.260
+rsS,0.260
+selectlast20,0.260
