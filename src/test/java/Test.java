@@ -53,12 +53,29 @@ public class Test {
 
     public static List<Test> getAllTests(String directory) {
         List<Test> listOfTests = new ArrayList<>();
-        List<String> fileNames = getFileNames(directory);
+        List<String> fileNames = null;
+
+        if (JUnitRunner.SoftwareUsed.equals("PasswordManager")) {
+            fileNames = new ArrayList<>();
+            fileNames.add("src/test/java/JUnit/PasswordManager/RegisterTest.java");
+            fileNames.add("src/test/java/JUnit/PasswordManager/LoginTest.java");
+            fileNames.add("src/test/java/JUnit/PasswordManager/AddEntry1Test.java");
+            fileNames.add("src/test/java/JUnit/PasswordManager/AddEntry2Test.java");
+            fileNames.add("src/test/java/JUnit/PasswordManager/ModifyEntry1Test.java");
+            fileNames.add("src/test/java/JUnit/PasswordManager/ModifyEntry2Test.java");
+            fileNames.add("src/test/java/JUnit/PasswordManager/ExportCSVTest.java");
+            fileNames.add("src/test/java/JUnit/PasswordManager/DeleteEntry1Test.java");
+            fileNames.add("src/test/java/JUnit/PasswordManager/DeleteEntry2Test.java");
+            fileNames.add("src/test/java/JUnit/PasswordManager/ImportCSVTest.java");
+        } else {
+            fileNames = getFileNames(directory);
+        }
 
         for (String className : fileNames) {
             Test newTest = new Test(className);
             listOfTests.add(newTest);
         }
+
         return listOfTests;
     }
 

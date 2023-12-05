@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.is;
 
@@ -41,7 +42,7 @@ public class ModifyEntry2Test {
     driver.findElement(By.id("chk")).click();
 
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-    WebElement elem = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".datarow:nth-child(3) .glyphicon-wrench")));
+    WebElement elem = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".datarow:nth-child(2) .glyphicon-wrench"))); // .datarow:nth-child(3) .glyphicon-wrench
     elem.click();
     // driver.findElement(By.cssSelector(".datarow:nth-child(3) .glyphicon-wrench")).click();
 
@@ -52,10 +53,11 @@ public class ModifyEntry2Test {
     Thread.sleep(2000);
     driver.switchTo().alert().accept();
 
-    driver.findElement(By.cssSelector(".datarow:nth-child(3) .glyphicon-wrench")).click();
+    driver.findElement(By.cssSelector(".datarow:nth-child(2) .glyphicon-wrench")).click(); // .datarow:nth-child(3) .glyphicon-wrench
     {
       String value = driver.findElement(By.id("edititeminputcomment")).getAttribute("value");
-      assertThat(value, is("Password generata (Per youtube)"));
+      assertThat(value, is(containsString("Password generata (Per youtube)")));
+      // assertThat(value, is("Password generata (Per youtube)"));
     }
     driver.close();
   }

@@ -45,7 +45,6 @@ public class DeleteEntry2Test {
 
     Thread.sleep(2000);
     driver.switchTo().alert().accept();
-    driver.switchTo().alert().accept();
     {
       List<WebElement> elements = driver.findElements(By.cssSelector(".accountname"));
       assert(!elements.isEmpty());

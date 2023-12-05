@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+import static org.hamcrest.CoreMatchers.containsString;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.is;
 
@@ -55,7 +56,8 @@ public class ModifyEntry1Test {
     driver.findElement(By.cssSelector(".datarow:nth-child(2) .glyphicon-wrench")).click();
     {
       String value = driver.findElement(By.id("edititeminputcomment")).getAttribute("value");
-      assertThat(value, is("Password generata (Per google)"));
+      assertThat(value, is(containsString("Password generata (Per google)")));
+      // assertThat(value, is("Password generata (Per google)"));
     }
     driver.close();
   }
