@@ -26,7 +26,7 @@ public class RegisterTest {
   }
 
   @Test
-  public void register() {
+  public void register() throws InterruptedException {
     driver.get("http://localhost:8000/");
     driver.findElement(By.cssSelector(".btn:nth-child(10)")).click();
 
@@ -44,14 +44,11 @@ public class RegisterTest {
 
     driver.findElement(By.id("chk")).click();
 
-    // TODO: Login and Registration do not work
-
+    Thread.sleep(2000);
     driver.switchTo().alert().accept();
 
-    {
-      String value = driver.findElement(By.id("chk")).getAttribute("value");
-      assertThat(value, is("Login"));
-    }
+    String value = driver.findElement(By.id("chk")).getAttribute("value");
+    assertThat(value, is("Login"));
 
     driver.close();
   }

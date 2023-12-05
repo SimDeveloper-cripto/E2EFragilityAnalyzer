@@ -10,6 +10,111 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/src/test/java/XMLResult/Dolibarr/Scores/CreateCompany1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Dolibarr/Scores/CreateProject1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Dolibarr/Scores/CreateReport1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Dolibarr/Scores/CreateTicket1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Dolibarr/Scores/DeleteBackup1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Dolibarr/Scores/DeleteHoliday1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Dolibarr/Scores/DeleteProductLot1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Dolibarr/Scores/ReadAgenda1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Dolibarr/Scores/ReadBAccounts1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Dolibarr/Scores/ReadContribution1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Dolibarr/Scores/ReadSubscription1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Dolibarr/Scores/UpdateStyle1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Dolibarr/Scores/UpdateTax1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Dolibarr/Scores/UpdateUser1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Dolibarr/Scores/UpdateValidityFile1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/src/test/java/XMLResult/JTrac/Result.csv">
           <value>
             <Attribute>
@@ -17,7 +122,168 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/src/test/java/XMLResult/JTrac/Scores/BlackboardTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/JTrac/Scores/CreateSpaceTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/JTrac/Scores/CreateUser1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/JTrac/Scores/CreateUser2Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/JTrac/Scores/DeleteUser2Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/JTrac/Scores/LoginAdminTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/JTrac/Scores/LoginUser1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/JTrac/Scores/LogoutAdminTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/JTrac/Scores/ModifyUser1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/JTrac/Scores/SettingsTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/src/test/java/XMLResult/Phormer/Result.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Phormer/Scores/AddNewPhotoTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Phormer/Scores/CreateStoryTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Phormer/Scores/CreatecategoryTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Phormer/Scores/DeleteCategoryTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Phormer/Scores/DeletePhotoTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Phormer/Scores/DeleteStoryTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Phormer/Scores/LoginTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Phormer/Scores/LogoutTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Phormer/Scores/ModifyCategoryTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Phormer/Scores/ModifyStoryTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Phormer/Scores/PhotoGalleryTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Phormer/Scores/RSSTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Phormer/Scores/Selectlast20Test_scores.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

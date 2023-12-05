@@ -1,0 +1,62 @@
+<Test: JUnit.PasswordManager.DeleteEntry1Test> <Invoked method: deleteEntry1>
+[ERROR] Exception Type: java.lang.reflect.InvocationTargetException, Root Cause: no such element: Unable to locate element: {"method":"css selector","selector":".accountname"}
+  (Session info: chrome=119.0.6045.105)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.5.0-13-generic', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bcba7136718d6ae6705a777884942f72, findElement {using=css selector, value=.accountname}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.105, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35819}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35819/devtoo..., se:cdpVersion: 119.0.6045.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bcba7136718d6ae6705a777884942f72
+------------------------------------------------------------------------------------
+
+<Test: JUnit.PasswordManager.AddEntry2Test> <Invoked method: addEntry2>
+[ERROR] Exception Type: java.lang.reflect.InvocationTargetException, Root Cause: no such element: Unable to locate element: {"method":"css selector","selector":".datarow:nth-child(3) .accountname"}
+  (Session info: chrome=119.0.6045.105)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.5.0-13-generic', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [19c684d3911410503496b0893a2d6940, findElement {using=css selector, value=.datarow:nth-child(3) .accountname}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.105, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46825}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46825/devtoo..., se:cdpVersion: 119.0.6045.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 19c684d3911410503496b0893a2d6940
+------------------------------------------------------------------------------------
+
+<Test: JUnit.PasswordManager.AddEntry1Test> <Invoked method: addEntry1>
+[ERROR] Exception Type: java.lang.reflect.InvocationTargetException, Root Cause: 
+Expected: is "Google"
+     but: was "Youtube"
+------------------------------------------------------------------------------------
+
+<Test: JUnit.PasswordManager.ModifyEntry1Test> <Invoked method: modifyEntry1>
+[ERROR] Exception Type: java.lang.reflect.InvocationTargetException, Root Cause: 
+Expected: is "Password generata (Per google)"
+     but: was "Password generataPassword generata (Per google)"
+------------------------------------------------------------------------------------
+
+<Test: JUnit.PasswordManager.RegisterTest> <Invoked method: register>
+[ERROR] Exception Type: java.lang.reflect.InvocationTargetException, Root Cause: 
+Expected: is "Login"
+     but: was "Submit"
+------------------------------------------------------------------------------------
+
+<Test: JUnit.PasswordManager.DeleteEntry2Test> <Invoked method: deleteEntry2>
+[ERROR] Exception Type: java.lang.reflect.InvocationTargetException, Root Cause: no such alert
+  (Session info: chrome=119.0.6045.105)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.5.0-13-generic', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ad88c434403c9c8e697bcb1dca286649, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.105, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:36715/devtoo..., se:cdpVersion: 119.0.6045.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ad88c434403c9c8e697bcb1dca286649
+------------------------------------------------------------------------------------
+
+<Test: JUnit.PasswordManager.ModifyEntry2Test> <Invoked method: modifyEntry2>
+[ERROR] Exception Type: java.lang.reflect.InvocationTargetException, Root Cause: Expected condition failed: waiting for element to be clickable: By.cssSelector: .datarow:nth-child(3) .glyphicon-wrench (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.5.0-13-generic', java.version: '21.0.1'
+Driver info: net.bytebuddy.renamed.java.lang.Object$ByteBuddy$gPI5ANwv
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.105, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40795}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40795/devtoo..., se:cdpVersion: 119.0.6045.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39314f144e9a94873441e0a8ef7b9c4b
+------------------------------------------------------------------------------------
+

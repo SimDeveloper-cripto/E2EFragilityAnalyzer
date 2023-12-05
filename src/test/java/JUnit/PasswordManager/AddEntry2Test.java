@@ -5,7 +5,12 @@ import org.junit.After;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.is;
@@ -27,7 +32,7 @@ public class AddEntry2Test {
   }
 
   @Test
-  public void addEntry2() {
+  public void addEntry2() throws InterruptedException {
     driver.get("http://localhost:8000/");
 
     driver.findElement(By.id("user")).click();
@@ -36,7 +41,10 @@ public class AddEntry2Test {
     driver.findElement(By.id("pwd")).sendKeys("1231231");
     driver.findElement(By.id("chk")).click();
 
-    driver.findElement(By.linkText("Add Entry")).click();
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    WebElement addEntryLink = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Add Entry")));
+    addEntryLink.click();
+
     driver.findElement(By.id("newiteminput")).click();
     driver.findElement(By.id("newiteminput")).sendKeys("Youtube");
     driver.findElement(By.id("newiteminputuser")).click();
@@ -46,7 +54,10 @@ public class AddEntry2Test {
     driver.findElement(By.id("newiteminputcomment")).click();
     driver.findElement(By.id("newiteminputcomment")).sendKeys("Password generata");
     driver.findElement(By.id("newbtn")).click();
+
+    Thread.sleep(2000);
     driver.switchTo().alert().accept();
+
     assertThat(driver.findElement(By.cssSelector(".datarow:nth-child(3) .accountname")).getText(), is("Youtube"));
     driver.close();
   }

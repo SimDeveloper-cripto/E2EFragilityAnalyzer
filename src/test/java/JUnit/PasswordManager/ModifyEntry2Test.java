@@ -5,7 +5,12 @@ import org.junit.After;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.is;
@@ -26,20 +31,28 @@ public class ModifyEntry2Test {
   }
 
   @Test
-  public void modifyEntry2() {
+  public void modifyEntry2() throws InterruptedException {
     driver.get("http://localhost:8000/");
+
     driver.findElement(By.id("user")).click();
     driver.findElement(By.id("user")).sendKeys("MikeFonseta");
     driver.findElement(By.id("pwd")).click();
     driver.findElement(By.id("pwd")).sendKeys("1231231");
     driver.findElement(By.id("chk")).click();
-    driver.findElement(By.cssSelector(".datarow:nth-child(3) .glyphicon-wrench")).click();
+
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+    WebElement elem = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".datarow:nth-child(3) .glyphicon-wrench")));
+    elem.click();
+    // driver.findElement(By.cssSelector(".datarow:nth-child(3) .glyphicon-wrench")).click();
+
     driver.findElement(By.id("edititeminputcomment")).click();
     driver.findElement(By.id("edititeminputcomment")).sendKeys("Password generata (Per youtube)");
     driver.findElement(By.id("editbtn")).click();
-    driver.switchTo().alert().accept();
-    driver.findElement(By.cssSelector(".datarow:nth-child(3) .glyphicon-wrench")).click();
 
+    Thread.sleep(2000);
+    driver.switchTo().alert().accept();
+
+    driver.findElement(By.cssSelector(".datarow:nth-child(3) .glyphicon-wrench")).click();
     {
       String value = driver.findElement(By.id("edititeminputcomment")).getAttribute("value");
       assertThat(value, is("Password generata (Per youtube)"));

@@ -1,15 +1,2 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Id, username, 0.000, 0.388, 0.000, 0.078
-Id, password, 0.000, 0.388, 0.000, 0.078
-Id, password, 0.000, 0.388, 0.000, 0.078
-CssSelector, .menu, 0.250, 0.363, 0.000, 0.248
-LinkText, Impostazioni, 0.250, 0.362, 0.000, 0.247
-LinkText, Impostazioni -> Moduli/Applicazioni, 0.250, 0.395, 0.000, 0.254
-CssSelector, .box-flex-container:nth-child(17) > .box-flex-item:nth-child(4) .reposition > .fas, 0.625, 0.387, 0.889, 0.604
-CssSelector, .box-flex-container:nth-child(17) > .box-flex-item:nth-child(4) .reposition > .fas, 0.625, 0.387, 0.889, 0.604
-Id, select2-search_status-container, 0.000, 0.387, 0.000, 0.077
-Id, search_keyword, 0.000, 0.387, 0.000, 0.077
-Id, modules, 0.000, 0.387, 0.000, 0.077
-Id, marketplace, 0.000, 0.387, 0.000, 0.077
-Id, deploy, 0.000, 0.387, 0.000, 0.077

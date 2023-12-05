@@ -5,7 +5,12 @@ import org.junit.After;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.is;
@@ -26,7 +31,7 @@ public class DeleteEntry1Test {
   }
 
   @Test
-  public void deleteEntry1() {
+  public void deleteEntry1() throws InterruptedException {
     driver.get("http://localhost:8000/");
     driver.findElement(By.id("user")).click();
     driver.findElement(By.id("user")).sendKeys("MikeFonseta");
@@ -34,10 +39,15 @@ public class DeleteEntry1Test {
     driver.findElement(By.id("pwd")).sendKeys("1231231");
     driver.findElement(By.id("chk")).click();
 
-    driver.findElement(By.cssSelector(".datarow:nth-child(2) .glyphicon-wrench")).click();
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+    WebElement elem = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".datarow:nth-child(2) .glyphicon-wrench")));
+    elem.click();
+
+    // driver.findElement(By.cssSelector(".datarow:nth-child(2) .glyphicon-wrench")).click();
+
     driver.findElement(By.id("delbtn")).click();
 
-    driver.switchTo().alert().accept();
+    Thread.sleep(2000);
     driver.switchTo().alert().accept();
 
     assertThat(driver.findElement(By.cssSelector(".accountname")).getText(), is("Youtube"));

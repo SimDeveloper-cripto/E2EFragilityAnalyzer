@@ -9,8 +9,11 @@ import java.lang.reflect.InvocationTargetException;
         - Log: logs results on terminal and also in the specified files
 **/
 
+// TODO: TEST DOLIBARR VERSION 15.0
+// TODO: TEST FIRST VERSION OF PASSWORD_MANAGER
+
 public class JUnitRunner {
-    static String SoftwareUsed = "Dolibarr"; // TODO: TEST DOLIBARR VERSION 15.0
+    static String SoftwareUsed = "PasswordManager";
 
     public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException, IOException {
         String directory = "src/test/java/JUnit/" + SoftwareUsed; // JUnit test directory

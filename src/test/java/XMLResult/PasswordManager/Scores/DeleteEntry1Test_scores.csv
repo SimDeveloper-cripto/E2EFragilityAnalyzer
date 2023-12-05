@@ -5,4 +5,5 @@ Id, user, 0.000, 0.379, 0.000, 0.076
 Id, pwd, 0.000, 0.379, 0.000, 0.076
 Id, pwd, 0.000, 0.379, 0.000, 0.076
 Id, chk, 0.000, 0.379, 0.000, 0.076
-CssSelector, .datarow:nth-child(2) .glyphicon-wrench, 0.500, 0.379, 0.800, 0.506
+CssSelector, .datarow:nth-child(2) .glyphicon-wrench, 0.500, 0.379, 0.000, 0.426
+Id, delbtn, 0.000, 0.369, 0.000, 0.074

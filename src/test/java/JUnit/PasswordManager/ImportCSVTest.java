@@ -6,6 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.is;
@@ -28,12 +32,14 @@ public class ImportCSVTest {
   @Test
   public void importCSV() {
     driver.get("http://localhost:8000//");
+
     driver.findElement(By.id("user")).click();
     driver.findElement(By.id("user")).sendKeys("MikeFonseta");
     driver.findElement(By.id("pwd")).click();
     driver.findElement(By.id("pwd")).sendKeys("1231231");
     driver.findElement(By.id("chk")).click();
 
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     assertThat(driver.findElement(By.linkText("Import")).getText(), is("Import"));
     driver.close();
   }

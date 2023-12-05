@@ -1,8 +1,2 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Id, username, 0.000, 0.388, 0.000, 0.078
-Id, password, 0.000, 0.388, 0.000, 0.078
-Id, username, 0.000, 0.388, 0.000, 0.078
-CssSelector, #mainmenua_members > .mainmenuaspan, 0.500, 0.363, 0.952, 0.518
-CssSelector, .menu, 0.250, 0.395, 0.000, 0.254
-LinkText, Adesioni, 0.250, 0.396, 0.000, 0.254
