@@ -5,6 +5,7 @@ import org.junit.After;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.JavascriptExecutor;
 
 import static org.junit.Assert.*;
@@ -16,9 +17,13 @@ public class BlackboardTest {
 
   public void setUp(WebDriver driver) {
     this.driver.quit();
-    this.driver = driver;
-    js = (JavascriptExecutor) driver;
+    // this.driver = driver;
 
+    ChromeOptions options = new ChromeOptions();
+    options.addArguments("--lang=it");
+    this.driver = new ChromeDriver(options);
+
+    js = (JavascriptExecutor) this.driver;
   }
 
   @After
@@ -28,7 +33,8 @@ public class BlackboardTest {
 
   @Test
   public void blackboard() {
-    driver.get("http://127.0.0.1:8888/app");
+    driver.get("http://localhost:8888/app");
+
     driver.findElement(By.linkText("LAVAGNA")).click();
     assertThat(driver.findElement(By.cssSelector(".selected > span")).getText(), is("My space"));
     driver.close();

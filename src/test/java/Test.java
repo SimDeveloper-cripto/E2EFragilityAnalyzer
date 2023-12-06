@@ -17,10 +17,10 @@ public class Test {
         this.className = className;
         this.testScore = 0;
 
-        if (JUnitRunner.SoftwareUsed.equals("Phormer"))
+        if (JUnitRunner.SoftwareUsed.equals("Phormer") || JUnitRunner.SoftwareUsed.equals("PasswordManager"))
             this.laterGetSuccess = getStatusResult(this.getFullTestName(),1);
         else
-            this.laterGetSuccess = getStatusResult(this.getFullTestName(),5); // Dolibarr, Magento, MantisBT have 5 versions
+            this.laterGetSuccess = getStatusResult(this.getFullTestName(),5);
     }
 
     @Override
