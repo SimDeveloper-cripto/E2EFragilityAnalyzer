@@ -11,7 +11,7 @@ services:
       - './dolibarr-db-dump:/docker-entrypoint-initdb.b'
     restart: no
   dolibarr:
-    image: upshift/dolibarr:14.0.3
+    image: upshift/dolibarr:14.0.5
     restart: no
     depends_on:
         - mysql

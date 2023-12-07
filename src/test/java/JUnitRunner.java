@@ -9,11 +9,11 @@ import java.lang.reflect.InvocationTargetException;
         - Log: logs results on terminal and also in the specified files
 **/
 
+// Dolibarr        [OK]
 // Phormer         [OK]
 // PasswordManager [OK]
-// Dolibarr        [] NEED TO TEST DOLIBARR VERSION 14.0.3 OR 15.0.0
-// JTrac           [] DOES NOT START ON LINUX, TRY ON WINDOWS
-// MantisBT        [] NEVER TRIED
+// JTrac           []
+// MantisBT        []
 
 public class JUnitRunner {
     static String SoftwareUsed = "Dolibarr";
