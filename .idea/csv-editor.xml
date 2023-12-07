@@ -227,6 +227,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/src/test/java/XMLResult/PasswordManager/Scores/ExportCSVTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/PasswordManager/Scores/ImportCSVTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/src/test/java/XMLResult/PasswordManager/Scores/LoginTest_scores.csv">
           <value>
             <Attribute>

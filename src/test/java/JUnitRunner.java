@@ -9,12 +9,14 @@ import java.lang.reflect.InvocationTargetException;
         - Log: logs results on terminal and also in the specified files
 **/
 
-// TODO: NEED TO TEST DOLIBARR VERSION 15.0
-// TODO: NEED TO TEST PASSWORD MANAGER VERSION 9.13 (ERROR SHOWN WHEN TESTED BY SELENIUM (LOOK G.DRIVE))
-// TODO: NEED TO TEST JTRAC
+// Phormer         [OK]
+// PasswordManager [OK]
+// Dolibarr        [] NEED TO TEST DOLIBARR VERSION 14.0.3 OR 15.0.0
+// JTrac           [] DOES NOT START ON LINUX, TRY ON WINDOWS
+// MantisBT        [] NEVER TRIED
 
 public class JUnitRunner {
-    static String SoftwareUsed = "JTrac";
+    static String SoftwareUsed = "Dolibarr";
 
     public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException, IOException {
         String directory = "src/test/java/JUnit/" + SoftwareUsed; // JUnit test directory

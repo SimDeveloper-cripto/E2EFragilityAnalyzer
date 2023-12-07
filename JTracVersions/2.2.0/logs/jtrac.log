@@ -1,0 +1,156 @@
+2023-12-07 12:06:00,626 [main] INFO [info.jtrac.config.JtracConfigurer] - found 'jtrac-init.properties' on classpath, processing...
+2023-12-07 12:06:00,627 [main] INFO [info.jtrac.config.JtracConfigurer] - locales available configured are 'en,hu,cs,ja,el,zh_TW,zh_CN,ru,nl,pt_BR,es_AR,fr,ar,pl,sl,de,en,uk,it,es_MX,tr,es,sv,ko,no'
+2023-12-07 12:06:00,627 [main] INFO [info.jtrac.config.JtracConfigurer] - valid 'jtrac.home' property not available in 'jtrac-init.properties', trying system properties.
+2023-12-07 12:06:00,627 [main] INFO [info.jtrac.config.JtracConfigurer] - 'jtrac.home' property initialized from system properties as 'data'
+2023-12-07 12:06:00,627 [main] INFO [info.jtrac.config.JtracConfigurer] - directory does not exist, created 'data'
+2023-12-07 12:06:00,627 [main] INFO [info.jtrac.config.JtracConfigurer] - directory does not exist, created 'data/attachments'
+2023-12-07 12:06:00,627 [main] INFO [info.jtrac.config.JtracConfigurer] - directory does not exist, created 'data/indexes'
+2023-12-07 12:06:00,627 [main] INFO [info.jtrac.config.JtracConfigurer] - properties file does not exist, created 'data/jtrac.properties'
+2023-12-07 12:06:00,627 [main] INFO [info.jtrac.config.JtracConfigurer] - HSQLDB will be used.  Finished creating 'data/jtrac.properties'
+2023-12-07 12:06:00,627 [main] INFO [info.jtrac.config.JtracConfigurer] - found 'jtrac-version.properties' on classpath, processing...
+2023-12-07 12:06:00,627 [main] INFO [info.jtrac.config.JtracConfigurer] - jtrac.version = '2.2.0'
+2023-12-07 12:06:00,627 [main] INFO [info.jtrac.config.JtracConfigurer] - jtrac.timestamp = '2021-12-14 08:34 UTC'
+2023-12-07 12:06:00,628 [main] INFO [info.jtrac.config.JtracConfigurer] - Loading properties file from file [/home/simone/intellij/FragilitySentry/JTracVersions/2.2.0/data/jtrac.properties]
+2023-12-07 12:06:00,646 [main] INFO [info.jtrac.config.DataSourceFactoryBean] - embedded HSQLDB mode detected, using Spring single connection data source
+2023-12-07 12:06:00,977 [main] INFO [info.jtrac.config.DataSourceFactoryBean] - attempting to shut down embedded HSQLDB database
+2023-12-07 12:06:01,099 [main] INFO [info.jtrac.config.DataSourceFactoryBean] - embedded HSQLDB database shut down successfully
+2023-12-07 12:06:01,101 [main] ERROR [org.springframework.web.context.ContextLoader] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jtrac' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Cannot resolve reference to bean 'transactionManager' while setting bean property 'transactionManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.HibernateException: Unable to instantiate default tuplizer [org.hibernate.tuple.entity.PojoEntityTuplizer]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:275)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:104)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1245)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1010)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:423)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:728)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:380)
+	at org.springframework.web.context.ContextLoader.createWebApplicationContext(ContextLoader.java:255)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:199)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:45)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:1067)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:572)
+	at org.eclipse.jetty.server.handler.ContextHandler.contextInitialized(ContextHandler.java:996)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:746)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:379)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1449)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1414)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:910)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:288)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:524)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.deploy.bindings.StandardStarter.processBinding(StandardStarter.java:46)
+	at org.eclipse.jetty.deploy.AppLifeCycle.runBindings(AppLifeCycle.java:188)
+	at org.eclipse.jetty.deploy.DeploymentManager.requestAppGoal(DeploymentManager.java:517)
+	at org.eclipse.jetty.deploy.DeploymentManager.addApp(DeploymentManager.java:157)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.fileAdded(ScanningAppProvider.java:173)
+	at org.eclipse.jetty.deploy.providers.WebAppProvider.fileAdded(WebAppProvider.java:442)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider$1.fileAdded(ScanningAppProvider.java:66)
+	at org.eclipse.jetty.util.Scanner.reportAddition(Scanner.java:785)
+	at org.eclipse.jetty.util.Scanner.reportDifferences(Scanner.java:754)
+	at org.eclipse.jetty.util.Scanner.scan(Scanner.java:641)
+	at org.eclipse.jetty.util.Scanner.doStart(Scanner.java:540)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.deploy.providers.ScanningAppProvider.doStart(ScanningAppProvider.java:146)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.deploy.DeploymentManager.startAppProvider(DeploymentManager.java:605)
+	at org.eclipse.jetty.deploy.DeploymentManager.doStart(DeploymentManager.java:252)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
+	at org.eclipse.jetty.server.Server.start(Server.java:423)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:387)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:73)
+	at org.eclipse.jetty.xml.XmlConfiguration.lambda$main$3(XmlConfiguration.java:1907)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.jetty.xml.XmlConfiguration.main(XmlConfiguration.java:1857)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.jetty.start.Main.invokeMain(Main.java:218)
+	at org.eclipse.jetty.start.Main.start(Main.java:491)
+	at org.eclipse.jetty.start.Main.main(Main.java:77)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.HibernateException: Unable to instantiate default tuplizer [org.hibernate.tuple.entity.PojoEntityTuplizer]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:275)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:104)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1245)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1010)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:269)
+	... 60 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in ServletContext resource [/WEB-INF/applicationContext.xml]: Invocation of init method failed; nested exception is org.hibernate.HibernateException: Unable to instantiate default tuplizer [org.hibernate.tuple.entity.PojoEntityTuplizer]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:473)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:409)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:380)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:264)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:261)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:185)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:164)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:269)
+	... 73 more
+Caused by: org.hibernate.HibernateException: Unable to instantiate default tuplizer [org.hibernate.tuple.entity.PojoEntityTuplizer]
+	at org.hibernate.tuple.entity.EntityTuplizerFactory.constructTuplizer(EntityTuplizerFactory.java:110)
+	at org.hibernate.tuple.entity.EntityTuplizerFactory.constructDefaultTuplizer(EntityTuplizerFactory.java:135)
+	at org.hibernate.tuple.entity.EntityEntityModeToTuplizerMapping.<init>(EntityEntityModeToTuplizerMapping.java:56)
+	at org.hibernate.tuple.entity.EntityMetamodel.<init>(EntityMetamodel.java:323)
+	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:433)
+	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:109)
+	at org.hibernate.persister.PersisterFactory.createClassPersister(PersisterFactory.java:55)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:231)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1313)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:814)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:732)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1369)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1335)
+	... 83 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.hibernate.tuple.entity.EntityTuplizerFactory.constructTuplizer(EntityTuplizerFactory.java:107)
+	... 96 more
+Caused by: java.lang.ExceptionInInitializerError
+	at net.sf.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:167)
+	at net.sf.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25)
+	at net.sf.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:216)
+	at net.sf.cglib.core.KeyFactory$Generator.create(KeyFactory.java:145)
+	at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:117)
+	at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:108)
+	at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:104)
+	at net.sf.cglib.proxy.Enhancer.<clinit>(Enhancer.java:69)
+	at org.hibernate.proxy.pojo.cglib.CGLIBLazyInitializer.getProxyFactory(CGLIBLazyInitializer.java:117)
+	at org.hibernate.proxy.pojo.cglib.CGLIBProxyFactory.postInstantiate(CGLIBProxyFactory.java:43)
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.buildProxyFactory(PojoEntityTuplizer.java:188)
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.<init>(AbstractEntityTuplizer.java:128)
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.<init>(PojoEntityTuplizer.java:78)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 99 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @30c31dd7
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:203)
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:197)
+	at net.sf.cglib.core.ReflectUtils$2.run(ReflectUtils.java:56)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at net.sf.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:46)
+	... 113 more
