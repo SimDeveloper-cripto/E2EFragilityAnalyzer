@@ -17,7 +17,7 @@ public class SettingsTest {
   public void setUp(WebDriver driver) {
     this.driver.quit();
     this.driver = driver;
-    js = (JavascriptExecutor) driver;
+    js = (JavascriptExecutor) this.driver;
   }
 
   @After
@@ -28,6 +28,16 @@ public class SettingsTest {
   @Test
   public void settings() {
     driver.get("http://127.0.0.1:8888/app");
+
+    driver.findElement(By.linkText("LOGIN")).click();
+
+    // Login as Admin User
+    driver.findElement(By.name("loginName")).sendKeys("admin");
+    driver.findElement(By.name("password")).click();
+    driver.findElement(By.name("password")).sendKeys("admin");
+    driver.findElement(By.cssSelector("td:nth-child(3) > input")).click();
+
+    // Test
     driver.findElement(By.linkText("OPZIONI")).click();
     driver.findElement(By.linkText("Gestione Impostazioni")).click();
     assertThat(driver.findElement(By.cssSelector(".heading")).getText(), is("Impostazioni di Configurazione"));

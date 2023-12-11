@@ -1,1 +1,12 @@
 Nome del test,Metric
+setItalianLanguage,0.440
+loginAdmin,0.451
+createUser1,0.349
+createUser2,0.349
+modifyUser1,0.368
+deleteUser2,0.373
+createSpace,0.337
+settings,0.311
+logoutAdmin,0.325
+loginUser1,0.330
+blackboard,0.360

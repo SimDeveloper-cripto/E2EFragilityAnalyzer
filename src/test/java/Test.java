@@ -17,7 +17,8 @@ public class Test {
         this.className = className;
         this.testScore = 0;
 
-        if (JUnitRunner.SoftwareUsed.equals("Phormer") || JUnitRunner.SoftwareUsed.equals("PasswordManager"))
+        if (JUnitRunner.SoftwareUsed.equals("Phormer") || JUnitRunner.SoftwareUsed.equals("PasswordManager")
+                || JUnitRunner.SoftwareUsed.equals("JTrac"))
             this.laterGetSuccess = getStatusResult(this.getFullTestName(),1);
         else
             this.laterGetSuccess = getStatusResult(this.getFullTestName(),5);
@@ -67,6 +68,19 @@ public class Test {
             fileNames.add("src/test/java/JUnit/PasswordManager/DeleteEntry1Test.java");
             fileNames.add("src/test/java/JUnit/PasswordManager/DeleteEntry2Test.java");
             fileNames.add("src/test/java/JUnit/PasswordManager/ImportCSVTest.java");
+        } else if (JUnitRunner.SoftwareUsed.equals("JTrac")) {
+            fileNames = new ArrayList<>();
+            fileNames.add("src/test/java/JUnit/JTrac/SetItalianLanguageTest.java");
+            fileNames.add("src/test/java/JUnit/JTrac/LoginAdminTest.java");
+            fileNames.add("src/test/java/JUnit/JTrac/CreateUser1Test.java");
+            fileNames.add("src/test/java/JUnit/JTrac/CreateUser2Test.java");
+            fileNames.add("src/test/java/JUnit/JTrac/ModifyUser1Test.java");
+            fileNames.add("src/test/java/JUnit/JTrac/DeleteUser2Test.java");
+            fileNames.add("src/test/java/JUnit/JTrac/CreateSpaceTest.java");
+            fileNames.add("src/test/java/JUnit/JTrac/SettingsTest.java");
+            fileNames.add("src/test/java/JUnit/JTrac/LogoutAdminTest.java");
+            fileNames.add("src/test/java/JUnit/JTrac/LoginUser1Test.java");
+            fileNames.add("src/test/java/JUnit/JTrac/BlackboardTest.java");
         } else {
             fileNames = getFileNames(directory);
         }

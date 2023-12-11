@@ -5,7 +5,6 @@ import org.junit.After;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.JavascriptExecutor;
 
 import static org.junit.Assert.*;
@@ -17,12 +16,7 @@ public class BlackboardTest {
 
   public void setUp(WebDriver driver) {
     this.driver.quit();
-    // this.driver = driver;
-
-    ChromeOptions options = new ChromeOptions();
-    options.addArguments("--lang=it");
-    this.driver = new ChromeDriver(options);
-
+    this.driver = driver;
     js = (JavascriptExecutor) this.driver;
   }
 

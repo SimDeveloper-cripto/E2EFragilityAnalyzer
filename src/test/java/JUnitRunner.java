@@ -12,11 +12,11 @@ import java.lang.reflect.InvocationTargetException;
 // Dolibarr        [OK]
 // Phormer         [OK]
 // PasswordManager [OK]
-// JTrac           []
+// JTrac           [] (Only Tested 2.2.0)
 // MantisBT        []
 
 public class JUnitRunner {
-    static String SoftwareUsed = "Dolibarr";
+    static String SoftwareUsed = "JTrac";
 
     public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException, IOException {
         String directory = "src/test/java/JUnit/" + SoftwareUsed; // JUnit test directory

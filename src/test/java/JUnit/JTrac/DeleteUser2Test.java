@@ -18,7 +18,7 @@ public class DeleteUser2Test {
   public void setUp(WebDriver driver) {
     this.driver.quit();
     this.driver = driver;
-    js = (JavascriptExecutor) driver;
+    js = (JavascriptExecutor) this.driver;
   }
 
   @After
@@ -29,11 +29,21 @@ public class DeleteUser2Test {
   @Test
   public void deleteUser2() {
     driver.get("http://127.0.0.1:8888/app");
+
+    // Login as Admin User
+    driver.findElement(By.name("loginName")).sendKeys("admin");
+    driver.findElement(By.name("password")).click();
+    driver.findElement(By.name("password")).sendKeys("admin");
+    driver.findElement(By.cssSelector("td:nth-child(3) > input")).click();
+
+    // Test
     driver.findElement(By.linkText("OPZIONI")).click();
     driver.findElement(By.linkText("Gestione Utenti")).click();
+
     driver.findElement(By.cssSelector("input:nth-child(4)")).click();
     driver.findElement(By.xpath("//td[6]/a/img")).click();
     driver.findElement(By.name("delete")).click();
+
     driver.findElement(By.cssSelector("input:nth-child(5)")).click();
     driver.findElement(By.cssSelector("input:nth-child(4)")).click();
     assertThat(driver.findElement(By.cssSelector("tr:nth-child(2) > td:nth-child(2)")).getText(), is(not("Test")));
