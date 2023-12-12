@@ -1,3 +1,19 @@
-Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, FinalScore 
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Id, username, 0.000, 0.344, 0.000, 0.069
+Id, username, 0.000, 0.412, 0.000, 0.082
+Id, username, 0.000, 0.412, 0.000, 0.082
+CssSelector, .width-40, 0.250, 0.412, 0.000, 0.257
+Id, password, 0.000, 0.410, 0.000, 0.082
+Id, password, 0.000, 0.410, 0.000, 0.082
+CssSelector, .width-40, 0.250, 0.410, 0.000, 0.257
+CssSelector, .icon-bar:nth-child(4), 0.250, 0.403, 0.000, 0.256
+CssSelector, li:nth-child(7) .menu-text, 0.500, 0.403, 0.857, 0.516
+LinkText, Gestisci etichette, 0.250, 0.405, 0.000, 0.256
+Id, tag-name, 0.000, 0.441, 0.000, 0.088
+Id, tag-name, 0.000, 0.441, 0.000, 0.088
+Id, tag-name, 0.000, 0.441, 0.000, 0.088
+Id, tag-description, 0.000, 0.441, 0.000, 0.088
+Id, tag-description, 0.000, 0.441, 0.000, 0.088
+Id, tag-description, 0.000, 0.441, 0.000, 0.088
+Name, config_set, 0.400, 0.441, 0.000, 0.368
+CssSelector, .widget-box:nth-child(1) .widget-title, 0.500, 0.441, 0.500, 0.488
