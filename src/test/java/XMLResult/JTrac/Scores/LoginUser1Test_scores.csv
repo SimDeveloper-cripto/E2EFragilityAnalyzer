@@ -1,7 +1,7 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-LinkText, LOGIN, 0.250, 0.397, 0.000, 0.254
-Name, loginName, 0.400, 0.389, 0.000, 0.358
-Name, loginName, 0.400, 0.389, 0.000, 0.358
-Name, password, 0.400, 0.389, 0.000, 0.358
-Name, password, 0.400, 0.389, 0.000, 0.358
+LinkText, LOGIN, 0.250, 0.415, 0.000, 0.258
+Name, loginName, 0.400, 0.388, 0.000, 0.358
+Name, loginName, 0.400, 0.388, 0.000, 0.358
+Name, password, 0.400, 0.388, 0.000, 0.358
+Name, password, 0.400, 0.388, 0.000, 0.358

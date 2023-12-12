@@ -1,21 +1,21 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Name, loginName, 0.400, 0.389, 0.000, 0.358
-Name, password, 0.400, 0.389, 0.000, 0.358
-Name, password, 0.400, 0.389, 0.000, 0.358
-CssSelector, td:nth-child(3) > input, 0.650, 0.389, 0.800, 0.613
-LinkText, OPZIONI, 0.250, 0.410, 0.000, 0.257
+Name, loginName, 0.400, 0.388, 0.000, 0.358
+Name, password, 0.400, 0.388, 0.000, 0.358
+Name, password, 0.400, 0.388, 0.000, 0.358
+CssSelector, td:nth-child(3) > input, 0.650, 0.388, 0.800, 0.613
+LinkText, OPZIONI, 0.250, 0.409, 0.000, 0.257
+LinkText, Gestione Spazi, 0.250, 0.418, 0.000, 0.259
+LinkText, Crea Nuovo Spazio, 0.250, 0.407, 0.000, 0.256
+Name, space.name, 0.400, 0.383, 0.000, 0.357
+Name, space.prefixCode, 0.400, 0.383, 0.000, 0.357
+Name, space.prefixCode, 0.400, 0.383, 0.000, 0.357
+Name, space.description, 0.400, 0.383, 0.000, 0.357
+Name, space.description, 0.400, 0.383, 0.000, 0.357
+Name, space.guestAllowed, 0.400, 0.383, 0.000, 0.357
+XPath, //input[@value='Avanti'], 0.400, 0.383, 0.000, 0.357
+Name, next, 0.400, 0.389, 0.000, 0.358
+Name, save, 0.400, 0.388, 0.000, 0.358
+LinkText, OPZIONI, 0.250, 0.393, 0.000, 0.254
 LinkText, Gestione Spazi, 0.250, 0.419, 0.000, 0.259
-LinkText, Crea Nuovo Spazio, 0.250, 0.408, 0.000, 0.257
-Name, space.name, 0.400, 0.384, 0.000, 0.357
-Name, space.prefixCode, 0.400, 0.384, 0.000, 0.357
-Name, space.prefixCode, 0.400, 0.384, 0.000, 0.357
-Name, space.description, 0.400, 0.384, 0.000, 0.357
-Name, space.description, 0.400, 0.384, 0.000, 0.357
-Name, space.guestAllowed, 0.400, 0.384, 0.000, 0.357
-XPath, //input[@value='Avanti'], 0.400, 0.384, 0.000, 0.357
-Name, next, 0.400, 0.388, 0.000, 0.358
-Name, save, 0.400, 0.387, 0.000, 0.357
-LinkText, OPZIONI, 0.250, 0.392, 0.000, 0.253
-LinkText, Gestione Spazi, 0.250, 0.420, 0.000, 0.259
 CssSelector, tr:nth-child(2) > td:nth-child(1), 0.650, 0.408, 0.800, 0.617

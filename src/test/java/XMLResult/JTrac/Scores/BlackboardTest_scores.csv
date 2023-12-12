@@ -1,4 +1,4 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-LinkText, LAVAGNA, 0.250, 0.397, 0.000, 0.254
-CssSelector, .selected > span, 0.650, 0.397, 0.833, 0.618
+LinkText, LAVAGNA, 0.250, 0.415, 0.000, 0.258
+CssSelector, .selected > span, 0.650, 0.415, 1.000, 0.638

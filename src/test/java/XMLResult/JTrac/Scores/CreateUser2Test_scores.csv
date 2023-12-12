@@ -1,11 +1,11 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Name, loginName, 0.400, 0.389, 0.000, 0.358
-Name, password, 0.400, 0.389, 0.000, 0.358
-Name, password, 0.400, 0.389, 0.000, 0.358
-CssSelector, td:nth-child(3) > input, 0.650, 0.389, 0.800, 0.613
-LinkText, OPZIONI, 0.250, 0.410, 0.000, 0.257
-LinkText, Gestione Utenti, 0.250, 0.419, 0.000, 0.259
+Name, loginName, 0.400, 0.388, 0.000, 0.358
+Name, password, 0.400, 0.388, 0.000, 0.358
+Name, password, 0.400, 0.388, 0.000, 0.358
+CssSelector, td:nth-child(3) > input, 0.650, 0.388, 0.800, 0.613
+LinkText, OPZIONI, 0.250, 0.409, 0.000, 0.257
+LinkText, Gestione Utenti, 0.250, 0.418, 0.000, 0.259
 LinkText, Crea Nuovo Utente, 0.250, 0.394, 0.000, 0.254
 Name, user.loginName, 0.400, 0.369, 0.000, 0.354
 Name, user.name, 0.400, 0.369, 0.000, 0.354
@@ -18,4 +18,4 @@ Name, passwordConfirm, 0.400, 0.369, 0.000, 0.354
 Name, passwordConfirm, 0.400, 0.369, 0.000, 0.354
 Name, passwordConfirm, 0.400, 0.369, 0.000, 0.354
 CssSelector, input:nth-child(4), 0.400, 0.394, 0.000, 0.359
-CssSelector, .selected > td:nth-child(2), 0.650, 0.392, 0.800, 0.613
+CssSelector, .selected > td:nth-child(2), 0.650, 0.391, 0.833, 0.616

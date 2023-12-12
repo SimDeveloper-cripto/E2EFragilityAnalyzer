@@ -12,7 +12,7 @@ import java.lang.reflect.InvocationTargetException;
 // Dolibarr        [OK]
 // Phormer         [OK]
 // PasswordManager [OK]
-// JTrac           [] (Only Tested 2.2.0)
+// JTrac           [OK]
 // MantisBT        []
 
 public class JUnitRunner {
