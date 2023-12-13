@@ -16,7 +16,7 @@
             <pattern testClass="JUnit.MantisBT.CreateTag1Test"/>
             <pattern testClass="JUnit.MantisBT.CreateUser1Test"/>
             <pattern testClass="JUnit.MantisBT.ReadAdminInfo1Test"/>
-            <pattern testClass="JUnit.MantisBT.UpdateUserInfo1Test"/>
+            <pattern testClass="JUnit.MantisBT.AssertCorrectReportUser1Test"/>
             <pattern testClass="JUnit.MantisBT.UpdateWorkflow1Test"/>
             <pattern testClass="JUnit.MantisBT.zDeleteNote1Test"/>
             <pattern testClass="JUnit.MantisBT.zDeleteUser1Test"/>
@@ -133,7 +133,7 @@ INFO: Detected dialect: W3C
 </output>
         </test>
     </suite>
-    <suite duration="4174" locationUrl="java:suite://JUnit.MantisBT.UpdateUserInfo1Test" name="UpdateUserInfo1Test" status="passed">
+    <suite duration="4174" locationUrl="java:suite://JUnit.MantisBT.AssertCorrectReportUser1Test" name="UpdateUserInfo1Test" status="passed">
         <test duration="4174" locationUrl="java:test://JUnit.MantisBT.UpdateUserInfo1Test/updateUserInfo1" name="updateUserInfo1" metainfo="" status="passed">
             <output type="stderr">Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 23642
 Only local connections are allowed.

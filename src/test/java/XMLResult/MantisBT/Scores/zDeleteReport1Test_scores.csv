@@ -5,15 +5,15 @@ Id, username, 0.000, 0.412, 0.000, 0.082
 CssSelector, .width-40, 0.250, 0.412, 0.000, 0.257
 Id, password, 0.000, 0.410, 0.000, 0.082
 CssSelector, .width-40, 0.250, 0.410, 0.000, 0.257
-LinkText, Quando chiedi la stampa dei fogli excel crasha, 0.250, 0.402, 0.000, 0.255
-Name, new_status, 0.400, 0.376, 0.000, 0.355
-Name, new_status, 0.400, 0.376, 0.000, 0.355
-CssSelector, fieldset > .btn:nth-child(5), 0.500, 0.376, 0.500, 0.475
-Id, bugnote_text, 0.000, 0.386, 0.000, 0.077
-Id, bugnote_text, 0.000, 0.386, 0.000, 0.077
-CssSelector, .widget-toolbox > .btn, 0.500, 0.386, 0.833, 0.511
-CssSelector, .pull-left:nth-child(5) .btn, 0.500, 0.384, 0.900, 0.517
-CssSelector, .btn-white, 0.250, 0.410, 0.000, 0.257
+LinkText, Quando chiedi la stampa dei fogli excel crasha, 0.250, 0.403, 0.000, 0.256
+Name, new_status, 0.400, 0.377, 0.000, 0.355
+Name, new_status, 0.400, 0.377, 0.000, 0.355
+CssSelector, fieldset > .btn:nth-child(5), 0.500, 0.377, 0.500, 0.475
+Id, bugnote_text, 0.000, 0.387, 0.000, 0.077
+Id, bugnote_text, 0.000, 0.387, 0.000, 0.077
+CssSelector, .widget-toolbox > .btn, 0.500, 0.387, 0.833, 0.511
+CssSelector, .pull-left:nth-child(5) .btn, 0.500, 0.385, 0.900, 0.517
+CssSelector, .btn-white, 0.250, 0.411, 0.000, 0.257
 Id, filter-search-txt, 0.000, 0.406, 0.000, 0.081
 Id, per_page_filter, 0.000, 0.406, 0.000, 0.081
 Id, show_profile_filter, 0.000, 0.406, 0.000, 0.081

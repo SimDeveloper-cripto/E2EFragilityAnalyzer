@@ -4,9 +4,9 @@ Name, username, 0.400, 0.412, 0.000, 0.362
 CssSelector, .width-40, 0.250, 0.412, 0.000, 0.257
 Name, password, 0.400, 0.410, 0.000, 0.362
 CssSelector, .width-40, 0.250, 0.410, 0.000, 0.257
-CssSelector, #menu-toggler, 0.000, 0.401, 0.000, 0.080
-LinkText, Visualizza anomalie, 0.250, 0.401, 0.000, 0.255
+CssSelector, #menu-toggler, 0.000, 0.402, 0.000, 0.080
+LinkText, Visualizza anomalie, 0.250, 0.402, 0.000, 0.255
 Id, show_severity_filter, 0.000, 0.400, 0.000, 0.080
-CssSelector, #show_severity_filter_target > .input-xs, 0.500, 0.399, 0.667, 0.496
-CssSelector, #show_severity_filter_target > .input-xs, 0.500, 0.399, 0.667, 0.496
-CssSelector, .no-float, 0.250, 0.399, 0.000, 0.255
+CssSelector, #show_severity_filter_target > .input-xs, 0.500, 0.398, 0.667, 0.496
+CssSelector, #show_severity_filter_target > .input-xs, 0.500, 0.398, 0.667, 0.496
+CssSelector, .no-float, 0.250, 0.398, 0.000, 0.255

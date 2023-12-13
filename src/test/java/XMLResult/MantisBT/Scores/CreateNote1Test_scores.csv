@@ -4,11 +4,11 @@ Id, username, 0.000, 0.412, 0.000, 0.082
 CssSelector, .width-40, 0.250, 0.412, 0.000, 0.257
 Id, password, 0.000, 0.410, 0.000, 0.082
 CssSelector, .width-40, 0.250, 0.410, 0.000, 0.257
-CssSelector, .my-buglist-bug:nth-child(1) .status-50-color, 0.500, 0.400, 0.333, 0.463
-XPath, //div[@id="reported"]/div[2]/div/div/table/tbody/tr/td/i[2], 0.844, 0.400, 0.333, 0.704
-LinkText, username con _ non riescono a loggare, 0.250, 0.400, 0.000, 0.255
-Id, bugnote_text, 0.000, 0.375, 0.000, 0.075
-Id, bugnote_text, 0.000, 0.375, 0.000, 0.075
-Id, bugnote_text, 0.000, 0.375, 0.000, 0.075
-Id, bugnote_text, 0.000, 0.375, 0.000, 0.075
-CssSelector, .widget-toolbox > .btn, 0.500, 0.375, 0.941, 0.519
+CssSelector, .my-buglist-bug:nth-child(1) .status-50-color, 0.500, 0.402, 0.400, 0.470
+XPath, //div[@id="reported"]/div[2]/div/div/table/tbody/tr/td/i[2], 0.844, 0.402, 0.600, 0.732
+LinkText, username con _ non riescono a loggare, 0.250, 0.402, 0.000, 0.255
+Id, bugnote_text, 0.000, 0.376, 0.000, 0.075
+Id, bugnote_text, 0.000, 0.376, 0.000, 0.075
+Id, bugnote_text, 0.000, 0.376, 0.000, 0.075
+Id, bugnote_text, 0.000, 0.376, 0.000, 0.075
+CssSelector, .widget-toolbox > .btn, 0.500, 0.376, 0.941, 0.519

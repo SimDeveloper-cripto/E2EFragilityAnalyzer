@@ -236,7 +236,7 @@ CREATE TABLE `mantis_bug_text_table` (
 
 INSERT INTO `mantis_bug_text_table` (`id`, `description`, `steps_to_reproduce`, `additional_information`) VALUES
 (5, 'username con _ non riescono a loggare', '', ''),
-(9, 'Quando chiedi la stampa dei fogl excel crasha', '', '');
+(9, 'Quando chiedi la stampa dei fogli excel crasha', '', '');
 
 -- --------------------------------------------------------
 
@@ -489,7 +489,9 @@ INSERT INTO `mantis_project_table` (`id`, `name`, `status`, `enabled`, `view_sta
 (5, 'Contabilità', 30, 1, 10, 10, '', 'Parte contabile di EasyManager', 1, 1),
 (6, 'Fiscalità', 10, 1, 10, 10, '', 'Sezione fisco di EasyManager', 1, 1),
 (7, 'Prova1', 10, 1, 50, 10, '', 'Prova', 1, 1),
-(8, 'Prova', 10, 1, 10, 10, '', '', 1, 1);
+(8, 'Prova', 10, 1, 10, 10, '', '', 1, 1),
+(9, 'EasyManager', 50, 1, 10, 10, '', 'Easy EasyManager', 1, 1),
+(10, 'EasyManager2', 50, 1, 10, 10, '', 'Easy EasyManager2', 1, 1);
 
 -- --------------------------------------------------------
 

@@ -9,26 +9,21 @@ import java.lang.reflect.InvocationTargetException;
         - Log: logs results on terminal and also in the specified files
 **/
 
-// Dolibarr        [OK]
-// Phormer         [OK]
-// PasswordManager [OK]
-// JTrac           [OK]
-// MantisBT        []
+// Dolibarr        [OK] (All versions provided are tested)
+// Phormer         [OK] (All versions provided are tested)
+// PasswordManager [OK] (All versions provided are tested)
+// JTrac           [OK] (All versions provided are tested)
+// MantisBT        []   (Tested only version 2.18.0)
 
 /* [HOW TO RUN MANTIS_BT]
     - Before starting the test, you'll need to set the italian language.
     - This is how you do it:
-        1. From your browser, go to http://localhost:8989/login_page.php and login as Administrator (Name: administrator, Pass: root)
+        1. From your browser, go to http://localhost:8989/login_page.php and login as Administrator (Name: Administrator, Pass: root)
         2. Then proceed to My Account > Preferences
         3. Logout and do the same for this other users: (Name: Chris95, Miranda23 -- Pass: root)
-        3. Stop and Re-Run your docker container
+        4. Login with user (Name: Ivan52, Pass: root) > Report Issue for EasyManager2 (fill category dropdown menu, Summary: "Glitch grafico", Description: "Glitch grafico che prima non si verificava")
+        5. Stop and Re-Run your docker container
 **/
-
-// What does not work in MantiBT test:
-// Ogni riferimento a "Le fatture sono errate" è stato modificato
-// Commented out Line 56 of aStopFilter1Test
-// Commented out Line 94 of CreateFilter1Test
-// zDeleteUser1Test.java Line 43, changed Umber93 with Mario (Umber93 does not exist)
 
 public class JUnitRunner {
     static String SoftwareUsed = "MantisBT";

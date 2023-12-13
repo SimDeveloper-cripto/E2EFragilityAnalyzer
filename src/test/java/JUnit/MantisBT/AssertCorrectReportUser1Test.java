@@ -8,7 +8,7 @@ import static org.hamcrest.CoreMatchers.is;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class UpdateUserInfo1Test {
+public class AssertCorrectReportUser1Test {
   private  WebDriver driver = new ChromeDriver();
   JavascriptExecutor js = (JavascriptExecutor) driver;
 
@@ -24,7 +24,7 @@ public class UpdateUserInfo1Test {
   }
 
   @Test
-  public void updateUserInfo1() throws InterruptedException {
+  public void assertCorrectReportUser1() throws InterruptedException {
     driver.get("http://localhost:8989/login_page.php");
     driver.manage().window().setSize(new Dimension(1936, 1050));
 
@@ -36,12 +36,33 @@ public class UpdateUserInfo1Test {
     driver.findElement(By.cssSelector(".width-40")).click();
 
     Thread.sleep(1000);
-    driver.findElement(By.cssSelector("li:nth-child(1) .menu-text")).click();
-    driver.findElement(By.cssSelector("#resolved .my-buglist-bug:nth-child(1) span > a")).click();
-    driver.findElement(By.linkText("Ivan52")).click();
-    driver.findElement(By.cssSelector("tr:nth-child(3) > td")).click();
 
-    assertThat(driver.findElement(By.cssSelector("tr:nth-child(3) > td")).getText(), is("Ivan Capasso"));
+    driver.findElement(By.cssSelector("li:nth-child(1) .menu-text")).click();
+
+    /* [OLD TEST 1] (Record not found in DB)
+      driver.findElement(By.cssSelector("#resolved .my-buglist-bug:nth-child(1) span > a")).click();
+      driver.findElement(By.linkText("Ivan52")).click();
+      driver.findElement(By.cssSelector("tr:nth-child(3) > td")).click();
+      assertThat(driver.findElement(By.cssSelector("tr:nth-child(3) > td")).getText(), is("Ivan Capasso"));
+    **/
+
+    /* [OLD TEST 2]
+      driver.findElement(By.xpath("//div/span/a[contains(text(), 'Ivan52')]")).click();
+      WebElement elem = driver.findElement(By.xpath("//tbody/tr[3]/td"));
+      assertThat(elem.getText(), is("Ivan Capasso"));
+    **/
+
+    // Test: Assert report made by the right user (Ivan52)
+    driver.findElement(By.linkText("Glitch grafico")).click();
+
+    String xPath = "//html/body/div[2]/div[2]/div[2]/div/div[1]/div/div[2]/div[2]/div/table/tbody/tr[5]/td[1]";
+    driver.findElement(By.xpath(xPath));
+
+    {
+      WebElement elem = driver.findElement(By.xpath(xPath));
+      assertThat(elem.getText(), is("Ivan52"));
+    }
+
     driver.close();
   }
 }

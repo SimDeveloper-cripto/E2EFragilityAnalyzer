@@ -32,7 +32,7 @@ public class ReadAdminInfo1Test {
     driver.findElement(By.name("password")).sendKeys("root");
     driver.findElement(By.name("password")).sendKeys(Keys.ENTER);
 
-    driver.findElement(By.linkText("Glitch grafico che prima non si verificava")).click();
+    driver.findElement(By.linkText("Glitch grafico")).click(); // Old Selector: "Glitch grafico che prima non si verificava"
     driver.findElement(By.linkText("administrator")).click();
 
     driver.findElement(By.cssSelector(".padding-8")).click();

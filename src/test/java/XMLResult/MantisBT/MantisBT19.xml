@@ -18,7 +18,7 @@
             <pattern testClass="JUnit.MantisBT.CreateTag1Test"/>
             <pattern testClass="JUnit.MantisBT.CreateUser1Test"/>
             <pattern testClass="JUnit.MantisBT.ReadAdminInfo1Test"/>
-            <pattern testClass="JUnit.MantisBT.UpdateUserInfo1Test"/>
+            <pattern testClass="JUnit.MantisBT.AssertCorrectReportUser1Test"/>
             <pattern testClass="JUnit.MantisBT.UpdateWorkflow1Test"/>
             <pattern testClass="JUnit.MantisBT.zDeleteNote1Test"/>
             <pattern testClass="JUnit.MantisBT.zDeleteUser1Test"/>
@@ -318,7 +318,7 @@ INFO: Detected dialect: W3C
             </output>
         </test>
     </suite>
-    <suite duration="4147" locationUrl="java:suite://JUnit.MantisBT.UpdateUserInfo1Test" name="UpdateUserInfo1Test" status="failed">
+    <suite duration="4147" locationUrl="java:suite://JUnit.MantisBT.AssertCorrectReportUser1Test" name="UpdateUserInfo1Test" status="failed">
         <test duration="4147" locationUrl="java:test://JUnit.MantisBT.UpdateUserInfo1Test/updateUserInfo1" name="updateUserInfo1" metainfo="" status="failed">
             <diff actual="noctino.misterioso@gmail.com" expected="Ivan Capasso"/>
             <output type="stderr">Starting ChromeDriver 114.0.5735.90
@@ -335,7 +335,7 @@ INFO: Detected dialect: W3C
                 at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)&#13;
                 at org.junit.Assert.assertThat(Assert.java:964)&#13;
                 at org.junit.Assert.assertThat(Assert.java:930)&#13;
-                at JUnit.MantisBT.UpdateUserInfo1Test.updateUserInfo1(UpdateUserInfo1Test.java:52)&#13;
+                at JUnit.MantisBT.AssertCorrectReportUser1Test.updateUserInfo1(UpdateUserInfo1Test.java:52)&#13;
                 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
                 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
                 at

@@ -1,16 +1,16 @@
 Nome del test,MantisBT18,MantisBT19,MantisBT20,MantisBT21,MantisBT22,Metric
 addTag1,passed,passed,passed,error,error,0.161
 astopFilter1,passed,passed,error,error,error,0.221
-createFilter1,passed,passed,error,error,error,0.126
+createFilter1,passed,passed,error,error,error,0.127
 createNote1,passed,passed,passed,error,error,0.088
-createProject1,passed,passed,passed,passed,passed,0.252
+createProject1,passed,passed,passed,passed,passed,0.253
 createReport1,passed,passed,passed,passed,passed,0.199
 createTag1,passed,passed,passed,passed,failed,0.189
 createUser1,passed,error,error,error,error,0.106
-readAdminInfo1,passed,error,error,error,error,0.321
-updateUserInfo1,passed,failed,failed,failed,failed,0.103
-updateWorkflow1,passed,passed,passed,passed,error,0.361
-zdeleteNote1,passed,passed,passed,passed,passed,0.094
-zdeleteProject1,passed,passed,error,error,error,0.324
+readAdminInfo1,passed,error,error,error,error,0.362
+assertCorrectReportUser1,passed,failed,failed,failed,failed,0.322
+updateWorkflow1,passed,passed,passed,passed,error,0.103
+zdeleteNote1,passed,passed,passed,passed,passed,0.095
+zdeleteProject1,passed,passed,error,error,error,0.339
 zdeleteReport1,passed,passed,passed,passed,passed,0.122
 zdeleteUser1,passed,passed,passed,passed,passed,0.098
