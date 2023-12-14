@@ -206,6 +206,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/src/test/java/XMLResult/MantisBT/Scores/AssertCorrectReportUser1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/src/test/java/XMLResult/MantisBT/Scores/CreateFilter1Test_scores.csv">
           <value>
             <Attribute>

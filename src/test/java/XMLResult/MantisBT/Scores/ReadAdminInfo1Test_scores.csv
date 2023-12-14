@@ -6,9 +6,9 @@ CssSelector, .width-40, 0.250, 0.412, 0.000, 0.257
 Name, password, 0.400, 0.410, 0.000, 0.362
 Name, password, 0.400, 0.410, 0.000, 0.362
 Name, password, 0.400, 0.410, 0.000, 0.362
-LinkText, Glitch grafico, 0.250, 0.403, 0.000, 0.256
-LinkText, administrator, 0.250, 0.389, 0.000, 0.253
-CssSelector, .padding-8, 0.250, 0.389, 0.000, 0.253
-CssSelector, td, 0.400, 0.389, 0.000, 0.358
-XPath, //div[@id="main-container"]/div[5]/div/div/div/address/small, 0.829, 0.389, 0.000, 0.658
-XPath, //div[@id="main-container"]/div[5]/div/div/div/address/small[2], 0.829, 0.389, 0.000, 0.658
+LinkText, Glitch grafico, 0.250, 0.404, 0.000, 0.256
+LinkText, administrator, 0.250, 0.390, 0.000, 0.253
+CssSelector, .padding-8, 0.250, 0.390, 0.000, 0.253
+CssSelector, td, 0.400, 0.390, 0.000, 0.358
+XPath, //div[@id="main-container"]/div[5]/div/div/div/address/small, 0.829, 0.390, 0.000, 0.658
+XPath, //div[@id="main-container"]/div[5]/div/div/div/address/small[2], 0.829, 0.390, 0.000, 0.658

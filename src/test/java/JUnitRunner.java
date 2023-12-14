@@ -13,7 +13,7 @@ import java.lang.reflect.InvocationTargetException;
 // Phormer         [OK] (All versions provided are tested)
 // PasswordManager [OK] (All versions provided are tested)
 // JTrac           [OK] (All versions provided are tested)
-// MantisBT        []   (Tested only version 2.18.0)
+// MantisBT        [OK] (All versions provided are tested)
 
 /* [HOW TO RUN MANTIS_BT]
     - Before starting the test, you'll need to set the italian language.
