@@ -26,7 +26,7 @@ import java.lang.reflect.InvocationTargetException;
 **/
 
 public class JUnitRunner {
-    static String SoftwareUsed = "MantisBT";
+    static String SoftwareUsed = "Dolibarr";
 
     public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException, IOException {
         String directory = "src/test/java/JUnit/" + SoftwareUsed; // JUnit test directory

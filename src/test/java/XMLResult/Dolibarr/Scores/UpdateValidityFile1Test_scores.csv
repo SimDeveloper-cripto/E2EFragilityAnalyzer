@@ -9,4 +9,5 @@ CssSelector, .menu, 0.250, 0.398, 0.000, 0.255
 LinkText, Informazioni su Dolibarr, 0.250, 0.398, 0.000, 0.255
 CssSelector, .menu, 0.250, 0.347, 0.000, 0.244
 LinkText, Verifica integrità dei file, 0.250, 0.347, 0.000, 0.244
-CssSelector, input:nth-child(7), 0.400, 0.395, 0.800, 0.439
+CssSelector, input:nth-child(7), 0.400, 0.395, 0.000, 0.359
+CssSelector, .button, 0.250, 0.395, 0.000, 0.254

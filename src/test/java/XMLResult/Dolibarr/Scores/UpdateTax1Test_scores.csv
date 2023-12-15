@@ -4,7 +4,7 @@ Name, username, 0.400, 0.388, 0.000, 0.358
 Name, password, 0.400, 0.388, 0.000, 0.358
 Name, password, 0.400, 0.388, 0.000, 0.358
 CssSelector, .menu, 0.250, 0.363, 0.000, 0.248
-LinkText, Impostazioni, 0.250, 0.362, 0.000, 0.247
+LinkText, Impostazioni, 0.250, 0.363, 0.000, 0.248
 LinkText, Impostazioni -> Società/Organizzazione, 0.250, 0.395, 0.000, 0.254
 CssSelector, #no_vat, 0.000, 0.358, 0.000, 0.072
 XPath, //table[7]/tbody/tr/td[@width], 0.775, 0.358, 1.000, 0.714
