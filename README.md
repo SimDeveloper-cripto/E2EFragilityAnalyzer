@@ -34,9 +34,9 @@ In order to run tests you will need to start the related docker container. <br /
         $ docker compose -f 'docker-compose(MantisBT).yml' up -d
     ```
   Before starting the test, you'll need to several steps. In order:
-  - First, set the italian language. So from your browser, go to http://localhost:8989/login_page.php and login as "Administrator" (Name: Administrator, Pass: root) and then proceed to My Account > Preferences.
-  - Logout and do the same for this other users: (Name: Chris95, Miranda23 -- Pass: root)
-  - Login with user (Name: Ivan52, Pass: root) > Report Issue for EasyManager2 (fill category dropdown menu, Summary: "Glitch grafico", Description: "Glitch grafico che prima non si verificava")
+  - First, set the italian language. So from your browser, go to http://localhost:8989/login_page.php and login as "Administrator" (name: Administrator, pass: root) and then proceed to My Account > Preferences.
+  - Logout and do the same for this other users: (name: Chris95, Miranda23 -- pass: root)
+  - Login with user (name: Ivan52, pass: root) > Report Issue for EasyManager2 (fill category dropdown menu, Summary: "Glitch grafico", Description: "Glitch grafico che prima non si verificava")
   - Stop and restart your docker container. <br />
 
 
@@ -52,7 +52,8 @@ In order to run tests you will need to start the related docker container. <br /
         $ docker build -t jtrac .
         $ docker run --network host --name jtrac jtrac
     ```
-  Before executing the Dockerfile, go to the __JTracVersions__ folder and choose a version you'd like to test. Then change it accordingly inside the Dockerfile. <br />
+  Probably, once executed, you should go to http://localhost:8888/ and register with password "admin". <br /> 
+  Go to the __JTracVersions__ folder and choose a version you'd like to test. Then change it accordingly inside the Dockerfile. <br />
 
 
 * Run Phormer container: use Dockerfile (I recommend to run the version I have listed above)
@@ -61,7 +62,7 @@ In order to run tests you will need to start the related docker container. <br /
         $ docker run -d -p 80:80 --name phormer phormer
     ```
     This Docker file is located inside the __PhormerDockerfile__ folder. <br />
-    To execute it, first save in another folder the Dockerfile provided for JTrac. After that substitute (global folder) Phormer's.
+    To execute it, first save in another folder the Dockerfile provided for JTrac. After that substitute (global folder) Phormer's. <br />
     Before executing the Dockerfile, go to the PhormerVersions folder and choose a version you'd like to test; then change it accordingly inside the Dockerfile. <br />
 
 ### Step 2
@@ -70,6 +71,8 @@ To run the test and apply the metric It is really easy, what you have to do is j
 ```console
 static String SoftwareUsed = ""; # Insert here the name of the application. 
 ```
+One the testing is finished you will find a Result.csv which contains a triple (for each execution): __{Test Name, Passed (true/false), Score}__. <br />
+It is located in __src/test/java/XMLResult/{name_of_the_application_tested}__. <br />
 
 ## Applied Metric: here are the results
 

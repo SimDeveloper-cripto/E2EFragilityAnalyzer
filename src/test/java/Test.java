@@ -12,6 +12,7 @@ public class Test {
     private List<Page> pages;
     private double testScore;
     private final boolean laterGetSuccess;
+    private boolean passed;
 
     public Test(String className) {
         this.className = className;
@@ -170,5 +171,13 @@ public class Test {
 
     public boolean isLaterGetSuccess() {
         return this.laterGetSuccess;
+    }
+
+    public void setPassed(boolean passed) {
+        this.passed = passed;
+    }
+
+    public boolean isPassed() {
+        return passed;
     }
 }

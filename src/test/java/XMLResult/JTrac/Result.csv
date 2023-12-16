@@ -1,12 +1,12 @@
-Nome del test,Metric
-setItalianLanguage,0.430
-loginAdmin,0.451
-createUser1,0.349
-createUser2,0.349
-modifyUser1,0.364
-deleteUser2,0.363
-createSpace,0.337
-settings,0.312
-logoutAdmin,0.327
-loginUser1,0.332
-blackboard,0.367
+"Test Name","Passed","Score"
+"SetItalianLanguageTest","false","NaN"
+"LoginAdminTest","false","NaN"
+"CreateUser1Test","false","NaN"
+"CreateUser2Test","false","NaN"
+"ModifyUser1Test","false","NaN"
+"DeleteUser2Test","false","NaN"
+"CreateSpaceTest","false","NaN"
+"SettingsTest","false","NaN"
+"LogoutAdminTest","false","NaN"
+"LoginUser1Test","false","NaN"
+"BlackboardTest","false","NaN"

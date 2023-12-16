@@ -9,8 +9,7 @@ public class PointBiserialCorrelationCoefficient {
 
     private static void setLists(List<Test> testJudged) {
         for (Test test : testJudged) {
-            System.out.println(test);
-
+            // System.out.println(test);
             Double score = test.getTestScore();
             Boolean dichotomousValue = test.isLaterGetSuccess();
 

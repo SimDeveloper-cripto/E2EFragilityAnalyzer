@@ -1,6 +1,5 @@
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.text.DecimalFormat;
@@ -8,65 +7,9 @@ import java.text.DecimalFormatSymbols;
 
 /* [DESCRIPTION]
     - Log class is used to show the user Test results on terminal and also in the specified files
-* */
+**/
+
 public class Log {
-    private void fillResultFile(List<Test> testsJudge, String csvFileNamePath, DecimalFormat df) {
-        try {
-            File inputFile = new File(csvFileNamePath);
-            File tempFile  = new File("temp.csv");
-
-            BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-            BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile));
-
-            String line;
-            String[] headers;
-            int columnIdx = -1;
-            boolean foundColumn = false;
-
-            // Process the header row separately
-            if ((line = reader.readLine()) != null) {
-                headers = line.split(",");
-                for (int i = 0; i < headers.length; i++) {
-                    if (headers[i].equals("Metric")) {
-                        columnIdx = i;
-                        foundColumn = true;
-                        break;
-                    }
-                }
-                writer.write(line);
-                writer.newLine();
-            }
-
-            while ((line = reader.readLine()) != null) {
-                String[] data = line.split(",");
-
-                if (foundColumn && !testsJudge.isEmpty()) {
-                    // Update the values in the column with scores from testsJudge
-                    if (columnIdx < data.length) {
-                        String newValue = df.format(testsJudge.remove(0).getTestScore());
-                        data[columnIdx] = newValue;
-                    }
-                }
-
-                // Reconstruct the line with updated data
-                String newLine = String.join(",", data);
-                writer.write(newLine);
-                writer.newLine();
-            }
-
-            reader.close();
-            writer.close();
-
-            // Rename tempFile to inputFile
-            if (inputFile.delete()) {
-                if (tempFile.renameTo(inputFile)) System.out.println("Result.csv file updated successfully! ( " + csvFileNamePath + " )");
-            } else {
-                throw new IOException("Failed to rename the temporary file to the original Result file.");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
     private void createScoreFileForEachTest(List<Test> testsJudged, DecimalFormat df) {
         String basePath = "src/test/java/XMLResult/" + JUnitRunner.SoftwareUsed + "/Scores/";
         File directory = new File(basePath);
@@ -120,7 +63,9 @@ public class Log {
 
         String directory = "src/test/java/XMLResult/" + JUnitRunner.SoftwareUsed + "/Result.csv";
         createScoreFileForEachTest(testsJudged, df);
-        fillResultFile(testsJudged, directory, df);
+
+        WriterCSV writerCSV = new WriterCSV(testsJudged, directory, df);
+        writerCSV.writeResultsToCSV();
     }
 
     public void logResultForEachTest(List<Test> testsJudged, DecimalFormat df) {
@@ -136,7 +81,6 @@ public class Log {
                         + ", PageAndSelectorScore: " + df.format(selector.getSelectorCombinedScoreWithPageScore()) + ", SelectorWeightedAverageResult: " + df.format(selector.getSelectorWeightedAverageResultScore()));
             }
             System.out.println("Test Score (by harmonic Mean): " + testJudged.getTestScore());
-            System.out.println(" ");
         }
         System.out.println(" ");
         double result = PointBiserialCorrelationCoefficient.getCorrelation(testsJudged);

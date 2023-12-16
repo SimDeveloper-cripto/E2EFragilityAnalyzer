@@ -101,6 +101,7 @@ public class TestRunner {
         try {
             method2.invoke(objPetX);
             System.out.println("<Test: " + testName + ">" + ", <Invoked method: " + methodName + ">\n");
+            test.setPassed(true);
         } catch(Exception e) {
             e.printStackTrace();
             String filePath = "src/test/java/XMLResult/" + JUnitRunner.SoftwareUsed + "/ErrorLog.txt";
@@ -123,6 +124,7 @@ public class TestRunner {
 
             setNumberOfFailedTests(numberOfFailedTests + 1);
             testFailed = true;
+            test.setPassed(false);
         }
 
         if(!testFailed) setNumberOfSuccessTests(numberOfSuccessTests + 1);

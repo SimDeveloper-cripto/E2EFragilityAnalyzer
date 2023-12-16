@@ -1,11 +1,11 @@
-Nome del test,Metric
-register,0.114
-login,0.093
-addEntry1,0.093
-addEntry2,0.093
-modifyEntry1,0.086
-modifyEntry2,0.086
-exportCSV,0.084
-deleteEntry1,0.086
-deleteEntry2,0.086
-importCSV,0.084
+"Test Name","Passed","Score"
+"RegisterTest","true","0.080"
+"LoginTest","true","0.095"
+"AddEntry1Test","true","0.082"
+"AddEntry2Test","true","0.082"
+"ModifyEntry1Test","true","0.089"
+"ModifyEntry2Test","true","0.089"
+"ExportCSVTest","true","0.086"
+"DeleteEntry1Test","true","0.086"
+"DeleteEntry2Test","true","0.086"
+"ImportCSVTest","true","0.086"
