@@ -5,5 +5,24 @@ CssSelector, .width-40, 0.250, 0.412, 0.000, 0.257
 Id, password, 0.000, 0.410, 0.000, 0.082
 CssSelector, .width-40, 0.250, 0.410, 0.000, 0.257
 Id, menu-toggler, 0.000, 0.404, 0.000, 0.081
-CssSelector, li:nth-child(2) .menu-text, 0.500, 0.404, 0.857, 0.516
-CssSelector, .widget-main:nth-child(1) > .table-responsive, 0.500, 0.401, 1.000, 0.530
+CssSelector, li:nth-child(2) .menu-text, 0.500, 0.404, 0.857, 0.517
+CssSelector, .widget-main:nth-child(1) > .table-responsive, 0.500, 0.400, 0.500, 0.480
+CssSelector, .widget-main:nth-child(1) > .table-responsive, 0.500, 0.400, 0.500, 0.480
+CssSelector, .widget-main:nth-child(1) > .table-responsive, 0.500, 0.400, 0.500, 0.480
+Id, view_state_filter, 0.000, 0.400, 0.000, 0.080
+Id, view_state_filter, 0.000, 0.400, 0.000, 0.080
+TagName, body, 0.400, 0.400, 0.000, 0.360
+Name, view_state, 0.400, 0.400, 0.000, 0.360
+Name, view_state, 0.400, 0.400, 0.000, 0.360
+Id, show_severity_filter, 0.000, 0.400, 0.000, 0.080
+Id, show_severity_filter, 0.000, 0.400, 0.000, 0.080
+CssSelector, .no-float, 0.250, 0.399, 0.000, 0.255
+Name, save_query_button, 0.400, 0.400, 0.000, 0.360
+Name, query_name, 0.400, 0.403, 0.000, 0.361
+CssSelector, .checkbox:nth-child(6) .lbl, 0.500, 0.403, 0.500, 0.481
+CssSelector, .checkbox:nth-child(7) .lbl, 0.500, 0.403, 0.500, 0.481
+Name, query_name, 0.400, 0.403, 0.000, 0.361
+Name, query_name, 0.400, 0.403, 0.000, 0.361
+XPath, //form/input[3], 0.650, 0.403, 0.000, 0.536
+XPath, /html/body/div[2]/div[2]/div[2]/div/div/div/div[2]/div/form[2]/input, 0.862, 0.402, 0.000, 0.683
+LinkText, Esporta in Excel, 0.250, 0.400, 0.000, 0.255

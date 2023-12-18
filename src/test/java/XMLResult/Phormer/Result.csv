@@ -1,14 +1,1 @@
-Nome del test,Metric
-addNewPhoto,0.260
-createcategory,0.260
-createStory,0.260
-deleteCategory,0.260
-deletePhoto,0.260
-deleteStory,0.260
-login,0.260
-logout,0.260
-modifyCategory,0.260
-modifyStory,0.260
-photoGallery,0.260
-rsS,0.260
-selectlast20,0.260
+"Test Name","3.0.1","3.0.2","3.10","3.13","3.20","3.30","3.31","Score"

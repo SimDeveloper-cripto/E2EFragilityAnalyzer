@@ -11,8 +11,10 @@ import java.lang.reflect.InvocationTargetException;
         - Log: logs results on terminal and also in the specified files
 **/
 
+// Remember to Edit Run Configuration specifying the version of the application you want to test!
+
 public class JUnitRunner {
-    static String SoftwareUsed = "PasswordManager"; // src/test/java/JUnit/
+    static String SoftwareUsed = "MantisBT"; // src/test/java/JUnit/
     static String applicationVersion;
 
     public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException, IOException, CsvException {

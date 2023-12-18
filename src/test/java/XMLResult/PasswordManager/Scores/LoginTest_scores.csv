@@ -1,9 +1,2 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Id, user, 0.000, 0.380, 0.000, 0.076
-Id, user, 0.000, 0.380, 0.000, 0.076
-Id, pwd, 0.000, 0.380, 0.000, 0.076
-Id, pwd, 0.000, 0.380, 0.000, 0.076
-Id, chk, 0.000, 0.380, 0.000, 0.076
-LinkText, LogOut, 0.250, 0.380, 0.000, 0.251
-LinkText, LogOut, 0.250, 0.362, 0.000, 0.247

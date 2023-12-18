@@ -1,17 +1,2 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Id, user, 0.000, 0.380, 0.000, 0.076
-Id, user, 0.000, 0.380, 0.000, 0.076
-Id, pwd, 0.000, 0.380, 0.000, 0.076
-Id, pwd, 0.000, 0.380, 0.000, 0.076
-Id, chk, 0.000, 0.380, 0.000, 0.076
-LinkText, Add Entry, 0.250, 0.380, 0.000, 0.251
-Id, newiteminput, 0.000, 0.365, 0.000, 0.073
-Id, newiteminput, 0.000, 0.365, 0.000, 0.073
-Id, newiteminputuser, 0.000, 0.365, 0.000, 0.073
-Id, newiteminputuser, 0.000, 0.365, 0.000, 0.073
-Id, newiteminputurl, 0.000, 0.365, 0.000, 0.073
-Id, newiteminputurl, 0.000, 0.365, 0.000, 0.073
-Id, newiteminputcomment, 0.000, 0.365, 0.000, 0.073
-Id, newiteminputcomment, 0.000, 0.365, 0.000, 0.073
-Id, newbtn, 0.000, 0.365, 0.000, 0.073
