@@ -68,10 +68,12 @@ I recommend to run the versions I have listed above. <br />
 
 ### Step 2
 
-To run the test and apply the metric It is really easy, what you have to do is just change one line of code located in JUnitRunner.java (located in src/test/java/). This is the line: <br />
-```console
-static String SoftwareUsed = ""; // Insert here the name of the application.
-```
+To run the test and apply the metric It is really easy, what you have to do is: <br />
+  1. Edit Run Configuration and insert as input parameter the version you want to test (make sure it exists in the related Result.csv file).
+  2. Change one line of code located in JUnitRunner.java (located in src/test/java/), that is to say: <br />
+  ```console
+  static String SoftwareUsed = ""; // Insert here the name of the application.
+  ```
 Once the testing is finished you will find a Result.csv which contains a triple (for each execution): __{Test Name, Passed (true/false), Score}__. <br />
 It is located in __src/test/java/XMLResult/{name_of_the_application_tested}__. <br />
 

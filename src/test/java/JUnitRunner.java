@@ -1,3 +1,5 @@
+import com.opencsv.exceptions.CsvException;
+
 import java.io.*;
 import java.util.List;
 import java.lang.reflect.InvocationTargetException;
@@ -11,9 +13,13 @@ import java.lang.reflect.InvocationTargetException;
 
 public class JUnitRunner {
     static String SoftwareUsed = "PasswordManager"; // src/test/java/JUnit/
+    static String applicationVersion;
 
-    public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException, IOException {
+    public static void main(String[] args) throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, IllegalAccessException, InstantiationException, IOException, CsvException {
         String directory = "src/test/java/JUnit/" + SoftwareUsed; // JUnit test directory
+
+        JUnitRunner.applicationVersion = args[0];
+        System.out.println("Application Version to test: " + applicationVersion);
 
         Judge judge = new Judge(new DefaultSelectorComplexityEvaluator(), new DefaultPageComplexityEvaluator(), new DefaultPageAndSelectorComplexityEvaluator());
 
@@ -21,11 +27,6 @@ public class JUnitRunner {
         String filePath = "src/test/java/XMLResult/" + JUnitRunner.SoftwareUsed + "/ErrorLog.txt";
         PrintWriter writer = new PrintWriter(filePath);
         writer.close();
-
-        // Clean Result.csv file
-        String _filePath = "src/test/java/XMLResult/" + JUnitRunner.SoftwareUsed + "/Result.csv";
-        PrintWriter _writer = new PrintWriter(_filePath);
-        _writer.close();
 
         List<Test> dolibarrTests = Test.getAllTests(directory);
 

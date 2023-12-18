@@ -1,4 +1,6 @@
 
+import com.opencsv.exceptions.CsvException;
+
 import java.io.*;
 import java.util.List;
 import java.util.Locale;
@@ -50,7 +52,7 @@ public class Log {
         System.out.println("You can find each Test score in: " + basePath);
     }
 
-    public void logResult(List<Test> testsJudged, TestRunner testRunner) {
+    public void logResult(List<Test> testsJudged, TestRunner testRunner) throws IOException, CsvException {
         DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
         symbols.setDecimalSeparator('.');
         DecimalFormat df = new DecimalFormat("0.000", symbols);
@@ -64,7 +66,7 @@ public class Log {
         String directory = "src/test/java/XMLResult/" + JUnitRunner.SoftwareUsed + "/Result.csv";
         createScoreFileForEachTest(testsJudged, df);
 
-        WriterCSV writerCSV = new WriterCSV(testsJudged, directory, df);
+        WriterCSV writerCSV = new WriterCSV(testsJudged, directory, df, JUnitRunner.applicationVersion);
         writerCSV.writeResultsToCSV();
     }
 
