@@ -11,7 +11,7 @@ services:
       - './mantisbt-db-dump:/docker-entrypoint-initdb.b'
     restart: no
   mantisbt:
-    image: xlrl/mantisbt:2.18.0
+    image: xlrl/mantisbt:2.19.0
     ports:
       - '8989:80'
     volumes:

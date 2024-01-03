@@ -24,8 +24,8 @@ Each battery of test (related to the specific application) is located in __src/t
 In order to run tests you will need to start the related docker container. <br />
 I recommend to run the versions I have listed above. <br />
 * ___Run Dolibarr container___
-    ```console
-        $ docker compose -f 'docker-compose(Dolibarr).yml' up -d
+    ```shell
+        docker compose -f 'docker-compose(Dolibarr).yml' up -d
     ```
     Once It starts, the dolibarr application will probably be "exited". <br />
     What you want to do Is to go to http://localhost:8081/, login with (server: mysql, name: dolibarr, pass: dolibarr), select dolibarr database and import the .sql file I have provided inside the folder "dolibarr-db-dump". <br />
@@ -34,9 +34,10 @@ I recommend to run the versions I have listed above. <br />
 
 
 * ___Run MantisBT container___
-    ```console
-        $ docker compose -f 'docker-compose(MantisBT).yml' up -d
+    ```shell
+        docker compose -f 'docker-compose(MantisBT).yml' up -d
     ```
+  Make sure you defined the correct version you want to test (inside the docker-compose file). <br />
   Once It starts, go to http://localhost:8080/, login with (server: mysql, name: mantisbt, pass: mantisbt), select bugtracker database and import the .sql file I have provided inside the folder "mantisbt-db-dump". <br />
   Stop and restart your container. <br />
   Before starting the test, you'll need to do several steps. In order:
@@ -47,27 +48,25 @@ I recommend to run the versions I have listed above. <br />
 
 
 * ___Run Password Manager container___
-    ```console
-        $ docker compose -f 'docker-compose(PasswordManager).yml' up -d
+    ```shell
+        docker compose -f 'docker-compose(PasswordManager).yml' up -d
     ```
     Before executing the docker compose file, go to the __PasswordManagerVersions__ folder and choose a version you'd like to test. Then change it accordingly inside the docker-compose file. <br />
  
 
 * ___Run JTrac container___
-    ```console
-        $ docker build -t jtrac .
-        $ docker run --network host --name jtrac jtrac
+    ```shell
+        docker build -t jtrac . && docker run --network host --name jtrac jtrac
     ```
   Go to the __JTracVersions__ folder and choose a version you'd like to test; then change it accordingly inside the Dockerfile. <br />
 
 
 * ___Run Phormer container___
-    ```console
-        $ docker build -t phormer .
-        $ docker run -d -p 80:80 --name phormer phormer
+    ```shell
+        docker build -t phormer . && docker run -d -p 80:80 --name phormer phormer
     ```
   This Docker file is located inside the __PhormerDockerfile__ folder. <br />
-  Probably, once executed, you should go to http://localhost:8888/ and register with password "admin". <br />
+  Probably, once executed, you should go to http://localhost/ and register with password "admin". <br />
   To execute it, first save in another folder the Dockerfile provided for JTrac. After that substitute (global folder) Phormer's. <br />
   Before executing the Dockerfile, go to the PhormerVersions folder and choose a version you'd like to test; then change it accordingly inside the Dockerfile. <br />
 

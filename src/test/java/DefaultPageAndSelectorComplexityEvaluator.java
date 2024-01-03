@@ -34,12 +34,7 @@ public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelect
                 return 0;
         }
 
-        if (nElemSecondMatch == 0) { // Fragile selector, need to penalize
-            ratio = 0.2f;            // Could write 0.1f. So that (1 - ratio) is as close as possible to 1
-        } else {
-            ratio = (float) nElemFirstMatch / (float) nElemSecondMatch;
-        }
-
+        ratio = (float) nElemFirstMatch / (float) nElemSecondMatch;
         return (1 - ratio);
     }
 

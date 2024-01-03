@@ -12,7 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.is;
 
-public class CreatecategoryTest {
+public class CreateCategoryTest {
   private WebDriver driver = new ChromeDriver();
   JavascriptExecutor js = (JavascriptExecutor) driver;
 
@@ -28,7 +28,7 @@ public class CreatecategoryTest {
   }
 
   @Test
-  public void createcategory() {
+  public void createCategory() {
     driver.get("http://localhost/");
     driver.findElement(By.linkText("Admin")).click();
 
