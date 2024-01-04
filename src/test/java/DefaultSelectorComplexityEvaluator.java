@@ -34,12 +34,15 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
         System.out.println("(Analyzed) Selector Hierarchy score: " + hierarchyScore);
 
         // Step 2: Type Score calculation (Rule Based)
+        CascadeSpecificityEvaluator cascadeEvaluator = new CascadeSpecificityEvaluator(selectorString);
         switch (selectorType) {
             case "CssSelector":
-                typeScore = evaluateCssSelectorTypeScore(selectorString, depth);
+                // typeScore = evaluateCssSelectorTypeScore(selectorString, depth);
+                typeScore = cascadeEvaluator.applyAlgorithmForCssSelectors();
                 break;
             case "XPath":
-                typeScore = evaluateXPathTypeScore(selectorString, depth);
+                // typeScore = evaluateXPathTypeScore(selectorString, depth);
+                typeScore = cascadeEvaluator.applyAlgorithmForXPathSelectors(document);
                 break;
             case "TagName":
             case "Name":

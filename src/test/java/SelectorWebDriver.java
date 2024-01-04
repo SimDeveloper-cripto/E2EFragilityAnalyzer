@@ -22,10 +22,10 @@ public class SelectorWebDriver implements WebDriverListener {
 	@Override
 	public void beforeFindElement(WebDriver driver, By locator) {
 		String pageSource    = driver.getPageSource();
-		Document pageContent = Jsoup.parse(pageSource);
+		Document pageContent = Jsoup.parse(pageSource); // Page Document
 
 		Selector selector = new Selector(locator);
-		Page page        = new Page(pageContent);
+		Page page         = new Page(pageContent);
 
 		// Scores calculation
 		float selectorComplexityScore        = judge.applyMetricToSelector(selector, pageContent);
