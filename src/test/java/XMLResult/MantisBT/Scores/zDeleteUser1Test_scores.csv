@@ -2,10 +2,10 @@ Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeighted
 
 Id, username, 0.000, 0.412, 0.000, 0.082
 Id, username, 0.000, 0.412, 0.000, 0.082
-CssSelector, .width-40, 0.250, 0.412, 0.000, 0.257
+CssSelector, .width-40, 0.125, 0.412, 0.000, 0.170
 Id, password, 0.000, 0.410, 0.000, 0.082
 Id, password, 0.000, 0.410, 0.000, 0.082
-CssSelector, .fa-gears, 0.250, 0.405, 0.000, 0.256
+CssSelector, .fa-gears, 0.125, 0.405, 0.000, 0.169
 LinkText, Gestione utenti, 0.250, 0.407, 0.000, 0.256
 Id, search, 0.000, 0.432, 0.000, 0.086
 Id, search, 0.000, 0.432, 0.000, 0.086
@@ -15,5 +15,5 @@ Id, edit-access-level, 0.000, 0.351, 0.000, 0.070
 Id, email-field, 0.000, 0.351, 0.000, 0.070
 Id, edit-realname, 0.000, 0.351, 0.000, 0.070
 Id, edit-username, 0.000, 0.351, 0.000, 0.070
-CssSelector, #manage-user-delete-form .btn, 0.500, 0.351, 0.900, 0.510
-CssSelector, .btn-white, 0.250, 0.408, 0.000, 0.257
+CssSelector, #manage-user-delete-form .btn, 0.312, 0.351, 0.900, 0.379
+CssSelector, .btn-white, 0.125, 0.408, 0.000, 0.169

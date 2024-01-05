@@ -34,7 +34,14 @@ public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelect
                 return 0;
         }
 
-        ratio = (float) nElemFirstMatch / (float) nElemSecondMatch;
+        // ratio = (float) nElemFirstMatch / (float) nElemSecondMatch;
+        // return (1 - ratio);
+
+        if (nElemSecondMatch == 0) {
+             ratio = 0.2f;
+        } else {
+            ratio = (float) nElemFirstMatch / (float) nElemSecondMatch;
+        }
         return (1 - ratio);
     }
 
