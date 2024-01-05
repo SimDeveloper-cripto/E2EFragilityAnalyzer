@@ -1,10 +1,10 @@
 # FragilitySentry Overview
 
 This project is the continuation of https://github.com/Noctino52/FragilitySentry. <br />
-The project is still a work in progress, meaning this Readme overview will be updated once completed. <br/>
-All the development process of this project took place in a Linux environment (Ubuntu 22, Ubuntu 23). <br />
+It is still a work in progress, meaning this Readme overview will be updated once completed. <br/>
+All the development process took place in a Linux environment (Ubuntu 22 and Ubuntu 23). <br />
 
-## How to run tests
+## How to test an application
 
 In this project 5 applications are tested. Here is the list with the versions: <br />
 
@@ -17,23 +17,32 @@ In this project 5 applications are tested. Here is the list with the versions: <
 | Password Manager    | 9.08, 9.09, 9.10, 9.11, 9.13               |
 
 First of all, this project uses JUnit to automate a battery of Selenium tests. <br />
-Each battery of test (related to the specific application) is located in __src/test/java/JUnit/{name_of_the_application}__. <br />
+Each battery of tests (related to the specific application) is located in __src/test/java/JUnit/{name_of_the_application}__. <br />
 
 ### Step 1
 
+The first thing to do is define your execution configuration (__src/test/java/config/configuration.json__). <br />
+Take my configuration as an example. <br />
+1. "softwareUsed": __src/test/java/JUnit/{name_of_the_application}__.
+2. "applicationVersion": version of the application. I recommend to run the versions listed above.
+3. "selectorScoreStrategy": define here the name of the __implementation__ class for selector strategy score.
+4. "pageScoreStrategy": define here the name of the __implementation__ class for page strategy score.
+5. "pageAndSelectorScoreStrategy": define here the name of the __implementation__ class for page and selector strategy score. <br />
+
+### Step 2
+
 In order to run tests you will need to start the related docker container. <br />
-I recommend to run the versions I have listed above. <br />
-* ___Run Dolibarr container___
+* ___Dolibarr___
     ```shell
         docker compose -f 'docker-compose(Dolibarr).yml' up -d
     ```
     Once It starts, the dolibarr application will probably be "exited". <br />
     What you want to do Is to go to http://localhost:8081/, login with (server: mysql, name: dolibarr, pass: dolibarr), select dolibarr database and import the .sql file I have provided inside the folder "dolibarr-db-dump". <br />
-    Now stop and restart the docker container. <br />
-    Last thing, please test the version starting from the version 13.0.0 if you don't want problems with the volumes installation. <br />    
+    Stop and restart the docker container. <br />
+    Please test the app starting from the version 13.0.0 if you don't want problems with the volumes of installation. <br />   
 
 
-* ___Run MantisBT container___
+* ___MantisBT___
     ```shell
         docker compose -f 'docker-compose(MantisBT).yml' up -d
     ```
@@ -44,24 +53,24 @@ I recommend to run the versions I have listed above. <br />
   - Set the italian language: from your browser go to http://localhost:8989/login_page.php and login as "Administrator" (name: Administrator, pass: root) and then proceed to My Account > Preferences.
   - Logout and do the same for this other users: (name: Chris95, Miranda23 -- pass: root).
   - Login with user (name: Ivan52, pass: root) > Report Issue for EasyManager2 (fill category dropdown menu, Summary: "Glitch grafico", Description: "Glitch grafico che prima non si verificava").
-  - Stop and restart your docker container. <br />
 
 
-* ___Run Password Manager container___
+* ___PasswordManager___
     ```shell
         docker compose -f 'docker-compose(PasswordManager).yml' up -d
     ```
-    Before executing the docker compose file, go to the __PasswordManagerVersions__ folder and choose a version you'd like to test. Then change it accordingly inside the docker-compose file. <br />
+    Before executing the docker compose file, go to the __PasswordManagerVersions__ folder and choose a version you'd like to test. Then change it accordingly inside the docker-compose file (two places). <br />
  
 
-* ___Run JTrac container___
+* ___JTrac___
     ```shell
         docker build -t jtrac . && docker run --network host --name jtrac jtrac
     ```
   Go to the __JTracVersions__ folder and choose a version you'd like to test; then change it accordingly inside the Dockerfile. <br />
+  I Recommend to test JTrac in Ubuntu22. <br />
 
 
-* ___Run Phormer container___
+* ___Phormer___
     ```shell
         docker build -t phormer . && docker run -d -p 80:80 --name phormer phormer
     ```
@@ -71,23 +80,9 @@ I recommend to run the versions I have listed above. <br />
   Before executing the Dockerfile, go to the PhormerVersions folder and choose a version you'd like to test; then change it accordingly inside the Dockerfile. <br />
 
 
-### Step 2
-
-To run the test and apply the metric It is really easy, what you have to do is: <br />
-  1. Edit Run Configuration and insert as input parameter the version you want to test (make sure it exists in the related Result.csv file).
-  2. Change one line of code located in JUnitRunner.java (located in src/test/java/), that is to say: <br />
-  ```console
-  static String SoftwareUsed = ""; // Insert here the name of the application.
-  ```
-Once the testing is finished you will find a Result.csv which contains a triple (for each execution): __{Test Name, Passed (true/false), Score}__. <br />
-It is located in __src/test/java/XMLResult/{name_of_the_application_tested}__. <br />
-
 ## Applied Metric
-Once the project is finished I will update this section. <br />
-<!--
-  ![Dolibarr results](ResultImages_v1/Dolibarr.png)
-  ![MantisBT results](ResultImages_v1/MantisBT.png)
-  ![Password Manager results](ResultImages_v1/PasswordManager.png)
-  ![JTrac results](ResultImages_v1/JTrac.png)
-  ![Phormer Manager results](ResultImages_v1/Phormer.png)
--->
+
+Once you have finished running all the tests go to __src/test/java/XMLResult/{name_of_the_application}__. <br />
+There is a Result.csv file containing all the info needed. For each test: <br />
+1. Passed/Failed, depending on the version.
+2. Score.

@@ -1,7 +1,7 @@
 {
   "softwareUsed": "PasswordManager",
   "applicationVersion": "9.11",
-  "//selectorScoreStrategy": "DefaultSelectorComplexityEvaluator",
-  "//pageScoreStrategy": "DefaultPageComplexityEvaluator",
-  "//pageAndSelectorScoreStrategy": "DefaultPageAndSelectorComplexityEvaluator"
+  "selectorScoreStrategy": "DefaultSelectorComplexityEvaluator",
+  "pageScoreStrategy": "DefaultPageComplexityEvaluator",
+  "pageAndSelectorScoreStrategy": "DefaultPageAndSelectorComplexityEvaluator"
 }

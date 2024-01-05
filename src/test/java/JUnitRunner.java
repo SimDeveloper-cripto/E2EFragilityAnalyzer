@@ -1,8 +1,8 @@
 
 import java.io.*;
+import java.util.List;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.List;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -16,11 +16,6 @@ import java.lang.reflect.InvocationTargetException;
         - Log: logs results on terminal and also in the specified files
 **/
 
-// Remember to Edit Run Configuration specifying the version of the application you want to test!
-
-// TODO: Update Readme.md file
-// TODO: Find a way to define the implementations for each Evaluator (json file)
-
 public class JUnitRunner {
     static String applicationVersion, SoftwareUsed;
 
@@ -33,9 +28,22 @@ public class JUnitRunner {
         JUnitRunner.applicationVersion = configuration.get("applicationVersion").getAsString();
         System.out.println("Testing Application Version: " + applicationVersion);
 
-        Judge judge = new Judge(new DefaultSelectorComplexityEvaluator(), new DefaultPageComplexityEvaluator(), new DefaultPageAndSelectorComplexityEvaluator());
+        String selectorScoreStrategy        = configuration.get("selectorScoreStrategy").getAsString();
+        String pageScoreStrategy            = configuration.get("pageScoreStrategy").getAsString();
+        String pageAndSelectorScoreStrategy = configuration.get("pageAndSelectorScoreStrategy").getAsString();
 
-        // Clean ErrorLog.txt file
+        Object selectorScoreStrategyImpl = null, pageScoreStrategyImpl = null, pageAndSelectorScoreStrategyImpl = null;
+        try {
+            selectorScoreStrategyImpl        = instantiateScoreStrategy(selectorScoreStrategy);
+            pageScoreStrategyImpl            = instantiateScoreStrategy(pageScoreStrategy);
+            pageAndSelectorScoreStrategyImpl = instantiateScoreStrategy(pageAndSelectorScoreStrategy);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Judge judge = new Judge((ISelectorScoreStrategy) selectorScoreStrategyImpl,
+                (IPageScoreStrategy) pageScoreStrategyImpl, (IPageAndSelectorScoreStrategy) pageAndSelectorScoreStrategyImpl);
+
+        // Clear ErrorLog.txt file
         String filePath = "src/test/java/XMLResult/" + JUnitRunner.SoftwareUsed + "/ErrorLog.txt";
         PrintWriter writer = new PrintWriter(filePath);
         writer.close();
@@ -54,5 +62,10 @@ public class JUnitRunner {
     private static JsonObject readConfigurationFile() throws IOException {
         String content = new String(Files.readAllBytes(Paths.get("src/test/java/config/configuration.json")));
         return new JsonParser().parse(content).getAsJsonObject();
+    }
+
+    private static Object instantiateScoreStrategy(String className) throws Exception {
+        Class<?> c = Class.forName(className);
+        return c.getDeclaredConstructor().newInstance();
     }
 }
