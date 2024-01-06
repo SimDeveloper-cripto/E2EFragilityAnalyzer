@@ -100,8 +100,9 @@ public class WriterCSV {
     }
 
     private int getScoreColumnIndex(String[] header) throws IOException, CsvValidationException {
+        String score = "Score_" + this.applicationVersion;
         for (int i = 0; i < header.length; i++) {
-            if ("Score".equals(header[i])) return i;
+            if (score.equals(header[i])) return i;
         }
         throw new IllegalArgumentException("Could not find 'Score' column inside CSV file.");
     }

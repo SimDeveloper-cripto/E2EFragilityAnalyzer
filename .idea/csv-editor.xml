@@ -199,6 +199,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/src/test/java/XMLResult/Magento/Result.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/Magento/Scores/CreateHelp1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/src/test/java/XMLResult/MantisBT/Result.csv">
           <value>
             <Attribute>

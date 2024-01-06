@@ -1,6 +1,6 @@
 {
-  "softwareUsed": "MantisBT",
-  "applicationVersion": "2.19.0",
+  "softwareUsed": "PasswordManager",
+  "applicationVersion": "9.08",
   "selectorScoreStrategy": "DefaultSelectorComplexityEvaluator",
   "pageScoreStrategy": "DefaultPageComplexityEvaluator",
   "pageAndSelectorScoreStrategy": "DefaultPageAndSelectorComplexityEvaluator"

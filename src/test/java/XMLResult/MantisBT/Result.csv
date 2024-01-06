@@ -1,16 +1,16 @@
-"Test Name","2.18.0","2.19.0","2.20.0","2.21.0","2.22.0","Score"
-"UpdateWorkflow1Test","passed","passed","","","","0.135"
-"CreateUser1Test","passed","failed","","","","0.193"
-"CreateNote1Test","passed","passed","","","","0.111"
-"CreateProject1Test","passed","passed","","","","0.087"
-"zDeleteProject1Test","passed","passed","","","","0.228"
-"aStopFilter1Test","passed","passed","","","","0.196"
-"CreateFilter1Test","passed","passed","","","","0.165"
-"zDeleteNote1Test","passed","passed","","","","0.098"
-"AssertCorrectReportUser1Test","passed","passed","","","","0.272"
-"AddTag1Test","passed","passed","","","","0.245"
-"zDeleteUser1Test","passed","passed","","","","0.099"
-"zDeleteReport1Test","passed","passed","","","","0.093"
-"ReadAdminInfo1Test","passed","passed","","","","0.266"
-"CreateTag1Test","passed","passed","","","","0.114"
-"CreateReport1Test","passed","passed","","","","0.094"
+"Test Name","2.18.0","Score_2.18.0","2.19.0","Score_2.19.0","2.20.0","Score_2.20.0","2.21.0","Score_2.21.0","2.22.0","Score_2.22.0"
+"UpdateWorkflow1Test","","","","","","","","","","",
+"CreateUser1Test","","","","","","","","","","",
+"CreateNote1Test","","","","","","","","","","",
+"CreateProject1Test","","","","","","","","","","",
+"zDeleteProject1Test","","","","","","","","","","",
+"aStopFilter1Test","","","","","","","","","","",
+"CreateFilter1Test","","","","","","","","","","",
+"zDeleteNote1Test","","","","","","","","","","",
+"AssertCorrectReportUser1Test","","","","","","","","","","",
+"AddTag1Test","","","","","","","","","","",
+"zDeleteUser1Test","","","","","","","","","","",
+"zDeleteReport1Test","","","","","","","","","","",
+"ReadAdminInfo1Test","","","","","","","","","","",
+"CreateTag1Test","","","","","","","","","","",
+"CreateReport1Test","","","","","","","","","","",

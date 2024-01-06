@@ -1,3 +1,15 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-LinkText, Admin, 0.250, 0.426, 0.000, 0.260
+LinkText, Admin, 0.250, 0.453, 0.000, 0.266
+Name, passwd, 0.400, 0.490, 0.000, 0.378
+Name, passwd, 0.400, 0.490, 0.000, 0.378
+CssSelector, .submit, 0.167, 0.490, 0.000, 0.215
+LinkText, Manage Categories, 0.250, 0.475, 0.000, 0.270
+CssSelector, span:nth-child(10) > a:nth-child(1), 0.295, 0.439, 0.857, 0.380
+Id, name, 0.000, 0.438, 0.000, 0.088
+Name, desc, 0.400, 0.438, 0.000, 0.368
+Name, list, 0.400, 0.438, 0.000, 0.368
+CssSelector, tr:nth-child(4) > td:nth-child(2), 0.295, 0.438, 0.833, 0.378
+Id, public, 0.000, 0.438, 0.000, 0.088
+CssSelector, .submit, 0.167, 0.438, 0.000, 0.204
+CssSelector, .note_valid, 0.167, 0.436, 0.000, 0.204

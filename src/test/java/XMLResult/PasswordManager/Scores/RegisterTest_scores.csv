@@ -1,4 +1,13 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-CssSelector, .btn:nth-child(10), 0.071, 0.370, 0.000, 0.124
-Id, user, 0.000, 0.368, 0.000, 0.074
+CssSelector, .btn:nth-child(10), 0.071, 0.379, 0.000, 0.126
+Id, user, 0.000, 0.373, 0.000, 0.075
+Id, user, 0.000, 0.373, 0.000, 0.075
+Id, pwd, 0.000, 0.373, 0.000, 0.075
+Id, pwd, 0.000, 0.373, 0.000, 0.075
+Id, pwd1, 0.000, 0.373, 0.000, 0.075
+Id, pwd1, 0.000, 0.373, 0.000, 0.075
+Id, email, 0.000, 0.373, 0.000, 0.075
+Id, email, 0.000, 0.373, 0.000, 0.075
+Id, chk, 0.000, 0.373, 0.000, 0.075
+Id, chk, 0.000, 0.379, 0.000, 0.076
