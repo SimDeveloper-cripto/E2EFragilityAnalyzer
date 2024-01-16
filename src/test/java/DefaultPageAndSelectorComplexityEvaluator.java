@@ -1,9 +1,8 @@
 
+import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelectorScoreStrategy {
     @Override
@@ -11,40 +10,30 @@ public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelect
         String selectorType   = selector.getType();
         String selectorString = selector.getSelector();
 
+        String newSelectorString;
         int nElemFirstMatch, nElemSecondMatch;
         float ratio;
 
-        String newSelectorString;
+        nElemFirstMatch = getNumberOfMatches(selectorString, selectorType, driver);
         switch (selectorType) {
             case "CssSelector":
-                nElemFirstMatch   = getNumberOfMatches(selectorString, selectorType, driver);
-                System.out.println("(Debug) Old css selector: " + selectorString);
                 newSelectorString = removeFirstLevelCssSelector(selectorString);
-                System.out.println("(Debug) New css selector: " + newSelectorString);
                 nElemSecondMatch  = getNumberOfMatches(newSelectorString, selectorType, driver);
                 break;
             case "XPath":
-                nElemFirstMatch   = getNumberOfMatches(selectorString, selectorType, driver);
-                System.out.println("(Debug) Old xpath selector: " + selectorString);
                 newSelectorString = removeFirstLevelXPath(selectorString);
-                System.out.println("(Debug) New xpath selector: " + newSelectorString);
                 nElemSecondMatch  = getNumberOfMatches(newSelectorString, selectorType, driver);
                 break;
             default:
                 return 0;
         }
 
-        ratio = (float) nElemFirstMatch / (float) nElemSecondMatch;
+        if (nElemFirstMatch == 0) {
+            ratio = 0.0f;
+        } else {
+            ratio = (float) nElemFirstMatch / (float) nElemSecondMatch;
+        }
         return (1 - ratio);
-
-        /*
-            if (nElemSecondMatch == 0) {
-                 ratio = 0.2f;
-            } else {
-                ratio = (float) nElemFirstMatch / (float) nElemSecondMatch;
-            }
-            return (1 - ratio);
-        */
     }
 
     private String removeFirstLevelCssSelector(String selectorString) {

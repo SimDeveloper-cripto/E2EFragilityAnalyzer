@@ -1,6 +1,6 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-CssSelector, .row, 0.167, 0.412, 0.000, 0.199
+CssSelector, .row, 0.250, 0.412, 0.000, 0.257
 Id, username, 0.000, 0.412, 0.000, 0.082
 Id, username, 0.000, 0.412, 0.000, 0.082
 Id, username, 0.000, 0.412, 0.000, 0.082
@@ -8,7 +8,7 @@ Id, username, 0.000, 0.412, 0.000, 0.082
 Id, username, 0.000, 0.412, 0.000, 0.082
 Id, username, 0.000, 0.412, 0.000, 0.082
 Id, username, 0.000, 0.412, 0.000, 0.082
-CssSelector, .width-40, 0.125, 0.412, 0.000, 0.170
+CssSelector, .width-40, 0.250, 0.412, 0.000, 0.257
 Id, password, 0.000, 0.410, 0.000, 0.082
 Id, password, 0.000, 0.410, 0.000, 0.082
 Id, password, 0.000, 0.410, 0.000, 0.082
@@ -18,9 +18,8 @@ Id, password, 0.000, 0.410, 0.000, 0.082
 Id, password, 0.000, 0.410, 0.000, 0.082
 Id, password, 0.000, 0.410, 0.000, 0.082
 Id, password, 0.000, 0.410, 0.000, 0.082
-LinkText, username con _ non riescono a loggare, 0.250, 0.402, 0.000, 0.255
-CssSelector, .col-md-12:nth-child(4), 0.056, 0.375, 0.000, 0.114
-CssSelector, .visible-on-hover, 0.100, 0.375, 0.000, 0.145
-CssSelector, .visible-on-hover, 0.100, 0.375, 0.000, 0.145
-CssSelector, .visible-on-hover, 0.100, 0.375, 0.000, 0.145
-CssSelector, .btn-white, 0.125, 0.405, 0.000, 0.169
+CssSelector, .col-md-12:nth-child(4), 0.250, 0.375, 0.000, 0.250
+CssSelector, .visible-on-hover, 0.250, 0.375, 0.000, 0.250
+CssSelector, .visible-on-hover, 0.250, 0.375, 0.000, 0.250
+CssSelector, .visible-on-hover, 0.250, 0.375, 0.000, 0.250
+CssSelector, .btn-white, 0.250, 0.405, 0.000, 0.256

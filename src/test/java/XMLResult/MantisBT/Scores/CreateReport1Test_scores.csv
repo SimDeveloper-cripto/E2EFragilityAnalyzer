@@ -2,49 +2,14 @@ Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeighted
 
 Id, username, 0.000, 0.412, 0.000, 0.082
 Id, username, 0.000, 0.412, 0.000, 0.082
-CssSelector, .width-40, 0.125, 0.412, 0.000, 0.170
+CssSelector, .width-40, 0.250, 0.412, 0.000, 0.257
 Id, password, 0.000, 0.410, 0.000, 0.082
 Id, password, 0.000, 0.410, 0.000, 0.082
 Id, password, 0.000, 0.410, 0.000, 0.082
-CssSelector, .fa-gears, 0.125, 0.405, 0.000, 0.169
-LinkText, Gestione progetti, 0.250, 0.407, 0.000, 0.256
-CssSelector, .widget-toolbox > .form-inline .btn, 0.389, 0.400, 0.909, 0.443
+CssSelector, .fa-gears, 0.250, 0.405, 0.000, 0.256
+CssSelector, .widget-toolbox > .form-inline .btn, 0.583, 0.400, 0.909, 0.579
 Id, project-name, 0.000, 0.411, 0.000, 0.082
 Id, project-name, 0.000, 0.411, 0.000, 0.082
 Id, project-name, 0.000, 0.411, 0.000, 0.082
-CssSelector, .btn-white, 0.125, 0.411, 0.000, 0.170
+CssSelector, .btn-white, 0.250, 0.411, 0.000, 0.257
 LinkText, Continua, 0.250, 0.412, 0.000, 0.257
-CssSelector, .user-info, 0.125, 0.400, 0.000, 0.167
-LinkText, Esci, 0.250, 0.400, 0.000, 0.255
-Id, username, 0.000, 0.412, 0.000, 0.082
-Id, username, 0.000, 0.412, 0.000, 0.082
-Id, username, 0.000, 0.412, 0.000, 0.082
-CssSelector, .width-40, 0.125, 0.412, 0.000, 0.170
-Id, password, 0.000, 0.410, 0.000, 0.082
-Id, password, 0.000, 0.410, 0.000, 0.082
-CssSelector, li:nth-child(3) .menu-text, 0.306, 0.402, 0.800, 0.374
-Id, select-project-id, 0.000, 0.409, 0.000, 0.082
-Id, select-project-id, 0.000, 0.409, 0.000, 0.082
-CssSelector, .btn-white, 0.125, 0.409, 0.000, 0.169
-Id, category_id, 0.000, 0.382, 0.000, 0.076
-Id, category_id, 0.000, 0.382, 0.000, 0.076
-Id, reproducibility, 0.000, 0.382, 0.000, 0.076
-Id, reproducibility, 0.000, 0.382, 0.000, 0.076
-Id, severity, 0.000, 0.382, 0.000, 0.076
-Id, severity, 0.000, 0.382, 0.000, 0.076
-Id, priority, 0.000, 0.382, 0.000, 0.076
-Id, priority, 0.000, 0.382, 0.000, 0.076
-Id, profile_id, 0.000, 0.382, 0.000, 0.076
-Id, profile_id, 0.000, 0.382, 0.000, 0.076
-Id, handler_id, 0.000, 0.382, 0.000, 0.076
-Id, handler_id, 0.000, 0.382, 0.000, 0.076
-Id, summary, 0.000, 0.382, 0.000, 0.076
-Id, summary, 0.000, 0.382, 0.000, 0.076
-CssSelector, tr:nth-child(7), 0.083, 0.382, 0.000, 0.135
-Id, summary, 0.000, 0.382, 0.000, 0.076
-Id, summary, 0.000, 0.382, 0.000, 0.076
-Id, summary, 0.000, 0.382, 0.000, 0.076
-Id, description, 0.000, 0.382, 0.000, 0.076
-Id, description, 0.000, 0.382, 0.000, 0.076
-Id, description, 0.000, 0.382, 0.000, 0.076
-CssSelector, .btn-white, 0.125, 0.382, 0.000, 0.164

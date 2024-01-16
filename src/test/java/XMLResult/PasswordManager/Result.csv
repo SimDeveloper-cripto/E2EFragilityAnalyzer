@@ -1,11 +1,11 @@
 "Test Name","9.08","Score_9.08","9.09","Score_9.09","9.10","Score_9.10","9.11","Score_9.11","9.13","Score_9.13"
-"RegisterTest","passed","0.080","passed","0.080","passed","0.080","passed","0.080","failed","0.114"
-"LoginTest","passed","0.095","failed","0.095","failed","0.095","failed","0.095","failed","0.093"
-"AddEntry1Test","passed","0.082","failed","0.077","failed","0.077","failed","0.077","failed","0.093"
-"AddEntry2Test","passed","0.082","failed","0.078","failed","0.078","failed","0.078","failed","0.093"
-"ModifyEntry1Test","passed","0.089","failed","0.083","failed","0.083","failed","0.083","failed","NaN"
-"ModifyEntry2Test","passed","0.089","failed","0.083","failed","0.083","failed","0.083","failed","NaN"
-"ExportCSVTest","passed","0.086","failed","0.086","failed","0.086","failed","0.086","failed","0.084"
-"DeleteEntry1Test","passed","0.086","failed","0.091","failed","0.091","failed","0.091","failed","NaN"
-"DeleteEntry2Test","passed","0.086","failed","0.100","failed","0.100","failed","0.100","failed","NaN"
-"ImportCSVTest","passed","0.086","failed","0.086","failed","0.086","failed","0.086","failed","0.084"
+"RegisterTest","passed",,"passed",,"passed",,"passed",,"failed",
+"LoginTest","passed",,"failed",,"failed",,"failed",,"failed",
+"AddEntry1Test","passed",,"failed",,"failed",,"failed",,"failed",
+"AddEntry2Test","passed",,"failed",,"failed",,"failed",,"failed",
+"ModifyEntry1Test","passed",,"failed",,"failed",,"failed",,"failed",
+"ModifyEntry2Test","passed",,"failed",,"failed",,"failed",,"failed",
+"ExportCSVTest","passed",,"failed",,"failed",,"failed",,"failed",
+"DeleteEntry1Test","passed",,"failed",,"failed",,"failed",,"failed",
+"DeleteEntry2Test","passed",,"failed",,"failed",,"failed",,"failed",
+"ImportCSVTest","passed",,"failed",,"failed",,"failed",,"failed",

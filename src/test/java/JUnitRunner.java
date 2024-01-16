@@ -16,6 +16,8 @@ import java.lang.reflect.InvocationTargetException;
         - Log: logs results on terminal and also in the specified files
 **/
 
+// TODO: TEST EVERYTHING AGAIN
+
 public class JUnitRunner {
     static String applicationVersion, SoftwareUsed;
 

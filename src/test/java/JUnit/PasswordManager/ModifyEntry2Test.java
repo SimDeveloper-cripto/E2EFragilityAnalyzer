@@ -44,7 +44,6 @@ public class ModifyEntry2Test {
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
     WebElement elem = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".datarow:nth-child(2) .glyphicon-wrench"))); // .datarow:nth-child(3) .glyphicon-wrench
     elem.click();
-    // driver.findElement(By.cssSelector(".datarow:nth-child(3) .glyphicon-wrench")).click();
 
     driver.findElement(By.id("edititeminputcomment")).click();
     driver.findElement(By.id("edititeminputcomment")).sendKeys("Password generata (Per youtube)");
@@ -57,7 +56,6 @@ public class ModifyEntry2Test {
     {
       String value = driver.findElement(By.id("edititeminputcomment")).getAttribute("value");
       assertThat(value, is(containsString("Password generata (Per youtube)")));
-      // assertThat(value, is("Password generata (Per youtube)"));
     }
     driver.close();
   }

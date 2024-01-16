@@ -1,6 +1,6 @@
 {
   "softwareUsed": "PasswordManager",
-  "applicationVersion": "9.13",
+  "applicationVersion": "9.08",
   "selectorScoreStrategy": "DefaultSelectorComplexityEvaluator",
   "pageScoreStrategy": "DefaultPageComplexityEvaluator",
   "pageAndSelectorScoreStrategy": "DefaultPageAndSelectorComplexityEvaluator"

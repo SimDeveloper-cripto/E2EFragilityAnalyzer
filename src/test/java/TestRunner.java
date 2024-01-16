@@ -8,7 +8,6 @@ import org.openqa.selenium.support.events.EventFiringDecorator;
 import java.lang.reflect.Method;
 import java.lang.reflect.InvocationTargetException;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
@@ -109,7 +108,6 @@ public class TestRunner {
             System.err.println("Error Log generated in: " + filePath);
 
             String errorMessage = "<Test: " + testName + "> " + "<Invoked method: " + methodName + ">" + "\n";
-            // errorMessage += "Error: " + (e.getMessage() != null ? e.getMessage() : "No detailed message available");
 
             errorMessage += "[ERROR] Exception Type: " + e.getClass().getName() + ", ";
             Throwable cause = e.getCause();
