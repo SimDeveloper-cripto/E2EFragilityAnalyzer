@@ -1,1 +1,12 @@
 "Test Name","2.2.0","Score_2.2.0","2.2.1","Score_2.2.1","2.3.0","Score_2.3.0","2.3.1","Score_2.3.1","2.3.2","Score_2.3.2"
+"SetItalianLanguageTest","passed","0.310",,,,,,,,
+"LoginAdminTest","passed","0.363",,,,,,,,
+"CreateUser1Test","passed","0.264",,,,,,,,
+"CreateUser2Test","passed","0.264",,,,,,,,
+"ModifyUser1Test","passed","0.281",,,,,,,,
+"DeleteUser2Test","passed","0.293",,,,,,,,
+"CreateSpaceTest","passed","0.262",,,,,,,,
+"SettingsTest","passed","0.251",,,,,,,,
+"LogoutAdminTest","passed","0.259",,,,,,,,
+"LoginUser1Test","passed","0.249",,,,,,,,
+"BlackboardTest","passed","0.318",,,,,,,,

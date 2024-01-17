@@ -1,2 +1,12 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
+Name, loginName, 0.400, 0.389, 0.000, 0.260
+Name, password, 0.400, 0.389, 0.000, 0.260
+Name, password, 0.400, 0.389, 0.000, 0.260
+CssSelector, td:nth-child(3) > input, 0.650, 0.389, 0.800, 0.607
+XPath, //html/body/div[1]/table[2]/tbody/tr/td[1]/a, 0.837, 0.410, 0.000, 0.412
+XPath, //html/body/table[2]/tbody/tr/td/div[5], 0.829, 0.419, 0.000, 0.412
+CssSelector, body > table:nth-child(7), 0.650, 0.387, 0.000, 0.342
+Name, field:value, 0.400, 0.402, 0.000, 0.265
+Name, field:value, 0.400, 0.402, 0.000, 0.265
+XPath, //input[@value="Submit"], 0.400, 0.402, 0.000, 0.265

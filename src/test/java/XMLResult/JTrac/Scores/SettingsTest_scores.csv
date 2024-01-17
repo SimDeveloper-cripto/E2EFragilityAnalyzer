@@ -1,2 +1,10 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
+LinkText, LOGIN, 0.250, 0.397, 0.000, 0.213
+Name, loginName, 0.400, 0.389, 0.000, 0.260
+Name, password, 0.400, 0.389, 0.000, 0.260
+Name, password, 0.400, 0.389, 0.000, 0.260
+CssSelector, td:nth-child(3) > input, 0.650, 0.389, 0.800, 0.607
+LinkText, OPZIONI, 0.250, 0.397, 0.000, 0.214
+LinkText, Gestione Impostazioni, 0.250, 0.420, 0.000, 0.221
+CssSelector, .heading, 0.250, 0.387, 0.000, 0.210

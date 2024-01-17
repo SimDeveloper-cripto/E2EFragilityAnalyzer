@@ -1,2 +1,8 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
+Name, loginName, 0.400, 0.389, 0.000, 0.260
+Name, password, 0.400, 0.389, 0.000, 0.260
+Name, password, 0.400, 0.389, 0.000, 0.260
+CssSelector, td:nth-child(3) > input, 0.650, 0.389, 0.800, 0.607
+CssSelector, td > span, 0.650, 0.410, 0.750, 0.597
+CssSelector, td > span, 0.650, 0.410, 0.750, 0.597

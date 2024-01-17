@@ -1,2 +1,21 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
+Name, loginName, 0.400, 0.389, 0.000, 0.260
+Name, password, 0.400, 0.389, 0.000, 0.260
+Name, password, 0.400, 0.389, 0.000, 0.260
+CssSelector, td:nth-child(3) > input, 0.650, 0.389, 0.800, 0.607
+LinkText, OPZIONI, 0.250, 0.410, 0.000, 0.218
+LinkText, Gestione Spazi, 0.250, 0.419, 0.000, 0.221
+LinkText, Crea Nuovo Spazio, 0.250, 0.408, 0.000, 0.217
+Name, space.name, 0.400, 0.384, 0.000, 0.259
+Name, space.prefixCode, 0.400, 0.384, 0.000, 0.259
+Name, space.prefixCode, 0.400, 0.384, 0.000, 0.259
+Name, space.description, 0.400, 0.384, 0.000, 0.259
+Name, space.description, 0.400, 0.384, 0.000, 0.259
+Name, space.guestAllowed, 0.400, 0.384, 0.000, 0.259
+XPath, //input[@value='Avanti'], 0.400, 0.384, 0.000, 0.259
+Name, next, 0.400, 0.388, 0.000, 0.260
+Name, save, 0.400, 0.387, 0.000, 0.260
+LinkText, OPZIONI, 0.250, 0.392, 0.000, 0.212
+LinkText, Gestione Spazi, 0.250, 0.420, 0.000, 0.221
+CssSelector, tr:nth-child(2) > td:nth-child(1), 0.650, 0.408, 0.800, 0.613
