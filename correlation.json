@@ -3,13 +3,13 @@
   "data":  [
     {
       "application": "Phormer",
-      "statistic": "0.4165882601009072",
-      "pvalue": "0.1567630301100941"
+      "statistic": "",
+      "pvalue": ""
     },
     {
       "application": "PasswordManager",
-      "statistic": "NaN",
-      "pvalue": "NaN"
+      "statistic": "",
+      "pvalue": ""
     },
     {
       "application": "MantisBT",
