@@ -1,3 +1,32 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-LinkText, Admin, 0.250, 0.426, 0.000, 0.260
+LinkText, Admin, 0.250, 0.451, 0.000, 0.231
+Name, passwd, 0.400, 0.490, 0.000, 0.294
+Name, passwd, 0.400, 0.490, 0.000, 0.294
+CssSelector, .submit, 0.250, 0.490, 0.000, 0.244
+LinkText, Manage Photos, 0.250, 0.475, 0.000, 0.239
+LinkText, Add a new photo!, 0.250, 0.416, 0.000, 0.220
+Id, fileAddr, 0.000, 0.424, 0.000, 0.140
+Name, name, 0.400, 0.394, 0.000, 0.262
+CssSelector, td > .radio:nth-child(4), 0.500, 0.394, 0.000, 0.295
+Name, name, 0.400, 0.394, 0.000, 0.262
+Name, name, 0.400, 0.394, 0.000, 0.262
+Name, photoinfo, 0.400, 0.394, 0.000, 0.262
+Name, photoinfo, 0.400, 0.394, 0.000, 0.262
+Name, categ, 0.400, 0.394, 0.000, 0.262
+Name, categ, 0.400, 0.394, 0.000, 0.262
+Name, categ, 0.400, 0.394, 0.000, 0.262
+Name, desc, 0.400, 0.394, 0.000, 0.262
+CssSelector, .radio:nth-child(4), 0.250, 0.394, 0.000, 0.213
+Name, photoinfo, 0.400, 0.394, 0.000, 0.262
+Name, photoinfo, 0.400, 0.394, 0.000, 0.262
+CssSelector, .inside > table td:nth-child(2) tbody, 0.775, 0.394, 0.500, 0.551
+Name, story, 0.400, 0.394, 0.000, 0.262
+Name, story, 0.400, 0.394, 0.000, 0.262
+CssSelector, .submit, 0.250, 0.394, 0.000, 0.213
+CssSelector, .submit, 0.250, 0.394, 0.000, 0.213
+CssSelector, .submit, 0.250, 0.394, 0.000, 0.213
+CssSelector, .submit, 0.250, 0.394, 0.000, 0.213
+CssSelector, .submit, 0.250, 0.396, 0.000, 0.213
+CssSelector, .submit, 0.250, 0.396, 0.000, 0.213
+CssSelector, .note_valid, 0.250, 0.417, 0.000, 0.220

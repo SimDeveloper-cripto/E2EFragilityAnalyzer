@@ -1,18 +1,22 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Name, username, 0.400, 0.412, 0.000, 0.362
-Name, username, 0.400, 0.412, 0.000, 0.362
-CssSelector, .width-40, 0.250, 0.412, 0.000, 0.257
-Name, password, 0.400, 0.410, 0.000, 0.362
-Name, password, 0.400, 0.410, 0.000, 0.362
-Name, password, 0.400, 0.410, 0.000, 0.362
-XPath, //button[@id=\'menu-toggler\'], 0.000, 0.405, 0.000, 0.081
-CssSelector, .sidebar-toggle, 0.250, 0.405, 0.000, 0.256
-CssSelector, .sidebar-toggle, 0.250, 0.405, 0.000, 0.256
-CssSelector, .sidebar-toggle, 0.250, 0.405, 0.000, 0.256
-CssSelector, .sidebar-toggle, 0.250, 0.405, 0.000, 0.256
-CssSelector, li:nth-child(7) .menu-text, 0.500, 0.405, 0.857, 0.517
-LinkText, EasyManager, 0.250, 0.399, 0.000, 0.255
-CssSelector, .btn:nth-child(3), 0.250, 0.375, 0.000, 0.250
-CssSelector, .btn-white, 0.250, 0.408, 0.000, 0.257
-LinkText, Configurazione, 0.250, 0.399, 0.000, 0.255
+Name, username, 0.400, 0.412, 0.000, 0.268
+Name, username, 0.400, 0.412, 0.000, 0.268
+CssSelector, .width-40, 0.250, 0.412, 0.000, 0.218
+Name, password, 0.400, 0.410, 0.000, 0.267
+Name, password, 0.400, 0.410, 0.000, 0.267
+Name, password, 0.400, 0.410, 0.000, 0.267
+XPath, //button[@id=\'menu-toggler\'], 0.000, 0.404, 0.000, 0.133
+CssSelector, .sidebar-toggle, 0.250, 0.404, 0.000, 0.216
+CssSelector, .sidebar-toggle, 0.250, 0.404, 0.000, 0.216
+CssSelector, .sidebar-toggle, 0.250, 0.404, 0.000, 0.216
+CssSelector, .sidebar-toggle, 0.250, 0.404, 0.000, 0.216
+CssSelector, li:nth-child(7) .menu-text, 0.500, 0.404, 0.857, 0.581
+LinkText, Gestione progetti, 0.250, 0.406, 0.000, 0.216
+LinkText, EasyManager, 0.250, 0.399, 0.000, 0.214
+CssSelector, .btn:nth-child(3), 0.250, 0.376, 0.000, 0.207
+CssSelector, .btn-white, 0.250, 0.407, 0.000, 0.217
+LinkText, Gestione campi personalizzati, 0.250, 0.399, 0.000, 0.214
+LinkText, Gestione profili globali, 0.250, 0.399, 0.000, 0.214
+LinkText, Gestione Plugins, 0.250, 0.399, 0.000, 0.214
+LinkText, Configurazione, 0.250, 0.399, 0.000, 0.214

@@ -16,7 +16,7 @@ import java.lang.reflect.InvocationTargetException;
         - Log: logs results on terminal and also in the specified files
 **/
 
-// TODO: TEST EVERYTHING AGAIN
+// TODO: TESTARE PRIMA VERSIONE DI DOLIBARR DOLIBARR
 
 public class JUnitRunner {
     static String applicationVersion, SoftwareUsed;

@@ -1,6 +1,6 @@
 {
-  "softwareUsed": "PasswordManager",
-  "applicationVersion": "9.08",
+  "softwareUsed": "JTrac",
+  "applicationVersion": "2.2.0",
   "selectorScoreStrategy": "DefaultSelectorComplexityEvaluator",
   "pageScoreStrategy": "DefaultPageComplexityEvaluator",
   "pageAndSelectorScoreStrategy": "DefaultPageAndSelectorComplexityEvaluator"

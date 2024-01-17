@@ -66,7 +66,7 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
     }
 
     public static float getSelectorScoreWeight() {
-        return 0.7f;
+        return 0.33f;
     }
 
     /* METHODS */

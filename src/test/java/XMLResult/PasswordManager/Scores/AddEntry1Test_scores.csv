@@ -1,7 +1,18 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Id, user, 0.000, 0.370, 0.000, 0.074
-Id, user, 0.000, 0.370, 0.000, 0.074
-Id, pwd, 0.000, 0.370, 0.000, 0.074
-Id, pwd, 0.000, 0.370, 0.000, 0.074
-Id, chk, 0.000, 0.370, 0.000, 0.074
+Id, user, 0.000, 0.379, 0.000, 0.125
+Id, user, 0.000, 0.379, 0.000, 0.125
+Id, pwd, 0.000, 0.379, 0.000, 0.125
+Id, pwd, 0.000, 0.379, 0.000, 0.125
+Id, chk, 0.000, 0.379, 0.000, 0.125
+LinkText, Add Entry, 0.250, 0.379, 0.000, 0.208
+Id, newiteminput, 0.000, 0.368, 0.000, 0.121
+Id, newiteminput, 0.000, 0.368, 0.000, 0.121
+Id, newiteminputuser, 0.000, 0.368, 0.000, 0.121
+Id, newiteminputuser, 0.000, 0.368, 0.000, 0.121
+Id, newiteminputurl, 0.000, 0.368, 0.000, 0.121
+Id, newiteminputurl, 0.000, 0.368, 0.000, 0.121
+Id, newiteminputcomment, 0.000, 0.368, 0.000, 0.121
+Id, newiteminputcomment, 0.000, 0.368, 0.000, 0.121
+Id, newbtn, 0.000, 0.368, 0.000, 0.121
+CssSelector, .datarow:nth-child(2) .accountname, 0.500, 0.369, 0.000, 0.287

@@ -23,7 +23,7 @@ public class DefaultPageComplexityEvaluator implements IPageScoreStrategy {
     }
 
     public static float getPageScoreWeight() {
-        return 0.2f;
+        return 0.33f;
     }
 
     private static void setNumberOfElements(int numberOfElements) {

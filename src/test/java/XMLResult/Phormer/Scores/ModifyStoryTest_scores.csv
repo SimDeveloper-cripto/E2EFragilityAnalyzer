@@ -1,3 +1,14 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-LinkText, Admin, 0.250, 0.426, 0.000, 0.260
+LinkText, Admin, 0.250, 0.453, 0.000, 0.232
+Name, passwd, 0.400, 0.490, 0.000, 0.294
+Name, passwd, 0.400, 0.490, 0.000, 0.294
+CssSelector, .submit, 0.250, 0.490, 0.000, 0.244
+LinkText, Manage Stories, 0.250, 0.475, 0.000, 0.239
+Id, name, 0.000, 0.429, 0.000, 0.142
+Name, desc, 0.400, 0.429, 0.000, 0.274
+CssSelector, tr:nth-child(4) .radio:nth-child(4), 0.500, 0.429, 0.667, 0.527
+Name, list, 0.400, 0.429, 0.000, 0.274
+Id, public, 0.000, 0.429, 0.000, 0.142
+CssSelector, .submit, 0.250, 0.429, 0.000, 0.224
+CssSelector, .note_valid, 0.250, 0.428, 0.000, 0.224

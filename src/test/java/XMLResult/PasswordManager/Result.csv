@@ -1,11 +1,11 @@
 "Test Name","9.08","Score_9.08","9.09","Score_9.09","9.10","Score_9.10","9.11","Score_9.11","9.13","Score_9.13"
-"RegisterTest","passed",,"passed",,"passed",,"passed",,"failed",
-"LoginTest","passed",,"failed",,"failed",,"failed",,"failed",
-"AddEntry1Test","passed",,"failed",,"failed",,"failed",,"failed",
-"AddEntry2Test","passed",,"failed",,"failed",,"failed",,"failed",
-"ModifyEntry1Test","passed",,"failed",,"failed",,"failed",,"failed",
-"ModifyEntry2Test","passed",,"failed",,"failed",,"failed",,"failed",
-"ExportCSVTest","passed",,"failed",,"failed",,"failed",,"failed",
-"DeleteEntry1Test","passed",,"failed",,"failed",,"failed",,"failed",
-"DeleteEntry2Test","passed",,"failed",,"failed",,"failed",,"failed",
-"ImportCSVTest","passed",,"failed",,"failed",,"failed",,"failed",
+"RegisterTest","passed","0.128","passed","","passed","","passed","","failed",""
+"LoginTest","passed","0.141","failed","","failed","","failed","","failed",""
+"AddEntry1Test","passed","0.131","failed","","failed","","failed","","failed",""
+"AddEntry2Test","passed","0.132","failed","","failed","","failed","","failed",""
+"ModifyEntry1Test","passed","0.143","failed","","failed","","failed","","failed",""
+"ModifyEntry2Test","passed","0.143","failed","","failed","","failed","","failed",""
+"ExportCSVTest","passed","0.134","failed","","failed","","failed","","failed",""
+"DeleteEntry1Test","passed","0.139","failed","","failed","","failed","","failed",""
+"DeleteEntry2Test","passed","0.136","failed","","failed","","failed","","failed",""
+"ImportCSVTest","passed","0.134","failed","","failed","","failed","","failed",""

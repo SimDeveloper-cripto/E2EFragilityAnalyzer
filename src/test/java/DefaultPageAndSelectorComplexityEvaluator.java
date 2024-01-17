@@ -14,26 +14,27 @@ public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelect
         int nElemFirstMatch, nElemSecondMatch;
         float ratio;
 
-        nElemFirstMatch = getNumberOfMatches(selectorString, selectorType, driver);
-        switch (selectorType) {
-            case "CssSelector":
-                newSelectorString = removeFirstLevelCssSelector(selectorString);
-                nElemSecondMatch  = getNumberOfMatches(newSelectorString, selectorType, driver);
-                break;
-            case "XPath":
-                newSelectorString = removeFirstLevelXPath(selectorString);
-                nElemSecondMatch  = getNumberOfMatches(newSelectorString, selectorType, driver);
-                break;
-            default:
-                return 0;
-        }
-
-        if (nElemFirstMatch == 0) {
-            ratio = 0.0f;
+        if (!selectorType.equals("CssSelector") && !selectorType.equals("XPath")) {
+            return 0;
         } else {
-            ratio = (float) nElemFirstMatch / (float) nElemSecondMatch;
+            nElemFirstMatch = getNumberOfMatches(selectorString, selectorType, driver);
+
+            if (nElemFirstMatch == 0) {
+                ratio = 0.0f;
+            } else {
+                newSelectorString = removeFirstLevelForSelector(selectorString, selectorType);
+                nElemSecondMatch  = getNumberOfMatches(newSelectorString, selectorType, driver);
+                ratio = (float) nElemFirstMatch / (float) nElemSecondMatch;
+            }
         }
         return (1 - ratio);
+    }
+
+    private String removeFirstLevelForSelector(String selectorString, String selectorType) {
+        if (selectorType.equals("CssSelector"))
+            return removeFirstLevelCssSelector(selectorString);
+        else
+            return removeFirstLevelXPath(selectorString);
     }
 
     private String removeFirstLevelCssSelector(String selectorString) {
@@ -71,6 +72,6 @@ public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelect
     }
 
     public static float getPageAndSelectorScoreWeight() {
-        return 0.1f;
+        return 0.33f;
     }
 }

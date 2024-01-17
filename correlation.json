@@ -1,0 +1,30 @@
+{
+  "reason": "correlation-coefficient",
+  "data":  [
+    {
+      "application": "Phormer",
+      "statistic": "0.4165882601009072",
+      "pvalue": "0.1567630301100941"
+    },
+    {
+      "application": "PasswordManager",
+      "statistic": "NaN",
+      "pvalue": "NaN"
+    },
+    {
+      "application": "MantisBT",
+      "statistic": "0.3861700548162511",
+      "pvalue": "0.1551010553852851"
+    },
+    {
+      "application": "JTrac",
+      "statistic": "",
+      "pvalue": ""
+    },
+    {
+      "application": "Dolibarr",
+      "statistic": "",
+      "pvalue": ""
+    }
+  ]
+}
