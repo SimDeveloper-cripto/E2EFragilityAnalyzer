@@ -50,10 +50,19 @@ public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelect
     }
 
     private String removeFirstLevelXPath(String selectorString) {
+        int index;
         if (selectorString.startsWith("//")) {
-            int index = selectorString.indexOf("/", 2); // The XPath string starts with "//"
+            index = selectorString.indexOf("/", 2); // The XPath string starts with "//"
             if (index != -1)
                 return "//" + selectorString.substring(index + 1);
+        } else if (selectorString.startsWith("/")) {
+            index = selectorString.indexOf("/", 1);
+            if (index != -1)
+                return selectorString.substring(index);
+        } else {
+            index = selectorString.indexOf("/");
+            if (index != -1)
+                return selectorString.substring(index + 1);
         }
         return selectorString;
     }
