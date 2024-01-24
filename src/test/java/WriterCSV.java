@@ -1,13 +1,14 @@
+
 import java.util.List;
 import java.io.FileWriter;
 import java.io.FileReader;
 import java.io.IOException;
 import com.opencsv.CSVWriter;
 import com.opencsv.CSVReader;
+import java.text.DecimalFormat;
+
 import com.opencsv.exceptions.CsvException;
 import com.opencsv.exceptions.CsvValidationException;
-
-import java.text.DecimalFormat;
 
 public class WriterCSV {
     private final List<Test> tests;
@@ -20,23 +21,6 @@ public class WriterCSV {
         this.df = df;
         this.applicationVersion = applicationVersion;
     }
-
-    /* [OLD BUT COULD BE USEFUL]
-        public void writeResultsToCSV() {
-            try (CSVWriter writer = new CSVWriter(new FileWriter(filePath))) {
-                writer.writeNext(new String[] {"Test Name", "Passed", "Score"} );
-
-                for (Test test : tests) {
-                    String[] data = { test.getTestName(), String.valueOf(test.isPassed()), String.valueOf(df.format(test.getTestScore())) };
-                    writer.writeNext(data);
-                }
-
-                System.out.println("Result.csv file updated successfully! -> " + filePath);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    */
 
     public void writeResultsToCSV() throws IOException, CsvException {
         CSVReader csvReader = new CSVReader(new FileReader(filePath));
@@ -86,7 +70,7 @@ public class WriterCSV {
         CSVWriter csvWriter = new CSVWriter(new FileWriter(filePath));
         csvWriter.writeAll(lines);
         csvWriter.close();
-        System.out.println("Result.csv file updated successfully! -> " + filePath);
+        System.out.println("Result.csv file has been updated successfully! -> " + filePath);
     }
 
     private static int getVersionColumnIndex(String[] header, String applicationVersion) {

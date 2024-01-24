@@ -19,7 +19,7 @@ public class Test {
         this.testScore = 0;
 
         if (JUnitRunner.SoftwareUsed.equals("Phormer") || JUnitRunner.SoftwareUsed.equals("PasswordManager")
-                || JUnitRunner.SoftwareUsed.equals("JTrac"))
+                || JUnitRunner.SoftwareUsed.equals("JTrac") || JUnitRunner.SoftwareUsed.equals("NewMantisBT"))
             this.laterGetSuccess = getStatusResult(this.getFullTestName(),1);
         else
             this.laterGetSuccess = getStatusResult(this.getFullTestName(),5);

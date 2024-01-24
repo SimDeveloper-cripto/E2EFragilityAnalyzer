@@ -43,7 +43,7 @@ public class DefaultPageComplexityEvaluator implements IPageScoreStrategy {
     }
 
     private static float evaluateDomRatio(Document document) {
-        float depth  = (float) evaluatePageDepth(document.child(0)); // root element
+        float depth  = (float) evaluatePageDepth(document.child(0)); // Starting from root element
         return (depth / getNumberOfElements()); // [0-1]
     }
 

@@ -79,7 +79,7 @@ public class TestRunner {
         List<Page> pageFinished;         // Tested Pages: each page tested will be added to this list
         List<Selector> selectorFinished; // Tested Selector: each selector tested will be added to this list
 
-        System.out.println("\nTest no." + testNum + " started!");
+        System.out.println("Test no." + testNum + " Started!\n");
 
         // Get the test so it can be executed
         test = testsToValidate.get(testNum - 1);
@@ -130,7 +130,7 @@ public class TestRunner {
         method3 = testX.getDeclaredMethod("tearDown");
         method3.invoke(objPetX);
 
-        System.out.println("Test no." + testNum + " ended!\n");
+        System.out.println("Test no." + testNum + " Ended!\n");
 
         selectorFinished = listener.getVisitedSelectors();
         test.setSelectors(selectorFinished);

@@ -1,6 +1,6 @@
 {
-  "softwareUsed": "JTrac",
-  "applicationVersion": "2.2.0",
+  "softwareUsed": "NewMantisBT",
+  "applicationVersion": "1.1.8",
   "selectorScoreStrategy": "DefaultSelectorComplexityEvaluator",
   "pageScoreStrategy": "DefaultPageComplexityEvaluator",
   "pageAndSelectorScoreStrategy": "DefaultPageAndSelectorComplexityEvaluator"

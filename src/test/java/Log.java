@@ -82,11 +82,11 @@ public class Log {
                 System.out.println("\t\tSelectorScore: " + df.format(selector.getSelectorScore()) + ", PageScore: " + df.format(page.getPageComplexity())
                         + ", PageAndSelectorScore: " + df.format(selector.getSelectorCombinedScoreWithPageScore()) + ", SelectorWeightedAverageResult: " + df.format(selector.getSelectorWeightedAverageResultScore()));
             }
-            System.out.println("Test Score (by harmonic Mean): " + testJudged.getTestScore());
+            System.out.println("Test Score (by Harmonic Mean): " + testJudged.getTestScore());
         }
         System.out.println(" ");
-        double result = PointBiserialCorrelationCoefficient.getCorrelation(testsJudged);
-        System.out.println("The value of correlation coefficient is: " + result);
+        // double result = PointBiserialCorrelationCoefficient.getCorrelation(testsJudged);
+        // System.out.println("The value of correlation coefficient is: " + result);
     }
 
     public static void fillErrorLog(String errorMessage, String filePath) {

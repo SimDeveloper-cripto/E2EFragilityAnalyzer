@@ -18,31 +18,32 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
         // Step 1: Hierarchy Score calculation
         switch (selectorType) {
             case "CssSelector":
-                depth = evaluateCssSelectorHierarchyDepth(selectorString);
+                // depth = evaluateCssSelectorHierarchyDepth(selectorString);
+                depth = SelectorDepthEvaluator.evaluateCssSelectorHierarchyDepth(selectorString);
                 level = depth + 1;
                 hierarchyScore = (1 - ((float) 1 / level)); // [0-1]
                 break;
             case "XPath":
-                depth = evaluateXPathSelectorHierarchyDepth(selectorString);
+                // depth = evaluateXPathSelectorHierarchyDepth(selectorString);
+                depth = SelectorDepthEvaluator.evaluateXPathSelectorHierarchyDepth(selectorString);
                 level = depth + 1;
                 hierarchyScore = (1 - ((float) 1 / level)); // [0-1]
                 break;
             default:
                 hierarchyScore = 0.0f;
         }
-        System.out.println("(Debug) Hierarchy Depth: " + depth);
-        System.out.println("(Analyzed) Selector Hierarchy score: " + hierarchyScore);
+
+        System.out.println("[Selector Complexity Evaluator] Selector: " + selectorString);
+        System.out.println("[Selector Complexity Evaluator] (Debug) Hierarchy Depth: " + depth);
+        System.out.println("[Selector Complexity Evaluator] (Analyzed) Selector Hierarchy Score: " + hierarchyScore);
 
         // Step 2: Type Score calculation (Rule Based)
-        // CascadeSpecificityEvaluator cascadeEvaluator = new CascadeSpecificityEvaluator(selectorString);
         switch (selectorType) {
             case "CssSelector":
                 typeScore = evaluateCssSelectorTypeScore(selectorString, depth);
-                // typeScore = cascadeEvaluator.applyAlgorithmForCssSelectors();
                 break;
             case "XPath":
                 typeScore = evaluateXPathTypeScore(selectorString, depth);
-                // typeScore = cascadeEvaluator.applyAlgorithmForXPathSelectors(document);
                 break;
             case "TagName":
             case "Name":
@@ -59,7 +60,7 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
             default:
                 typeScore = 0.0f; // If the selector is of type "id" we set score to 0.0f too.
         }
-        System.out.println("(Analyzed) Selector Type score: " + typeScore);
+        System.out.println("[Selector Complexity Evaluator] (Analyzed) Selector Type Score: " + typeScore);
 
         // Step 3: Combination
         return ((hierarchyScore + typeScore) / 2); // [0-1]
@@ -71,18 +72,32 @@ public class DefaultSelectorComplexityEvaluator implements ISelectorScoreStrateg
 
     /* METHODS */
 
-    private static int evaluateCssSelectorHierarchyDepth(String selectorString) {
-        String[] combinators = selectorString.split("[ >~+]+");
-        return combinators.length - 1;
-    }
+    /*
+        private static int evaluateCssSelectorHierarchyDepth(String selectorString) {
+            if (selectorString == null || selectorString.isEmpty()) {
+                System.out.println("[Selector Complexity Evaluator] (ERROR) " + selectorString + " is Null or empty string!");
+                return 0;
+            }
 
-    private static int evaluateXPathSelectorHierarchyDepth(String selectorString) {
-        if (selectorString.startsWith("//"))
-            selectorString = selectorString.substring(2);
+            String[] combinators = selectorString.split("[ >~+]+");
+            return combinators.length - 1;
+        }
 
-        String[] combinators = selectorString.split("/");
-        return combinators.length - 1;
-    }
+        private static int evaluateXPathSelectorHierarchyDepth(String selectorString) {
+            if (selectorString == null || selectorString.isEmpty()) {
+                System.out.println("[Selector Complexity Evaluator] (ERROR) " + selectorString + " is Null or empty string!");
+                return 0;
+            }
+
+            if (selectorString.startsWith("//"))
+                selectorString = selectorString.substring(2);
+            else if (selectorString.startsWith("/"))
+                selectorString = selectorString.substring(1);
+
+            String[] combinators = selectorString.split("/");
+            return combinators.length - 1;
+        }
+     */
 
     private static float evaluateCssSelectorTypeScore(String selectorString, int depth) {
         if (depth >= 1) {

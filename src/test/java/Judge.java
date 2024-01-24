@@ -1,4 +1,5 @@
 
+import exception.ElementNotFoundException;
 import org.jsoup.nodes.Document;
 import org.openqa.selenium.WebDriver;
 
@@ -32,7 +33,7 @@ public class Judge {
         return getPageScoreStrategy().evaluatePageComplexity(documentPage);
     }
 
-    public float applyMetricToPageAndSelector(Selector selector, Page page, WebDriver driver) {
+    public float applyMetricToPageAndSelector(Selector selector, Page page, WebDriver driver) throws ElementNotFoundException {
         return getPageAndSelectorScoreStrategy().evaluatePageAndSelectorComplexity(selector, page, driver);
     }
 
@@ -56,7 +57,7 @@ public class Judge {
         symbols.setDecimalSeparator('.');
         DecimalFormat df = new DecimalFormat("0.00", symbols);
 
-        System.out.println("Test no. " + (int) numOfTestJudged + " scores: \n" +
+        System.out.println("Test no. " + (int) numOfTestJudged + " Scores: \n" +
                 "Geometric Calculation: " + df.format(geometryMean) + ", Harmonic Calculation: " + df.format(harmonicMean) +
                 ", Arithmetic Calculation: " + df.format(arithmeticMean) + ", Quadratic Calculation: " + df.format(quadraticMean) + "\n");
 

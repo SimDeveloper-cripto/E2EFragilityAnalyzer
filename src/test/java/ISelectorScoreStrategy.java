@@ -5,5 +5,4 @@ import org.jsoup.nodes.Document;
 * */
 public interface ISelectorScoreStrategy {
     float evaluateSelectorComplexity(Selector selector, Document document);
-    // float getSelectorScoreWeight();
 }

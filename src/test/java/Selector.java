@@ -3,7 +3,7 @@ import org.openqa.selenium.By;
 
 public class Selector {
     private String selector; // String value of the Locator
-    private String type; // Type of the Locator
+    private String type;     // Type of the Locator
     private float selectorScore, selectorCombinedScoreWithPageScore;
 
     /** [DESCRIPTION]
@@ -12,7 +12,7 @@ public class Selector {
             Result calculation:
                 (selectorComplexityScore * DefaultSelectorComplexityEvaluator.getSelectorScoreWeight())
                 + (pageComplexityScore * DefaultPageComplexityEvaluator.getPageScoreWeight())
-                + (pageAndSelectorComplexityScore * DefaultPageAndSelectorComplexityEvaluator.getPageAndSelectorScoreWeight()
+                + (pageAndSelectorComplexityScore * DefaultPageAndSelectorComplexityEvaluator.getPageAndSelectorScoreWeight())
 
         - It is used for calculating the Harmonic Mean used to set the Test score (Test in which is the Selector is used)
      */

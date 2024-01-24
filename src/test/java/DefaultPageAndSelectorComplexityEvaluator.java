@@ -3,6 +3,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import exception.ElementNotFoundException;
 
 public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelectorScoreStrategy {
     @Override
@@ -14,19 +15,44 @@ public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelect
         int nElemFirstMatch, nElemSecondMatch;
         float ratio;
 
-        if (!selectorType.equals("CssSelector") && !selectorType.equals("XPath")) {
-            return 0;
-        } else {
-            nElemFirstMatch = getNumberOfMatches(selectorString, selectorType, driver);
+        System.out.println("[Page And Selector Complexity Evaluator] Current URL: " + driver.getCurrentUrl());
+        System.out.println("[Page And Selector Complexity Evaluator] Selector: " + selectorString);
 
-            if (nElemFirstMatch == 0) {
-                ratio = 0.0f;
+        try {
+            if (!selectorType.equals("CssSelector") && !selectorType.equals("XPath")) {
+                return 0;
             } else {
-                newSelectorString = removeFirstLevelForSelector(selectorString, selectorType);
-                nElemSecondMatch  = getNumberOfMatches(newSelectorString, selectorType, driver);
-                ratio = (float) nElemFirstMatch / (float) nElemSecondMatch;
+                /* HERE IS THE ONLY PLACE WHERE THE EXCEPTION MUST BE GENERATED (IF IT HAPPENS) */
+                nElemFirstMatch = getNumberOfMatches(selectorString, selectorType, driver);
+                System.out.println("[Page And Selector Complexity Evaluator] nElemFirstMatch: " + nElemFirstMatch);
+
+                int depth;
+                if (selectorType.equals("CssSelector"))
+                    depth = SelectorDepthEvaluator.evaluateCssSelectorHierarchyDepth(selectorString);
+                else
+                    depth = SelectorDepthEvaluator.evaluateXPathSelectorHierarchyDepth(selectorString);
+
+                System.out.println("[Page And Selector Complexity Evaluator] Depth: " + depth);
+                if (depth >= 1) {
+                    newSelectorString = removeFirstLevelForSelector(selectorString, selectorType);
+
+                    /* [IMPORTANT]
+                        - If the first time we call getNumberOfMatches() no exceptions occur,
+                            an Exception on the 2nd time should not happen: at least one element must be caught.
+                    **/
+                    nElemSecondMatch  = getNumberOfMatches(newSelectorString, selectorType, driver);
+                    System.out.println("[Page And Selector Complexity Evaluator] nElemSecondMatch: " + nElemSecondMatch);
+                    ratio = (float) nElemFirstMatch / (float) nElemSecondMatch;
+                } else {
+                    ratio = 1; // So that we return 0 (A selector without hierarchy is good)
+                }
             }
+        } catch (ElementNotFoundException e) {
+            // System.err.println("Element not found: " + e.getMessage()); // Should set the Test to "failed"
+            ratio = 0.0f;
         }
+
+        System.out.println("[Page And Selector Complexity Evaluator] Ratio: " + ratio);
         return (1 - ratio);
     }
 
@@ -57,24 +83,37 @@ public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelect
                 return "//" + selectorString.substring(index + 1);
         } else if (selectorString.startsWith("/")) {
             index = selectorString.indexOf("/", 1);
+
+            /*
+                - Input: /app/description/subject[1]
+                - Output: //description/subject[1]
+            **/
             if (index != -1)
-                return selectorString.substring(index);
+                return "/" + selectorString.substring(index);
         } else {
+            /*
+                - Input:  html/body/table[3]/tbody/tr[3]/td[2]
+                - Output: //body/table[3]/tbody/tr[3]/td[2]     (We can't risk it to not be recognized)
+            **/
             index = selectorString.indexOf("/");
             if (index != -1)
-                return selectorString.substring(index + 1);
+                return "//" + selectorString.substring(index + 1);
         }
         return selectorString;
     }
 
-    private static int getNumberOfMatches(String selectorString, String type, WebDriver driver) {
-        System.err.println("getNumberOfMatches(), selector received: " + selectorString);
-
+    private static int getNumberOfMatches(String selectorString, String type, WebDriver driver) throws ElementNotFoundException {
+        System.out.println("[Page And Selector Complexity Evaluator] getNumberOfMatcher(), received: " + selectorString);
         List<WebElement> list;
+
         if (type.equals("CssSelector")) {
             list = driver.findElements(By.cssSelector(selectorString));
         } else {
             list = driver.findElements(By.xpath(selectorString));
+        }
+
+        if (list.isEmpty()) {
+            throw new ElementNotFoundException("[Page And Selector Complexity Evaluator] Exception! Match = 0, Could not find: " + selectorString);
         }
 
         return list.size();
