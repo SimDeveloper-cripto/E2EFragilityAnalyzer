@@ -1,0 +1,10 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
+
+Name, username, 0.400, 0.396, 0.000, 0.263
+Name, username, 0.400, 0.396, 0.000, 0.263
+Name, password, 0.400, 0.396, 0.000, 0.263
+Name, password, 0.400, 0.396, 0.000, 0.263
+CssSelector, input.button, 0.400, 0.396, 0.000, 0.263
+LinkText, Report Issue, 0.250, 0.432, 0.000, 0.225
+CssSelector, input.button, 0.400, 0.426, 0.000, 0.273
+Name, category_id, 0.400, 0.390, 0.000, 0.261

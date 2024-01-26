@@ -48,11 +48,10 @@ public class JUnitRunner {
         PrintWriter writer = new PrintWriter(filePath);
         writer.close();
 
-        List<Test> dolibarrTests = Test.getAllTests(directory);
+        List<Test> testsToExecute = Test.getAllTests(directory);
+        TestRunner testRunner     = new TestRunner(testsToExecute, judge);
 
-        TestRunner testRunner = new TestRunner(dolibarrTests, judge);
-        List<Test> tests = testRunner.executeTests();
-
+        List<Test> tests       = testRunner.executeTests();
         List<Test> testsJudged = testRunner.assignScoreToEachTest(tests);
 
         Log log = new Log();

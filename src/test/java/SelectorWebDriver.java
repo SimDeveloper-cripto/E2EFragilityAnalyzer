@@ -1,12 +1,10 @@
 
-import exception.ElementNotFoundException;
+import java.util.List;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.events.WebDriverListener;
-
-import java.util.List;
 
 public class SelectorWebDriver implements WebDriverListener {
 	private List<Selector> visitedSelectors;
@@ -34,13 +32,7 @@ public class SelectorWebDriver implements WebDriverListener {
 		// Scores calculation
 		float selectorComplexityScore        = judge.applyMetricToSelector(selector, pageContent);
 		float pageComplexityScore            = judge.applyMetricToPage(page);
-
-		float pageAndSelectorComplexityScore = 0.0f;
-		try {
-			pageAndSelectorComplexityScore = judge.applyMetricToPageAndSelector(selector, page, driver);
-		} catch (ElementNotFoundException e) {
-			System.err.println(e.getMessage());
-		}
+		float pageAndSelectorComplexityScore = judge.applyMetricToPageAndSelector(selector, page, driver);
 
 		System.out.println("+ ---------- Metric Related Values ---------- +");
 		System.out.println("	Selector Complexity Score: [" + selectorComplexityScore + "]");

@@ -1,5 +1,4 @@
 
-import exception.ElementNotFoundException;
 import org.jsoup.nodes.Document;
 import org.openqa.selenium.WebDriver;
 
@@ -33,7 +32,7 @@ public class Judge {
         return getPageScoreStrategy().evaluatePageComplexity(documentPage);
     }
 
-    public float applyMetricToPageAndSelector(Selector selector, Page page, WebDriver driver) throws ElementNotFoundException {
+    public float applyMetricToPageAndSelector(Selector selector, Page page, WebDriver driver) {
         return getPageAndSelectorScoreStrategy().evaluatePageAndSelectorComplexity(selector, page, driver);
     }
 

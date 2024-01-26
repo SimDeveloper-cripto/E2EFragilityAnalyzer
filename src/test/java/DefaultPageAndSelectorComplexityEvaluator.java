@@ -48,7 +48,7 @@ public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelect
                 }
             }
         } catch (ElementNotFoundException e) {
-            // System.err.println("Element not found: " + e.getMessage()); // Should set the Test to "failed"
+            System.err.println("Element not found: " + e.getMessage()); // Should set the Test to "failed"
             ratio = 0.0f;
         }
 
@@ -113,6 +113,7 @@ public class DefaultPageAndSelectorComplexityEvaluator implements IPageAndSelect
         }
 
         if (list.isEmpty()) {
+            System.err.println("[Page And Selector Complexity Evaluator] getNumberOfMatcher(), Exception generated!");
             throw new ElementNotFoundException("[Page And Selector Complexity Evaluator] Exception! Match = 0, Could not find: " + selectorString);
         }
 

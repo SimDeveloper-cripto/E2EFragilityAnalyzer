@@ -1,0 +1,9 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
+
+Name, username, 0.400, 0.396, 0.000, 0.263
+Name, username, 0.400, 0.396, 0.000, 0.263
+Name, password, 0.400, 0.396, 0.000, 0.263
+Name, password, 0.400, 0.396, 0.000, 0.263
+CssSelector, input.button, 0.400, 0.396, 0.000, 0.263
+LinkText, Summary, 0.250, 0.432, 0.000, 0.225
+XPath, /html/body/table[3]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td[5], 0.850, 0.365, 0.000, 0.401

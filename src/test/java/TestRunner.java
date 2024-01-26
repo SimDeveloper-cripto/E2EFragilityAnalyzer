@@ -44,6 +44,9 @@ public class TestRunner {
         - This function was not written by me. I assume this is the observer initialization
     * */
     private void setupListener() {
+        // TODO: COMMENT OUT THIS LINE OF CODE
+        // System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+
         ChromeDriverService service = new ChromeDriverService.Builder().withLogOutput(System.err).build();
         WebDriverListener listenerDriver;
 
