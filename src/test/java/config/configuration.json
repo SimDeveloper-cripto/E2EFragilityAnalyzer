@@ -1,6 +1,6 @@
 {
   "softwareUsed": "NewMantisBT",
-  "applicationVersion": "1.1.8",
+  "applicationVersion": "1.2.0",
   "selectorScoreStrategy": "DefaultSelectorComplexityEvaluator",
   "pageScoreStrategy": "DefaultPageComplexityEvaluator",
   "pageAndSelectorScoreStrategy": "DefaultPageAndSelectorComplexityEvaluator"

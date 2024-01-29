@@ -1,11 +1,15 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Name, username, 0.400, 0.396, 0.000, 0.263
-Name, username, 0.400, 0.396, 0.000, 0.263
-Name, password, 0.400, 0.396, 0.000, 0.263
-Name, password, 0.400, 0.396, 0.000, 0.263
-CssSelector, input.button, 0.400, 0.396, 0.000, 0.263
-LinkText, Manage, 0.250, 0.433, 0.000, 0.225
-LinkText, Manage Projects, 0.250, 0.451, 0.000, 0.231
-LinkText, Project002, 0.250, 0.440, 0.000, 0.228
-XPath, html/body/div[6]/a[1]/table/tbody/tr[5]/td/form/input[3], 0.850, 0.380, 1.000, 0.736
+Name, username, 0.400, 0.383, 0.000, 0.259
+Name, username, 0.400, 0.383, 0.000, 0.259
+Name, password, 0.400, 0.383, 0.000, 0.259
+Name, password, 0.400, 0.383, 0.000, 0.259
+CssSelector, input.button, 0.400, 0.383, 0.000, 0.259
+LinkText, Manage, 0.250, 0.429, 0.000, 0.224
+LinkText, Manage Projects, 0.250, 0.426, 0.000, 0.223
+LinkText, Project002, 0.250, 0.423, 0.000, 0.222
+XPath, html/body/div[6]/a[1]/table/tbody/tr[5]/td/form/input[3], 0.850, 0.375, 0.000, 0.404
+XPath, html/body/div[6]/a[1]/table/tbody/tr[5]/td/form/input[3], 0.850, 0.375, 0.000, 0.404
+CssSelector, td.left > form > input.button, 0.733, 0.375, 0.125, 0.407
+XPath, html/body/div[2]/table/tbody/tr[2]/td/p, 0.837, 0.430, 0.000, 0.418
+LinkText, Logout, 0.250, 0.430, 0.000, 0.224

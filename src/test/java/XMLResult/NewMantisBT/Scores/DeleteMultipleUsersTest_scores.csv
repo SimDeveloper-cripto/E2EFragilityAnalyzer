@@ -1,9 +1,26 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Name, username, 0.400, 0.396, 0.000, 0.263
-Name, username, 0.400, 0.396, 0.000, 0.263
-Name, password, 0.400, 0.396, 0.000, 0.263
-Name, password, 0.400, 0.396, 0.000, 0.263
-CssSelector, input.button, 0.400, 0.396, 0.000, 0.263
-LinkText, Manage, 0.250, 0.431, 0.000, 0.225
-LinkText, Manage Users, 0.250, 0.450, 0.000, 0.231
+Name, username, 0.400, 0.383, 0.000, 0.259
+Name, username, 0.400, 0.383, 0.000, 0.259
+Name, password, 0.400, 0.383, 0.000, 0.259
+Name, password, 0.400, 0.383, 0.000, 0.259
+CssSelector, input.button, 0.400, 0.383, 0.000, 0.259
+LinkText, Manage, 0.250, 0.422, 0.000, 0.222
+LinkText, Manage Users, 0.250, 0.420, 0.000, 0.221
+XPath, html/body/table[3]/tbody/tr[4]/td[1]/a, 0.829, 0.434, 0.000, 0.417
+XPath, //input[@value='Delete User'], 0.400, 0.346, 0.000, 0.246
+CssSelector, input.button, 0.400, 0.422, 0.000, 0.271
+LinkText, Proceed, 0.250, 0.433, 0.000, 0.225
+XPath, html/body/table[3]/tbody/tr[4]/td[1]/a, 0.829, 0.437, 0.000, 0.418
+XPath, //input[@value='Delete User'], 0.400, 0.346, 0.000, 0.246
+CssSelector, input.button, 0.400, 0.422, 0.000, 0.271
+LinkText, Proceed, 0.250, 0.433, 0.000, 0.225
+XPath, html/body/table[3]/tbody/tr[4]/td[1]/a, 0.829, 0.440, 0.000, 0.419
+XPath, //input[@value='Delete User'], 0.400, 0.346, 0.000, 0.246
+CssSelector, input.button, 0.400, 0.422, 0.000, 0.271
+LinkText, Proceed, 0.250, 0.433, 0.000, 0.225
+XPath, html/body/table[3]/tbody/tr[1]/td[1], 0.817, 0.443, 0.000, 0.416
+CssSelector, BODY, 0.400, 0.443, 0.000, 0.278
+CssSelector, BODY, 0.400, 0.443, 0.000, 0.278
+CssSelector, BODY, 0.400, 0.443, 0.000, 0.278
+LinkText, Logout, 0.250, 0.443, 0.000, 0.229

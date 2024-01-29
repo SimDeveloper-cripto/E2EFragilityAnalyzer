@@ -1,9 +1,13 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Name, username, 0.400, 0.396, 0.000, 0.263
-Name, username, 0.400, 0.396, 0.000, 0.263
-Name, password, 0.400, 0.396, 0.000, 0.263
-Name, password, 0.400, 0.396, 0.000, 0.263
-CssSelector, input.button, 0.400, 0.396, 0.000, 0.263
-LinkText, View Issues, 0.250, 0.432, 0.000, 0.225
-CssSelector, img[alt="Edit"], 0.400, 0.409, 1.000, 0.597
+Name, username, 0.400, 0.383, 0.000, 0.259
+Name, username, 0.400, 0.383, 0.000, 0.259
+Name, password, 0.400, 0.383, 0.000, 0.259
+Name, password, 0.400, 0.383, 0.000, 0.259
+CssSelector, input.button, 0.400, 0.383, 0.000, 0.259
+LinkText, View Issues, 0.250, 0.419, 0.000, 0.221
+CssSelector, img[alt="Edit"], 0.400, 0.400, 0.000, 0.264
+Name, status, 0.400, 0.376, 0.000, 0.256
+CssSelector, input.button, 0.400, 0.376, 0.000, 0.256
+LinkText, View Issues, 0.250, 0.377, 0.000, 0.207
+LinkText, Logout, 0.250, 0.400, 0.000, 0.214

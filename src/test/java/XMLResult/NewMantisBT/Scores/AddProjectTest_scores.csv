@@ -1,18 +1,23 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Name, username, 0.400, 0.396, 0.000, 0.263
-Name, username, 0.400, 0.396, 0.000, 0.263
-Name, password, 0.400, 0.396, 0.000, 0.263
-Name, password, 0.400, 0.396, 0.000, 0.263
-CssSelector, input.button, 0.400, 0.396, 0.000, 0.263
-LinkText, Manage, 0.250, 0.432, 0.000, 0.225
-LinkText, Manage Projects, 0.250, 0.450, 0.000, 0.231
-CssSelector, td.form-title > form > input.button-small, 0.733, 0.436, 0.667, 0.606
-Name, name, 0.400, 0.418, 0.000, 0.270
-Name, name, 0.400, 0.418, 0.000, 0.270
-Name, status, 0.400, 0.418, 0.000, 0.270
-Name, view_state, 0.400, 0.418, 0.000, 0.270
-Name, description, 0.400, 0.418, 0.000, 0.270
-Name, description, 0.400, 0.418, 0.000, 0.270
-CssSelector, input.button, 0.400, 0.418, 0.000, 0.270
-LinkText, Proceed, 0.250, 0.442, 0.000, 0.228
+Name, username, 0.400, 0.383, 0.000, 0.259
+Name, username, 0.400, 0.383, 0.000, 0.259
+Name, password, 0.400, 0.383, 0.000, 0.259
+Name, password, 0.400, 0.383, 0.000, 0.259
+CssSelector, input.button, 0.400, 0.383, 0.000, 0.259
+LinkText, Manage, 0.250, 0.419, 0.000, 0.221
+LinkText, Manage Projects, 0.250, 0.421, 0.000, 0.222
+CssSelector, td.form-title > form > input.button-small, 0.733, 0.417, 0.800, 0.644
+Name, name, 0.400, 0.411, 0.000, 0.268
+Name, name, 0.400, 0.411, 0.000, 0.268
+Name, status, 0.400, 0.411, 0.000, 0.268
+Name, view_state, 0.400, 0.411, 0.000, 0.268
+Name, description, 0.400, 0.411, 0.000, 0.268
+Name, description, 0.400, 0.411, 0.000, 0.268
+CssSelector, input.button, 0.400, 0.411, 0.000, 0.268
+LinkText, Proceed, 0.250, 0.433, 0.000, 0.225
+XPath, html/body/table[3]/tbody/tr[3]/td[1]/a, 0.829, 0.415, 0.000, 0.410
+XPath, html/body/table[3]/tbody/tr[3]/td[2], 0.817, 0.415, 0.000, 0.406
+XPath, html/body/table[3]/tbody/tr[3]/td[4], 0.817, 0.415, 0.000, 0.406
+XPath, html/body/table[3]/tbody/tr[3]/td[5], 0.817, 0.415, 0.000, 0.406
+LinkText, Logout, 0.250, 0.415, 0.000, 0.219

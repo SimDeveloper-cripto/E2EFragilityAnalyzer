@@ -1,14 +1,14 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Name, username, 0.400, 0.396, 0.000, 0.263
-Name, username, 0.400, 0.396, 0.000, 0.263
-Name, password, 0.400, 0.396, 0.000, 0.263
-Name, password, 0.400, 0.396, 0.000, 0.263
-CssSelector, input.button, 0.400, 0.396, 0.000, 0.263
-LinkText, Manage, 0.250, 0.431, 0.000, 0.225
-LinkText, Manage Projects, 0.250, 0.450, 0.000, 0.231
-LinkText, Project001 New, 0.250, 0.432, 0.000, 0.225
-CssSelector, form > input.button, 0.650, 0.380, 0.333, 0.450
-CssSelector, input.button, 0.400, 0.431, 0.000, 0.274
-TagName, BODY, 0.400, 0.436, 0.000, 0.276
-LinkText, Logout, 0.250, 0.436, 0.000, 0.226
+Name, username, 0.400, 0.383, 0.000, 0.259
+Name, username, 0.400, 0.383, 0.000, 0.259
+Name, password, 0.400, 0.383, 0.000, 0.259
+Name, password, 0.400, 0.383, 0.000, 0.259
+CssSelector, input.button, 0.400, 0.383, 0.000, 0.259
+LinkText, Manage, 0.250, 0.422, 0.000, 0.222
+LinkText, Manage Projects, 0.250, 0.420, 0.000, 0.221
+LinkText, Project001 New, 0.250, 0.415, 0.000, 0.219
+CssSelector, form > input.button, 0.650, 0.375, 0.333, 0.448
+CssSelector, input.button, 0.400, 0.422, 0.000, 0.271
+TagName, BODY, 0.400, 0.417, 0.000, 0.270
+LinkText, Logout, 0.250, 0.417, 0.000, 0.220

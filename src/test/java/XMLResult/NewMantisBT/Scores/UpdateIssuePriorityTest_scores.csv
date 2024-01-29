@@ -1,10 +1,24 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Name, username, 0.400, 0.396, 0.000, 0.263
-Name, username, 0.400, 0.396, 0.000, 0.263
-Name, password, 0.400, 0.396, 0.000, 0.263
-Name, password, 0.400, 0.396, 0.000, 0.263
-CssSelector, input.button, 0.400, 0.396, 0.000, 0.263
-LinkText, Report Issue, 0.250, 0.432, 0.000, 0.225
-CssSelector, input.button, 0.400, 0.426, 0.000, 0.273
-Name, category_id, 0.400, 0.390, 0.000, 0.261
+Name, username, 0.400, 0.383, 0.000, 0.259
+Name, username, 0.400, 0.383, 0.000, 0.259
+Name, password, 0.400, 0.383, 0.000, 0.259
+Name, password, 0.400, 0.383, 0.000, 0.259
+CssSelector, input.button, 0.400, 0.383, 0.000, 0.259
+LinkText, Report Issue, 0.250, 0.423, 0.000, 0.222
+CssSelector, input.button, 0.400, 0.418, 0.000, 0.270
+Name, category_id, 0.400, 0.380, 0.000, 0.257
+Name, reproducibility, 0.400, 0.380, 0.000, 0.257
+Name, severity, 0.400, 0.380, 0.000, 0.257
+Name, priority, 0.400, 0.380, 0.000, 0.257
+Name, summary, 0.400, 0.380, 0.000, 0.257
+Name, summary, 0.400, 0.380, 0.000, 0.257
+Name, description, 0.400, 0.380, 0.000, 0.257
+Name, description, 0.400, 0.380, 0.000, 0.257
+CssSelector, input.button, 0.400, 0.380, 0.000, 0.257
+LinkText, View Issues, 0.250, 0.436, 0.000, 0.226
+CssSelector, img[alt="Edit"], 0.400, 0.399, 0.000, 0.264
+Name, priority, 0.400, 0.376, 0.000, 0.256
+CssSelector, input.button, 0.400, 0.376, 0.000, 0.256
+LinkText, View Issues, 0.250, 0.376, 0.000, 0.207
+LinkText, Logout, 0.250, 0.399, 0.000, 0.214

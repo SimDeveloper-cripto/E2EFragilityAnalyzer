@@ -1,10 +1,11 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Name, username, 0.400, 0.396, 0.000, 0.263
-Name, username, 0.400, 0.396, 0.000, 0.263
-Name, password, 0.400, 0.396, 0.000, 0.263
-Name, password, 0.400, 0.396, 0.000, 0.263
-CssSelector, input.button, 0.400, 0.396, 0.000, 0.263
-LinkText, Report Issue, 0.250, 0.433, 0.000, 0.225
-CssSelector, input.button, 0.400, 0.428, 0.000, 0.273
-XPath, html/body/div[2]/table/tbody/tr[2]/td/p, 0.837, 0.390, 1.000, 0.735
+Name, username, 0.400, 0.383, 0.000, 0.259
+Name, username, 0.400, 0.383, 0.000, 0.259
+Name, password, 0.400, 0.383, 0.000, 0.259
+Name, password, 0.400, 0.383, 0.000, 0.259
+CssSelector, input.button, 0.400, 0.383, 0.000, 0.259
+LinkText, Report Issue, 0.250, 0.429, 0.000, 0.224
+CssSelector, input.button, 0.400, 0.382, 0.000, 0.258
+XPath, html/body/div[2]/table/tbody/tr[2]/td/p, 0.837, 0.430, 0.000, 0.418
+LinkText, Logout, 0.250, 0.430, 0.000, 0.224
