@@ -6,11 +6,11 @@ Name, password, 0.400, 0.383, 0.000, 0.259
 Name, password, 0.400, 0.383, 0.000, 0.259
 CssSelector, input.button, 0.400, 0.383, 0.000, 0.259
 LinkText, Manage, 0.250, 0.417, 0.000, 0.220
-LinkText, Manage Users, 0.250, 0.421, 0.000, 0.222
+LinkText, Manage Users, 0.250, 0.420, 0.000, 0.221
 LinkText, username001, 0.250, 0.443, 0.000, 0.229
 Name, realname, 0.400, 0.346, 0.000, 0.246
 Name, realname, 0.400, 0.346, 0.000, 0.246
 CssSelector, input.button, 0.400, 0.346, 0.000, 0.246
-LinkText, Proceed, 0.250, 0.434, 0.000, 0.226
+LinkText, Proceed, 0.250, 0.433, 0.000, 0.225
 Name, realname, 0.400, 0.346, 0.000, 0.246
 LinkText, Logout, 0.250, 0.346, 0.000, 0.197

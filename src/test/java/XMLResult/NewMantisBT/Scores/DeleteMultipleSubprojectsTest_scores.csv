@@ -5,6 +5,15 @@ Name, username, 0.400, 0.383, 0.000, 0.259
 Name, password, 0.400, 0.383, 0.000, 0.259
 Name, password, 0.400, 0.383, 0.000, 0.259
 CssSelector, input.button, 0.400, 0.383, 0.000, 0.259
-LinkText, Manage, 0.250, 0.422, 0.000, 0.222
-LinkText, Manage Projects, 0.250, 0.420, 0.000, 0.221
-LinkText, » sub1, 0.250, 0.415, 0.000, 0.219
+LinkText, Manage, 0.250, 0.420, 0.000, 0.221
+LinkText, Manage Projects, 0.250, 0.417, 0.000, 0.220
+LinkText, » sub1, 0.250, 0.408, 0.000, 0.217
+CssSelector, form > input.button, 0.650, 0.372, 0.333, 0.447
+CssSelector, input.button, 0.400, 0.418, 0.000, 0.270
+LinkText, » sub2, 0.250, 0.410, 0.000, 0.218
+CssSelector, form > input.button, 0.650, 0.373, 0.333, 0.448
+CssSelector, input.button, 0.400, 0.419, 0.000, 0.270
+LinkText, Project1, 0.250, 0.411, 0.000, 0.218
+CssSelector, form > input.button, 0.650, 0.373, 0.333, 0.448
+CssSelector, input.button, 0.400, 0.420, 0.000, 0.270
+LinkText, Logout, 0.250, 0.413, 0.000, 0.219

@@ -6,5 +6,5 @@ Name, password, 0.400, 0.383, 0.000, 0.259
 Name, password, 0.400, 0.383, 0.000, 0.259
 CssSelector, input.button, 0.400, 0.383, 0.000, 0.259
 LinkText, Summary, 0.250, 0.417, 0.000, 0.220
-XPath, /html/body/table[3]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td[5], 0.850, 0.378, 0.000, 0.405
-LinkText, Logout, 0.250, 0.378, 0.000, 0.207
+XPath, /html/body/table[3]/tbody/tr[2]/td[1]/table[1]/tbody/tr[2]/td[5], 0.850, 0.377, 0.000, 0.405
+LinkText, Logout, 0.250, 0.377, 0.000, 0.207

@@ -45,7 +45,7 @@ public class TestRunner {
     * */
     private void setupListener() {
         // TODO: COMMENT OUT THIS LINE OF CODE
-        // System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 
         ChromeDriverService service = new ChromeDriverService.Builder().withLogOutput(System.err).build();
         WebDriverListener listenerDriver;

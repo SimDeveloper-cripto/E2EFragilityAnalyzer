@@ -5,8 +5,16 @@ Name, username, 0.400, 0.383, 0.000, 0.259
 Name, password, 0.400, 0.383, 0.000, 0.259
 Name, password, 0.400, 0.383, 0.000, 0.259
 CssSelector, input.button, 0.400, 0.383, 0.000, 0.259
-LinkText, Manage, 0.250, 0.423, 0.000, 0.222
-LinkText, Manage Projects, 0.250, 0.421, 0.000, 0.222
-LinkText, Project002, 0.250, 0.417, 0.000, 0.220
-LinkText, Proceed, 0.250, 0.376, 0.000, 0.207
-LinkText, Proceed, 0.250, 0.376, 0.000, 0.207
+LinkText, Manage, 0.250, 0.422, 0.000, 0.222
+LinkText, Manage Projects, 0.250, 0.420, 0.000, 0.221
+LinkText, Project002, 0.250, 0.415, 0.000, 0.219
+XPath, html/body/div[5]/table/tbody/tr[3]/td[7]/span[2]/a, 0.844, 0.377, 0.000, 0.403
+LinkText, Proceed, 0.250, 0.433, 0.000, 0.225
+XPath, html/body/div[5]/table/tbody/tr[3]/td[7]/span[2]/a, 0.844, 0.376, 0.000, 0.403
+LinkText, Proceed, 0.250, 0.433, 0.000, 0.225
+XPath, html/body/div[6]/table/tbody/tr[3]/td[1]/a, 0.837, 0.375, 1.000, 0.730
+XPath, html/body/div[6]/table/tbody/tr[4]/td[1]/a, 0.837, 0.375, 1.000, 0.730
+LinkText, Manage Projects, 0.250, 0.375, 0.000, 0.206
+XPath, html/body/table[3]/tbody/tr[4]/td[1]/a, 0.829, 0.415, 0.000, 0.410
+XPath, html/body/table[3]/tbody/tr[5]/td[1]/a, 0.829, 0.415, 0.000, 0.410
+LinkText, Logout, 0.250, 0.415, 0.000, 0.219

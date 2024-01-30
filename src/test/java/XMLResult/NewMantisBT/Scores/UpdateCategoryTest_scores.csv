@@ -5,17 +5,17 @@ Name, username, 0.400, 0.383, 0.000, 0.259
 Name, password, 0.400, 0.383, 0.000, 0.259
 Name, password, 0.400, 0.383, 0.000, 0.259
 CssSelector, input.button, 0.400, 0.383, 0.000, 0.259
-LinkText, Manage, 0.250, 0.423, 0.000, 0.222
-LinkText, Manage Projects, 0.250, 0.421, 0.000, 0.222
-LinkText, Project002, 0.250, 0.417, 0.000, 0.220
-CssSelector, td.center > form > input.button-small, 0.733, 0.376, 0.750, 0.614
+LinkText, Manage, 0.250, 0.422, 0.000, 0.222
+LinkText, Manage Projects, 0.250, 0.420, 0.000, 0.221
+LinkText, Project002, 0.250, 0.415, 0.000, 0.219
+CssSelector, td.center > form > input.button-small, 0.733, 0.375, 0.750, 0.613
 XPath, /html/body/div[6]/a[1]/table/tbody/tr[4]/td/form/input[3], 0.850, 0.374, 0.000, 0.404
 XPath, /html/body/div[6]/a[1]/table/tbody/tr[4]/td/form/input[3], 0.850, 0.374, 0.000, 0.404
 XPath, /html/body/div[6]/a[1]/table/tbody/tr[4]/td/form/input[4], 0.850, 0.374, 0.000, 0.404
 XPath, /html/body/div[6]/a[1]/table/tbody/tr[3]/td[3]/form[1]/input[2], 0.850, 0.374, 0.000, 0.404
-Name, name, 0.400, 0.420, 0.000, 0.270
-Name, name, 0.400, 0.420, 0.000, 0.270
-XPath, /html/body/div[3]/form/table/tbody/tr[4]/td[2]/input, 0.844, 0.420, 0.000, 0.417
-LinkText, Proceed, 0.250, 0.434, 0.000, 0.226
+Name, name, 0.400, 0.419, 0.000, 0.270
+Name, name, 0.400, 0.419, 0.000, 0.270
+XPath, /html/body/div[3]/form/table/tbody/tr[4]/td[2]/input, 0.844, 0.419, 0.000, 0.417
+LinkText, Proceed, 0.250, 0.433, 0.000, 0.225
 XPath, html/body/div[6]/a[1]/table/tbody/tr[3]/td[1], 0.837, 0.374, 0.000, 0.400
 LinkText, Logout, 0.250, 0.374, 0.000, 0.206

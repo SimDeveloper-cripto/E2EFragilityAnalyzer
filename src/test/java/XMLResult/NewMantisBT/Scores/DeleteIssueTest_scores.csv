@@ -5,10 +5,10 @@ Name, username, 0.400, 0.383, 0.000, 0.259
 Name, password, 0.400, 0.383, 0.000, 0.259
 Name, password, 0.400, 0.383, 0.000, 0.259
 CssSelector, input.button, 0.400, 0.383, 0.000, 0.259
-LinkText, View Issues, 0.250, 0.419, 0.000, 0.221
+LinkText, View Issues, 0.250, 0.417, 0.000, 0.220
 Name, bug_arr[], 0.400, 0.400, 0.000, 0.264
 Name, action, 0.400, 0.400, 0.000, 0.264
 CssSelector, input.button, 0.400, 0.400, 0.000, 0.264
-CssSelector, input.button, 0.400, 0.409, 0.000, 0.267
-CssSelector, BODY, 0.400, 0.405, 0.000, 0.266
-LinkText, Logout, 0.250, 0.405, 0.000, 0.216
+CssSelector, input.button, 0.400, 0.406, 0.000, 0.266
+CssSelector, BODY, 0.400, 0.404, 0.000, 0.265
+LinkText, Logout, 0.250, 0.404, 0.000, 0.216

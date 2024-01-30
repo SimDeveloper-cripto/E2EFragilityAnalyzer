@@ -1,3 +1,19 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-Name, username, 0.400, 0.417, 0.000, 0.270
+Name, username, 0.400, 0.383, 0.000, 0.259
+Name, username, 0.400, 0.383, 0.000, 0.259
+Name, password, 0.400, 0.383, 0.000, 0.259
+Name, password, 0.400, 0.383, 0.000, 0.259
+CssSelector, input.button, 0.400, 0.383, 0.000, 0.259
+LinkText, Manage, 0.250, 0.417, 0.000, 0.220
+LinkText, Manage Projects, 0.250, 0.420, 0.000, 0.221
+LinkText, Project002, 0.250, 0.415, 0.000, 0.219
+Name, subproject_id, 0.400, 0.374, 0.000, 0.255
+XPath, html/body/div[5]/table/tbody/tr[3]/td/form/input[3], 0.844, 0.374, 0.000, 0.402
+LinkText, Proceed, 0.250, 0.432, 0.000, 0.225
+Name, subproject_id, 0.400, 0.375, 0.000, 0.256
+XPath, html/body/div[5]/table/tbody/tr[5]/td/form/input[3], 0.844, 0.375, 0.000, 0.402
+LinkText, Proceed, 0.250, 0.432, 0.000, 0.225
+XPath, html/body/div[5]/table/tbody/tr[3]/td[1]/a, 0.837, 0.375, 0.000, 0.400
+XPath, html/body/div[5]/table/tbody/tr[4]/td[1]/a, 0.837, 0.375, 0.000, 0.400
+LinkText, Logout, 0.250, 0.375, 0.000, 0.206

@@ -5,15 +5,15 @@ Name, username, 0.400, 0.383, 0.000, 0.259
 Name, password, 0.400, 0.383, 0.000, 0.259
 Name, password, 0.400, 0.383, 0.000, 0.259
 CssSelector, input.button, 0.400, 0.383, 0.000, 0.259
-LinkText, Manage, 0.250, 0.419, 0.000, 0.221
-LinkText, Manage Projects, 0.250, 0.420, 0.000, 0.221
-CssSelector, td.form-title > form > input.button-small, 0.733, 0.415, 0.800, 0.643
-Name, name, 0.400, 0.411, 0.000, 0.268
-Name, name, 0.400, 0.411, 0.000, 0.268
-Name, status, 0.400, 0.411, 0.000, 0.268
-Name, view_state, 0.400, 0.411, 0.000, 0.268
-Name, description, 0.400, 0.411, 0.000, 0.268
-Name, description, 0.400, 0.411, 0.000, 0.268
-CssSelector, input.button, 0.400, 0.411, 0.000, 0.268
-XPath, html/body/div[2]/table/tbody/tr[2]/td/p, 0.837, 0.422, 0.000, 0.416
-LinkText, Logout, 0.250, 0.422, 0.000, 0.222
+LinkText, Manage, 0.250, 0.417, 0.000, 0.220
+LinkText, Manage Projects, 0.250, 0.417, 0.000, 0.220
+CssSelector, td.form-title > form > input.button-small, 0.733, 0.408, 0.800, 0.641
+Name, name, 0.400, 0.409, 0.000, 0.267
+Name, name, 0.400, 0.409, 0.000, 0.267
+Name, status, 0.400, 0.409, 0.000, 0.267
+Name, view_state, 0.400, 0.409, 0.000, 0.267
+Name, description, 0.400, 0.409, 0.000, 0.267
+Name, description, 0.400, 0.409, 0.000, 0.267
+CssSelector, input.button, 0.400, 0.409, 0.000, 0.267
+XPath, html/body/div[2]/table/tbody/tr[2]/td/p, 0.837, 0.418, 0.000, 0.414
+LinkText, Logout, 0.250, 0.418, 0.000, 0.220

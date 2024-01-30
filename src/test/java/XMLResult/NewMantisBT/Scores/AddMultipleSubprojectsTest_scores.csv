@@ -13,3 +13,33 @@ Name, name, 0.400, 0.415, 0.000, 0.269
 Name, status, 0.400, 0.415, 0.000, 0.269
 CssSelector, input.button, 0.400, 0.415, 0.000, 0.269
 LinkText, Proceed, 0.250, 0.434, 0.000, 0.226
+LinkText, Project1, 0.250, 0.417, 0.000, 0.220
+CssSelector, td.form-title > form > input.button-small, 0.733, 0.376, 0.750, 0.614
+Name, name, 0.400, 0.409, 0.000, 0.267
+Name, name, 0.400, 0.409, 0.000, 0.267
+CssSelector, input.button, 0.400, 0.409, 0.000, 0.267
+LinkText, Proceed, 0.250, 0.432, 0.000, 0.225
+LinkText, Project1, 0.250, 0.415, 0.000, 0.219
+CssSelector, td.form-title > form > input.button-small, 0.733, 0.376, 0.750, 0.614
+Name, name, 0.400, 0.408, 0.000, 0.267
+Name, name, 0.400, 0.408, 0.000, 0.267
+CssSelector, input.button, 0.400, 0.408, 0.000, 0.267
+LinkText, Proceed, 0.250, 0.430, 0.000, 0.225
+LinkText, Project1, 0.250, 0.413, 0.000, 0.219
+XPath, html/body/div[5]/table/tbody/tr[3]/td[1]/a, 0.837, 0.377, 0.000, 0.401
+XPath, html/body/div[5]/table/tbody/tr[4]/td[1]/a, 0.837, 0.377, 0.000, 0.401
+LinkText, Manage, 0.250, 0.377, 0.000, 0.207
+LinkText, Manage Projects, 0.250, 0.420, 0.000, 0.221
+LinkText, Project002, 0.250, 0.413, 0.000, 0.219
+CssSelector, td.form-title > form > input.button-small, 0.733, 0.373, 0.833, 0.640
+Name, name, 0.400, 0.407, 0.000, 0.266
+Name, name, 0.400, 0.407, 0.000, 0.266
+CssSelector, input.button, 0.400, 0.407, 0.000, 0.266
+LinkText, Proceed, 0.250, 0.429, 0.000, 0.224
+LinkText, Project002, 0.250, 0.411, 0.000, 0.218
+CssSelector, td.form-title > form > input.button-small, 0.733, 0.373, 0.833, 0.640
+Name, name, 0.400, 0.407, 0.000, 0.266
+Name, name, 0.400, 0.407, 0.000, 0.266
+CssSelector, input.button, 0.400, 0.407, 0.000, 0.266
+LinkText, Proceed, 0.250, 0.428, 0.000, 0.224
+LinkText, Logout, 0.250, 0.410, 0.000, 0.218

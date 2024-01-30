@@ -5,45 +5,45 @@ Name, username, 0.400, 0.383, 0.000, 0.259
 Name, password, 0.400, 0.383, 0.000, 0.259
 Name, password, 0.400, 0.383, 0.000, 0.259
 CssSelector, input.button, 0.400, 0.383, 0.000, 0.259
-LinkText, Manage, 0.250, 0.419, 0.000, 0.221
-LinkText, Manage Users, 0.250, 0.421, 0.000, 0.222
-CssSelector, td.form-title > form > input.button-small, 0.733, 0.447, 0.667, 0.610
-Name, username, 0.400, 0.412, 0.000, 0.268
-Name, username, 0.400, 0.412, 0.000, 0.268
-Name, realname, 0.400, 0.412, 0.000, 0.268
-Name, realname, 0.400, 0.412, 0.000, 0.268
-Name, email, 0.400, 0.412, 0.000, 0.268
-Name, email, 0.400, 0.412, 0.000, 0.268
-Name, access_level, 0.400, 0.412, 0.000, 0.268
-CssSelector, input.button, 0.400, 0.412, 0.000, 0.268
-LinkText, Proceed, 0.250, 0.432, 0.000, 0.225
+LinkText, Manage, 0.250, 0.417, 0.000, 0.220
+LinkText, Manage Users, 0.250, 0.418, 0.000, 0.220
+CssSelector, td.form-title > form > input.button-small, 0.733, 0.445, 0.667, 0.609
+Name, username, 0.400, 0.410, 0.000, 0.267
+Name, username, 0.400, 0.410, 0.000, 0.267
+Name, realname, 0.400, 0.410, 0.000, 0.267
+Name, realname, 0.400, 0.410, 0.000, 0.267
+Name, email, 0.400, 0.410, 0.000, 0.267
+Name, email, 0.400, 0.410, 0.000, 0.267
+Name, access_level, 0.400, 0.410, 0.000, 0.267
+CssSelector, input.button, 0.400, 0.410, 0.000, 0.267
+LinkText, Proceed, 0.250, 0.427, 0.000, 0.223
 LinkText, Manage Users, 0.250, 0.346, 0.000, 0.197
-XPath, //input[@value='Create New Account'], 0.400, 0.443, 0.000, 0.278
-Name, username, 0.400, 0.412, 0.000, 0.268
-Name, username, 0.400, 0.412, 0.000, 0.268
-Name, realname, 0.400, 0.412, 0.000, 0.268
-Name, realname, 0.400, 0.412, 0.000, 0.268
-Name, email, 0.400, 0.412, 0.000, 0.268
-Name, email, 0.400, 0.412, 0.000, 0.268
-Name, access_level, 0.400, 0.412, 0.000, 0.268
-CssSelector, input.button, 0.400, 0.412, 0.000, 0.268
-LinkText, Proceed, 0.250, 0.432, 0.000, 0.225
+XPath, //input[@value='Create New Account'], 0.400, 0.442, 0.000, 0.278
+Name, username, 0.400, 0.410, 0.000, 0.267
+Name, username, 0.400, 0.410, 0.000, 0.267
+Name, realname, 0.400, 0.410, 0.000, 0.267
+Name, realname, 0.400, 0.410, 0.000, 0.267
+Name, email, 0.400, 0.410, 0.000, 0.267
+Name, email, 0.400, 0.410, 0.000, 0.267
+Name, access_level, 0.400, 0.410, 0.000, 0.267
+CssSelector, input.button, 0.400, 0.410, 0.000, 0.267
+LinkText, Proceed, 0.250, 0.427, 0.000, 0.223
 LinkText, Manage Users, 0.250, 0.346, 0.000, 0.197
-XPath, //input[@value='Create New Account'], 0.400, 0.440, 0.000, 0.277
-Name, username, 0.400, 0.412, 0.000, 0.268
-Name, username, 0.400, 0.412, 0.000, 0.268
-Name, realname, 0.400, 0.412, 0.000, 0.268
-Name, realname, 0.400, 0.412, 0.000, 0.268
-Name, email, 0.400, 0.412, 0.000, 0.268
-Name, email, 0.400, 0.412, 0.000, 0.268
-Name, access_level, 0.400, 0.412, 0.000, 0.268
-CssSelector, input.button, 0.400, 0.412, 0.000, 0.268
-LinkText, Proceed, 0.250, 0.432, 0.000, 0.225
+XPath, //input[@value='Create New Account'], 0.400, 0.439, 0.000, 0.277
+Name, username, 0.400, 0.410, 0.000, 0.267
+Name, username, 0.400, 0.410, 0.000, 0.267
+Name, realname, 0.400, 0.410, 0.000, 0.267
+Name, realname, 0.400, 0.410, 0.000, 0.267
+Name, email, 0.400, 0.410, 0.000, 0.267
+Name, email, 0.400, 0.410, 0.000, 0.267
+Name, access_level, 0.400, 0.410, 0.000, 0.267
+CssSelector, input.button, 0.400, 0.410, 0.000, 0.267
+LinkText, Proceed, 0.250, 0.427, 0.000, 0.223
 LinkText, Manage Users, 0.250, 0.346, 0.000, 0.197
-XPath, html/body/table[3]/tbody/tr[4]/td[1]/a, 0.829, 0.437, 0.000, 0.418
-XPath, html/body/table[3]/tbody/tr[4]/td[4], 0.817, 0.437, 0.000, 0.414
-XPath, html/body/table[3]/tbody/tr[5]/td[1]/a, 0.829, 0.437, 0.000, 0.418
-XPath, html/body/table[3]/tbody/tr[5]/td[4], 0.817, 0.437, 0.000, 0.414
-XPath, html/body/table[3]/tbody/tr[6]/td[1]/a, 0.829, 0.437, 0.000, 0.418
-XPath, html/body/table[3]/tbody/tr[6]/td[4], 0.817, 0.437, 0.000, 0.414
-LinkText, Logout, 0.250, 0.437, 0.000, 0.227
+XPath, html/body/table[3]/tbody/tr[4]/td[1]/a, 0.829, 0.436, 0.000, 0.417
+XPath, html/body/table[3]/tbody/tr[4]/td[4], 0.817, 0.436, 0.000, 0.413
+XPath, html/body/table[3]/tbody/tr[5]/td[1]/a, 0.829, 0.436, 0.000, 0.417
+XPath, html/body/table[3]/tbody/tr[5]/td[4], 0.817, 0.436, 0.000, 0.413
+XPath, html/body/table[3]/tbody/tr[6]/td[1]/a, 0.829, 0.436, 0.000, 0.417
+XPath, html/body/table[3]/tbody/tr[6]/td[4], 0.817, 0.436, 0.000, 0.413
+LinkText, Logout, 0.250, 0.436, 0.000, 0.226
