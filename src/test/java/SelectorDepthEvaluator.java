@@ -19,6 +19,20 @@ public class SelectorDepthEvaluator {
 
     /* [DESCRIPTION]
         - Lets explain by example
+            - Input: #header .menu
+            - Output: ["#header", ".menu"]
+    **/
+    public static String[] getElementsFromCssSelector(String selectorString) {
+        if (selectorString == null || selectorString.isEmpty()) {
+            System.out.println("[Selector Complexity Evaluator] (ERROR) Function: getElementsFromCssSelector(), " + selectorString + " is Null or empty string!");
+            return new String[0];
+        }
+
+        return selectorString.split("[ >~+]+");
+    }
+
+    /* [DESCRIPTION]
+        - Lets explain by example
             - Selector: /html/body/div
             - Depth: 2 (2 levels of hierarchy)
     **/
@@ -35,5 +49,26 @@ public class SelectorDepthEvaluator {
 
         String[] combinators = selectorString.split("/");
         return combinators.length - 1;
+    }
+
+    public static String[] getElementsFromXPathSelector(String selectorString) {
+        if (selectorString == null || selectorString.isEmpty()) {
+            System.out.println("[Selector Complexity Evaluator] (ERROR) Function: getElementsFromXPathSelector(), " + selectorString + " is Null or empty string!");
+            return new String[0];
+        }
+
+        if (selectorString.startsWith("//"))
+            selectorString = selectorString.substring(2);
+        else if (selectorString.startsWith("/"))
+            selectorString = selectorString.substring(1);
+
+        String[] parts = selectorString.split("/");
+        String[] hierarchy = new String[parts.length];
+
+        for(int i = 0; i < parts.length; i++) {
+            hierarchy[i] = "//" + parts[i];
+        }
+
+        return hierarchy;
     }
 }

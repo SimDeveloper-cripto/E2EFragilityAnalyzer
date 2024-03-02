@@ -44,7 +44,7 @@ public class TestRunner {
         - This function was not written by me. I assume this is the observer initialization
     * */
     private void setupListener() {
-        // TODO: COMMENT OUT THIS LINE OF CODE
+        // TODO: COMMENT OUT THIS LINE OF CODE IF NOT ON UBUNTU 22
         System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 
         ChromeDriverService service = new ChromeDriverService.Builder().withLogOutput(System.err).build();

@@ -16,18 +16,21 @@ import java.util.regex.Matcher;
         - The score is ( (A*k1) + (B*k2) + (C*k3) )
 **/
 
+// TODO: FOR NOW THE ALGORITHMS ONLY DESCRIBE HOW TO GET (A, B, C).
+//      THE "SPECIFICITY" VALUE WILL BE CALCULATED JUST LIKE DISCUSSED ON TEAMS (CONSIDER EACH LEVEL OF HIERARCHY)
+
 public class CascadeSpecificityEvaluator {
     private int A, B, C; // That is (A, B, C)
 
-    public CascadeSpecificityEvaluator () {
-        this.A = 0;
-        this.B = 0;
-        this.C = 0;
-    }
+    public CascadeSpecificityEvaluator () {}
 
     /* [CSS SELECTOR] */
 
     public float applyAlgorithmForCssSelectors(String selector) {
+        A = 0;
+        B = 0;
+        C = 0;
+
         System.out.println("[CascadeSpecificityEvaluator] Selector received: " + selector);
 
         Pattern idPattern            = Pattern.compile("#\\w+");
@@ -81,34 +84,44 @@ public class CascadeSpecificityEvaluator {
     }
 
     /* [XPATH SELECTOR] */
-    /*public float applyAlgorithmForXPathSelectors(String selector, Document document) {
-        Elements elements = document.select(selector);
-        int A = countOccurrencesOfPatternForXPathSelector(elements, "id"); // Count the number of elements that have ID
 
-        int B = countOccurrencesOfPatternForXPathSelector(elements, "class") +
-                countOccurrencesOfRegexForXPathSelector(selector, "\\[@[^\\]]+\\]") + countOccurrencesOfRegexForXPathSelector(selector, ":.*\\(.*\\)");
+    public float applyAlgorithmForXPathSelectors(String selector) {
+        A = 0;
+        B = 0;
+        C = 0;
 
-        int C = countOccurrencesOfRegexForXPathSelector(selector, "^[^\\[]+") +
-                countOccurrencesOfRegexForXPathSelector(selector, "::[^:]+");
-        // return evaluateScore(); // [0 - 1]
-    } */
+        System.out.println("[CascadeSpecificityEvaluator] XPath Selector received: " + selector);
 
-    /*private int countOccurrencesOfPatternForXPathSelector(Elements elements, String pattern) {
-        int count = 0;
-        for(Element e : elements) {
-            if (e.hasAttr(pattern)) count++;
-        }
-        return count;
-    } */
+        // Count IDs
+        Pattern idPattern = Pattern.compile("@id\\b");
+        Matcher idMatcher = idPattern.matcher(selector);
+        while (idMatcher.find()) A++;
 
-    /*private int countOccurrencesOfRegexForXPathSelector(String selector, String regex) {
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(selector);
+        // Count Classes
+        Pattern classPattern = Pattern.compile("@class\\b");
+        Matcher classMatcher = classPattern.matcher(selector);
+        while (classMatcher.find()) B++;
 
-        int count = 0;
-        while (matcher.find()) count++;
-        return count;
-    } */
+        // Count Attributes - Including those within predicates and functions, but excluding @id and @class
+        Pattern attrPattern = Pattern.compile("@(?!id\\b|class\\b)\\w+");
+        Matcher attrMatcher = attrPattern.matcher(selector);
+        while (attrMatcher.find()) B++;
+
+        // Count Element-types and Pseudo-elements
+        Pattern elementTypePattern = Pattern.compile("/(\\w+)");
+        Matcher elementTypeMatcher = elementTypePattern.matcher(selector);
+        while (elementTypeMatcher.find()) C++;
+
+        Pattern pseudoElementPattern = Pattern.compile("\\b(text\\(\\)|node\\(\\)|comment\\(\\))");
+        Matcher pseudoElementMatcher = pseudoElementPattern.matcher(selector);
+        while (pseudoElementMatcher.find()) C++;
+
+        System.out.printf("[CascadeSpecificityEvaluator] (A, B, C) = (%d, %d, %d)%n", A, B, C);
+        System.out.println();
+
+        Cascade cascade = new Cascade(A, B, C);
+        return evaluateScore(cascade); // [0 - 1]
+    }
 
     /* [EVALUATE SCORE] */
     private float evaluateScore(Cascade c) {

@@ -145,7 +145,7 @@ public class CascadeCSSTest {
     }
 
     @Test
-    public void cascade15() {
+    public void cascade15() { // We expect this test to fail. Encountered regex limit.
         CascadeSpecificityEvaluator evaluator = new CascadeSpecificityEvaluator();
         float expectedScore = 0.6f;
         float delta = 0.001f;
