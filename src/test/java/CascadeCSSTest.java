@@ -1,5 +1,3 @@
-package Cascade;
-
 import org.junit.Test;
 import org.junit.Assert;
 
@@ -11,7 +9,7 @@ public class CascadeCSSTest {
         float delta = 0.001f;
 
         // (1, 0, 0)
-        Assert.assertEquals(evaluator.applyAlgorithmForCssSelectors("#elementoId"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_Css_Selectors("#elementoId"), expectedScore, delta);
     }
 
     @Test
@@ -21,7 +19,7 @@ public class CascadeCSSTest {
         float delta = 0.001f;
 
         // (1, 1, 0)
-        Assert.assertEquals(evaluator.applyAlgorithmForCssSelectors("#elementoId .nomeClasse"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_Css_Selectors("#elementoId .nomeClasse"), expectedScore, delta);
     }
 
     @Test
@@ -31,7 +29,7 @@ public class CascadeCSSTest {
         float delta = 0.001f;
 
         // (0, 0, 1)
-        Assert.assertEquals(evaluator.applyAlgorithmForCssSelectors("div"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_Css_Selectors("div"), expectedScore, delta);
     }
 
     @Test
@@ -41,7 +39,7 @@ public class CascadeCSSTest {
         float delta = 0.001f;
 
         // (0, 1, 0)
-        Assert.assertEquals(evaluator.applyAlgorithmForCssSelectors("[attributo]"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_Css_Selectors("[attributo]"), expectedScore, delta);
     }
 
     @Test
@@ -51,7 +49,7 @@ public class CascadeCSSTest {
         float delta = 0.001f;
 
         // (0, 1, 0)
-        Assert.assertEquals(evaluator.applyAlgorithmForCssSelectors("[attributo=\"valore\"]"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_Css_Selectors("[attributo=\"valore\"]"), expectedScore, delta);
     }
 
     @Test
@@ -61,7 +59,7 @@ public class CascadeCSSTest {
         float delta = 0.001f;
 
         // (0, 1, 3)
-        Assert.assertEquals(evaluator.applyAlgorithmForCssSelectors("div h1 input.button"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_Css_Selectors("div h1 input.button"), expectedScore, delta);
     }
 
     @Test
@@ -71,7 +69,7 @@ public class CascadeCSSTest {
         float delta = 0.001f;
 
         // (0, 0, 2)
-        Assert.assertEquals(evaluator.applyAlgorithmForCssSelectors("div > h1"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_Css_Selectors("div > h1"), expectedScore, delta);
     }
 
     @Test
@@ -81,7 +79,7 @@ public class CascadeCSSTest {
         float delta = 0.001f;
 
         // (0, 2, 2)
-        Assert.assertEquals(evaluator.applyAlgorithmForCssSelectors("td.left > td:first-child"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_Css_Selectors("td.left > td:first-child"), expectedScore, delta);
     }
 
     @Test
@@ -91,7 +89,7 @@ public class CascadeCSSTest {
         float delta = 0.001f;
 
         // (1, 0, 2)
-        Assert.assertEquals(evaluator.applyAlgorithmForCssSelectors("div + form > #elementoID"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_Css_Selectors("div + form > #elementoID"), expectedScore, delta);
     }
 
     @Test
@@ -101,7 +99,7 @@ public class CascadeCSSTest {
         float delta = 0.001f;
 
         // (0, 2, 3)
-        Assert.assertEquals(evaluator.applyAlgorithmForCssSelectors("td.left > form > input.button"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_Css_Selectors("td.left > form > input.button"), expectedScore, delta);
     }
 
     @Test
@@ -111,7 +109,7 @@ public class CascadeCSSTest {
         float delta = 0.001f;
 
         // (1, 3, 1)
-        Assert.assertEquals(evaluator.applyAlgorithmForCssSelectors("#myId .myClass[attr='value']:hover::after"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_Css_Selectors("#myId .myClass[attr='value']:hover::after"), expectedScore, delta);
     }
 
     @Test
@@ -121,7 +119,7 @@ public class CascadeCSSTest {
         float delta = 0.001f;
 
         // (0, 3, 0)
-        Assert.assertEquals(evaluator.applyAlgorithmForCssSelectors(".my-buglist-bug:nth-child(1) .status-50-color"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_Css_Selectors(".my-buglist-bug:nth-child(1) .status-50-color"), expectedScore, delta);
     }
 
     @Test
@@ -131,7 +129,7 @@ public class CascadeCSSTest {
         float delta = 0.001f;
 
         // (0, 1, 0)
-        Assert.assertEquals(evaluator.applyAlgorithmForCssSelectors(":is()"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_Css_Selectors(":is()"), expectedScore, delta);
     }
 
     @Test
@@ -141,7 +139,7 @@ public class CascadeCSSTest {
         float delta = 0.001f;
 
         // (1, 5, 2)
-        Assert.assertEquals(evaluator.applyAlgorithmForCssSelectors("#app .user-list div.user.is-admin a.remove:hover"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_Css_Selectors("#app .user-list div.user.is-admin a.remove:hover"), expectedScore, delta);
     }
 
     @Test
@@ -151,6 +149,6 @@ public class CascadeCSSTest {
         float delta = 0.001f;
 
         // (0, 2, 0)
-        Assert.assertEquals(evaluator.applyAlgorithmForCssSelectors(":where(section.where-styling, aside.where-styling, footer.where-styling) a"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_Css_Selectors(":where(section.where-styling, aside.where-styling, footer.where-styling) a"), expectedScore, delta);
     }
 }

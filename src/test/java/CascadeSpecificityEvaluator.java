@@ -1,5 +1,3 @@
-package Cascade;
-
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
@@ -16,9 +14,6 @@ import java.util.regex.Matcher;
         - The score is ( (A*k1) + (B*k2) + (C*k3) )
 **/
 
-// TODO: FOR NOW THE ALGORITHMS ONLY DESCRIBE HOW TO GET (A, B, C).
-//      THE "SPECIFICITY" VALUE WILL BE CALCULATED JUST LIKE DISCUSSED ON TEAMS (CONSIDER EACH LEVEL OF HIERARCHY)
-
 public class CascadeSpecificityEvaluator {
     private int A, B, C; // That is (A, B, C)
 
@@ -27,11 +22,37 @@ public class CascadeSpecificityEvaluator {
     /* [CSS SELECTOR] */
 
     public float applyAlgorithmForCssSelectors(String selector) {
+        String[] levels = SelectorDepthEvaluator.getElementsFromCssSelector(selector);
+
+        /*
+            - depth = 1 --> An input selector like "input"
+            - That's because evaluateCssSelectorHierarchyDepth(selector) return 0 if there is only one level
+        **/
+        int depth = SelectorDepthEvaluator.evaluateCssSelectorHierarchyDepth(selector) + 1;
+
+        // Evaluate Score for each level
+        float[] tempScores = new float[levels.length];
+        for (int i = 0; i < levels.length; i++) {
+            Cascade currCascade = evaluateCascadeFromCssSelector(levels[i]);
+            int sumABC = currCascade.getA() + currCascade.getB() + currCascade.getC();
+            tempScores[i] = evaluateScore(currCascade) / sumABC;
+        }
+
+        float result = 0.0f;
+        for (int i = 0; i < tempScores.length; i++) {
+            int div = (i + 1) / depth;
+            result += tempScores[i] + div; // float + int is casts to float
+        }
+
+        return (1 - result);
+    }
+
+    public Cascade evaluateCascadeFromCssSelector(String selector) {
         A = 0;
         B = 0;
         C = 0;
 
-        System.out.println("[CascadeSpecificityEvaluator] Selector received: " + selector);
+        // System.out.println("[CascadeSpecificityEvaluator] Selector received: " + selector);
 
         Pattern idPattern            = Pattern.compile("#\\w+");
         Pattern classPattern         = Pattern.compile("\\.[-\\w]+");
@@ -79,18 +100,49 @@ public class CascadeSpecificityEvaluator {
         System.out.printf("[CascadeSpecificityEvaluator] (A, B, C) = (%d, %d, %d)%n", A, B, C);
         System.out.println();
 
-        Cascade cascade = new Cascade(A, B, C);
+        return new Cascade(A, B, C);
+    }
+
+    /* THIS METHOD IS CREATED FOR TESTING */
+    public float apply_ABC_For_Css_Selectors(String selector) {
+        Cascade cascade = evaluateCascadeFromCssSelector(selector);
         return evaluateScore(cascade); // [0 - 1]
     }
 
     /* [XPATH SELECTOR] */
 
     public float applyAlgorithmForXPathSelectors(String selector) {
+        String[] levels = SelectorDepthEvaluator.getElementsFromXPathSelector(selector);
+
+        /*
+            - depth = 1 --> An input selector like "input"
+            - That's because evaluateXPathSelectorHierarchyDepth(selector) return 0 if there is only one level
+        **/
+        int depth = SelectorDepthEvaluator.evaluateXPathSelectorHierarchyDepth(selector) + 1;
+
+        // Evaluate Score for each level
+        float[] tempScores = new float[levels.length];
+        for (int i = 0; i < levels.length; i++) {
+            Cascade currCascade = evaluateCascadeFromXPathSelector(levels[i]);
+            int sumABC = currCascade.getA() + currCascade.getB() + currCascade.getC();
+            tempScores[i] = evaluateScore(currCascade) / sumABC;
+        }
+
+        float result = 0.0f;
+        for (int i = 0; i < tempScores.length; i++) {
+            int div = (i + 1) / depth;
+            result += tempScores[i] + div; // float + int is casts to float
+        }
+
+        return (1 - result);
+    }
+
+    public Cascade evaluateCascadeFromXPathSelector(String selector) {
         A = 0;
         B = 0;
         C = 0;
 
-        System.out.println("[CascadeSpecificityEvaluator] XPath Selector received: " + selector);
+        // System.out.println("[CascadeSpecificityEvaluator] XPath Selector received: " + selector);
 
         // Count IDs
         Pattern idPattern = Pattern.compile("@id\\b");
@@ -116,10 +168,15 @@ public class CascadeSpecificityEvaluator {
         Matcher pseudoElementMatcher = pseudoElementPattern.matcher(selector);
         while (pseudoElementMatcher.find()) C++;
 
-        System.out.printf("[CascadeSpecificityEvaluator] (A, B, C) = (%d, %d, %d)%n", A, B, C);
-        System.out.println();
+        // System.out.printf("[CascadeSpecificityEvaluator] (A, B, C) = (%d, %d, %d)%n", A, B, C);
+        // System.out.println();
 
-        Cascade cascade = new Cascade(A, B, C);
+        return new Cascade(A, B, C);
+    }
+
+    /* THIS METHOD IS CREATED FOR TESTING */
+    public float apply_ABC_For_XPath_Selectors(String selector) {
+        Cascade cascade = evaluateCascadeFromXPathSelector(selector);
         return evaluateScore(cascade); // [0 - 1]
     }
 

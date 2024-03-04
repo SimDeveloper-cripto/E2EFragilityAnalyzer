@@ -1,5 +1,3 @@
-package Cascade;
-
 public class Cascade {
     private final int A, B, C;
 

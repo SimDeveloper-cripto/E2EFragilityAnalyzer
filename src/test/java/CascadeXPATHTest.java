@@ -1,5 +1,3 @@
-package Cascade;
-
 import org.junit.Test;
 import org.junit.Assert;
 
@@ -11,7 +9,7 @@ public class CascadeXPATHTest {
         float delta = 0.001f;
 
         // (1, 2, 3)
-        Assert.assertEquals(evaluator.applyAlgorithmForXPathSelectors("//div[@id='uniqueId' and contains(@class, 'exampleClass')]//span[@data-attribute='value']::text()"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_XPath_Selectors("//div[@id='uniqueId' and contains(@class, 'exampleClass')]//span[@data-attribute='value']::text()"), expectedScore, delta);
     }
 
     @Test
@@ -21,7 +19,7 @@ public class CascadeXPATHTest {
         float delta = 0.001f;
 
         // (0, 0, 1)
-        Assert.assertEquals(evaluator.applyAlgorithmForXPathSelectors("//p"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_XPath_Selectors("//p"), expectedScore, delta);
     }
 
     @Test
@@ -31,7 +29,7 @@ public class CascadeXPATHTest {
         float delta = 0.001f;
 
         // (1, 1, 1)
-        Assert.assertEquals(evaluator.applyAlgorithmForXPathSelectors("//*[@id='uniqueId']/a[contains(@class, 'linkClass')]"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_XPath_Selectors("//*[@id='uniqueId']/a[contains(@class, 'linkClass')]"), expectedScore, delta);
     }
 
     @Test
@@ -41,6 +39,6 @@ public class CascadeXPATHTest {
         float delta = 0.001f;
 
         // (0, 3, 3)
-        Assert.assertEquals(evaluator.applyAlgorithmForXPathSelectors("//ul[@role='navigation']//li[not(@class='active')]//a[@href]"), expectedScore, delta);
+        Assert.assertEquals(evaluator.apply_ABC_For_XPath_Selectors("//ul[@role='navigation']//li[not(@class='active')]//a[@href]"), expectedScore, delta);
     }
 }
