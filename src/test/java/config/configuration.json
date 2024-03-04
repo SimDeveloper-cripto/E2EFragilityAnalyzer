@@ -1,6 +1,6 @@
 {
-  "softwareUsed": "NewMantisBT",
-  "applicationVersion": "1.2.0",
+  "softwareUsed": "AddressBook810",
+  "applicationVersion": "8.1.0",
   "selectorScoreStrategy": "DefaultSelectorComplexityEvaluator",
   "pageScoreStrategy": "DefaultPageComplexityEvaluator",
   "pageAndSelectorScoreStrategy": "DefaultPageAndSelectorComplexityEvaluator"

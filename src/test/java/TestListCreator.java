@@ -44,4 +44,34 @@ public class TestListCreator {
         fileNames.add("src/test/java/JUnit/PasswordManager/DeleteEntry2Test.java");
         fileNames.add("src/test/java/JUnit/PasswordManager/ImportCSVTest.java");
     }
+
+    public static void createAddressBookTestList(List<String> fileNames, String version) {
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookAddAddressBookTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookSearchAddressBookNameTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookSearchAddressBookEmailTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookAddGroupTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookAssignToGroupTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookSearchByGroupTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookCheckBirthdayInfoTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookCheckAddressBookTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookPrintAddressBookTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookEditAddressBookTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookEditGroupTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookRemoveFromGroupTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookRemoveGroupTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookRemoveAddressBookTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookAddMultipleAddressBookTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookSearchMultipleAddressBookNameTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookAddMultipleGroupsTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookAssignToMultipleGroupsTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookSearchByMultipleGroupsTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookCheckMultipleBirthdaysInfoTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookCheckMultipleAddressBookTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookPrintMultipleAddressBookTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookEditMultipleAddressBookTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookEditMultipleGroupsTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookRemoveFromMultipleGroupsTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookRemoveMultipleGroupsTest.java");
+        fileNames.add("src/test/java/JUnit/AddressBook" + version + "/AddressBookRemoveMultipleAddressBookTest.java");
+    }
 }

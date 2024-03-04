@@ -1,0 +1,4 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
+
+XPath, html/body/div[1]/div[4]/label/strong, 0.817, 0.440, 0.800, 0.679
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[2], 0.775, 0.440, 0.992, 0.728

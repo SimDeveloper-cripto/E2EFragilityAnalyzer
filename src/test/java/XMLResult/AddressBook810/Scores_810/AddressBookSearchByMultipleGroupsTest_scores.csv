@@ -1,0 +1,17 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult , failed
+
+Name, group, 0.000, 0.443, 0.500, 0.311 ,0
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[2], 0.775, 0.478, 0.950, 0.727, 1
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[3], 0.775, 0.478, 0.950, 0.727, 1
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[4], 0.775, 0.478, 0.950, 0.727, 1
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[5], 0.775, 0.478, 0.950, 0.727,1
+Name, group, 0.000, 0.478, 0.500, 0.323,0
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[2], 0.775, 0.478, 0.950, 0.727,1
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[3], 0.775, 0.478, 0.950, 0.727,1
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[4], 0.775, 0.478, 0.950, 0.727,1
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[5], 0.775, 0.478, 0.950, 0.727,1
+Name, group, 0.000, 0.478, 0.500, 0.323,0
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[2], 0.775, 0.478, 0.950, 0.727,1
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[3], 0.775, 0.478, 0.950, 0.727,1
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[4], 0.775, 0.478, 0.950, 0.727,1
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[5], 0.775, 0.478, 0.950, 0.727,1

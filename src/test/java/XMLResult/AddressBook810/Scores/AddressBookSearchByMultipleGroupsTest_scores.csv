@@ -1,0 +1,4 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
+
+Name, group, 0.000, 0.437, 0.500, 0.309
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[2], 0.775, 0.473, 0.955, 0.727

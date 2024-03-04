@@ -1,0 +1,46 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
+
+LinkText, gruppi, 0.300, 0.503, 0.000, 0.265
+XPath, .//*[@id='content']/form/input[4], 0.733, 0.559, 0.889, 0.720
+XPath, .//*[@id='content']/form/input[9], 0.733, 0.559, 0.889, 0.720
+Name, group_name, 0.000, 0.533, 0.000, 0.176
+Name, group_name, 0.000, 0.533, 0.000, 0.176
+Name, group_header, 0.000, 0.533, 0.000, 0.176
+Name, group_header, 0.000, 0.533, 0.000, 0.176
+Name, group_footer, 0.000, 0.533, 0.000, 0.176
+Name, group_footer, 0.000, 0.533, 0.000, 0.176
+Name, update, 0.000, 0.533, 0.000, 0.176
+LinkText, group page, 0.300, 0.563, 0.000, 0.285
+XPath, .//*[@id='content']/form/input[4], 0.733, 0.559, 0.889, 0.720
+XPath, .//*[@id='content']/form/input[9], 0.733, 0.559, 0.889, 0.720
+Name, group_name, 0.000, 0.533, 0.000, 0.176
+Name, group_name, 0.000, 0.533, 0.000, 0.176
+Name, group_header, 0.000, 0.533, 0.000, 0.176
+Name, group_header, 0.000, 0.533, 0.000, 0.176
+Name, group_footer, 0.000, 0.533, 0.000, 0.176
+Name, group_footer, 0.000, 0.533, 0.000, 0.176
+Name, update, 0.000, 0.533, 0.000, 0.176
+LinkText, group page, 0.300, 0.563, 0.000, 0.285
+XPath, .//*[@id='content']/form/input[4], 0.733, 0.559, 0.889, 0.720
+XPath, .//*[@id='content']/form/input[9], 0.733, 0.559, 0.889, 0.720
+Name, group_name, 0.000, 0.533, 0.000, 0.176
+Name, group_name, 0.000, 0.533, 0.000, 0.176
+Name, group_header, 0.000, 0.533, 0.000, 0.176
+Name, group_header, 0.000, 0.533, 0.000, 0.176
+Name, group_footer, 0.000, 0.533, 0.000, 0.176
+Name, group_footer, 0.000, 0.533, 0.000, 0.176
+Name, update, 0.000, 0.533, 0.000, 0.176
+LinkText, group page, 0.300, 0.563, 0.000, 0.285
+XPath, .//*[@id='content']/form, 0.650, 0.559, 0.000, 0.399
+XPath, .//*[@id='content']/form, 0.650, 0.559, 0.000, 0.399
+XPath, .//*[@id='content']/form, 0.650, 0.559, 0.000, 0.399
+LinkText, homepage, 0.300, 0.559, 0.000, 0.283
+Name, group, 0.000, 0.503, 0.500, 0.331
+XPath, html/body/div[1]/div[4], 0.775, 0.495, 0.800, 0.683
+XPath, html/body/div[1]/div[4], 0.775, 0.495, 0.800, 0.683
+Name, group, 0.000, 0.495, 0.500, 0.328
+XPath, html/body/div[1]/div[4], 0.775, 0.495, 0.800, 0.683
+XPath, html/body/div[1]/div[4], 0.775, 0.495, 0.800, 0.683
+Name, group, 0.000, 0.495, 0.500, 0.328
+XPath, html/body/div[1]/div[4], 0.775, 0.495, 0.800, 0.683
+XPath, html/body/div[1]/div[4], 0.775, 0.495, 0.800, 0.683

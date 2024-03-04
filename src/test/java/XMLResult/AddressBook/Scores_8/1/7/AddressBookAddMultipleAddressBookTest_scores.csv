@@ -1,0 +1,5 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
+
+LinkText, nuovo, 0.300, 0.095, 0.000, 0.130
+Name, quickadd, 0.000, 0.127, 0.000, 0.042
+Name, firstname, 0.000, 0.127, 0.000, 0.042

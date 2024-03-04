@@ -1,0 +1,11 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
+
+LinkText, gruppi, 0.300, 0.090, 0.000, 0.129
+XPath, .//*[@id='content']/form/input[4], 0.733, 0.119, 0.000, 0.281
+XPath, .//*[@id='content']/form/input[5], 0.733, 0.119, 0.000, 0.281
+XPath, .//*[@id='content']/form/input[6], 0.733, 0.119, 0.000, 0.281
+XPath, .//*[@id='content']/form/input[8], 0.733, 0.119, 0.000, 0.281
+LinkText, group page, 0.300, 0.149, 0.000, 0.148
+XPath, .//*[@id='content']/form, 0.650, 0.131, 0.000, 0.258
+XPath, .//*[@id='content']/form, 0.650, 0.131, 0.000, 0.258
+XPath, .//*[@id='content']/form, 0.650, 0.131, 0.000, 0.258

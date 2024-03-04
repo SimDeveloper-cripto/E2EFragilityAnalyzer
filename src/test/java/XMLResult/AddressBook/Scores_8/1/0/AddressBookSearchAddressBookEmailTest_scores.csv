@@ -1,0 +1,9 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
+
+Name, searchstring, 0.000, 0.096, 0.000, 0.032
+Name, searchstring, 0.000, 0.096, 0.000, 0.032
+XPath, html/body/div[1]/div[4]/label/strong, 0.817, 0.096, 0.000, 0.301
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[2], 0.775, 0.096, 0.000, 0.287
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[3], 0.775, 0.096, 0.000, 0.287
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[4], 0.775, 0.096, 0.000, 0.287
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[5], 0.775, 0.096, 0.000, 0.287

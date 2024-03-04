@@ -1,0 +1,12 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
+
+LinkText, stampa numeri telefonici, 0.300, 0.089, 0.000, 0.128
+XPath, .//*[@id='view']/tbody/tr/td[1], 0.775, 0.121, 0.000, 0.296
+XPath, .//*[@id='view']/tbody/tr/td[1], 0.775, 0.121, 0.000, 0.296
+XPath, .//*[@id='view']/tbody/tr/td[1], 0.775, 0.121, 0.000, 0.296
+XPath, .//*[@id='view']/tbody/tr/td[2], 0.775, 0.121, 0.000, 0.296
+XPath, .//*[@id='view']/tbody/tr/td[2], 0.775, 0.121, 0.000, 0.296
+XPath, .//*[@id='view']/tbody/tr/td[2], 0.775, 0.121, 0.000, 0.296
+XPath, .//*[@id='view']/tbody/tr/td[3], 0.775, 0.121, 0.000, 0.296
+XPath, .//*[@id='view']/tbody/tr/td[3], 0.775, 0.121, 0.000, 0.296
+XPath, .//*[@id='view']/tbody/tr/td[3], 0.775, 0.121, 0.000, 0.296

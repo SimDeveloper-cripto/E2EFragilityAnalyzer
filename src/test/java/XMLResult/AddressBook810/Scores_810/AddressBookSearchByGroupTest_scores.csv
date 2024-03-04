@@ -1,0 +1,8 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult ,faild
+
+Name, group, 0.000, 0.488, 0.500, 0.326, 0
+XPath, html/body/div[1]/div[4]/label/strong, 0.817, 0.480, 0.800, 0.692, 0
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[2], 0.775, 0.480, 0.950, 0.728,1
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[3], 0.775, 0.480, 0.950, 0.728,1
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[4], 0.775, 0.480, 0.950, 0.728,1
+XPath, .//*[@id='maintable']/tbody/tr[2]/td[5], 0.775, 0.480, 0.950, 0.728,1

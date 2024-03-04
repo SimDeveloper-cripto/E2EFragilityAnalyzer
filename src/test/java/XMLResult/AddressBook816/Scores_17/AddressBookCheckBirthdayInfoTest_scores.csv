@@ -1,0 +1,4 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
+
+LinkText, compleanni, 0.300, 0.508, 0.000, 0.267
+XPath, .//*[@id='birthdays']/tbody/tr[2]/td[1], 0.775, 0.556, -∞, -∞

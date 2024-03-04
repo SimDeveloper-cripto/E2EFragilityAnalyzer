@@ -1,0 +1,13 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
+
+LinkText, gruppi, 0.300, 0.095, 0.000, 0.130
+Name, new, 0.000, 0.131, 0.000, 0.043
+Name, group_name, 0.000, 0.117, 0.000, 0.039
+Name, group_name, 0.000, 0.117, 0.000, 0.039
+Name, group_header, 0.000, 0.117, 0.000, 0.039
+Name, group_header, 0.000, 0.117, 0.000, 0.039
+Name, group_footer, 0.000, 0.117, 0.000, 0.039
+Name, group_footer, 0.000, 0.117, 0.000, 0.039
+Name, submit, 0.000, 0.117, 0.000, 0.039
+XPath, .//*[@id='content']/div, 0.650, 0.146, 0.857, 0.546
+LinkText, group page, 0.300, 0.146, 0.000, 0.147

@@ -1,0 +1,11 @@
+Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult , failed
+
+CssSelector, img[alt="Modifica"], 0.400, 0.482, 0.000, 0.291, 0
+Name, address, 0.000, 0.322, 0.000, 0.106, 0
+Name, address, 0.000, 0.322, 0.000, 0.106, 0
+Name, home, 0.000, 0.322, 0.000, 0.106, 0
+Name, home, 0.000, 0.322, 0.000, 0.106, 0
+Name, email, 0.000, 0.322, 0.000, 0.106, 0
+Name, email, 0.000, 0.322, 0.000, 0.106, 0
+XPath, .//*[@id='content']/form[1]/input[21], 0.733, 0.322, 0.978, 0.671, 0
+XPath, .//*[@id='content']/div, 0.650, 0.568, 0.000, 0.402, 0

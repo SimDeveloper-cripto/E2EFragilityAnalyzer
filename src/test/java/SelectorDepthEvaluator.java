@@ -46,6 +46,10 @@ public class SelectorDepthEvaluator {
             selectorString = selectorString.substring(2);
         else if (selectorString.startsWith("/"))
             selectorString = selectorString.substring(1);
+        else if (selectorString.startsWith("(//") || selectorString.startsWith(".//"))
+            selectorString = selectorString.substring(3);
+        else if(selectorString.startsWith("(/"))
+            selectorString = selectorString.substring(2);
 
         String[] combinators = selectorString.split("/");
         return combinators.length - 1;
@@ -61,6 +65,10 @@ public class SelectorDepthEvaluator {
             selectorString = selectorString.substring(2);
         else if (selectorString.startsWith("/"))
             selectorString = selectorString.substring(1);
+        else if (selectorString.startsWith("(//") || selectorString.startsWith(".//"))
+            selectorString = selectorString.substring(3);
+        else if(selectorString.startsWith("(/"))
+            selectorString = selectorString.substring(2);
 
         String[] parts = selectorString.split("/");
         String[] hierarchy = new String[parts.length];

@@ -72,6 +72,30 @@ public class Test {
                 fileNames = new ArrayList<>();
                 TestListCreator.createPhormerTestList(fileNames);
                 break;
+            /* case "Claroline":
+                fileNames = new ArrayList<>();
+                TestListCreator.createClarolineTestList(fileNames);
+                break;
+            case "MRBS":
+                fileNames = new ArrayList<>();
+                TestListCreator.createMRBSTestList(fileNames);
+                break;
+            case "MantisBT":
+                fileNames= new ArrayList<>();
+                TestListCreator.createMantisBTTestList(fileNames);
+                break;
+            */ case "AddressBook810":
+                fileNames = new ArrayList<>();
+                TestListCreator.createAddressBookTestList(fileNames, "810");
+                break;
+            case "AddressBook816":
+                fileNames = new ArrayList<>();
+                TestListCreator.createAddressBookTestList(fileNames, "816");
+                break;
+            case "AddressBook817":
+                fileNames = new ArrayList<>();
+                TestListCreator.createAddressBookTestList(fileNames, "817");
+                break;
             default:
                 fileNames = getFileNames(directory);
                 break;
