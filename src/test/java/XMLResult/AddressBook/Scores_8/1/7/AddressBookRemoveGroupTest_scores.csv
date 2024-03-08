@@ -1,6 +1,0 @@
-Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
-
-LinkText, gruppi, 0.300, 0.093, 0.000, 0.130
-Name, selected[], 0.000, 0.127, 0.000, 0.042
-Name, delete, 0.000, 0.127, 0.000, 0.042
-XPath, .//*[@id='content']/div, 0.650, 0.149, 0.857, 0.547

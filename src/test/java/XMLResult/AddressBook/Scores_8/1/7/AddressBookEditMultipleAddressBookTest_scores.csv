@@ -1,3 +1,0 @@
-Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
-
-XPath, .//*[@id='maintable']/tbody/tr[2]/td[8]/a/img, 0.817, 0.090, 1.000, 0.629

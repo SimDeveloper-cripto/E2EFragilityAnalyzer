@@ -1,4 +1,0 @@
-Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
-
-LinkText, stampa numeri telefonici, 0.300, 0.503, 0.000, 0.265
-XPath, .//*[@id='view']/tbody/tr/td[1], 0.775, 0.739, -∞, -∞

@@ -1,4 +1,0 @@
-Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
-
-Name, group, 0.000, 0.093, 0.000, 0.031
-XPath, html/body/div[1]/div[4]/label/strong, 0.817, 0.090, 0.000, 0.299

@@ -1,6 +1,7 @@
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.support.events.WebDriverListener;
 import org.openqa.selenium.support.events.EventFiringDecorator;
@@ -8,7 +9,7 @@ import org.openqa.selenium.support.events.EventFiringDecorator;
 import java.lang.reflect.Method;
 import java.lang.reflect.InvocationTargetException;
 
-import java.util.List;
+import java.util.*;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
@@ -42,15 +43,22 @@ public class TestRunner {
 
     /* [DESCRIPTION]
         - This function was not written by me. I assume this is the observer initialization
-    * */
+    **/
     private void setupListener() {
         // TODO: COMMENT OUT THIS LINE OF CODE IF NOT ON UBUNTU 22
-        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+        // System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 
         ChromeDriverService service = new ChromeDriverService.Builder().withLogOutput(System.err).build();
         WebDriverListener listenerDriver;
 
-        driver         = new ChromeDriver(service);
+        // This is for AddressBook 8.1.0
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--lang=it-IT");
+        Map<String, Object> pref = new HashMap<>();
+        pref.put("intl.accept_languages", "it-IT,it");
+        options.setExperimentalOption("prefs", pref);
+
+        driver         = new ChromeDriver(service, options);
         listener       = new SelectorWebDriver(judge);
         listenerDriver = listener; // This class is used to track the pages and selectors visited during test execution (Observer)
         driver         = new EventFiringDecorator(listenerDriver).decorate(driver);

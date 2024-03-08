@@ -1,9 +1,0 @@
-Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult, failed
-
-Name, searchstring, 0.000, 0.487, 0.000, 0.161, 0
-Name, searchstring, 0.000, 0.487, 0.000, 0.161, 0
-XPath, html/body/div[1]/div[4]/label/strong, 0.817, 0.487, 0.800, 0.694, 0
-XPath, .//*[@id='maintable']/tbody/tr[2]/td[3], 0.775, 0.487, 0.955, 0.731, 0
-XPath, .//*[@id='maintable']/tbody/tr[2]/td[4], 0.775, 0.487, 0.955, 0.731, 0
-XPath, .//*[@id='maintable']/tbody/tr[2]/td[5], 0.775, 0.487, 0.955, 0.731, 0
-XPath, .//*[@id='maintable']/tbody/tr[2]/td[6], 0.775, 0.487, 0.955, 0.731, 0

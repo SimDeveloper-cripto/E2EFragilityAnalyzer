@@ -4,13 +4,12 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AddressBookAddAddressBookTest {
-
 	private  WebDriver driver = new ChromeDriver();
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 
@@ -23,11 +22,10 @@ public class AddressBookAddAddressBookTest {
 
 	@Test
 	public void addressBookAddAddressBook() throws Exception {
-
 		driver.get("http://localhost:3000/index.php");
-		//driver.findElement(By.name("user")).sendKeys("admin");
-		//driver.findElement(By.name("pass")).sendKeys("secret");
-		//driver.findElement(By.xpath(".//*[@id='content']/form/input[3]")).click();
+		// driver.findElement(By.name("user")).sendKeys("admin");
+		// driver.findElement(By.name("pass")).sendKeys("secret");
+		// driver.findElement(By.xpath(".//*[@id='content']/form/input[3]")).click();
 		driver.findElement(By.linkText("nuovo")).click();
 		driver.findElement(By.name("quickadd")).click();
 		driver.findElement(By.name("firstname")).clear();
@@ -54,6 +52,5 @@ public class AddressBookAddAddressBookTest {
 
 	public void tearDown() throws Exception {
 		driver.quit();
-
 	}
 }

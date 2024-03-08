@@ -1,4 +1,0 @@
-Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
-
-Name, group, 0.000, 0.090, 0.000, 0.030
-XPath, html/body/div[1]/div[4]/form[2]/table/tbody/tr[2]/td[1]/input, 0.850, 0.087, 1.000, 0.639

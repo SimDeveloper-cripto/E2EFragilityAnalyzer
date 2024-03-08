@@ -1,33 +1,33 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
-LinkText, gruppi, 0.300, 0.440, 0.000, 0.244
-Name, new, 0.000, 0.568, 0.500, 0.352
-Name, group_name, 0.000, 0.536, 0.000, 0.177
-Name, group_name, 0.000, 0.536, 0.000, 0.177
-Name, group_header, 0.000, 0.536, 0.000, 0.177
-Name, group_header, 0.000, 0.536, 0.000, 0.177
-Name, group_footer, 0.000, 0.536, 0.000, 0.177
-Name, group_footer, 0.000, 0.536, 0.000, 0.177
-Name, submit, 0.000, 0.536, 0.000, 0.177
-LinkText, group page, 0.300, 0.563, 0.000, 0.285
-Name, new, 0.000, 0.566, 0.500, 0.352
-Name, group_name, 0.000, 0.537, 0.000, 0.177
-Name, group_name, 0.000, 0.537, 0.000, 0.177
-Name, group_header, 0.000, 0.537, 0.000, 0.177
-Name, group_header, 0.000, 0.537, 0.000, 0.177
-Name, group_footer, 0.000, 0.537, 0.000, 0.177
-Name, group_footer, 0.000, 0.537, 0.000, 0.177
-Name, submit, 0.000, 0.537, 0.000, 0.177
-LinkText, group page, 0.300, 0.563, 0.000, 0.285
-Name, new, 0.000, 0.563, 0.500, 0.351
-Name, group_name, 0.000, 0.540, 0.000, 0.178
-Name, group_name, 0.000, 0.540, 0.000, 0.178
-Name, group_header, 0.000, 0.540, 0.000, 0.178
-Name, group_header, 0.000, 0.540, 0.000, 0.178
-Name, group_footer, 0.000, 0.540, 0.000, 0.178
-Name, group_footer, 0.000, 0.540, 0.000, 0.178
-Name, submit, 0.000, 0.540, 0.000, 0.178
-LinkText, group page, 0.300, 0.563, 0.000, 0.285
-XPath, .//*[@id='content']/form, 0.650, 0.559, 0.000, 0.399
-XPath, .//*[@id='content']/form, 0.650, 0.559, 0.000, 0.399
-XPath, .//*[@id='content']/form, 0.650, 0.559, 0.000, 0.399
+LinkText, gruppi, 0.250, 0.420, 0.000, 0.221
+Name, new, 0.400, 0.444, 0.000, 0.279
+Name, group_name, 0.400, 0.432, 0.000, 0.274
+Name, group_name, 0.400, 0.432, 0.000, 0.274
+Name, group_header, 0.400, 0.432, 0.000, 0.274
+Name, group_header, 0.400, 0.432, 0.000, 0.274
+Name, group_footer, 0.400, 0.432, 0.000, 0.274
+Name, group_footer, 0.400, 0.432, 0.000, 0.274
+Name, submit, 0.400, 0.432, 0.000, 0.274
+LinkText, group page, 0.250, 0.460, 0.000, 0.234
+Name, new, 0.400, 0.440, 0.000, 0.277
+Name, group_name, 0.400, 0.430, 0.000, 0.274
+Name, group_name, 0.400, 0.430, 0.000, 0.274
+Name, group_header, 0.400, 0.430, 0.000, 0.274
+Name, group_header, 0.400, 0.430, 0.000, 0.274
+Name, group_footer, 0.400, 0.430, 0.000, 0.274
+Name, group_footer, 0.400, 0.430, 0.000, 0.274
+Name, submit, 0.400, 0.430, 0.000, 0.274
+LinkText, group page, 0.250, 0.460, 0.000, 0.234
+Name, new, 0.400, 0.437, 0.000, 0.276
+Name, group_name, 0.400, 0.429, 0.000, 0.273
+Name, group_name, 0.400, 0.429, 0.000, 0.273
+Name, group_header, 0.400, 0.429, 0.000, 0.273
+Name, group_header, 0.400, 0.429, 0.000, 0.273
+Name, group_footer, 0.400, 0.429, 0.000, 0.273
+Name, group_footer, 0.400, 0.429, 0.000, 0.273
+Name, submit, 0.400, 0.429, 0.000, 0.273
+LinkText, group page, 0.250, 0.460, 0.000, 0.234
+XPath, .//*[@id='content']/form, 0.650, 0.433, 0.000, 0.357
+XPath, .//*[@id='content']/form, 0.650, 0.433, 0.000, 0.357
+XPath, .//*[@id='content']/form, 0.650, 0.433, 0.000, 0.357
