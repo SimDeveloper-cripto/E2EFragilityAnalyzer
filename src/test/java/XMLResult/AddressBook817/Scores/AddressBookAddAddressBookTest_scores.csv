@@ -17,6 +17,6 @@ Name, bmonth, 0.400, 0.360, 0.000, 0.251
 Name, byear, 0.400, 0.360, 0.000, 0.251
 Name, byear, 0.400, 0.360, 0.000, 0.251
 Name, submit, 0.400, 0.360, 0.000, 0.251
-XPath, .//*[@id='content']/div, 0.650, 0.462, 0.857, 0.650
+XPath, .//*[@id='content']/div, 0.525, 0.462, 0.857, 0.608
 LinkText, home page, 0.250, 0.462, 0.000, 0.235
-XPath, html/body/div[1]/div[4]/label/strong, 0.817, 0.420, 0.000, 0.408
+XPath, html/body/div[1]/div[4]/label/strong, 0.567, 0.420, 0.000, 0.326

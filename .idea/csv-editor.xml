@@ -402,7 +402,378 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookAddGroupTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookAddMultipleAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookAddMultipleGroupsTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookAssignToGroupTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookAssignToMultipleGroupsTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookCheckAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookCheckBirthdayInfoTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookCheckMultipleAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookCheckMultipleBirthdaysInfoTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookEditAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookEditGroupTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookEditMultipleAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookEditMultipleGroupsTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookPrintAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookPrintMultipleAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookRemoveAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookRemoveFromGroupTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookRemoveFromMultipleGroupsTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookRemoveGroupTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookRemoveMultipleAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookRemoveMultipleGroupsTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookSearchAddressBookEmailTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookSearchAddressBookNameTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookSearchByGroupTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookSearchByMultipleGroupsTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook816/Scores/AddressBookSearchMultipleAddressBookNameTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/src/test/java/XMLResult/AddressBook817/Result.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookAddAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookAddGroupTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookAddMultipleAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookAddMultipleGroupsTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookAssignToGroupTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookAssignToMultipleGroupsTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookCheckAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookCheckBirthdayInfoTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookCheckMultipleAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookCheckMultipleBirthdaysInfoTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookEditAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookEditGroupTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookEditMultipleAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookEditMultipleGroupsTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookPrintAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookPrintMultipleAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookRemoveAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookRemoveFromGroupTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookRemoveFromMultipleGroupsTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookRemoveGroupTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookRemoveMultipleAddressBookTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookRemoveMultipleGroupsTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookSearchAddressBookEmailTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookSearchAddressBookNameTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookSearchByGroupTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookSearchByMultipleGroupsTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/AddressBook817/Scores/AddressBookSearchMultipleAddressBookNameTest_scores.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

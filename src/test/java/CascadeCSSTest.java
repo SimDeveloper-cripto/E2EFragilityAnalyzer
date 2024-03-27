@@ -142,6 +142,7 @@ public class CascadeCSSTest {
         Assert.assertEquals(evaluator.apply_ABC_For_Css_Selectors("#app .user-list div.user.is-admin a.remove:hover"), expectedScore, delta);
     }
 
+    // TODO: FOR FUTURE DEVELOPMENT THIS TEST HAS TO WORK
     @Test
     public void cascade15() { // We expect this test to fail. Encountered regex limit.
         CascadeSpecificityEvaluator evaluator = new CascadeSpecificityEvaluator();

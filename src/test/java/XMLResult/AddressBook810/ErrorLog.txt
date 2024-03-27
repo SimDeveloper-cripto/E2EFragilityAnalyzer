@@ -1,0 +1,17 @@
+<Test: JUnit.AddressBook810.AddressBookAddAddressBookTest> <Invoked method: addressBookAddAddressBook>
+[ERROR] Exception Type: java.lang.reflect.InvocationTargetException, Root Cause: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.160)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.5.0-15-generic', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e07f4db7115b4563337802b1ed4b65bd, clearElement {id=8196E7A19F558947EB0795E42A01CD66_element_22}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.160, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43873}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43873/devtoo..., se:cdpVersion: 121.0.6167.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (e07f4db7115b4563337802b1ed4b65bd)] -> name: email]
+Session ID: e07f4db7115b4563337802b1ed4b65bd
+------------------------------------------------------------------------------------
+
+<Test: JUnit.AddressBook810.AddressBookSearchAddressBookNameTest> <Invoked method: addressBookSearchAddressBookName>
+[ERROR] Exception Type: java.lang.reflect.InvocationTargetException, Root Cause: expected:<...umero di risultati: [1]> but was:<...umero di risultati: [0]>
+------------------------------------------------------------------------------------
+

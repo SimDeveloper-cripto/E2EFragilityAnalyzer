@@ -9,5 +9,5 @@ Name, group_header, 0.400, 0.432, 0.000, 0.274
 Name, group_footer, 0.400, 0.432, 0.000, 0.274
 Name, group_footer, 0.400, 0.432, 0.000, 0.274
 Name, submit, 0.400, 0.432, 0.000, 0.274
-XPath, .//*[@id='content']/div, 0.650, 0.460, 0.857, 0.649
+XPath, .//*[@id='content']/div, 0.525, 0.460, 0.857, 0.608
 LinkText, group page, 0.250, 0.460, 0.000, 0.234

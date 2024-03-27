@@ -23,26 +23,28 @@ public class CascadeSpecificityEvaluator {
 
     public float applyAlgorithmForCssSelectors(String selector) {
         String[] levels = SelectorDepthEvaluator.getElementsFromCssSelector(selector);
-
-        /*
-            - depth = 1 --> An input selector like "input"
-            - That's because evaluateCssSelectorHierarchyDepth(selector) return 0 if there is only one level
-        **/
-        int depth = SelectorDepthEvaluator.evaluateCssSelectorHierarchyDepth(selector) + 1;
+        // System.out.println("Levels[] size: " + levels.length);
 
         // Evaluate Score for each level
         float[] tempScores = new float[levels.length];
         for (int i = 0; i < levels.length; i++) {
             Cascade currCascade = evaluateCascadeFromCssSelector(levels[i]);
-            int sumABC = currCascade.getA() + currCascade.getB() + currCascade.getC();
+            int sumABC = currCascade.getA() + currCascade.getB() + currCascade.getC(); // (A, B, C) of the current level
             tempScores[i] = evaluateScore(currCascade) / sumABC;
+            // System.out.println("tempScores[i]: " + tempScores[i]);
         }
 
         float result = 0.0f;
-        for (int i = 0; i < tempScores.length; i++) {
-            int div = (i + 1) / depth;
-            result += tempScores[i] + div; // float + int is casts to float
+        for (int i = 0; i < levels.length; i++) {
+            float div = ((float) (i + 1)) / levels.length;
+            float partialSum = tempScores[i] * div;
+            result += partialSum; // So that we cast to float
+
+            // System.out.println("Si          = " + tempScores[i]);
+            // System.out.println("i/h         = " + div);
+            // System.out.println("Partial Sum = " + partialSum + "\n");
         }
+        // System.out.println("[CascadeSpecificityEvaluator] applyAlgorithmForCssSelectors() RESULT: " + result);
 
         return (1 - result);
     }
@@ -52,7 +54,7 @@ public class CascadeSpecificityEvaluator {
         B = 0;
         C = 0;
 
-        // System.out.println("[CascadeSpecificityEvaluator] Selector received: " + selector);
+        System.out.println("[CascadeSpecificityEvaluator] Selector received: " + selector);
 
         Pattern idPattern            = Pattern.compile("#\\w+");
         Pattern classPattern         = Pattern.compile("\\.[-\\w]+");
@@ -114,12 +116,6 @@ public class CascadeSpecificityEvaluator {
     public float applyAlgorithmForXPathSelectors(String selector) {
         String[] levels = SelectorDepthEvaluator.getElementsFromXPathSelector(selector);
 
-        /*
-            - depth = 1 --> An input selector like "input"
-            - That's because evaluateXPathSelectorHierarchyDepth(selector) return 0 if there is only one level
-        **/
-        int depth = SelectorDepthEvaluator.evaluateXPathSelectorHierarchyDepth(selector) + 1;
-
         // Evaluate Score for each level
         float[] tempScores = new float[levels.length];
         for (int i = 0; i < levels.length; i++) {
@@ -129,9 +125,10 @@ public class CascadeSpecificityEvaluator {
         }
 
         float result = 0.0f;
-        for (int i = 0; i < tempScores.length; i++) {
-            int div = (i + 1) / depth;
-            result += tempScores[i] + div; // float + int is casts to float
+        for (int i = 0; i < levels.length; i++) {
+            float div = ((float) (i + 1)) / levels.length;
+            float partialSum = tempScores[i] * div;
+            result += partialSum;
         }
 
         return (1 - result);
@@ -142,7 +139,7 @@ public class CascadeSpecificityEvaluator {
         B = 0;
         C = 0;
 
-        // System.out.println("[CascadeSpecificityEvaluator] XPath Selector received: " + selector);
+        System.out.println("[CascadeSpecificityEvaluator] XPath Selector received: " + selector);
 
         // Count IDs
         Pattern idPattern = Pattern.compile("@id\\b");
@@ -168,8 +165,8 @@ public class CascadeSpecificityEvaluator {
         Matcher pseudoElementMatcher = pseudoElementPattern.matcher(selector);
         while (pseudoElementMatcher.find()) C++;
 
-        // System.out.printf("[CascadeSpecificityEvaluator] (A, B, C) = (%d, %d, %d)%n", A, B, C);
-        // System.out.println();
+        System.out.printf("[CascadeSpecificityEvaluator] (A, B, C) = (%d, %d, %d)%n", A, B, C);
+        System.out.println();
 
         return new Cascade(A, B, C);
     }

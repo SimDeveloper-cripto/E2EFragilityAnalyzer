@@ -1,8 +1,8 @@
 Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeightedAverageResult 
 
 LinkText, gruppi, 0.250, 0.417, 0.000, 0.220
-XPath, .//*[@id='content']/form/input[4], 0.733, 0.433, 0.000, 0.385
-XPath, .//*[@id='content']/form/input[9], 0.733, 0.433, 0.000, 0.385
+XPath, .//*[@id='content']/form/input[4], 0.583, 0.433, 0.000, 0.336
+XPath, .//*[@id='content']/form/input[9], 0.583, 0.433, 0.000, 0.336
 Name, group_name, 0.400, 0.423, 0.000, 0.272
 Name, group_name, 0.400, 0.423, 0.000, 0.272
 Name, group_header, 0.400, 0.423, 0.000, 0.272
@@ -11,8 +11,8 @@ Name, group_footer, 0.400, 0.423, 0.000, 0.272
 Name, group_footer, 0.400, 0.423, 0.000, 0.272
 Name, update, 0.400, 0.423, 0.000, 0.272
 LinkText, group page, 0.250, 0.460, 0.000, 0.234
-XPath, .//*[@id='content']/form/input[4], 0.733, 0.433, 0.000, 0.385
-XPath, .//*[@id='content']/form/input[9], 0.733, 0.433, 0.000, 0.385
+XPath, .//*[@id='content']/form/input[4], 0.583, 0.433, 0.000, 0.336
+XPath, .//*[@id='content']/form/input[9], 0.583, 0.433, 0.000, 0.336
 Name, group_name, 0.400, 0.423, 0.000, 0.272
 Name, group_name, 0.400, 0.423, 0.000, 0.272
 Name, group_header, 0.400, 0.423, 0.000, 0.272
@@ -21,8 +21,8 @@ Name, group_footer, 0.400, 0.423, 0.000, 0.272
 Name, group_footer, 0.400, 0.423, 0.000, 0.272
 Name, update, 0.400, 0.423, 0.000, 0.272
 LinkText, group page, 0.250, 0.460, 0.000, 0.234
-XPath, .//*[@id='content']/form/input[4], 0.733, 0.433, 0.000, 0.385
-XPath, .//*[@id='content']/form/input[9], 0.733, 0.433, 0.000, 0.385
+XPath, .//*[@id='content']/form/input[4], 0.583, 0.433, 0.000, 0.336
+XPath, .//*[@id='content']/form/input[9], 0.583, 0.433, 0.000, 0.336
 Name, group_name, 0.400, 0.423, 0.000, 0.272
 Name, group_name, 0.400, 0.423, 0.000, 0.272
 Name, group_header, 0.400, 0.423, 0.000, 0.272
@@ -31,16 +31,16 @@ Name, group_footer, 0.400, 0.423, 0.000, 0.272
 Name, group_footer, 0.400, 0.423, 0.000, 0.272
 Name, update, 0.400, 0.423, 0.000, 0.272
 LinkText, group page, 0.250, 0.460, 0.000, 0.234
-XPath, .//*[@id='content']/form, 0.650, 0.433, 0.000, 0.357
-XPath, .//*[@id='content']/form, 0.650, 0.433, 0.000, 0.357
-XPath, .//*[@id='content']/form, 0.650, 0.433, 0.000, 0.357
+XPath, .//*[@id='content']/form, 0.525, 0.433, 0.000, 0.316
+XPath, .//*[@id='content']/form, 0.525, 0.433, 0.000, 0.316
+XPath, .//*[@id='content']/form, 0.525, 0.433, 0.000, 0.316
 LinkText, homepage, 0.250, 0.433, 0.000, 0.225
 Name, group, 0.400, 0.417, 0.000, 0.270
-XPath, html/body/div[1]/div[4], 0.775, 0.414, 0.000, 0.392
-XPath, html/body/div[1]/div[4], 0.775, 0.414, 0.000, 0.392
+XPath, html/body/div[1]/div[4], 0.625, 0.414, 0.000, 0.343
+XPath, html/body/div[1]/div[4], 0.625, 0.414, 0.000, 0.343
 Name, group, 0.400, 0.414, 0.000, 0.268
-XPath, html/body/div[1]/div[4], 0.775, 0.414, 0.000, 0.392
-XPath, html/body/div[1]/div[4], 0.775, 0.414, 0.000, 0.392
+XPath, html/body/div[1]/div[4], 0.625, 0.414, 0.000, 0.343
+XPath, html/body/div[1]/div[4], 0.625, 0.414, 0.000, 0.343
 Name, group, 0.400, 0.414, 0.000, 0.268
-XPath, html/body/div[1]/div[4], 0.775, 0.414, 0.000, 0.392
-XPath, html/body/div[1]/div[4], 0.775, 0.414, 0.000, 0.392
+XPath, html/body/div[1]/div[4], 0.625, 0.414, 0.000, 0.343
+XPath, html/body/div[1]/div[4], 0.625, 0.414, 0.000, 0.343

@@ -2,7 +2,7 @@ Type, Selector, SelectorScore, PageScore, PageAndSelectorScore, SelectorWeighted
 
 LinkText, gruppi, 0.250, 0.419, 0.000, 0.221
 Name, selected[], 0.400, 0.440, 0.000, 0.277
-XPath, .//*[@id='content']/form/input[7], 0.733, 0.440, 0.000, 0.387
+XPath, .//*[@id='content']/form/input[7], 0.583, 0.440, 0.000, 0.338
 Name, group_name, 0.400, 0.426, 0.000, 0.272
 Name, group_name, 0.400, 0.426, 0.000, 0.272
 Name, group_header, 0.400, 0.426, 0.000, 0.272
@@ -10,4 +10,4 @@ Name, group_header, 0.400, 0.426, 0.000, 0.272
 Name, group_footer, 0.400, 0.426, 0.000, 0.272
 Name, group_footer, 0.400, 0.426, 0.000, 0.272
 Name, update, 0.400, 0.426, 0.000, 0.272
-XPath, .//*[@id='content']/div, 0.650, 0.460, 0.857, 0.649
+XPath, .//*[@id='content']/div, 0.525, 0.460, 0.857, 0.608
