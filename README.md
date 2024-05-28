@@ -1,4 +1,4 @@
-# FragilitySentry Overview
+# E2EFragilityAnalyzer Overview
 
 This project is the continuation of https://github.com/Noctino52/FragilitySentry. <br />
 It is still a work in progress, meaning this Readme overview will be updated once completed. <br/>
