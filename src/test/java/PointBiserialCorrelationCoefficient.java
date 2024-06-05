@@ -3,13 +3,19 @@ import java.util.List;
 import java.util.ArrayList;
 import org.apache.commons.math3.stat.StatUtils;
 
+/* [DESCRIPTION]
+    - This is a very old file. It is not used anymore but could still be useful.
+    - The Point Bi-serial Coefficient of Correlation has been calculated using "Scipy (stats module)", a python library.
+        - I, personally, didn't work on that (it is a private repository of my professor's assistant) so I will not push the code here.
+**/
+
 public class PointBiserialCorrelationCoefficient {
     static List<Boolean> dichotomous = new ArrayList<>(), dichotomousFalse = new ArrayList<>(), dichotomousTrue = new ArrayList<>();
     static List<Double> continuos = new ArrayList<>(), continuosFalse = new ArrayList<>(), continuosTrue = new ArrayList<>();
 
+
     private static void setLists(List<Test> testJudged) {
         for (Test test : testJudged) {
-            // System.out.println(test);
             Double score = test.getTestScore();
             Boolean dichotomousValue = test.isLaterGetSuccess();
 

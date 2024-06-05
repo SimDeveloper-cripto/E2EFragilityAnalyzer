@@ -1,8 +1,9 @@
-# E2EFragilityAnalyzer Overview
+# Overview
 
-This project is the continuation of https://github.com/Noctino52/FragilitySentry. <br />
-It is still a work in progress, meaning this Readme overview will be updated once completed. <br/>
+This is my Bachelor's Thesis project: an end-to-end test case fragility evaluator for web applications using Selenium written in Java. <br />
 All the development process took place in a Linux environment (Ubuntu 22 and Ubuntu 23). <br />
+It works with every web application since you just need to make sure that the app is running on you computer (a Docker Container is the best choice). <br />
+I have provided for you some examples.
 
 ## How to test an application
 
@@ -19,6 +20,9 @@ In this project 5 applications are tested. Here is the list with the versions: <
 First of all, this project uses JUnit to automate a battery of Selenium tests. <br />
 Each battery of tests (related to the specific application) is located in __src/test/java/JUnit/{name_of_the_application}__. <br />
 
+__Disclaimer__: I do not recommend you to test AddressBook or NEW_MantisBT (test provided for __RunMantisBTDockerContainer__ folder). <br />
+For these applications I have not provided tutorials as it is already quite difficult to put them into operation as they are very serious software products.
+
 ### Step 1
 
 The first thing to do is define your execution configuration (__src/test/java/config/configuration.json__). <br />
@@ -30,6 +34,16 @@ Take my configuration as an example. <br />
 5. "pageAndSelectorScoreStrategy": define here the name of the __implementation__ class for page and selector strategy score. <br />
 
 ### Step 2
+
+Go in __src/test/java/XMLResult/{name_of_the_application}__ and fill the Result.csv file adding two columns:
+1. The first one containing the exact number of the version executed.
+2. The second one "Score_{exact version executed}".
+
+Have a look at the others Result files to see what I am talking about. <br />
+If you want to add to the project many more application this is a must step! <br />
+You'll need to include, also, a column (place it as the first one) "Test Name". Literally.
+
+### Step 3
 
 In order to run tests you will need to start the related docker container. <br />
 * ___Dolibarr___
@@ -86,3 +100,6 @@ Once you have finished running all the tests go to __src/test/java/XMLResult/{na
 There is a Result.csv file containing all the info needed. For each test: <br />
 1. Passed/Failed, depending on the version.
 2. Score.
+
+Feel free to use information from the metric and pass/fail tests in subsequent releases to calculate correlations as well. <br />
+You can do it in Java as well as Python or whatever you prefer!
