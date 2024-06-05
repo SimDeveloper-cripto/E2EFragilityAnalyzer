@@ -3,7 +3,7 @@
 This is my Bachelor's Thesis project: an end-to-end test case fragility evaluator for web applications using Selenium written in Java. <br />
 All the development process took place in a Linux environment (Ubuntu 22 and Ubuntu 23). <br />
 It works with every web application since you just need to make sure that the app is running on you computer (a Docker Container is the best choice). <br />
-I have provided for you some examples.
+I have provided for you some simple examples.
 
 ## How to test an application
 
