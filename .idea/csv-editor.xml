@@ -990,6 +990,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/src/test/java/XMLResult/Magento/Scores/ReadTemplate1Test_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/src/test/java/XMLResult/MantisBT/Result.csv">
           <value>
             <Attribute>
@@ -1109,7 +1116,63 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/src/test/java/XMLResult/NEW_MantisBT/Scores/AddCategoryEmptyTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/NEW_MantisBT/Scores/AddUserWrongTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/NEW_MantisBT/Scores/DeleteCategoryTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/NEW_MantisBT/Scores/DeleteIssueTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/NEW_MantisBT/Scores/LogoutTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/NEW_MantisBT/Scores/UpdateIssueStatusResolvedTest_scores.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/src/test/java/XMLResult/NewMantisBT/Result.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/OLD_MantisBT/Result.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/XMLResult/OLD_MantisBT/Scores/ReadAdminInfo1Test_scores.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+  mantis:
+     image: mantis-1.1.8
+     environment:
+      - TZ=Europe/Rome
+     ports:
+      - 8080:80
+  db:
+    image: mysql:5.5.42
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: bugtracker
+      MYSQL_USER: mantisbt
+      MYSQL_PASSWORD: mantisbt
+    volumes:
+      - ./data:/var/lib/mysql
